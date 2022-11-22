@@ -5,15 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      "brand-dark": "#0d0d0d",
-      "brand-light": "#eff0f3",
-      "brand-primary": "#ff8e3c",
-      "brand-secondary": "#d9376e",
-    },
     extend: {
       fontFamily: {
         mono: ["Roboto Mono", "monospace"],
+      },
+      colors: {
+        "brand-dark": "#0d0d0d",
+        "brand-light": "#eff0f3",
+        "brand-primary": "#00ebc7",
+        "brand-secondary": "#ff5470",
+        "brand-tertiary": "#fde24f",
       },
     },
   },
