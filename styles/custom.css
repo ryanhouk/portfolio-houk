@@ -1,0 +1,7 @@
+.drop-shadow-item {
+  filter: drop-shadow(-79px 68px 87px rgba(0, 0, 0, 0.45));
+}
+
+.drop-shadow-two {
+  filter: drop-shadow(-13px 23px 29px #000);
+}
