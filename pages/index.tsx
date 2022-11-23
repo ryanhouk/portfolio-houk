@@ -1,3 +1,4 @@
+import { FadeY } from "../components/animations";
 
 export default function Home() {
   return (
@@ -9,28 +10,33 @@ export default function Home() {
         </p>
       </div> */}
       {/* INTRO */}
-      <div className="bg-brand-primary h-1 -z-10"></div>
+      {/* <div className="bg-red-600 h-1 -z-10"></div> */}
 
       <section className="relative overflow-clip h-[90vh] bg-brand-light flex justify-center items-center">
+        <img src="/img/plastic-overlay-01.webp" alt="" className="h-full w-full absolute left-0 top-0" />
+
         <img
           src="/img/pkg-ns-01.webp"
           alt="brown paper package"
-          className="left-0 right-0 bottom-0 -top-96 w-[1000px] absolute mx-auto drop-shadow-item hover:-top-[28rem] hover:opacity-0 transition-all duration-300"
+          className="left-0 right-0 bottom-0 -top-[26rem] w-[1000px] hover:-top-[28rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300"
         />
-        <div className="max-w-7xl transition-all">
-          <p className="text-center font-mono text-black/50">Easter Egg</p>
-          <h1 className="text-5xl lg:text-[200px] font-clash font-black pl-16 p-12 text-brand-dark text-center mt-16">
+        <div className="max-w-7xl">
+          <p className="text-center">Easter egg</p>
+          <h1 className="text-5xl lg:text-[200px] font-black p-12 text-brand-dark text-center mt-16">
             It's been a minute.
           </h1>
         </div>
       </section>
 
       {/* SECTION TWO */}
-      <section className="bg-brand-light">
-        <div className="flex justify-center">
-          <div className="w-[2px] h-64 bg-black">
-          </div>
-        </div>
+      <section className="bg-brand-light relative py-12 lg:py-32">
+        <FadeY className="-mb-8 pl-16" delay={.15}>
+          <p className="font-mono text-sm text-red-600">Design / Information Architecture / Development</p>
+          <h2 className="text-3xl lg:text-9xl z-0 font-black">Website</h2>
+        </FadeY>
+        <FadeY className={""} delay={.15}>
+          <img src="/img/crc-paper-01.webp" alt="" className="mx-auto max-w-7xl w-full" />
+        </FadeY>
       </section>
     </>
   );
