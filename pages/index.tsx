@@ -1,5 +1,6 @@
 import { FadeY } from "../components/animations";
 import {
+  LineDoubleSVG,
   LineVerticalSVG,
   RectangeDotsSVG,
   RoundScribbleSVG,
@@ -34,7 +35,7 @@ export default function Home() {
       {/* INTRO */}
       <section className="relative overflow-clip h-[60vh] xl:h-[90vh] bg-brand-light flex justify-center items-center selection:bg-black/10">
         <img
-          className="w-64 -rotate-12 absolute -left-12 drop-shadow-sm -top-12 z-20 hidden lg:block"
+          className="w-64 -rotate-12 absolute -left-12 drop-shadow-sm -top-12 z-20 hidden lg:block hover:rotate-12 transition-all duration-200"
           src="/img/sticker/sticker-gray-round.png"
           alt="gray erroded sticker with website layout icon"
         />
@@ -58,7 +59,7 @@ export default function Home() {
             It's been a minute.
           </h1>
           <p className="text-black/70 text-center font-mono mx-auto w-2/3">
-            😊 Yes, this is yet another portfolio site.
+            😊 Yes this is yet another portfolio site.
           </p>
         </FadeY>
       </section>
@@ -67,6 +68,7 @@ export default function Home() {
       <section></section>
 
       {/* SECTION TWO */}
+
       <section className="relative py-12 lg:py-32 xl:py-48 bg-red-600 selection:bg-black/10">
         <RoundScribbleSVG
           className={"w-[400px] absolute left-8 top-8 hidden lg:block"}
@@ -74,7 +76,7 @@ export default function Home() {
           strokeWidth={0.5}
         />
         <img
-          className="absolute -left-24 top-0 z-0 w-[400px] rotate-12 hidden lg:block drop-shadow-lg"
+          className="absolute -left-24 top-0 z-0 w-[400px] rotate-12 hidden lg:block drop-shadow-lg hover:rotate-0 transition-all duration-200"
           src="/img/photo/self-bw-car.png"
           alt="photo of ryan with beard and beanie"
         />
@@ -94,7 +96,7 @@ export default function Home() {
             src="/img/sticker/tape-gray.png"
             alt="piece of duct tape stuck to a letter"
           />
-          <div className="p-4 lg:py-16 py-12 lg:p-16 bg-white shadow-md m-4">
+          <div className="p-4 lg:py-16 py-12 lg:p-16 bg-white shadow-md rounded-sm m-4">
             <p className="font-mono leading-loose mb-8">
               Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
               halvah carrot cake croissant sweet. Chocolate cake croissant
