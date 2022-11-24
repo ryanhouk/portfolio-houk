@@ -2,9 +2,11 @@ import Link from "next/link";
 import { FadeY } from "../components/animations";
 import {
   ArrowDownSVG,
+  CrossSVG,
   LineVerticalSVG,
   RectangeDotsSVG,
   RoundScribbleSVG,
+  ShapeTopLeftSVG,
 } from "../components/svg";
 
 export default function Home() {
@@ -61,7 +63,8 @@ export default function Home() {
             <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
           </div>
         </FadeY>
-        <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute -right-24 -bottom-24 -rotate-12 w-[26rem] z-20 drop-shadow-md" />
+        <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-56 lg:w-[26rem] z-20 drop-shadow-md" />
+        <ShapeTopLeftSVG className={"w-60 lg:w-[500px] bottom-0 left-0 absolute -mb-1"} fillColor={"#DC2626"} />
       </section>
 
 
@@ -77,7 +80,7 @@ export default function Home() {
           src="/img/photo/self-bw-car.png"
           alt="photo of ryan with beard and beanie"
         />
-        <FadeY className="lg:ml-96 z-10 text-center lg:text-left mx-auto px-8 lg:px-0" delay={0.15}>
+        <FadeY className="z-10 text-center mx-auto px-8 lg:px-0" delay={0.2}>
           <h2 className="text-5xl lg:text-9xl font-black text-white drop-shadow-sm">
             It's been a journey
           </h2>
@@ -87,7 +90,7 @@ export default function Home() {
           </p>
         </FadeY>
         <div className="h-[1px] bg-black mt-12"></div>
-        <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24" delay={0.15}>
+        <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24" delay={0.2}>
           <img
             className="lg:w-72 w-48 mx-auto -mb-16 transition-all duration-200"
             src="/img/sticker/tape-gray.png"
@@ -125,11 +128,13 @@ export default function Home() {
 
       {/* SECTION */}
       <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10">
-        <div className="max-w-7xl mx-auto">
+        <img src="/img/sticker/sticker-gray-round.png" alt="design with care sticker" className="w-72 absolute left-8 -top-44 -rotate-12 drop-shadow-sm" />
+        <FadeY className="max-w-7xl mx-auto relative" delay={.2}>
           <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-white text-center mt-16">
             It's been busy.
           </h1>
-        </div>
+          <CrossSVG className={"w-96 absolute inset-0 m-auto"} strokeColor={"#dc2626"} strokeWidth={2} />
+        </FadeY>
       </section>
     </>
   );
