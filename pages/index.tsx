@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div className="absolute z-10 w-[28.5rem] rotate-90 top-[14rem] -left-32 hidden p-4 xl:flex selection:bg-black/10">
-        <p className="font-mono text-[.75rem] text-justify leading-relaxed">
+        <p className="font-mono text-[.75rem] text-justify leading-relaxed opacity-70">
           Please don't do vertical text. Sure it looks cool, but it's a pain in
           the butt to read and isn't very accessible.
         </p>
@@ -128,7 +128,6 @@ export default function Home() {
 
       {/* SECTION */}
       <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10">
-        <img src="/img/sticker/sticker-gray-round.png" alt="design with care sticker" className="w-72 absolute left-8 -top-44 -rotate-12 drop-shadow-sm" />
         <FadeY className="max-w-7xl mx-auto relative" delay={.2}>
           <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-white text-center mt-16">
             It's been busy.
