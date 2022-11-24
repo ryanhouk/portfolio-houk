@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { FadeY } from "../components/animations";
 import {
-  LineDoubleSVG,
+  ArrowDownSVG,
   LineVerticalSVG,
   RectangeDotsSVG,
   RoundScribbleSVG,
@@ -9,7 +10,7 @@ import {
 export default function Home() {
   return (
     <>
-      <div className="absolute z-10 w-[28.5rem] rotate-90 top-[28rem] -left-32 hidden p-4 xl:flex selection:bg-black/10">
+      <div className="absolute z-10 w-[28.5rem] rotate-90 top-[14rem] -left-32 hidden p-4 xl:flex selection:bg-black/10">
         <p className="font-mono text-[.75rem] text-justify leading-relaxed">
           Please don't do vertical text. Sure it looks cool, but it's a pain in
           the butt to read and isn't very accessible.
@@ -33,12 +34,7 @@ export default function Home() {
       />
 
       {/* INTRO */}
-      <section className="relative overflow-clip h-[60vh] xl:h-[90vh] bg-brand-light flex justify-center items-center selection:bg-black/10">
-        <img
-          className="w-64 -rotate-12 absolute -left-12 drop-shadow-sm -top-12 z-20 hidden lg:block hover:rotate-12 transition-all duration-200"
-          src="/img/sticker/sticker-gray-round.png"
-          alt="gray erroded sticker with website layout icon"
-        />
+      <section className="relative overflow-clip pb-16 lg:pt-24 lg:pb-48 bg-brand-light flex justify-center items-center selection:bg-black/10">
 
         {/* <img
           src="/img/object/plastic-overlay-01.webp"
@@ -49,26 +45,27 @@ export default function Home() {
         <img
           src="/img/object/pkg-ns-01.webp"
           alt="brown paper package"
-          className="left-0 right-0 bottom-0 z-30 -top-40 md:-top-[26rem] w-[900px] lg:w-[1000px] lg:hover:-top-[28rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300"
+          className="left-0 right-0 bottom-0 z-30 -top-48 md:-top-[30rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] lg:hover:-top-[28rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
         />
         <FadeY className="max-w-7xl" once={true}>
           <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-1 w-80 rounded-sm">
-            Uh oh, did someone obscure text? Designers should know better.
+            Uh oh, we've got some obscured text. Designers should know better.
           </p>
-          <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-brand-dark text-center mt-16">
+          <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-brand-dark text-center mt-12">
             It's been a minute.
           </h1>
           <p className="text-black/70 text-center font-mono mx-auto w-2/3">
-            😊 Yes this is yet another portfolio site.
+            😊 Yes, this is yet another portfolio site.
           </p>
+          <div className="flex justify-center">
+            <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
+          </div>
         </FadeY>
+        <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute -right-24 -bottom-24 -rotate-12 w-[26rem] z-20 drop-shadow-md" />
       </section>
 
-      {/* SKILLS */}
-      <section></section>
 
-      {/* SECTION TWO */}
-
+      {/* ABOUT ME */}
       <section className="relative py-12 lg:py-32 xl:py-48 bg-red-600 selection:bg-black/10">
         <RoundScribbleSVG
           className={"w-[400px] absolute left-8 top-8 hidden lg:block"}
@@ -80,8 +77,8 @@ export default function Home() {
           src="/img/photo/self-bw-car.png"
           alt="photo of ryan with beard and beanie"
         />
-        <FadeY className="lg:ml-96 z-10 max-w-xl" delay={0.15}>
-          <h2 className="text-3xl lg:text-9xl font-black text-white drop-shadow-sm">
+        <FadeY className="lg:ml-96 z-10 text-center lg:text-left mx-auto px-8 lg:px-0" delay={0.15}>
+          <h2 className="text-5xl lg:text-9xl font-black text-white drop-shadow-sm">
             It's been a journey
           </h2>
           <p className="font-mono text-sm text-white/70 mt-8 leading-loose">
@@ -92,7 +89,7 @@ export default function Home() {
         <div className="h-[1px] bg-black mt-12"></div>
         <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24" delay={0.15}>
           <img
-            className="lg:w-72 w-48 mx-auto -mb-16"
+            className="lg:w-72 w-48 mx-auto -mb-16 transition-all duration-200"
             src="/img/sticker/tape-gray.png"
             alt="piece of duct tape stuck to a letter"
           />
@@ -124,13 +121,15 @@ export default function Home() {
           </div>
           <RectangeDotsSVG className={"w-72 mx-auto -mt-10"} />
         </FadeY>
-        {/* <FadeY className={""} delay={0.15}>
-          <img
-            src="/img/mockup/crc-paper-01.webp"
-            alt=""
-            className="mx-auto max-w-7xl w-full"
-          />
-        </FadeY> */}
+      </section>
+
+      {/* SECTION */}
+      <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-white text-center mt-16">
+            It's been busy.
+          </h1>
+        </div>
       </section>
     </>
   );

@@ -2,3 +2,4 @@ export { default as LineVerticalSVG } from "./VerticalLine";
 export { default as RoundScribbleSVG } from "./RoundScribble";
 export { default as RectangeDotsSVG } from "./RectangeDots";
 export { default as LineDoubleSVG } from "./LineDouble";
+export { default as ArrowDownSVG } from "./ArrowDown";
