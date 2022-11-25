@@ -37,20 +37,13 @@ export default function Home() {
 
       {/* INTRO */}
       <section className="relative overflow-clip pb-16 lg:pt-24 lg:pb-48 bg-brand-light flex justify-center items-center selection:bg-black/10">
-
-        {/* <img
-          src="/img/object/plastic-overlay-01.webp"
-          alt=""
-          className="h-full w-full absolute left-0 top-0"
-        /> */}
-
         <img
           src="/img/object/pkg-ns-01.webp"
           alt="brown paper package"
           className="left-0 right-0 bottom-0 z-30 -top-48 md:-top-[30rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] lg:hover:-top-[28rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
         />
         <FadeY className="max-w-7xl" once={true}>
-          <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-1 w-80 rounded-sm">
+          <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 rounded-sm">
             Uh oh, we've got some obscured text. Designers should know better.
           </p>
           <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-brand-dark text-center mt-12">
@@ -63,8 +56,8 @@ export default function Home() {
             <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
           </div>
         </FadeY>
-        <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-56 lg:w-[26rem] z-20 drop-shadow-md" />
-        <ShapeTopLeftSVG className={"w-60 lg:w-[500px] bottom-0 left-0 absolute -mb-1"} fillColor={"#DC2626"} />
+        <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute hover:rotate-0 duration-200 transition-all -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-56 lg:w-[26rem] z-20 drop-shadow-md" />
+        <ShapeTopLeftSVG className={"hidden md:w-60 lg:w-[500px] bottom-0 left-0 absolute -mb-1 lg:flex"} fillColor={"#DC2626"} />
       </section>
 
 
