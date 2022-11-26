@@ -38,12 +38,12 @@ export default function Home() {
       {/* INTRO */}
       <section className="relative overflow-clip pb-16 lg:pt-24 lg:pb-48 bg-brand-light flex justify-center items-center selection:bg-black/10">
         <img
-          src="/img/object/pkg-ns-01.webp"
+          src="/img/object/box-logos.webp"
           alt="brown paper package"
-          className="left-0 right-0 bottom-0 z-30 -top-48 md:-top-[30rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] lg:hover:-top-[28rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
+          className="left-8 sm:left-24 right-0 bottom-0 z-30 rotate-12 -top-64 md:-top-[40rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] lg:hover:-top-[37rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
         />
-        <FadeY className="max-w-7xl" once={true}>
-          <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 rounded-sm">
+        <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
+          <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
             Uh oh, we've got some obscured text. Designers should know better.
           </p>
           <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-brand-dark text-center mt-12">
@@ -57,14 +57,14 @@ export default function Home() {
           </div>
         </FadeY>
         <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute hover:rotate-0 duration-200 transition-all -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-56 lg:w-[26rem] z-20 drop-shadow-md" />
-        <ShapeTopLeftSVG className={"hidden md:w-60 lg:w-[500px] bottom-0 left-0 absolute -mb-1 lg:flex"} fillColor={"#DC2626"} />
+        {/* <ShapeTopLeftSVG className={"hidden md:w-60 lg:w-[500px] bottom-0 left-0 absolute -mb-1 lg:flex"} fillColor={"#DC2626"} /> */}
       </section>
 
 
       {/* ABOUT ME */}
       <section className="relative py-12 lg:py-32 xl:py-48 bg-red-600 selection:bg-black/10">
         <RoundScribbleSVG
-          className={"w-[400px] absolute left-8 top-8 hidden lg:block"}
+          className={"w-[400px] absolute left-8 top-8 hidden lg:block z-0"}
           strokeColor={"#000"}
           strokeWidth={0.5}
         />
@@ -73,7 +73,7 @@ export default function Home() {
           src="/img/photo/self-bw-car.png"
           alt="photo of ryan with beard and beanie"
         />
-        <FadeY className="z-10 text-center mx-auto px-8 lg:px-0" delay={0.2}>
+        <FadeY className="z-10 text-center mx-auto px-8 lg:px-0 relative" delay={0.2}>
           <h2 className="text-5xl lg:text-9xl font-black text-white drop-shadow-sm">
             It's been a journey
           </h2>
