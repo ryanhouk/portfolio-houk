@@ -6,7 +6,6 @@ import {
   LineVerticalSVG,
   RectangeDotsSVG,
   RoundScribbleSVG,
-  ShapeTopLeftSVG,
 } from "../components/svg";
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
       <div className="overflow-clip">
         <div className="absolute z-10 w-[28.5rem] rotate-90 top-[14rem] -left-32 hidden p-4 xl:flex selection:bg-black/10">
           <p className="font-mono text-[.75rem] text-justify leading-relaxed opacity-70">
-            Please don't do vertical text. Sure it looks cool, but it's a pain in
+            Please don't do vertical text ❌ Sure it looks cool, but it's a pain in
             the butt to read and isn't very accessible.
           </p>
         </div>
@@ -50,8 +49,8 @@ export default function Home() {
             <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-brand-dark text-center mt-12">
               It's been a minute.
             </h1>
-            <p className="text-black/70 text-center font-mono mx-auto w-2/3">
-              😊 Yes, this is yet another portfolio site.
+            <p className="text-center font-mono mx-auto w-2/3">
+              😊 <span className="text-black/70">Yes, this is yet another portfolio site.</span>
             </p>
             <div className="flex justify-center">
               <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
@@ -84,13 +83,14 @@ export default function Home() {
             </p>
           </FadeY>
           <div className="h-[1px] bg-black mt-12"></div>
-          <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24" delay={0.2}>
+          <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24 z-20 relative" delay={0.2}>
             <img
               className="lg:w-72 w-48 mx-auto -mb-16 transition-all duration-200"
               src="/img/sticker/tape-gray.png"
               alt="piece of duct tape stuck to a letter"
             />
             <div className="p-4 lg:py-16 py-12 lg:p-16 bg-white shadow-md rounded-sm m-4">
+              <h2 className="font-mono text-2xl lg:text-3xl mb-8">a brief history</h2>
               <p className="font-mono leading-loose mb-8">
                 Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
                 halvah carrot cake croissant sweet. Chocolate cake croissant
@@ -118,18 +118,26 @@ export default function Home() {
             </div>
             <RectangeDotsSVG className={"w-72 mx-auto -mt-10"} />
           </FadeY>
-          <img src="/img/object/cd-ns.webp" alt="cd case with macromedia and pepsi logos" className="lg:w-[500px] -rotate-12 -right-4 -bottom-4 lg:absolute flex justify-center" />
+          <img src="/img/object/cd-ns.webp" alt="cd case with macromedia and pepsi logos" className="lg:w-[500px] z-10 p-8 lg:p-0 lg:-rotate-12 lg:-right-4 lg:-bottom-12 lg:absolute flex justify-center" />
         </section>
 
         {/* SECTION */}
         <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10">
-          <FadeY className="max-w-7xl mx-auto relative" delay={.2}>
-            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-white text-center mt-16">
+          <FadeY className="max-w-7xl mx-auto relative" delay={.25}>
+            <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black p-12 text-white text-center">
               It's been busy.
             </h1>
-            <CrossSVG className={"w-96 absolute inset-0 m-auto p-12"} strokeColor={"#dc2626"} strokeWidth={2} />
+            <CrossSVG className={"w-64 md:w-96 xl:w-[600px] absolute inset-0 m-auto z-10 p-8"} strokeColor={"#dc2626"} strokeWidth={2} />
           </FadeY>
         </section>
+
+        {/* SECTION */}
+        <section className="py-12 lg:py-32 xl:py-48">
+          <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black p-12 text-center">
+            Work
+          </h1>
+        </section>
+        {/* CLOSING CONTAINER DIV */}
       </div>
     </>
   );
