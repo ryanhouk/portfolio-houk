@@ -46,7 +46,7 @@ export default function Home() {
             <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
               Uh oh, we've got some obscured text. Designers should know better.
             </p>
-            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black p-12 text-brand-dark text-center mt-12">
+            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-12 pb-4 lg:pb-12 text-brand-dark text-center mt-12">
               It's been a minute.
             </h1>
             <p className="text-center font-mono mx-auto w-2/3">
@@ -74,8 +74,8 @@ export default function Home() {
             alt="photo of ryan with beard and beanie"
           />
           <FadeY className="z-10 text-center mx-auto px-8 lg:px-0 relative" delay={0.2}>
-            <h2 className="text-5xl lg:text-9xl font-black text-white drop-shadow-sm">
-              It's been a journey
+            <h2 className="text-5xl sm:text-9xl xl:text-[200px] font-black text-white drop-shadow-sm">
+              It's been a journey.
             </h2>
             <p className="font-mono text-sm text-white/70 mt-8 leading-loose">
               A little bit about me, myself and I. Also that red and white, oof.
@@ -83,7 +83,7 @@ export default function Home() {
             </p>
           </FadeY>
           <div className="h-[1px] bg-black mt-12"></div>
-          <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24 z-20 relative" delay={0.2}>
+          <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24" delay={0.2}>
             <img
               className="lg:w-72 w-48 mx-auto -mb-16 transition-all duration-200"
               src="/img/sticker/tape-gray.png"
@@ -118,24 +118,40 @@ export default function Home() {
             </div>
             <RectangeDotsSVG className={"w-72 mx-auto -mt-10"} />
           </FadeY>
-          <img src="/img/object/cd-ns.webp" alt="cd case with macromedia and pepsi logos" className="lg:w-[500px] z-10 p-8 lg:p-0 lg:-rotate-12 lg:-right-4 lg:-bottom-12 lg:absolute flex justify-center" />
+          <RoundScribbleSVG
+            className={"w-[500px] absolute -right-24 -bottom-32 hidden lg:block"}
+            strokeColor={"#dc2626"}
+            strokeWidth={0.5}
+          />
+          <img src="/img/object/cd-ns.webp" alt="cd case with macromedia and pepsi logos" className="lg:w-[500px] p-8 lg:p-0 lg:-rotate-12 lg:-right-10 lg:-bottom-16 lg:absolute flex justify-center drop-shadow-2xl" />
         </section>
 
         {/* SECTION */}
-        <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10">
+        {/* <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10">
           <FadeY className="max-w-7xl mx-auto relative" delay={.25}>
             <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black p-12 text-white text-center">
               It's been busy.
             </h1>
             <CrossSVG className={"w-64 md:w-96 xl:w-[600px] absolute inset-0 m-auto z-10 p-8"} strokeColor={"#dc2626"} strokeWidth={2} />
           </FadeY>
-        </section>
+        </section> */}
 
         {/* SECTION */}
-        <section className="py-12 lg:py-32 xl:py-48">
-          <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black p-12 text-center">
-            Work
-          </h1>
+        <section className="py-12 lg:py-32 xl:py-48 relative">
+          <FadeY className="mb-16 selection:bg-black/10 z-1- relative" delay={.25}>
+            <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black px-12 text-center mb-8">
+              It's been busy.
+            </h1>
+            <p className="text-center font-mono mx-auto w-2/3">
+              A glimpse at just a few of the projects and products I've worked on.
+            </p>
+          </FadeY>
+          <div className="max-w-screen-2xl grid grid-cols-1 gap-5 lg:grid-cols-3 mx-auto z-10 relative px-8">
+            <div className="p-4 bg-red-600 text-white font-extrabold text-lg hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 hover:text-brand-dark">Item</div>
+            <div className="p-4 bg-red-600 text-white font-extrabold text-lg">Item</div>
+            <div className="p-4 bg-red-600 text-white font-extrabold text-lg">Item</div>
+          </div>
+          {/* <img src="/img/object/iphone-klove.webp" alt="" className="absolute w-[350px] -left-24 -top-16 z-0" /> */}
         </section>
         {/* CLOSING CONTAINER DIV */}
       </div>
