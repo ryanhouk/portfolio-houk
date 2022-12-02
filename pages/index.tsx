@@ -138,7 +138,7 @@ export default function Home() {
 
         {/* SECTION */}
         <section className="py-12 lg:py-32 xl:py-48 relative">
-          <FadeY className="mb-16 selection:bg-black/10 z-0 relative" delay={.25}>
+          <FadeY className="mb-16 selection:bg-black/10 z-1- relative" delay={.25}>
             <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black px-12 text-center mb-8">
               It's been busy.
             </h1>
@@ -151,6 +151,7 @@ export default function Home() {
             <div className="p-4 bg-red-600 text-white font-extrabold text-lg">Item</div>
             <div className="p-4 bg-red-600 text-white font-extrabold text-lg">Item</div>
           </div>
+          {/* <img src="/img/object/iphone-klove.webp" alt="" className="absolute w-[350px] -left-24 -top-16 z-0" /> */}
         </section>
         {/* CLOSING CONTAINER DIV */}
       </div>
