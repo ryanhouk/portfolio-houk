@@ -1,3 +1,4 @@
+/* LARGE SHADOW */
 .drop-shadow-item {
   filter: drop-shadow(-79px 68px 87px rgba(0, 0, 0, 0.45));
 }
