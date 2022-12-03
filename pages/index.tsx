@@ -2,10 +2,13 @@ import Link from "next/link";
 import { FadeY } from "../components/animations";
 import {
   ArrowDownSVG,
-  CrossSVG,
+  DribbbleSVG,
   LineVerticalSVG,
+  LinkedInSVG,
+  MediumSVG,
   RectangeDotsSVG,
   RoundScribbleSVG,
+  TwitterSVG,
 } from "../components/svg";
 
 export default function Home() {
@@ -17,6 +20,24 @@ export default function Home() {
             Please don't do vertical text ❌ Sure it looks cool, but it's a pain in
             the butt to read and isn't very accessible.
           </p>
+        </div>
+        <div className="absolute right-14 top-12 z-10 hidden xl:flex xl:flex-col gap-10">
+          <Link className="group" target={'_blank'} href={"https://medium.com/@ryanhouk"}>
+            <MediumSVG className={"w-[32px] mx-auto group-hover:-translate-y-1 transition-all duration-200"} fillColor={"#000"} />
+            <div className="font-mono mx-auto text-[.75rem] text-center mt-2">Medium</div>
+          </Link>
+          <Link className="group" target={'_blank'} href={""}>
+            <LinkedInSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all duration-200"} fillColor={"#000"} />
+            <div className="font-mono mx-auto text-[.75rem] text-center mt-2">LinkedIn</div>
+          </Link>
+          <Link className="group" target={'_blank'} href={""}>
+            <TwitterSVG className={"w-[26px] mx-auto group-hover:-translate-y-1 transition-all duration-200"} fillColor={"#000"} />
+            <div className="font-mono mx-auto text-[.75rem] text-center mt-2">Twitter</div>
+          </Link>
+          <Link className="group" target={'_blank'} href={"https://dribbble.com/ryanhouk"}>
+            <DribbbleSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all duration-200"} fillColor={"#000"} />
+            <div className="font-mono mx-auto text-[.75rem] text-center mt-2">Dribbble</div>
+          </Link>
         </div>
 
         <LineVerticalSVG
@@ -40,13 +61,13 @@ export default function Home() {
           <img
             src="/img/object/box-logos.webp"
             alt="box with software logos all over it"
-            className="left-8 sm:left-24 right-0 bottom-0 z-30 rotate-12 -top-64 md:-top-[40rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] lg:hover:-top-[37rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
+            className="z-30 -top-52 md:-top-[40rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] lg:hover:-top-[37rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
           />
           <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
             <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
               Uh oh, we've got some obscured text. Designers should know better.
             </p>
-            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-12 pb-4 lg:pb-12 text-brand-dark text-center mt-12">
+            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-16 lg:pt-44 pb-4 lg:pb-12 text-brand-dark text-center">
               It's been a minute.
             </h1>
             <p className="text-center font-mono mx-auto w-2/3">
