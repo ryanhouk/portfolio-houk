@@ -3,11 +3,15 @@ import { FadeY } from "../components/animations";
 import {
   ArrowDownSVG,
   DribbbleSVG,
+  IconCodeSVG,
+  IconDesignTechSVG,
+  IconWriteSVG,
   LineVerticalSVG,
   LinkedInSVG,
   MediumSVG,
   RectangeDotsSVG,
   RoundScribbleSVG,
+  RoundZagSVG,
   TwitterSVG,
 } from "../components/svg";
 
@@ -21,22 +25,22 @@ export default function Home() {
             the butt to read and isn't very accessible.
           </p>
         </div>
-        <div className="absolute right-14 top-12 z-10 hidden xl:flex xl:flex-col gap-10">
+        <div className="absolute right-12 top-12 z-10 hidden xl:flex xl:flex-col gap-10">
           <Link className="group" target={'_blank'} href={"https://medium.com/@ryanhouk"}>
             <MediumSVG className={"w-[32px] mx-auto group-hover:-translate-y-1 transition-all duration-200"} fillColor={"#000"} />
-            <div className="font-mono mx-auto text-[.75rem] text-center mt-2">Medium</div>
+            <div className="font-mono mx-auto text-[.75rem] text-center mt-2 group-hover:text-red-600 transition-all duration-200">Medium</div>
           </Link>
           <Link className="group" target={'_blank'} href={""}>
-            <LinkedInSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all duration-200"} fillColor={"#000"} />
-            <div className="font-mono mx-auto text-[.75rem] text-center mt-2">LinkedIn</div>
+            <LinkedInSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all group-hover:text-red-600 duration-200"} fillColor={"#000"} />
+            <div className="font-mono group-hover:text-red-600 mx-auto text-[.75rem] text-center mt-2 transition-all duration-200">LinkedIn</div>
           </Link>
           <Link className="group" target={'_blank'} href={""}>
-            <TwitterSVG className={"w-[26px] mx-auto group-hover:-translate-y-1 transition-all duration-200"} fillColor={"#000"} />
-            <div className="font-mono mx-auto text-[.75rem] text-center mt-2">Twitter</div>
+            <TwitterSVG className={"w-[26px] mx-auto group-hover:-translate-y-1 transition-all group-hover:text-red-600 duration-200"} fillColor={"#000"} />
+            <div className="font-mono group-hover:text-red-600 mx-auto text-[.75rem] text-center mt-2 transition-all duration-200">Twitter</div>
           </Link>
           <Link className="group" target={'_blank'} href={"https://dribbble.com/ryanhouk"}>
-            <DribbbleSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all duration-200"} fillColor={"#000"} />
-            <div className="font-mono mx-auto text-[.75rem] text-center mt-2">Dribbble</div>
+            <DribbbleSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all group-hover:text-red-600 duration-200"} fillColor={"#000"} />
+            <div className="font-mono group-hover:text-red-600 mx-auto text-[.75rem] text-center mt-2 transition-all duration-200">Dribbble</div>
           </Link>
         </div>
 
@@ -164,13 +168,37 @@ export default function Home() {
               It's been busy.
             </h1>
             <p className="text-center font-mono mx-auto w-2/3">
-              A glimpse at just a few of the projects and products I've worked on.
+              Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
           </FadeY>
           <div className="max-w-screen-2xl grid grid-cols-1 gap-5 lg:grid-cols-3 mx-auto z-10 relative px-8">
-            <div className="p-4 bg-red-600 text-white font-extrabold text-lg hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 hover:text-brand-dark">Item</div>
-            <div className="p-4 bg-red-600 text-white font-extrabold text-lg">Item</div>
-            <div className="p-4 bg-red-600 text-white font-extrabold text-lg">Item</div>
+            <div className="p-4 h-64 lg:p-8 rounded-sm flex flex-col justify-between border-2 border-red-600 hover:border-black bg-red-600 group hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 hover:text-brand-dark group">
+              <div className="z-10">
+                <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+              </div>
+              <div className="z-10">
+                <h5 className="text-white font-extrabold text-lg lg:text-xl group-hover:text-black mb-2">Product Design</h5>
+                <p className="text-white font-mono opacity-60 text-sm group-hover:text-black">Gummi bears cotton candy powder apple pie caramels cake</p>
+              </div>
+            </div>
+            <div className="p-4 h-64 lg:p-8 rounded-sm flex flex-col justify-between border-2 border-red-600 hover:border-black bg-red-600 group hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 hover:text-brand-dark group">
+              <div className="z-10">
+                <IconCodeSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+              </div>
+              <div className="z-10">
+                <h5 className="text-white font-extrabold text-lg lg:text-xl group-hover:text-black mb-2">Code</h5>
+                <p className="text-white opacity-60 font-mono text-sm group-hover:text-black">Gummi bears cotton candy powder apple pie caramels cake</p>
+              </div>
+            </div>
+            <div className="p-4 h-64 lg:p-8 rounded-sm flex flex-col justify-between border-2 border-red-600 hover:border-black bg-red-600 group hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 hover:text-brand-dark group">
+              <div className="z-10">
+                <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+              </div>
+              <div className="z-10">
+                <h5 className="text-white font-extrabold text-lg lg:text-xl group-hover:text-black mb-2">Writing</h5>
+                <p className="text-white opacity-60 font-mono text-sm group-hover:text-black">Gummi bears cotton candy powder apple pie caramels cake</p>
+              </div>
+            </div>
           </div>
           {/* <img src="/img/object/iphone-klove.webp" alt="" className="absolute w-[350px] -left-24 -top-16 z-0" /> */}
         </section>
