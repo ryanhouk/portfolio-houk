@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FadeY } from "../components/animations";
+import { CardIcon } from "../components/cards";
 import {
   ArrowDownSVG,
   DribbbleSVG,
@@ -163,42 +164,24 @@ export default function Home() {
 
         {/* SECTION */}
         <section className="py-12 lg:py-32 xl:py-48 relative">
-          <FadeY className="mb-16 selection:bg-black/10 z-1- relative" delay={.25}>
-            <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black px-12 text-center mb-8">
+          <FadeY className="mb-16 px-8 selection:bg-black/10 relative" delay={.25}>
+            <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black lg:px-12 text-center mb-8">
               It's been busy.
             </h1>
-            <p className="text-center font-mono mx-auto w-2/3">
+            <p className="text-center font-mono mx-auto text-black/70 lg:w-2/3">
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
           </FadeY>
           <div className="max-w-screen-2xl grid grid-cols-1 gap-5 lg:grid-cols-3 mx-auto z-10 relative px-8">
-            <div className="p-4 h-64 lg:p-8 rounded-sm flex flex-col justify-between border-2 border-red-600 hover:border-black bg-red-600 group hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 hover:text-brand-dark group">
-              <div className="z-10">
-                <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
-              </div>
-              <div className="z-10">
-                <h5 className="text-white font-extrabold text-lg lg:text-xl group-hover:text-black mb-2">Product Design</h5>
-                <p className="text-white font-mono opacity-60 text-sm group-hover:text-black">Gummi bears cotton candy powder apple pie caramels cake</p>
-              </div>
-            </div>
-            <div className="p-4 h-64 lg:p-8 rounded-sm flex flex-col justify-between border-2 border-red-600 hover:border-black bg-red-600 group hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 hover:text-brand-dark group">
-              <div className="z-10">
-                <IconCodeSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
-              </div>
-              <div className="z-10">
-                <h5 className="text-white font-extrabold text-lg lg:text-xl group-hover:text-black mb-2">Code</h5>
-                <p className="text-white opacity-60 font-mono text-sm group-hover:text-black">Gummi bears cotton candy powder apple pie caramels cake</p>
-              </div>
-            </div>
-            <div className="p-4 h-64 lg:p-8 rounded-sm flex flex-col justify-between border-2 border-red-600 hover:border-black bg-red-600 group hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 hover:text-brand-dark group">
-              <div className="z-10">
-                <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
-              </div>
-              <div className="z-10">
-                <h5 className="text-white font-extrabold text-lg lg:text-xl group-hover:text-black mb-2">Writing</h5>
-                <p className="text-white opacity-60 font-mono text-sm group-hover:text-black">Gummi bears cotton candy powder apple pie caramels cake</p>
-              </div>
-            </div>
+            <CardIcon delay={.1} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"h-64"}>
+              <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+            </CardIcon>
+            <CardIcon delay={.15} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Code"} className={"h-64"}>
+              <IconCodeSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+            </CardIcon>
+            <CardIcon delay={.2} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"h-64"}>
+              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+            </CardIcon>
           </div>
           {/* <img src="/img/object/iphone-klove.webp" alt="" className="absolute w-[350px] -left-24 -top-16 z-0" /> */}
         </section>
