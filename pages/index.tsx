@@ -12,7 +12,6 @@ import {
   MediumSVG,
   RectangeDotsSVG,
   RoundScribbleSVG,
-  RoundZagSVG,
   TwitterSVG,
 } from "../components/svg";
 
@@ -43,6 +42,10 @@ export default function Home() {
             <DribbbleSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all group-hover:text-red-600 duration-200"} fillColor={"#000"} />
             <div className="font-mono group-hover:text-red-600 mx-auto text-[.75rem] text-center mt-2 transition-all duration-200">Dribbble</div>
           </Link>
+          <Link className="group" target={'_blank'} href={"https://dribbble.com/ryanhouk"}>
+            <DribbbleSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all group-hover:text-red-600 duration-200"} fillColor={"#000"} />
+            <div className="font-mono group-hover:text-red-600 mx-auto text-[.75rem] text-center mt-2 transition-all duration-200">Polywork</div>
+          </Link>
         </div>
 
         <LineVerticalSVG
@@ -60,13 +63,14 @@ export default function Home() {
           strokeColor={"#000"}
           strokeWidth={0.1}
         />
+        <div className="bg-red-600 h-[5px] w-full"></div>
 
         {/* INTRO */}
         <section className="relative pb-16 lg:pt-24 lg:pb-48 bg-brand-light flex justify-center items-center selection:bg-black/10">
           <img
             src="/img/object/box-logos.webp"
             alt="box with software logos all over it"
-            className="z-30 -top-52 md:-top-[40rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] lg:hover:-top-[37rem] hover:opacity-0 absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
+            className="z-30 -top-52 md:-top-[40rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
           />
           <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
             <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
@@ -83,12 +87,11 @@ export default function Home() {
             </div>
           </FadeY>
           <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute hover:rotate-0 duration-200 transition-all -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-48 lg:w-[26rem] z-20 drop-shadow-md" />
-          {/* <ShapeTopLeftSVG className={"hidden md:w-60 lg:w-[500px] bottom-0 left-0 absolute -mb-1 lg:flex"} fillColor={"#DC2626"} /> */}
         </section>
 
 
         {/* ABOUT ME */}
-        <section className="relative py-12 lg:py-32 xl:py-48 bg-red-600 selection:bg-black/10">
+        <section className="relative py-12 lg:py-32 xl:py-48 bg-red-600 selection:bg-black/10 lg:mx-12">
           <RoundScribbleSVG
             className={"w-[400px] absolute left-8 top-8 hidden lg:block z-0"}
             strokeColor={"#000"}
@@ -104,11 +107,11 @@ export default function Home() {
               It's been a journey.
             </h2>
             <p className="font-mono text-sm text-white/70 mt-8 leading-loose">
-              A little bit about me, myself and I. Also that red and white, oof.
+              A little bit about me. Also that red and white, oof.
               Retina burn much?
             </p>
           </FadeY>
-          <div className="h-[1px] bg-black mt-12"></div>
+          <div className="h-[.5px] bg-black mt-12"></div>
           <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24" delay={0.2}>
             <img
               className="lg:w-72 w-48 mx-auto -mb-16 transition-all duration-200"
@@ -183,7 +186,7 @@ export default function Home() {
               <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
             </CardIcon>
           </div>
-          {/* <img src="/img/object/iphone-klove.webp" alt="" className="absolute w-[350px] -left-24 -top-16 z-0" /> */}
+          <img src="/img/sticker/sticker-gray-round.webp" alt="" className="absolute w-[330px] drop-shadow-md -left-12 -top-16 z-0 rotate-12" />
         </section>
         {/* CLOSING CONTAINER DIV */}
       </div>
