@@ -63,7 +63,6 @@ export default function Home() {
           strokeColor={"#000"}
           strokeWidth={0.1}
         />
-        <div className="bg-red-600 h-[5px] w-full"></div>
 
         {/* INTRO */}
         <section className="relative pb-16 lg:pt-24 lg:pb-48 bg-brand-light flex justify-center items-center selection:bg-black/10">
@@ -175,18 +174,30 @@ export default function Home() {
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
           </FadeY>
-          <div className="max-w-screen-2xl grid grid-cols-1 gap-5 lg:grid-cols-3 mx-auto z-10 relative px-8">
-            <CardIcon delay={.1} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"h-64"}>
-              <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+          <div className="max-w-screen-2xl grid grid-cols-1 gap-6 lg:grid-cols-3 mx-auto z-10 relative px-8">
+            <CardIcon delay={.1} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"lg:h-64"}>
+              <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon delay={.15} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Code"} className={"h-64"}>
-              <IconCodeSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+            <CardIcon delay={.15} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Code"} className={"lg:h-64"}>
+              <IconCodeSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon delay={.2} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"h-64"}>
-              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300"} strokeColor={"#000"} />
+            <CardIcon delay={.2} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-64"}>
+              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
+            </CardIcon>
+            <CardIcon delay={.1} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Work"} className={"lg:h-64"}>
+              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
+            </CardIcon>
+            <CardIcon delay={.15} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-64"}>
+              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
+            </CardIcon>
+            <CardIcon delay={.2} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-64"}>
+              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
           </div>
-          <img src="/img/sticker/sticker-gray-round.webp" alt="" className="absolute w-[330px] drop-shadow-md -left-12 -top-16 z-0 rotate-12" />
+        </section>
+
+        {/* SECTION */}
+        <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-black/10 lg:mx-12">
         </section>
         {/* CLOSING CONTAINER DIV */}
       </div>
