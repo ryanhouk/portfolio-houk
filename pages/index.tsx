@@ -6,10 +6,12 @@ import {
   DribbbleSVG,
   IconCodeSVG,
   IconDesignTechSVG,
+  IconProcessSVG,
   IconWriteSVG,
   LineVerticalSVG,
   LinkedInSVG,
   MediumSVG,
+  PolyworkSVG,
   RectangeDotsSVG,
   RoundScribbleSVG,
   TwitterSVG,
@@ -42,8 +44,8 @@ export default function Home() {
             <DribbbleSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all group-hover:text-red-600 duration-200"} fillColor={"#000"} />
             <div className="font-mono group-hover:text-red-600 mx-auto text-[.75rem] text-center mt-2 transition-all duration-200">Dribbble</div>
           </Link>
-          <Link className="group" target={'_blank'} href={"https://dribbble.com/ryanhouk"}>
-            <DribbbleSVG className={"w-[24px] mx-auto group-hover:-translate-y-1 transition-all group-hover:text-red-600 duration-200"} fillColor={"#000"} />
+          <Link className="group" target={'_blank'} href={"https://www.polywork.com/ryanhouk"}>
+            <PolyworkSVG className={"w-[16px] mx-auto group-hover:-translate-y-1 transition-all group-hover:text-red-600 duration-200"} fillColor={"#000"} />
             <div className="font-mono group-hover:text-red-600 mx-auto text-[.75rem] text-center mt-2 transition-all duration-200">Polywork</div>
           </Link>
         </div>
@@ -72,10 +74,10 @@ export default function Home() {
             className="z-30 -top-52 md:-top-[40rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
           />
           <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
-            <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
+            {/* <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
               Uh oh, we've got some obscured text. Designers should know better.
-            </p>
-            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-16 lg:pt-44 pb-4 lg:pb-12 text-brand-dark text-center">
+            </p> */}
+            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-16 lg:pt-52 pb-4 lg:pb-12 text-brand-dark text-center">
               It's been a minute.
             </h1>
             <p className="text-center font-mono mx-auto w-2/3">
@@ -118,7 +120,7 @@ export default function Home() {
               alt="piece of duct tape stuck to a letter"
             />
             <div className="p-4 lg:py-16 py-12 lg:p-16 bg-white shadow-md rounded-sm m-4">
-              <h2 className="font-mono text-2xl lg:text-3xl mb-8">a brief history</h2>
+              <h2 className="font-mono mb-8">A brief history.</h2>
               <p className="font-mono leading-loose mb-8">
                 Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
                 halvah carrot cake croissant sweet. Chocolate cake croissant
@@ -167,38 +169,43 @@ export default function Home() {
         {/* SECTION */}
         <section className="py-12 lg:py-32 xl:py-48 relative">
           <FadeY className="mb-16 px-8 selection:bg-black/10 relative" delay={.25}>
-            <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black lg:px-12 text-center mb-8">
+            <h2 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black lg:px-12 text-center mb-8">
               It's been busy.
-            </h1>
+            </h2>
             <p className="text-center font-mono mx-auto text-black/70 lg:w-2/3">
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
           </FadeY>
-          <div className="max-w-screen-2xl grid grid-cols-1 gap-6 lg:grid-cols-3 mx-auto z-10 relative px-8">
-            <CardIcon delay={.1} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"lg:h-64"}>
+          <FadeY delay={.2} className="grid grid-cols-1 gap-6 lg:grid-cols-4 mx-auto z-10 relative px-8 lg:px-12">
+            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"lg:h-64"}>
               <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon delay={.15} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Code"} className={"lg:h-64"}>
+            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Code"} className={"lg:h-64"}>
               <IconCodeSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon delay={.2} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-64"}>
+            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-64"}>
               <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon delay={.1} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Work"} className={"lg:h-64"}>
-              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
+            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Process"} className={"lg:h-64"}>
+              <IconProcessSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon delay={.15} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-64"}>
-              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
-            </CardIcon>
-            <CardIcon delay={.2} description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-64"}>
-              <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
-            </CardIcon>
-          </div>
+          </FadeY>
+          {/* <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div> */}
         </section>
 
-        {/* SECTION */}
+        {/* CASE STUDIES */}
         <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-black/10 lg:mx-12">
+          <img src="/img/sticker/sticker-gray-round.png" alt="sticker with design with care written on it" className="lg:absolute hidden lg:flex lg:mb-0 mb-10 rotate-6 hover:rotate-0 mx-auto w-48 lg:w-80 left-0 right-0 lg:-top-44 transition-all" />
+          <FadeY className="mb-16 px-8 selection:bg-black/10 relative" delay={.25}>
+            <h2 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black text-white lg:px-12 text-center mb-8">
+              Projects.
+            </h2>
+            <p className="text-center font-mono mx-auto text-white/70 lg:w-2/3">
+              Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
+            </p>
+          </FadeY>
         </section>
+
         {/* CLOSING CONTAINER DIV */}
       </div>
     </>

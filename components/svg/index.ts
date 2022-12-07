@@ -16,7 +16,9 @@ export { default as RoundZagSVG } from "./RoundZag";
 export { default as IconDesignTechSVG } from "./IconDesignTech";
 export { default as IconCodeSVG } from "./IconCode"
 export { default as IconWriteSVG } from "./IconWrite"
-
+export { default as ArrowRightSVG } from "./ArrowRight"
+export { default as IconProcessSVG } from "./IconProcess"
+export { default as PolyworkSVG } from "./Polywork"
 
 
 
