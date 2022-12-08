@@ -87,6 +87,7 @@ export default function Home() {
               <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
             </div>
           </FadeY>
+          <img src="/img/photo/morty.webp" alt="" className="w-28 absolute right-8 bottom-6" />
           <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute hover:rotate-0 duration-200 transition-all -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-48 lg:w-[26rem] z-20 drop-shadow-md" />
         </section>
 
@@ -193,16 +194,33 @@ export default function Home() {
           {/* <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div> */}
         </section>
 
-        {/* CASE STUDIES */}
-        <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-black/10 lg:mx-12">
-          <img src="/img/sticker/sticker-gray-round.png" alt="sticker with design with care written on it" className="lg:absolute hidden lg:flex lg:mb-0 mb-10 rotate-6 hover:rotate-0 mx-auto w-48 lg:w-80 left-0 right-0 lg:-top-44 transition-all" />
-          <FadeY className="mb-16 px-8 selection:bg-black/10 relative" delay={.25}>
+        {/* PROJECTS */}
+        <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10 lg:mx-12">
+          <RoundScribbleSVG
+            className={"w-[370px] absolute -left-40 -top-12 hidden lg:block"}
+            strokeColor={"#dc2626"}
+            strokeWidth={0.5}
+          />
+          <img src="/img/sticker/sticker-gray-round.png" alt="sticker with design with care written on it" className="lg:absolute hidden lg:flex lg:mb-0 mb-10 rotate-12 hover:rotate-0 w-48 lg:w-80 -left-24 lg:-top-32 transition-all" />
+          <FadeY className="mb-16 lg:mb-32 px-8 selection:bg-black/10 relative" delay={.15}>
             <h2 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black text-white lg:px-12 text-center mb-8">
               Projects.
             </h2>
             <p className="text-center font-mono mx-auto text-white/70 lg:w-2/3">
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
+          </FadeY>
+          <FadeY delay={.15} className="bg-white/10 p-8 lg:p-24 mx-12">
+            <div className="grid grid-cols-2">
+              <div>
+                <p className="font-mono text-white/60 text-sm mb-4">Category</p>
+                <h3 className="font-black text-white text-lg lg:text-3xl">Product Name</h3>
+                <p className="text-white mt-2 font-mono">Do something cooler here design wise.</p>
+              </div>
+              <div className="-my-40 bg-red-600">
+
+              </div>
+            </div>
           </FadeY>
         </section>
 
