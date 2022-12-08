@@ -13,6 +13,7 @@ import {
   MediumSVG,
   PolyworkSVG,
   RectangeDotsSVG,
+  RoundLinesOutSVG,
   RoundScribbleSVG,
   TwitterSVG,
 } from "../components/svg";
@@ -71,7 +72,7 @@ export default function Home() {
           <img
             src="/img/object/box-logos.webp"
             alt="box with software logos all over it"
-            className="z-30 -top-52 md:-top-[40rem] sm:-top-[26rem] w-[900px] lg:w-[1000px] absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
+            className="z-30 -top-52 sm:-top-[26rem] md:-top-[42rem] w-[900px] lg:w-[1000px] absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
           />
           <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
             {/* <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
@@ -87,7 +88,7 @@ export default function Home() {
               <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
             </div>
           </FadeY>
-          <img src="/img/photo/morty.webp" alt="" className="w-28 absolute right-8 bottom-6" />
+          <img src="/img/photo/morty.webp" alt="" className="w-28 absolute right-8 bottom-6 hidden lg:flex" />
           <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute hover:rotate-0 duration-200 transition-all -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-48 lg:w-[26rem] z-20 drop-shadow-md" />
         </section>
 
@@ -178,31 +179,32 @@ export default function Home() {
             </p>
           </FadeY>
           <FadeY delay={.2} className="grid grid-cols-1 gap-6 lg:grid-cols-4 mx-auto z-10 relative px-8 lg:px-12">
-            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"lg:h-64"}>
+            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"lg:h-72"}>
               <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Code"} className={"lg:h-64"}>
+            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Code"} className={"lg:h-72"}>
               <IconCodeSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-64"}>
+            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Blog"} className={"lg:h-72"}>
               <IconWriteSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
-            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Process"} className={"lg:h-64"}>
+            <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Process"} className={"lg:h-72 relative overflow-clip"}>
               <IconProcessSVG className={"w-14 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
+              {/* <RoundScribbleSVG className={"w-52 opacity-0 -left-12 -bottom-12 group-hover:opacity-10 absolute transition-all duration-300"} strokeColor={"#000"} strokeWidth={2} /> */}
             </CardIcon>
           </FadeY>
-          {/* <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div> */}
+          <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div>
         </section>
 
         {/* PROJECTS */}
-        <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10 lg:mx-12">
+        <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark lg:mx-12">
           <RoundScribbleSVG
             className={"w-[370px] absolute -left-40 -top-12 hidden lg:block"}
             strokeColor={"#dc2626"}
             strokeWidth={0.5}
           />
           <img src="/img/sticker/sticker-gray-round.png" alt="sticker with design with care written on it" className="lg:absolute hidden lg:flex lg:mb-0 mb-10 rotate-12 hover:rotate-0 w-48 lg:w-80 -left-24 lg:-top-32 transition-all" />
-          <FadeY className="mb-16 lg:mb-32 px-8 selection:bg-black/10 relative" delay={.15}>
+          <FadeY className="mb-16 lg:mb-32 px-8 selection:bg-white/10" delay={.15}>
             <h2 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black text-white lg:px-12 text-center mb-8">
               Projects.
             </h2>
@@ -210,18 +212,25 @@ export default function Home() {
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
           </FadeY>
-          <FadeY delay={.15} className="bg-white/10 p-8 lg:p-24 mx-12">
-            <div className="grid grid-cols-2">
-              <div>
-                <p className="font-mono text-white/60 text-sm mb-4">Category</p>
-                <h3 className="font-black text-white text-lg lg:text-3xl">Product Name</h3>
-                <p className="text-white mt-2 font-mono">Do something cooler here design wise.</p>
+          <FadeY delay={.15} className="z-10">
+            <div className="grid lg:grid-cols-2 selection:bg-black/10">
+              <div className="bg-white p-4 grid place-content-center lg:p-16 mx-4 lg:ml-16">
+                <p className="font-mono text-red-600 text-sm mb-2">Item Type</p>
+                <h3 className="text-brand-dark font-black mb-4 text-lg lg:text-3xl">Product Title</h3>
+                <p className="font-mono leading-loose">
+                  Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
+                  halvah carrot cake croissant sweet. Chocolate cake croissant
+                  pudding donut brownie sesame snaps bear claw.
+                </p>
               </div>
-              <div className="-my-40 bg-red-600">
+              <div className="p-8 mx-4 lg:mr-16 bg-green-300">
 
               </div>
             </div>
           </FadeY>
+          <RoundLinesOutSVG
+            className={"w-[370px] absolute -right-40 -bottom-12 hidden lg:block"}
+            strokeColor={"#dc2626"} />
         </section>
 
         {/* CLOSING CONTAINER DIV */}
