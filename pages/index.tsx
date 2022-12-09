@@ -3,6 +3,7 @@ import { FadeY } from "../components/animations";
 import { CardIcon } from "../components/cards";
 import {
   ArrowDownSVG,
+  ArrowRightSVG,
   DribbbleSVG,
   IconCodeSVG,
   IconDesignTechSVG,
@@ -21,6 +22,7 @@ import {
 export default function Home() {
   return (
     <>
+      {/* HERO */}
       <div className="overflow-clip">
         <div className="absolute z-10 w-[28.5rem] rotate-90 top-[14rem] -left-32 hidden p-4 xl:flex selection:bg-black/10">
           <p className="font-mono text-[.75rem] text-justify leading-relaxed opacity-70">
@@ -69,10 +71,11 @@ export default function Home() {
 
         {/* INTRO */}
         <section className="relative pb-16 lg:pt-24 lg:pb-48 bg-brand-light flex justify-center items-center selection:bg-black/10">
+          <div className="h-32 w-32 lg:w-64 lg:h-64 absolute mx-auto rounded-full border-black border-[.5px] left-0 right-0 -bottom-16 lg:-bottom-32"></div>
           <img
-            src="/img/object/box-logos.webp"
+            src="/img/object/box-logos-half.webp"
             alt="box with software logos all over it"
-            className="z-30 -top-52 sm:-top-[26rem] md:-top-[42rem] w-[900px] lg:w-[1000px] absolute mx-auto drop-shadow-item transition-all duration-300 px-8"
+            className="z-30 w-[900px] lg:w-[1000px] absolute mx-auto top-0 drop-shadow-4xl transition-all duration-300 px-8"
           />
           <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
             {/* <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
@@ -217,14 +220,18 @@ export default function Home() {
               <div className="bg-white p-4 grid place-content-center lg:p-16 mx-4 lg:ml-16">
                 <p className="font-mono text-red-600 text-sm mb-2">Item Type</p>
                 <h3 className="text-brand-dark font-black mb-4 text-lg lg:text-3xl">Product Title</h3>
-                <p className="font-mono leading-loose">
+                <p className="font-mono leading-loose mb-4">
                   Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
                   halvah carrot cake croissant sweet. Chocolate cake croissant
-                  pudding donut brownie sesame snaps bear claw.
+                  pudding donut brownie sesame snaps bear.
                 </p>
+                <Link href={""} className="text-red-600 group rounded-sm border-red-600 border-2 px-4 py-3 flex justify-center items-center hover:bg-red-600 transition-all duration-300 hover:text-white font-bold">
+                  See More <ArrowRightSVG className={"w-6 group-hover:ml-3 opacity-0 group-hover:opacity-100 transition-all duration-200 mt-1"}
+                    strokeColor={"#fff"} strokeWidth={2} />
+                </Link>
               </div>
               <div className="p-8 mx-4 lg:mr-16 bg-green-300">
-
+                STUFF
               </div>
             </div>
           </FadeY>
