@@ -4,6 +4,7 @@ import { CardIcon } from "../components/cards";
 import {
   ArrowDownSVG,
   ArrowRightSVG,
+  CrossSVG,
   DribbbleSVG,
   IconCodeSVG,
   IconDesignTechSVG,
@@ -71,27 +72,29 @@ export default function Home() {
 
         {/* INTRO */}
         <section className="relative pb-16 lg:pt-24 lg:pb-48 bg-brand-light flex justify-center items-center selection:bg-black/10">
-          <div className="h-32 w-32 lg:w-64 lg:h-64 absolute mx-auto rounded-full border-black border-[.5px] left-0 right-0 -bottom-16 lg:-bottom-32"></div>
+          {/* <div className="h-32 w-32 lg:w-64 lg:h-64 absolute mx-auto rounded-full border-black border-[2px] left-0 right-0 -bottom-16 lg:-bottom-32 hidden lg:block"></div> */}
           <img
-            src="/img/object/box-logos-half.webp"
-            alt="box with software logos all over it"
-            className="z-30 w-[900px] lg:w-[1000px] absolute mx-auto top-0 drop-shadow-4xl transition-all duration-300 px-8"
+            src="/img/object/box-logos-rick.webp"
+            alt="old box with software logos all over it"
+            className="z-30 w-[900px] lg:w-[1000px] absolute hover:rotate-45 mx-auto hover:-top-[400px] -top-[240px] sm:-top-[600px] lg:-top-[750px] drop-shadow-4xl transition-all duration-300 px-8"
           />
+          {/* <RoundScribbleSVG
+            className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
+            strokeColor={"#dc2626"}
+            strokeWidth={0.5}
+          /> */}
           <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
-            {/* <p className="text-center font-mono text-sm text-white bg-red-600 mx-auto py-2 px-3 w-80 hidden lg:block rounded-sm">
-              Uh oh, we've got some obscured text. Designers should know better.
-            </p> */}
             <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-16 lg:pt-52 pb-4 lg:pb-12 text-brand-dark text-center">
               It's been a minute.
             </h1>
-            <p className="text-center font-mono mx-auto w-2/3">
-              😊 <span className="text-black/70">Yes, this is yet another portfolio site.</span>
+            <p className="font-mono text-center mx-auto px-12">
+              <span className="text-black/70">This is another portfolio site </span>😊
             </p>
             <div className="flex justify-center">
               <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
             </div>
           </FadeY>
-          <img src="/img/photo/morty.webp" alt="" className="w-28 absolute right-8 bottom-6 hidden lg:flex" />
+          <img src="/img/photo/morty.webp" alt="picture of morty smith" className="w-28 absolute right-8 bottom-6 hidden lg:flex" />
           <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute hover:rotate-0 duration-200 transition-all -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-48 lg:w-[26rem] z-20 drop-shadow-md" />
         </section>
 
@@ -108,14 +111,10 @@ export default function Home() {
             src="/img/photo/self-bw-car.png"
             alt="photo of ryan with beard and beanie"
           />
-          <FadeY className="z-10 text-center mx-auto px-8 lg:px-0 relative" delay={0.2}>
-            <h2 className="text-5xl sm:text-9xl xl:text-[200px] font-black text-white drop-shadow-sm">
+          <FadeY className="z-10 mx-auto px-8 lg:px-0 relative" delay={0.2}>
+            <h2 className="text-5xl text-center sm:text-9xl xl:text-[200px] font-black text-white drop-shadow-sm">
               It's been a journey.
             </h2>
-            <p className="font-mono text-sm text-white/70 mt-8 leading-loose">
-              A little bit about me. Also that red and white, oof.
-              Retina burn much?
-            </p>
           </FadeY>
           <div className="h-[.5px] bg-black mt-12"></div>
           <FadeY className="max-w-5xl mx-auto mt-16 lg:mt-24" delay={0.2}>
@@ -127,13 +126,7 @@ export default function Home() {
             <div className="p-4 lg:py-16 py-12 lg:p-16 bg-white shadow-md rounded-sm m-4">
               <h2 className="font-mono mb-8">A brief history.</h2>
               <p className="font-mono leading-loose mb-8">
-                Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
-                halvah carrot cake croissant sweet. Chocolate cake croissant
-                pudding donut brownie sesame snaps bear claw. Pie sweet roll
-                gummies soufflé croissant. Dragée dessert pie tootsie roll apple
-                pie donut jelly beans chupa chups. Bear claw caramels marzipan
-                carrot cake chocolate cake gummi bears lollipop powder. Toffee
-                jelly-o toffee halvah tiramisu danish halvah jujubes bear claw.
+                I could say I'm a designer who loves to create meaningful experiences etcetera, but we've all read that so many times it's become a cliche. I've been doing this for a long time and have had both successes and failures. Empathy? Yep! Usability testing? Yep! All the things? Yep and yep. "Meaningful experiences" take time, feedback and collaboration.
               </p>
               <p className="font-mono leading-loose mb-8">
                 Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
@@ -161,17 +154,7 @@ export default function Home() {
           <img src="/img/object/cd-ns.webp" alt="cd case with macromedia and pepsi logos" className="lg:w-[500px] p-8 lg:p-0 lg:-rotate-12 lg:-right-10 lg:-bottom-16 lg:absolute flex justify-center drop-shadow-2xl" />
         </section>
 
-        {/* SECTION */}
-        {/* <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark selection:bg-white/10">
-          <FadeY className="max-w-7xl mx-auto relative" delay={.25}>
-            <h1 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black p-12 text-white text-center">
-              It's been busy.
-            </h1>
-            <CrossSVG className={"w-64 md:w-96 xl:w-[600px] absolute inset-0 m-auto z-10 p-8"} strokeColor={"#dc2626"} strokeWidth={2} />
-          </FadeY>
-        </section> */}
-
-        {/* SECTION */}
+        {/* BEEN BUSY */}
         <section className="py-12 lg:py-32 xl:py-48 relative">
           <FadeY className="mb-16 px-8 selection:bg-black/10 relative" delay={.25}>
             <h2 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black lg:px-12 text-center mb-8">
@@ -196,13 +179,15 @@ export default function Home() {
               {/* <RoundScribbleSVG className={"w-52 opacity-0 -left-12 -bottom-12 group-hover:opacity-10 absolute transition-all duration-300"} strokeColor={"#000"} strokeWidth={2} /> */}
             </CardIcon>
           </FadeY>
+          {/* <div className="h-32 w-32 lg:w-64 lg:h-64 absolute rounded-full border-red-600 border-[.5px] -right-16 -bottom-16 lg:-bottom-32"></div> */}
           <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div>
         </section>
 
         {/* PROJECTS */}
         <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark lg:mx-12">
+          <CrossSVG className={"mx-auto w-64 absolute left-0 right-0 -top-32"} strokeColor={"#dc2626"} strokeWidth={.5} />
           <RoundScribbleSVG
-            className={"w-[370px] absolute -left-40 -top-12 hidden lg:block"}
+            className={"w-[370px] absolute -left-72 -top-16 hidden lg:block"}
             strokeColor={"#dc2626"}
             strokeWidth={0.5}
           />
@@ -220,7 +205,7 @@ export default function Home() {
               <div className="bg-white p-4 grid place-content-center lg:p-16 mx-4 lg:ml-16">
                 <p className="font-mono text-red-600 text-sm mb-2">Item Type</p>
                 <h3 className="text-brand-dark font-black mb-4 text-lg lg:text-3xl">Product Title</h3>
-                <p className="font-mono leading-loose mb-4">
+                <p className="font-mono leading-loose mb-8">
                   Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
                   halvah carrot cake croissant sweet. Chocolate cake croissant
                   pudding donut brownie sesame snaps bear.
