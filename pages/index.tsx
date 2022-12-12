@@ -144,7 +144,7 @@ export default function Home() {
                 claw.
               </p>
             </div>
-            <RectangeDotsSVG className={"w-72 mx-auto -mt-10"} />
+            <RectangeDotsSVG className={"w-72 mx-auto -mt-10"} fillColor={"#000"} />
           </FadeY>
           <RoundScribbleSVG
             className={"w-[500px] absolute -right-24 -bottom-32 hidden lg:block"}
@@ -164,7 +164,7 @@ export default function Home() {
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
           </FadeY>
-          <FadeY delay={.2} className="grid grid-cols-1 gap-6 lg:grid-cols-4 mx-auto z-10 relative px-8 lg:px-12">
+          <FadeY delay={.2} className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mx-auto z-10 relative px-8 lg:px-12 max-w-screen-2xl">
             <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"lg:h-72"}>
               <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
@@ -185,7 +185,7 @@ export default function Home() {
 
         {/* PROJECTS */}
         <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark lg:mx-12">
-          <CrossSVG className={"mx-auto w-64 absolute left-0 right-0 -top-32"} strokeColor={"#dc2626"} strokeWidth={.5} />
+          <CrossSVG className={"mx-auto w-24 lg:w-64 hidden lg:block absolute left-0 right-0 -top-12 lg:-top-32"} strokeColor={"#dc2626"} strokeWidth={.5} />
           <RoundScribbleSVG
             className={"w-[370px] absolute -left-72 -top-16 hidden lg:block"}
             strokeColor={"#dc2626"}
