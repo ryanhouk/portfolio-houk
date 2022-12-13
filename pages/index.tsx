@@ -96,6 +96,8 @@ export default function Home() {
           </FadeY>
           <img src="/img/photo/morty.webp" alt="picture of morty smith" className="w-28 absolute right-8 bottom-6 hidden lg:flex" />
           <img src="/img/sticker/sticker-gray-round-thumb.png" alt="design without ego sticker" className="absolute hover:rotate-0 duration-200 transition-all -right-20 -bottom-16 lg:-right-24 lg:-bottom-24 -rotate-12 w-48 lg:w-[26rem] z-20 drop-shadow-md" />
+          {/* SUMMER SMITH */}
+          <img src="/img/photo/summer-smith.webp" alt="" className="absolute drop-shadow-sm left-0 right-0 hover:-bottom-8 -bottom-[320px] mx-auto z-0 w-48 hidden lg:block transition-all duration-500" />
         </section>
 
 
@@ -111,6 +113,7 @@ export default function Home() {
             src="/img/photo/self-bw-car.png"
             alt="photo of ryan with beard and beanie"
           />
+          {/* <img src="/img/photo/summer-smith.webp" alt="" className="absolute left-0 right-0 mx-auto -top-4 z-0 w-48 hover:-top-48 hidden lg:block transition-all duration-300" /> */}
           <FadeY className="z-10 mx-auto px-8 lg:px-0 relative" delay={0.2}>
             <h2 className="text-5xl text-center sm:text-9xl xl:text-[200px] font-black text-white drop-shadow-sm">
               It's been a journey.
@@ -200,26 +203,7 @@ export default function Home() {
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
           </FadeY>
-          <FadeY delay={.15} className="z-10">
-            <div className="grid lg:grid-cols-2 selection:bg-black/10">
-              <div className="bg-white p-4 grid place-content-center lg:p-16 mx-4 lg:ml-16">
-                <p className="font-mono text-red-600 text-sm mb-2">Item Type</p>
-                <h3 className="text-brand-dark font-black mb-4 text-lg lg:text-3xl">Product Title</h3>
-                <p className="font-mono leading-loose mb-8">
-                  Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
-                  halvah carrot cake croissant sweet. Chocolate cake croissant
-                  pudding donut brownie sesame snaps bear.
-                </p>
-                <Link href={""} className="text-red-600 group rounded-sm border-red-600 border-2 px-4 py-3 flex justify-center items-center hover:bg-red-600 transition-all duration-300 hover:text-white font-bold">
-                  See More <ArrowRightSVG className={"w-6 group-hover:ml-3 opacity-0 group-hover:opacity-100 transition-all duration-200 mt-1"}
-                    strokeColor={"#fff"} strokeWidth={2} />
-                </Link>
-              </div>
-              <div className="p-8 mx-4 lg:mr-16 bg-green-300">
-                STUFF
-              </div>
-            </div>
-          </FadeY>
+
           <RoundLinesOutSVG
             className={"w-[370px] absolute -right-40 -bottom-12 hidden lg:block"}
             strokeColor={"#dc2626"} />
