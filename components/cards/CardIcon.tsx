@@ -15,7 +15,7 @@ interface Props extends PropsWithChildren<any> {
 const CardIcon = ({ className, delay, cardUrl, description, title, children }: Props) => {
 
   return <>
-    <Link href="" className="hover:-translate-y-2 transition-all duration-200">
+    <Link href="" className="hover:-translate-y-2 hover:-translate-x-2 transition-all duration-200">
       <div className={`p-8 rounded-sm flex flex-col justify-between border-2 border-red-600 hover:border-black bg-red-600 group hover:bg-white hover:shadow-2xl hover:text-brand-dark duration-300 ${className}`}>
         <div className="z-10">
           {children}
