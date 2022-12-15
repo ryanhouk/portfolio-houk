@@ -3,7 +3,6 @@ import { FadeY } from "../components/animations";
 import { CardIcon } from "../components/cards";
 import {
   ArrowDownSVG,
-  ArrowRightSVG,
   CrossSVG,
   DribbbleSVG,
   IconCodeSVG,
@@ -23,8 +22,9 @@ import {
 export default function Home() {
   return (
     <>
-      {/* HERO */}
+      {/* CONTAINER DIV */}
       <div className="overflow-clip">
+        {/* HERO */}
         <div className="absolute z-10 w-[28.5rem] rotate-90 top-[14rem] -left-32 hidden p-4 xl:flex selection:bg-black/10">
           <p className="font-mono text-[.75rem] text-justify leading-relaxed opacity-70">
             Please don't do vertical text ❌ Sure it looks cool, but it's a pain in
@@ -87,8 +87,8 @@ export default function Home() {
             <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-16 lg:pt-52 pb-4 lg:pb-12 text-brand-dark text-center">
               It's been a minute.
             </h1>
-            <p className="font-mono text-center mx-auto px-12">
-              <span className="text-black/70">This is another portfolio site </span>😊
+            <p className="font-mono text-center mx-auto px-12 lg:w-4/6 leading-relaxed">
+              <span className="text-black/70">This is another portfolio site. It might look a little messy, buy design, development, usability testing, and iterating is often a little messy. </span>😊
             </p>
             <div className="flex justify-center">
               <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="p-4 lg:py-16 py-12 lg:p-16 bg-white shadow-md rounded-sm m-4">
               <h2 className="font-mono mb-8">A brief history.</h2>
               <p className="font-mono leading-loose mb-8">
-                I could say I'm a designer who loves to create meaningful experiences etcetera, but we've all read that so many times it's become a cliche. I've been doing this for a long time and have had both successes and failures. Empathy? Yep! Usability testing? Yep! All the things? Yep and yep. "Meaningful experiences" take time, feedback and collaboration.
+                I could say I'm a designer who loves to create meaningful experiences etcetera, but we've all read that so many times it's become a cliche. I've been doing this for a long time and have had both successes and failures. Empathy? Yep! Usability testing? Yep! Aligning business and customer goals? Yessir. Feedback and collaboration SOMETHING.
               </p>
               <p className="font-mono leading-loose mb-8">
                 Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
@@ -159,15 +159,15 @@ export default function Home() {
 
         {/* BEEN BUSY */}
         <section className="py-12 lg:py-32 xl:py-48 relative">
-          <FadeY className="mb-16 px-8 selection:bg-black/10 relative" delay={.25}>
-            <h2 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black lg:px-12 text-center mb-8">
+          <FadeY className="mb-16 px-8 selection:bg-black/10 max-w-7xl mx-auto" delay={.25}>
+            <h2 className="text-5xl sm:text-9xl xl:text-[200px] z-20 font-black lg:px-12 text-center mb-8">
               It's been busy.
             </h2>
             <p className="text-center font-mono mx-auto text-black/70 lg:w-2/3">
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
             </p>
           </FadeY>
-          <FadeY delay={.2} className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mx-auto z-10 relative px-8 lg:px-12 max-w-screen-2xl">
+          <FadeY delay={.2} className="grid grid-cols-1 gap-6 sm:grid-cols-2 mx-auto z-10 relative px-8 lg:px-12 max-w-6xl">
             <CardIcon description={"Gummi bears cotton candy powder apple pie caramels cake"} title={"Design"} className={"lg:h-72"}>
               <IconDesignTechSVG className={"w-16 group-hover:-rotate-6 transition-all duration-300 mb-6"} strokeColor={"#000"} />
             </CardIcon>
@@ -183,32 +183,33 @@ export default function Home() {
             </CardIcon>
           </FadeY>
           {/* <div className="h-32 w-32 lg:w-64 lg:h-64 absolute rounded-full border-red-600 border-[.5px] -right-16 -bottom-16 lg:-bottom-32"></div> */}
-          <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div>
+          {/* <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div> */}
         </section>
 
         {/* PROJECTS */}
         <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark lg:mx-12">
           <CrossSVG className={"mx-auto w-24 lg:w-64 hidden lg:block absolute left-0 right-0 -top-12 lg:-top-32"} strokeColor={"#dc2626"} strokeWidth={.5} />
-          <RoundScribbleSVG
+          {/* <RoundScribbleSVG
             className={"w-[370px] absolute -left-72 -top-16 hidden lg:block"}
             strokeColor={"#dc2626"}
             strokeWidth={0.5}
-          />
-          <img src="/img/sticker/sticker-gray-round.png" alt="sticker with design with care written on it" className="lg:absolute hidden lg:flex lg:mb-0 mb-10 rotate-12 hover:rotate-0 w-48 lg:w-80 -left-24 lg:-top-32 transition-all" />
+          /> */}
+          <RoundLinesOutSVG
+            className={"w-[370px] absolute -right-40 -bottom-12 hidden lg:block"}
+            strokeColor={"#dc2626"} />
+          <img src="/img/sticker/sticker-gray-round.png" alt="sticker with design with care written on it" className="lg:absolute hidden lg:flex lg:mb-0 mb-10 rotate-12 hover:rotate-0 w-48 lg:w-80 -right-24 lg:bottom-16 transition-all" />
           <FadeY className="mb-16 lg:mb-32 px-8 selection:bg-white/10" delay={.15}>
             <h2 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black text-white lg:px-12 text-center mb-8">
               Projects.
             </h2>
-            <p className="text-center font-mono mx-auto text-white/70 lg:w-2/3">
-              Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
+            <p className="text-center font-mono mx-auto text-white/70 lg:w-2/3 leading-relaxed">
+              A deeper look into the projects and products I've worked on.
             </p>
           </FadeY>
-
-          <RoundLinesOutSVG
-            className={"w-[370px] absolute -right-40 -bottom-12 hidden lg:block"}
-            strokeColor={"#dc2626"} />
+          <FadeY delay={.15}>
+            <p className="text-center text-white font-lg font-mono">Coming soon.</p>
+          </FadeY>
         </section>
-
         {/* CLOSING CONTAINER DIV */}
       </div>
     </>
