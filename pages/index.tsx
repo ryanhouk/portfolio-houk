@@ -84,11 +84,11 @@ export default function Home() {
             strokeWidth={0.5}
           /> */}
           <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
-            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-16 lg:pt-52 pb-4 lg:pb-12 text-brand-dark text-center">
+            <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-16 lg:pt-52 pb-4 lg:pb-12 text-center">
               It's been a minute.
             </h1>
             <p className="font-mono text-center mx-auto px-12 lg:w-4/6 leading-relaxed">
-              <span className="text-black/70">This is another portfolio site. It might look a little messy, buy design, development, usability testing, and iterating is often a little messy. </span>😊
+              <span className="text-black/70">This is another portfolio site. It might look a little messy, but design, development, usability testing, and iterating is often a little messy. </span>😊
             </p>
             <div className="flex justify-center">
               <ArrowDownSVG className={"w-8 mt-16 animate-bounce"} strokeColor={"#000"} />
@@ -115,7 +115,7 @@ export default function Home() {
           />
           {/* <img src="/img/photo/summer-smith.webp" alt="" className="absolute left-0 right-0 mx-auto -top-4 z-0 w-48 hover:-top-48 hidden lg:block transition-all duration-300" /> */}
           <FadeY className="z-10 mx-auto px-8 lg:px-0 relative" delay={0.2}>
-            <h2 className="text-5xl text-center sm:text-9xl xl:text-[200px] font-black text-white drop-shadow-sm">
+            <h2 className="text-5xl text-center sm:text-9xl xl:text-[200px] font-black text-white drop-shadow-sm text-border-test">
               It's been a journey.
             </h2>
           </FadeY>
@@ -197,7 +197,7 @@ export default function Home() {
           <RoundLinesOutSVG
             className={"w-[370px] absolute -right-40 -bottom-12 hidden lg:block"}
             strokeColor={"#dc2626"} />
-          <img src="/img/sticker/sticker-gray-round.png" alt="sticker with design with care written on it" className="lg:absolute hidden lg:flex lg:mb-0 mb-10 rotate-12 hover:rotate-0 w-48 lg:w-80 -right-24 lg:bottom-16 transition-all" />
+          <img src="/img/sticker/sticker-gray-round.png" alt="sticker with design with care written on it" className="absolute hidden lg:flex rotate-12 hover:rotate-0 w-48 lg:w-80 -right-24 lg:bottom-16 transition-all" />
           <FadeY className="mb-16 lg:mb-32 px-8 selection:bg-white/10" delay={.15}>
             <h2 className="text-5xl relative sm:text-9xl xl:text-[200px] z-20 font-black text-white lg:px-12 text-center mb-8">
               Projects.
