@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         mono: ["Roboto Mono", "monospace"],
+        clash: ["Clash Display", "Helvetica", "Arial", "sans-serif"],
       },
       dropShadow: {
         '3xl': [' -24px 18px 26px -11px rgba(0, 0, 0, 0.5)'],

@@ -8,4 +8,4 @@ const ProductTemplate = (props: Props) => {
     )
 }
 
-export default ProductTemplate
+export default ProductTemplate;
