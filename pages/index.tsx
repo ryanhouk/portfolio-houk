@@ -76,7 +76,7 @@ export default function Home() {
           <img
             src="/img/object/box-logos-rick.webp"
             alt="old box with software logos all over it"
-            className="z-30 w-[900px] lg:w-[1000px] absolute hover:rotate-45 mx-auto hover:-top-[400px] -top-[240px] sm:-top-[600px] lg:-top-[750px] drop-shadow-4xl transition-all duration-300 px-8"
+            className="z-30 w-[900px] lg:w-[1000px] absolute hover:rotate-45 mx-auto hover:-top-[400px] -top-[240px] sm:-top-[600px] lg:-top-[750px] drop-shadow-3xl lg:drop-shadow-4xl transition-all duration-300 px-8"
           />
           {/* <RoundScribbleSVG
             className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
@@ -85,7 +85,7 @@ export default function Home() {
           /> */}
           <FadeY className="max-w-7xl lg:pt-0 pt-24" once={true}>
             <h1 className="text-5xl sm:text-9xl xl:text-[200px] font-black px-12 pt-16 lg:pt-52 pb-4 lg:pb-12 text-center">
-              It's been a minute.
+              It's been a <span className="transition-all duration-200 text-border cursor-cell">minute.</span>
             </h1>
             <p className="font-mono text-center mx-auto px-12 lg:w-4/6 leading-relaxed">
               <span className="text-black/70">This is another portfolio site. It might look a little messy, but design, development, usability testing, and iterating is often a little messy. </span>😊
@@ -114,9 +114,9 @@ export default function Home() {
             alt="photo of ryan with beard and beanie"
           />
           {/* <img src="/img/photo/summer-smith.webp" alt="" className="absolute left-0 right-0 mx-auto -top-4 z-0 w-48 hover:-top-48 hidden lg:block transition-all duration-300" /> */}
-          <FadeY className="z-10 mx-auto px-8 lg:px-0 relative" delay={0.2}>
+          <FadeY className="z-10 mx-auto px-8 lg:px-0 relative max-w-7xl" delay={0.2}>
             <h2 className="text-5xl text-center sm:text-9xl xl:text-[200px] font-black text-white drop-shadow-sm text-border-test">
-              It's been a journey.
+              It's been a <span className="transition-all duration-200 text-border cursor-cell">journey.</span>
             </h2>
           </FadeY>
           <div className="h-[.5px] bg-black mt-12"></div>
@@ -161,7 +161,7 @@ export default function Home() {
         <section className="py-12 lg:py-32 xl:py-48 relative">
           <FadeY className="mb-16 px-8 selection:bg-black/10 max-w-7xl mx-auto" delay={.25}>
             <h2 className="text-5xl sm:text-9xl xl:text-[200px] z-20 font-black lg:px-12 text-center mb-8">
-              It's been busy.
+              It's been <span className="transition-all duration-200 text-border cursor-cell">busy.</span>
             </h2>
             <p className="text-center font-mono mx-auto text-black/70 lg:w-2/3">
               Halvah marzipan marshmallow apple pie shortbread croissant apple pie macaroon.
@@ -189,11 +189,11 @@ export default function Home() {
         {/* PROJECTS */}
         <section className="relative py-12 lg:py-32 xl:py-48 bg-brand-dark lg:mx-12">
           <CrossSVG className={"mx-auto w-24 lg:w-64 hidden lg:block absolute left-0 right-0 -top-12 lg:-top-32"} strokeColor={"#dc2626"} strokeWidth={.5} />
-          {/* <RoundScribbleSVG
+          <RoundScribbleSVG
             className={"w-[370px] absolute -left-72 -top-16 hidden lg:block"}
             strokeColor={"#dc2626"}
             strokeWidth={0.5}
-          /> */}
+          />
           <RoundLinesOutSVG
             className={"w-[370px] absolute -right-40 -bottom-12 hidden lg:block"}
             strokeColor={"#dc2626"} />

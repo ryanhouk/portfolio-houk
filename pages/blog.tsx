@@ -1,16 +1,28 @@
-import React from 'react'
-import { CardImg } from '../components/cards';
+import React from 'react';
+import { NextPage } from 'next';
 
-type Props = {}
-
-const Blog = (props: Props) => {
-    return (
-        <>
-            {/* INTRO */}
-
-
-        </>
-    )
+interface Item {
+  title: string;
+  description: string;
+  image: string;
 }
 
-export default Blog;
+interface Props {
+  items: Item[];
+}
+
+const ItemList: NextPage<Props> = ({ items }) => {
+  return (
+    <ul>
+      {items.map((item) => (
+        <li key={item.title}>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <img src={item.image} alt={item.title} />
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export default ItemList;
