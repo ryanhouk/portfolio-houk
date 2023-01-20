@@ -139,9 +139,9 @@ export default function Home() {
             </h1>
             <p className="mx-auto px-12 text-center font-mono leading-relaxed lg:w-4/6">
               <span className="text-black/70">
-                This is another portfolio site. It might look a little messy,
-                but design, development, usability testing, and iterating is
-                often a little messy.{" "}
+                This is a portfolio site. It might look a little messy, but
+                design, development, usability testing, and iterating is often a
+                little messy.{" "}
               </span>
               😊
             </p>
@@ -209,13 +209,12 @@ export default function Home() {
                 it&apos;s become a cliche. I&apos;ve been doing this for a long
                 time and have had both successes and failures. Empathy? Yep!
                 Usability testing? Yep! Aligning business and customer goals?
-                Yessir. Feedback and collaboration SOMETHING.
+                Yessir.
               </p>
               <p className="mb-8 font-mono leading-loose">
-                Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
-                halvah carrot cake croissant sweet. Chocolate cake croissant
-                pudding donut brownie sesame snaps bear claw. Pie sweet roll
-                gummies soufflé croissant.
+                I&apos;ve learned that successful and powerful products have
+                teams behind them with absent egos and creative contributions
+                coming from everyone.
               </p>
               <p className="font-mono leading-loose">
                 Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
@@ -239,10 +238,11 @@ export default function Home() {
             strokeColor={"#dc2626"}
             strokeWidth={0.5}
           />
+          {/* ADD THE OPEN DISC IMG ON HOVER WITH NEW CHARACTER INSIDE MISEEKS */}
           <img
             src="/img/object/cd-ns.webp"
             alt="cd case with macromedia and pepsi logos"
-            className="flex justify-center p-8 drop-shadow-2xl lg:absolute lg:-right-10 lg:-bottom-16 lg:w-[500px] lg:-rotate-12 lg:p-0"
+            className="flex justify-center p-8 drop-shadow-2xl transition-all duration-200 hover:-bottom-48 lg:absolute lg:-right-10 lg:-bottom-32 lg:w-[500px] lg:-rotate-12 lg:p-0"
           />
         </section>
 
@@ -363,16 +363,33 @@ export default function Home() {
             </h2>
             <p className="mx-auto text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
               A deeper look into the projects and products I&apos;ve worked on.
-            </p>
-          </FadeY>
-          <FadeY delay={0.15}>
-            <p className="font-lg text-center font-mono text-white">
               Coming soon.
             </p>
           </FadeY>
-          <FadeY className="max-w-screen-2xl mx-auto h-96 mt-16" delay={.15}>
-            <img src="/img/mockup/crc/crc-paper-01.webp" alt="" className="absolute -rotate-6 w-full p-8 lg:p-24" />
-            <img src="/img/mockup/klove/tvos-paper-min.webp" alt="" className="absolute rotate-6 w-full p-8 lg:p-24" />
+          {/* <FadeY delay={0.15}>
+            <p className="font-lg text-center font-mono text-white">
+              Coming soon.
+            </p>
+          </FadeY> */}
+          <FadeY
+            className="relative mx-auto mt-16 h-96 max-w-screen-2xl"
+            delay={0.15}
+          >
+            <img
+              src="/img/mockup/klove/kl-web-home.webp"
+              alt=""
+              className="absolute w-full -rotate-12 p-8 lg:p-24"
+            />
+            <img
+              src="/img/mockup/crc/crc-paper-01.webp"
+              alt=""
+              className="absolute w-full rotate-6 p-8 lg:p-24"
+            />
+            <img
+              src="/img/mockup/klove/tvos-paper-min.webp"
+              alt=""
+              className="absolute w-full -rotate-6 p-8 lg:p-24"
+            />
           </FadeY>
         </section>
         {/* CLOSING CONTAINER DIV */}
