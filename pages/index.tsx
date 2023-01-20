@@ -352,7 +352,7 @@ export default function Home() {
           <img
             src="/img/sticker/sticker-gray-round.png"
             alt="sticker with design with care written on it"
-            className="absolute -right-24 hidden w-48 rotate-12 transition-all hover:rotate-0 lg:bottom-16 lg:flex lg:w-80"
+            className="absolute -left-24 hidden w-48 rotate-12 transition-all hover:rotate-0 lg:-top-16 lg:flex lg:w-80"
           />
           <FadeY
             className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
@@ -369,6 +369,10 @@ export default function Home() {
             <p className="font-lg text-center font-mono text-white">
               Coming soon.
             </p>
+          </FadeY>
+          <FadeY className="max-w-screen-2xl mx-auto h-96 mt-16" delay={.15}>
+            <img src="/img/mockup/crc/crc-paper-01.webp" alt="" className="absolute -rotate-6 w-full p-8 lg:p-24" />
+            <img src="/img/mockup/klove/tvos-paper-min.webp" alt="" className="absolute rotate-6 w-full p-8 lg:p-24" />
           </FadeY>
         </section>
         {/* CLOSING CONTAINER DIV */}
