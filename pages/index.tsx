@@ -381,14 +381,14 @@ export default function Home() {
               className="absolute w-full -rotate-12 p-8 lg:p-24"
             />
             <img
-              src="/img/mockup/klove/tvos-paper-min.webp"
-              alt=""
-              className="absolute w-full -rotate-6 p-8 lg:p-24"
-            />
-            <img
               src="/img/mockup/crc/crc-paper-01.webp"
               alt=""
               className="absolute w-full rotate-6 p-8 lg:p-24"
+            />
+            <img
+              src="/img/mockup/klove/tvos-paper-min.webp"
+              alt=""
+              className="absolute w-full -rotate-6 p-8 lg:p-24"
             />
           </FadeY>
         </section>
