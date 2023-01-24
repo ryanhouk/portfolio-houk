@@ -119,11 +119,15 @@ export default function Home() {
 
         {/* INTRO */}
         <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
-          {/* <div className="h-32 w-32 lg:w-64 lg:h-64 absolute mx-auto rounded-full border-black border-[2px] left-0 right-0 -bottom-16 lg:-bottom-32 hidden lg:block"></div> */}
-          <img
+          {/* <img
             src="/img/object/box-logos-rick.webp"
             alt="old box with software logos all over it"
             className="absolute -top-[240px] z-30 mx-auto w-[900px] px-8 drop-shadow-3xl transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[750px] lg:w-[1000px] lg:drop-shadow-4xl"
+          /> */}
+          <img
+            src="/img/object/box-logos-rick.webp"
+            alt="old box with software logos all over it"
+            className="absolute -top-[240px] z-30 mx-auto w-[900px] px-8 drop-shadow-3xl transition-all duration-300 sm:-top-[600px] lg:-top-[750px] lg:w-[1000px] lg:drop-shadow-4xl"
           />
           {/* <RoundScribbleSVG
             className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
@@ -265,7 +269,7 @@ export default function Home() {
           </FadeY>
           <FadeY
             delay={0.2}
-            className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 gap-6 px-8 sm:grid-cols-2 lg:px-12"
+            className="relative z-10 mx-auto grid grid-cols-1 gap-6 px-8 md:grid-cols-2 lg:grid-cols-4 lg:px-12"
           >
             <CardIcon
               description={
@@ -297,7 +301,7 @@ export default function Home() {
             </CardIcon>
             <CardIcon
               description={
-                "Gummi bears cotton candy powder apple pie caramels cake"
+                "If you're interested in tech and design, I would be flattered if you checked out my posts on Medium."
               }
               title={"Blog"}
               className={"lg:h-72"}
@@ -359,7 +363,7 @@ export default function Home() {
             delay={0.15}
           >
             <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-white sm:text-9xl lg:px-12 xl:text-[200px]">
-              Projects.
+              There&apos;s been projects.
             </h2>
             <p className="mx-auto text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
               A deeper look into the projects and products I&apos;ve worked on.
