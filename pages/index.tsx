@@ -119,16 +119,12 @@ export default function Home() {
 
         {/* INTRO */}
         <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
-          {/* <img
-            src="/img/object/box-logos-rick.webp"
-            alt="old box with software logos all over it"
-            className="absolute -top-[240px] z-30 mx-auto w-[900px] px-8 drop-shadow-3xl transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[750px] lg:w-[1000px] lg:drop-shadow-4xl"
-          /> */}
           <img
             src="/img/object/box-logos-rick.webp"
             alt="old box with software logos all over it"
-            className="absolute -top-[240px] z-30 mx-auto w-[900px] px-8 drop-shadow-3xl transition-all duration-300 sm:-top-[600px] lg:-top-[750px] lg:w-[1000px] lg:drop-shadow-4xl"
+            className="absolute -top-[240px] z-30 mx-auto w-[900px] px-8 drop-shadow-3xl transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[750px] lg:w-[1000px] lg:drop-shadow-4xl"
           />
+
           {/* <RoundScribbleSVG
             className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
             strokeColor={"#dc2626"}
@@ -277,6 +273,7 @@ export default function Home() {
               }
               title={"Design"}
               className={"lg:h-72"}
+              cardUrl={""}
             >
               <IconDesignTechSVG
                 className={
@@ -291,6 +288,7 @@ export default function Home() {
               }
               title={"Code"}
               className={"lg:h-72"}
+              cardUrl={""}
             >
               <IconCodeSVG
                 className={
@@ -300,11 +298,13 @@ export default function Home() {
               />
             </CardIcon>
             <CardIcon
+              target={"_blank"}
               description={
-                "If you're interested in tech and design, I would be flattered if you checked out my posts on Medium."
+                "If you're interested in tech & design, check out my blog."
               }
               title={"Blog"}
               className={"lg:h-72"}
+              cardUrl={"https://medium.com/@ryanhouk"}
             >
               <IconWriteSVG
                 className={
@@ -319,6 +319,7 @@ export default function Home() {
               }
               title={"Process"}
               className={"relative overflow-clip lg:h-72"}
+              cardUrl={""}
             >
               <IconProcessSVG
                 className={
@@ -396,6 +397,7 @@ export default function Home() {
             />
           </FadeY>
         </section>
+
         {/* CLOSING CONTAINER DIV */}
       </div>
     </>

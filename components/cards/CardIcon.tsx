@@ -8,21 +8,23 @@ interface Props extends PropsWithChildren<any> {
   title: string;
   description: string;
   delay?: number;
-  // cardUrl: string;
+  cardUrl: string;
+  target?: "_blank" | "_self";
 }
 
 const CardIcon = ({
   className,
-  delay,
   cardUrl,
   description,
   title,
   children,
+  target,
 }: Props) => {
   return (
     <>
       <Link
-        href=""
+        target={target}
+        href={cardUrl}
         className="transition-all duration-200 hover:-translate-y-2 hover:-translate-x-2"
       >
         <div
