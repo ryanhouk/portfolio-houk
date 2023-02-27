@@ -195,13 +195,16 @@ export default function Home() {
             </h2>
           </FadeY>
           <div className="mt-12 h-[.5px] bg-black"></div>
-          <FadeY className="mx-auto mt-16 max-w-5xl lg:mt-24" delay={0.2}>
+          <FadeY
+            className="relative mx-auto mt-16 max-w-5xl lg:mt-24"
+            delay={0.2}
+          >
             <img
               className="mx-auto -mb-16 w-48 transition-all duration-200 lg:w-72"
               src="/img/sticker/tape-gray.png"
               alt="piece of duct tape stuck to a letter"
             />
-            <div className="m-4 rounded-sm bg-white p-4 py-12 shadow-md lg:p-16 lg:py-16">
+            <div className="z-20 m-4 rounded-sm bg-white p-4 py-12 shadow-md lg:p-16 lg:py-16">
               <h2 className="mb-8 font-mono">A brief history.</h2>
               <p className="mb-8 font-mono leading-loose">
                 I could say I&apos;m a designer who loves to create meaningful
@@ -225,7 +228,22 @@ export default function Home() {
                 Chocolate cake croissant pudding donut brownie sesame snaps bear
                 claw.
               </p>
+              <p className="font-mono leading-loose">
+                Kind regards,
+                <br />
+                <br />~ Ryan
+              </p>
+              <p className="hidden font-mono leading-loose lg:block">
+                <br />
+                <br />
+                P.S. Hover me.
+              </p>
             </div>
+            <img
+              src="/img/photo/evil-rick.png"
+              alt="evil rick sanchez"
+              className="absolute left-0 right-0 top-32 z-0 mx-auto hidden w-96 opacity-40 lg:flex"
+            />
             <RectangeDotsSVG
               className={"mx-auto -mt-10 w-72"}
               fillColor={"#000"}
