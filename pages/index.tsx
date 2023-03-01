@@ -132,9 +132,9 @@ export default function Home() {
           /> */}
           <FadeY className="max-w-7xl pt-24 lg:pt-0" once={true}>
             <h1 className="px-12 pt-16 pb-4 text-center text-5xl font-black sm:text-9xl lg:pt-52 lg:pb-12 xl:text-[200px]">
-              It&apos;s been a{" "}
+              It&apos;s been a minute
               <span className="text-border cursor-cell transition-all duration-200">
-                minute.
+                .
               </span>
             </h1>
             <p className="mx-auto px-12 text-center font-mono leading-relaxed lg:w-4/6">
@@ -178,19 +178,25 @@ export default function Home() {
             strokeWidth={0.5}
           />
           <img
+            className="absolute -left-2 top-0 z-0 w-[200px] rotate-90 lg:block hidden"
+            src="/img/photo/mr-meeseeks.webp"
+            alt="mr meeseeks"
+          />
+          <img
             className="absolute -left-24 top-0 z-0 hidden w-[400px] rotate-12 drop-shadow-lg transition-all duration-200 hover:rotate-0 lg:block"
             src="/img/photo/self-bw-car.png"
             alt="photo of ryan with beard and beanie"
           />
+
           {/* <img src="/img/photo/summer-smith.webp" alt="" className="absolute left-0 right-0 mx-auto -top-4 z-0 w-48 hover:-top-48 hidden lg:block transition-all duration-300" /> */}
           <FadeY
             className="relative z-10 mx-auto max-w-7xl px-8 lg:px-0"
             delay={0.2}
           >
             <h2 className="text-border-test text-center text-5xl font-black text-white drop-shadow-sm sm:text-9xl xl:text-[200px]">
-              It&apos;s been a{" "}
+              It&apos;s been a journey
               <span className="text-border cursor-cell transition-all duration-200">
-                journey.
+                .
               </span>
             </h2>
           </FadeY>
@@ -204,7 +210,7 @@ export default function Home() {
               src="/img/sticker/tape-gray.png"
               alt="piece of duct tape stuck to a letter"
             />
-            <div className="z-20 m-4 rounded-sm bg-white p-4 py-12 shadow-md lg:p-16 lg:py-16">
+            <div className="m-4 rounded-sm bg-white p-4 py-12 shadow-md lg:p-16 lg:py-16">
               <h2 className="mb-8 font-mono">A brief history.</h2>
               <p className="mb-8 font-mono leading-loose">
                 I could say I&apos;m a designer who loves to create meaningful
@@ -235,15 +241,15 @@ export default function Home() {
               </p>
               <p className="hidden font-mono leading-loose lg:block">
                 <br />
-                <br />
-                P.S. Hover me.
+                P.S. Delete my photo.
               </p>
+              {/* <img
+                src="/img/photo/evil-rick.png"
+                alt="evil rick sanchez"
+                className="absolute left-0 right-0 top-32 z-0 mx-auto hidden w-96 lg:flex"
+              /> */}
             </div>
-            <img
-              src="/img/photo/evil-rick.png"
-              alt="evil rick sanchez"
-              className="absolute left-0 right-0 top-32 z-0 mx-auto hidden w-96 opacity-40 lg:flex"
-            />
+
             <RectangeDotsSVG
               className={"mx-auto -mt-10 w-72"}
               fillColor={"#000"}
@@ -265,15 +271,15 @@ export default function Home() {
         </section>
 
         {/* BEEN BUSY */}
-        <section className="relative py-12 lg:py-32 xl:py-48">
+        <section className="relative py-12 lg:py-32 xl:py-48 lg:mx-12">
           <FadeY
             className="mx-auto mb-16 max-w-7xl px-8 selection:bg-black/10"
             delay={0.25}
           >
             <h2 className="z-20 mb-8 text-center text-5xl font-black sm:text-9xl lg:px-12 xl:text-[200px]">
-              It&apos;s been{" "}
+              It&apos;s been busy
               <span className="text-border cursor-cell transition-all duration-200">
-                busy.
+                .
               </span>
             </h2>
             <p className="mx-auto text-center font-mono text-black/70 lg:w-2/3">
@@ -283,7 +289,7 @@ export default function Home() {
           </FadeY>
           <FadeY
             delay={0.2}
-            className="relative z-10 mx-auto grid grid-cols-1 gap-6 px-8 md:grid-cols-2 lg:grid-cols-4 lg:px-12"
+            className="relative z-10 mx-auto grid grid-cols-1 gap-6 px-8 lg:px-0 md:grid-cols-2 lg:grid-cols-4"
           >
             <CardIcon
               description={
@@ -336,7 +342,7 @@ export default function Home() {
                 "Gummi bears cotton candy powder apple pie caramels cake"
               }
               title={"Process"}
-              className={"relative overflow-clip lg:h-72"}
+              className={"lg:h-72"}
               cardUrl={""}
             >
               <IconProcessSVG
@@ -395,7 +401,7 @@ export default function Home() {
             </p>
           </FadeY> */}
           <FadeY
-            className="relative mx-auto mt-16 h-96 max-w-screen-2xl"
+            className="relative mx-auto mt-16 h-96 max-w-screen-xl"
             delay={0.15}
           >
             <img
@@ -414,8 +420,26 @@ export default function Home() {
               className="absolute w-full -rotate-6 p-8 lg:p-24"
             />
           </FadeY>
+          <div className="bg-gradient-to-t from-brand-dark to-brand-dark/0 absolute z-10 h-64 bottom-0 w-full"></div>
         </section>
 
+        {/* SECTION */}
+        <section className="pt-12 lg:py-32 h-full overflow-clip bg-brand-light relative z-10">
+          <FadeY
+            className="mx-auto max-w-7xl px-8 selection:bg-black/10"
+            delay={0.25}
+          >
+          </FadeY>
+          <div className="flex h-full flex-col md:flex-row">
+            <FadeY className="flex-1 flex items-center" delay={0.25}>
+              <p className="font-mono text-black md:w-4/6 mx-auto px-8 leading-loose border-l-4 border-red-600 mb-8">Design is for everyone and can be created by anyone. My favorite design is inclusive and accessible. It should align business goals and customer goals.</p>
+            </FadeY>
+            <FadeY className="flex-1 justify-center md:justify-end flex">
+              <img src="/img/paper/black-paper-design-sm-min.png" alt="design for everyone torn paper" className=" w-[800px] mr-6 md:-mr-8" />
+            </FadeY>
+
+          </div>
+        </section>
         {/* CLOSING CONTAINER DIV */}
       </div>
     </>
