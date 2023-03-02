@@ -122,7 +122,7 @@ export default function Home() {
           <img
             src="/img/object/box-logos-rick-shadow.webp"
             alt="old box with software logos all over it"
-            className="absolute -top-[240px] z-30 mx-auto w-[900px] px-8 transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
+            className="absolute -top-[160px] z-30 mx-auto w-[900px] px-8 transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
           />
 
           {/* <RoundScribbleSVG
@@ -427,7 +427,7 @@ export default function Home() {
           </FadeY>
           <div className="flex h-full flex-col md:flex-row">
             <FadeY className="flex-1 flex items-center" delay={0.25}>
-              <p className="font-mono text-black md:w-4/6 mx-auto px-8 leading-loose border-l-4 border-red-600 mb-8">Design is for everyone and can be created by anyone. My favorite design is inclusive and accessible. It should align business goals and customer goals.</p>
+              <p className="font-mono text-center md:text-left text-black md:w-4/6 mx-auto px-4 md:px-8 leading-loose md:border-l-4 border-red-600 mb-8">Design is for everyone and can be created by anyone. My favorite design is inclusive and accessible. It should align business goals and customer goals.</p>
             </FadeY>
             <FadeY className="flex-1 justify-center md:justify-end flex">
               <img src="/img/paper/black-paper-design-sm-min.png" alt="design for everyone torn paper" className=" w-[800px] mr-6 md:-mr-8" />
