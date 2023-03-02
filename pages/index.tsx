@@ -120,9 +120,9 @@ export default function Home() {
         {/* INTRO */}
         <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
           <img
-            src="/img/object/box-logos-rick.webp"
+            src="/img/object/box-logos-rick-shadow.webp"
             alt="old box with software logos all over it"
-            className="absolute -top-[240px] z-30 mx-auto w-[900px] px-8 drop-shadow-3xl transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[750px] lg:w-[1000px] lg:drop-shadow-4xl"
+            className="absolute -top-[240px] z-30 mx-auto w-[900px] px-8 transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
           />
 
           {/* <RoundScribbleSVG
@@ -301,7 +301,7 @@ export default function Home() {
             >
               <IconDesignTechSVG
                 className={
-                  "mb-6 w-16 transition-all duration-300 group-hover:-rotate-6"
+                  "mb-6 w-16 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
                 }
                 strokeColor={"#dc2626"}
               />
@@ -316,7 +316,7 @@ export default function Home() {
             >
               <IconCodeSVG
                 className={
-                  "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6"
+                  "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
                 }
                 strokeColor={"#dc2626"}
               />
@@ -332,7 +332,7 @@ export default function Home() {
             >
               <IconWriteSVG
                 className={
-                  "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6"
+                  "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
                 }
                 strokeColor={"#dc2626"}
               />
@@ -347,7 +347,7 @@ export default function Home() {
             >
               <IconProcessSVG
                 className={
-                  "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6"
+                  "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
                 }
                 strokeColor={"#dc2626"}
               />
@@ -395,11 +395,6 @@ export default function Home() {
               Coming soon.
             </p>
           </FadeY>
-          {/* <FadeY delay={0.15}>
-            <p className="font-lg text-center font-mono text-white">
-              Coming soon.
-            </p>
-          </FadeY> */}
           <FadeY
             className="relative mx-auto mt-16 h-96 max-w-screen-xl"
             delay={0.15}
@@ -423,7 +418,7 @@ export default function Home() {
           <div className="bg-gradient-to-t from-brand-dark to-brand-dark/0 absolute z-10 h-64 bottom-0 w-full"></div>
         </section>
 
-        {/* SECTION */}
+        {/* ETHICAL */}
         <section className="pt-12 lg:py-32 h-full overflow-clip bg-brand-light relative z-10">
           <FadeY
             className="mx-auto max-w-7xl px-8 selection:bg-black/10"
@@ -439,6 +434,28 @@ export default function Home() {
             </FadeY>
 
           </div>
+        </section>
+
+        {/* BLOG */}
+        <section className="relative bg-brand-dark py-12 lg:mx-12 lg:py-32 xl:py-48">
+          <FadeY
+            className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
+            delay={0.15}
+          >
+            <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-white sm:text-9xl lg:px-12 xl:text-[200px]">
+              Blog.
+            </h2>
+            <p className="mx-auto text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
+              A few highlights from the blog. You can read more <Link href="" className="underline">here</Link>.
+            </p>
+          </FadeY>
+
+          <FadeY
+            className="relative mx-auto mt-16 h-96 max-w-screen-xl"
+            delay={0.15}
+          >
+            ADD BLOGS
+          </FadeY>
         </section>
         {/* CLOSING CONTAINER DIV */}
       </div>
