@@ -28,7 +28,7 @@ const CardIcon = ({
         className="transition-all duration-200 hover:-translate-y-2 hover:-translate-x-2"
       >
         <div
-          className={`group flex flex-col justify-between rounded-sm border-2 border-red-600 bg-red-600 p-8 duration-300 hover:border-black hover:bg-white hover:text-brand-dark hover:shadow-2xl ${className}`}
+          className={`group flex flex-col justify-between rounded-sm border-2 border-brand-dark bg-brand-dark p-8 duration-300 hover:border-black hover:bg-white hover:text-brand-dark hover:shadow-2xl ${className}`}
         >
           <div className="z-10">{children}</div>
           <div className="z-10">

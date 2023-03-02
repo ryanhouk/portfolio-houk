@@ -193,7 +193,7 @@ export default function Home() {
             className="relative z-10 mx-auto max-w-7xl px-8 lg:px-0"
             delay={0.2}
           >
-            <h2 className="text-border-test text-center text-5xl font-black text-white drop-shadow-sm sm:text-9xl xl:text-[200px]">
+            <h2 className="text-center text-5xl font-black text-white drop-shadow-sm sm:text-9xl xl:text-[200px]">
               It&apos;s been a journey
               <span className="text-border cursor-cell transition-all duration-200">
                 .
@@ -303,7 +303,7 @@ export default function Home() {
                 className={
                   "mb-6 w-16 transition-all duration-300 group-hover:-rotate-6"
                 }
-                strokeColor={"#000"}
+                strokeColor={"#dc2626"}
               />
             </CardIcon>
             <CardIcon
@@ -318,7 +318,7 @@ export default function Home() {
                 className={
                   "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6"
                 }
-                strokeColor={"#000"}
+                strokeColor={"#dc2626"}
               />
             </CardIcon>
             <CardIcon
@@ -334,7 +334,7 @@ export default function Home() {
                 className={
                   "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6"
                 }
-                strokeColor={"#000"}
+                strokeColor={"#dc2626"}
               />
             </CardIcon>
             <CardIcon
@@ -349,7 +349,7 @@ export default function Home() {
                 className={
                   "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6"
                 }
-                strokeColor={"#000"}
+                strokeColor={"#dc2626"}
               />
               {/* <RoundScribbleSVG className={"w-52 opacity-0 -left-12 -bottom-12 group-hover:opacity-10 absolute transition-all duration-300"} strokeColor={"#000"} strokeWidth={2} /> */}
             </CardIcon>
