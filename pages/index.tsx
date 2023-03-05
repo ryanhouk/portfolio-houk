@@ -272,6 +272,7 @@ export default function Home() {
 
         {/* BEEN BUSY */}
         <section className="relative py-12 lg:py-32 xl:py-48 lg:mx-12">
+          <img src="/img/paper/torn-bumber.png" alt="" className="absolute -left-32 -top-44 rotate-12 h-52 lg:h-80" />
           <FadeY
             className="mx-auto mb-16 max-w-7xl px-8 selection:bg-black/10"
             delay={0.25}
@@ -427,7 +428,7 @@ export default function Home() {
           </FadeY>
           <div className="flex h-full flex-col md:flex-row">
             <FadeY className="flex-1 flex items-center" delay={0.25}>
-              <p className="font-mono text-center md:text-left text-black md:w-4/6 mx-auto px-4 md:px-8 leading-loose md:border-l-4 border-red-600 mb-8">Design is for everyone and can be created by anyone. My favorite design is inclusive and accessible. It should align business goals and customer goals.</p>
+              <p className="font-mono text-center md:text-left text-black md:w-4/6 mx-auto px-8 leading-loose md:border-l-4 border-red-600 mb-8">Product design is for everyone. My favorite design is inclusive and accessible and it aligns business goals and customer goals.</p>
             </FadeY>
             <FadeY className="flex-1 justify-center md:justify-end flex">
               <img src="/img/paper/black-paper-design-sm-min.png" alt="design for everyone torn paper" className=" w-[800px] mr-6 md:-mr-8" />
