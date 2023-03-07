@@ -272,7 +272,7 @@ export default function Home() {
 
         {/* BEEN BUSY */}
         <section className="relative py-12 lg:py-32 xl:py-48 lg:mx-12">
-          <img src="/img/paper/torn-bumber.png" alt="" className="absolute -left-32 -top-44 rotate-12 h-52 lg:h-80" />
+          <img src="/img/paper/torn-bumber-bk.png" alt="" className="absolute -left-28 -top-48 rotate-12 h-52 lg:h-80" />
           <FadeY
             className="mx-auto mb-16 max-w-7xl px-8 selection:bg-black/10"
             delay={0.25}
@@ -290,7 +290,7 @@ export default function Home() {
           </FadeY>
           <FadeY
             delay={0.2}
-            className="relative z-10 mx-auto grid grid-cols-1 gap-6 px-8 lg:px-0 md:grid-cols-2 lg:grid-cols-4"
+            className="relative z-10 mx-auto grid grid-cols-1 gap-6 px-8 lg:px-0 lg:grid-cols-3"
           >
             <CardIcon
               description={
@@ -307,7 +307,7 @@ export default function Home() {
                 strokeColor={"#dc2626"}
               />
             </CardIcon>
-            <CardIcon
+            {/* <CardIcon
               description={
                 "Gummi bears cotton candy powder apple pie caramels cake"
               }
@@ -321,7 +321,7 @@ export default function Home() {
                 }
                 strokeColor={"#dc2626"}
               />
-            </CardIcon>
+            </CardIcon> */}
             <CardIcon
               target={"_blank"}
               description={
@@ -457,6 +457,29 @@ export default function Home() {
           >
             ADD BLOGS
           </FadeY>
+        </section>
+
+        {/* DESIGN */}
+        <section className="relative pt-12 lg:mx-12 lg:pt-32 xl:pt-48">
+          <FadeY
+            className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
+            delay={0.15}
+          >
+            <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-black sm:text-9xl lg:px-12 xl:text-[200px]">
+              Design.
+            </h2>
+            <p className="mx-auto text-center font-mono leading-relaxed text-black/70 lg:w-2/3">
+              Design copy goes here.
+            </p>
+          </FadeY>
+
+          <FadeY
+            className="mx-auto grid-cols-3 px-8 max-w-screen-2xl"
+            delay={0.15}
+          >
+
+          </FadeY>
+          <img src="/img/object/bag-logos-half.png" alt="bag with logos of code and design tools spilling out" className="w-[1500px] mx-auto ml-32" />
         </section>
         {/* CLOSING CONTAINER DIV */}
       </div>
