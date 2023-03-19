@@ -122,7 +122,7 @@ export default function Home() {
           <img
             src="/img/object/box-logos-rick-shadow.webp"
             alt="old box with software logos all over it"
-            className="absolute -top-[160px] z-30 mx-auto w-[900px] px-8 transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
+            className="absolute -top-[200px] z-30 mx-auto transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
           />
 
           {/* <RoundScribbleSVG
@@ -131,7 +131,7 @@ export default function Home() {
             strokeWidth={0.5}
           /> */}
           <FadeY className="max-w-7xl pt-24 lg:pt-0" once={true}>
-            <h1 className="px-12 pt-16 pb-4 text-center text-5xl font-black sm:text-9xl lg:pt-52 lg:pb-12 xl:text-[200px]">
+            <h1 className="px-12 pt-24 pb-4 text-center text-5xl font-black sm:text-9xl lg:pt-64 lg:pb-12 xl:text-[200px]">
               It&apos;s been a minute
               <span className="text-border cursor-cell transition-all duration-200">
                 .
@@ -259,7 +259,7 @@ export default function Home() {
             className={
               "absolute -right-24 -bottom-32 hidden w-[500px] lg:block"
             }
-            strokeColor={"#dc2626"}
+            strokeColor={"#000"}
             strokeWidth={0.5}
           />
           {/* ADD THE OPEN DISC IMG ON HOVER WITH NEW CHARACTER INSIDE MISEEKS */}
@@ -382,7 +382,7 @@ export default function Home() {
           <img
             src="/img/sticker/sticker-gray-round.png"
             alt="sticker with design with care written on it"
-            className="absolute -left-24 hidden w-48 rotate-12 transition-all hover:rotate-0 lg:-top-16 lg:flex lg:w-80"
+            className="absolute -left-32 hidden w-48 rotate-12 transition-all hover:rotate-0 lg:-top-16 lg:flex lg:w-96"
           />
           <FadeY
             className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
@@ -447,7 +447,7 @@ export default function Home() {
               Blog.
             </h2>
             <p className="mx-auto text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
-              A few highlights from the blog. You can read more <Link href="" className="underline">here</Link>.
+              A few highlights from the blog. You can read more <Link href="https://medium.com/@ryanhouk" target={"_blank"} className="underline">here</Link>.
             </p>
           </FadeY>
 
