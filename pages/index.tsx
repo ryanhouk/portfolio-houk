@@ -171,14 +171,14 @@ export default function Home() {
         </section>
 
         {/* ABOUT ME */}
-        <section className="relative bg-red-600 py-12 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48">
+        <section className="relative z-10 bg-red-600 py-12 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48">
           <RoundScribbleSVG
             className={"absolute left-8 top-8 z-0 hidden w-[400px] lg:block"}
             strokeColor={"#000"}
             strokeWidth={0.5}
           />
           <img
-            className="absolute -left-2 top-0 z-0 w-[200px] rotate-90 lg:block hidden"
+            className="absolute -left-2 top-0 z-0 hidden w-[200px] rotate-90 lg:block"
             src="/img/photo/mr-meeseeks.webp"
             alt="mr meeseeks"
           />
@@ -268,11 +268,20 @@ export default function Home() {
             alt="cd case with macromedia and pepsi logos"
             className="flex justify-center p-8 drop-shadow-2xl transition-all duration-200 hover:-bottom-48 lg:absolute lg:-right-10 lg:-bottom-32 lg:w-[500px] lg:-rotate-12 lg:p-0"
           />
+          <img
+            src="/img/paper/torn-bumber-bk.png"
+            alt=""
+            className="absolute -left-28 -bottom-8 h-52 rotate-12 lg:-bottom-48 lg:h-80"
+          />
         </section>
 
         {/* BEEN BUSY */}
-        <section className="relative py-12 lg:py-32 xl:py-48 lg:mx-12">
-          <img src="/img/paper/torn-bumber-bk.png" alt="" className="absolute -left-28 -top-48 rotate-12 h-52 lg:h-80" />
+        <section className="relative py-12 lg:mx-12 lg:py-32 xl:py-48">
+          {/* <img
+            src="/img/paper/torn-bumber-bk.png"
+            alt=""
+            className="absolute -left-28 -top-48 h-52 rotate-12 lg:h-80"
+          /> */}
           <FadeY
             className="mx-auto mb-16 max-w-7xl px-8 selection:bg-black/10"
             delay={0.25}
@@ -290,7 +299,7 @@ export default function Home() {
           </FadeY>
           <FadeY
             delay={0.2}
-            className="relative z-10 mx-auto grid grid-cols-1 gap-6 px-8 lg:px-0 lg:grid-cols-3"
+            className="relative z-10 mx-auto grid grid-cols-1 gap-6 px-8 lg:grid-cols-3 lg:px-0"
           >
             <CardIcon
               description={
@@ -302,7 +311,7 @@ export default function Home() {
             >
               <IconDesignTechSVG
                 className={
-                  "mb-6 w-16 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
+                  "mb-6 w-16 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
                 }
                 strokeColor={"#dc2626"}
               />
@@ -333,7 +342,7 @@ export default function Home() {
             >
               <IconWriteSVG
                 className={
-                  "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
+                  "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
                 }
                 strokeColor={"#dc2626"}
               />
@@ -348,7 +357,7 @@ export default function Home() {
             >
               <IconProcessSVG
                 className={
-                  "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
+                  "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
                 }
                 strokeColor={"#dc2626"}
               />
@@ -416,24 +425,29 @@ export default function Home() {
               className="absolute w-full -rotate-6 p-8 lg:p-24"
             />
           </FadeY>
-          <div className="bg-gradient-to-t from-brand-dark to-brand-dark/0 absolute z-10 h-64 bottom-0 w-full"></div>
+          <div className="absolute bottom-0 z-10 h-64 w-full bg-gradient-to-t from-brand-dark to-brand-dark/0"></div>
         </section>
 
         {/* ETHICAL */}
-        <section className="pt-12 lg:py-32 h-full overflow-clip bg-brand-light relative z-10">
+        <section className="relative z-10 h-full overflow-clip bg-brand-light pt-12 lg:py-32">
           <FadeY
             className="mx-auto max-w-7xl px-8 selection:bg-black/10"
             delay={0.25}
-          >
-          </FadeY>
+          ></FadeY>
           <div className="flex h-full flex-col md:flex-row">
-            <FadeY className="flex-1 flex items-center" delay={0.25}>
-              <p className="font-mono text-center md:text-left text-black md:w-4/6 mx-auto px-8 leading-loose md:border-l-4 border-red-600 mb-8">Product design is for everyone. My favorite design is inclusive and accessible and it aligns business goals and customer goals.</p>
+            <FadeY className="flex flex-1 items-center" delay={0.25}>
+              <p className="mx-auto mb-8 border-red-600 px-8 text-center font-mono leading-loose text-black md:w-4/6 md:border-l-4 md:text-left">
+                Product design is for everyone. My favorite design is inclusive
+                and accessible and it aligns business goals and customer goals.
+              </p>
             </FadeY>
-            <FadeY className="flex-1 justify-center md:justify-end flex">
-              <img src="/img/paper/black-paper-design-sm-min.png" alt="design for everyone torn paper" className=" w-[800px] mr-6 md:-mr-8" />
+            <FadeY className="flex flex-1 justify-center md:justify-end">
+              <img
+                src="/img/paper/black-paper-design-sm-min.png"
+                alt="design for everyone torn paper"
+                className=" mr-6 w-[800px] md:-mr-8"
+              />
             </FadeY>
-
           </div>
         </section>
 
@@ -447,7 +461,15 @@ export default function Home() {
               Blog.
             </h2>
             <p className="mx-auto text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
-              A few highlights from the blog. You can read more <Link href="https://medium.com/@ryanhouk" target={"_blank"} className="underline">here</Link>.
+              A few highlights from the blog. You can read more
+              <Link
+                href="https://medium.com/@ryanhouk"
+                target={"_blank"}
+                className="underline"
+              >
+                here
+              </Link>
+              .
             </p>
           </FadeY>
 
@@ -460,26 +482,89 @@ export default function Home() {
         </section>
 
         {/* DESIGN */}
-        <section className="relative pt-12 lg:mx-12 lg:pt-32 xl:pt-48">
+        <section className="relative pt-12 selection:bg-black/10 lg:mx-12 lg:pt-32">
           <FadeY
             className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
             delay={0.15}
           >
             <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-black sm:text-9xl lg:px-12 xl:text-[200px]">
-              Design.
+              Work.
             </h2>
-            <p className="mx-auto text-center font-mono leading-relaxed text-black/70 lg:w-2/3">
-              Design copy goes here.
-            </p>
+            {/* <p className="mx-auto max-w-3xl text-center font-mono leading-relaxed text-black/70">
+              Ah yes, the tools of the trade. 🧰
+            </p> */}
           </FadeY>
 
           <FadeY
-            className="mx-auto grid-cols-3 px-8 max-w-screen-2xl"
+            className="flex h-full flex-col items-center xl:flex-row"
             delay={0.15}
           >
-
+            <div className="flex-1">
+              <p className="mx-auto mb-8 border-red-600 px-8 text-center font-mono leading-loose text-black md:w-4/6 md:border-l-4 md:text-left">
+                Ah yes, the tools of the trade. Designers use all varieties of
+                tools to accomplish beautiful results. There are so many amazing
+                and powerful tools, none inherently right or wrong. Use the
+                right tools for the right team and product needs. 🧰
+              </p>
+            </div>
+            <div className="mt-16 flex-1 xl:mt-0">
+              <img
+                src="/img/object/bag-logos-half.png"
+                alt="bag with logos of code and design tools spilling out"
+                className="col-span-2 mx-auto"
+              />
+            </div>
           </FadeY>
-          <img src="/img/object/bag-logos-half.png" alt="bag with logos of code and design tools spilling out" className="w-[1500px] mx-auto ml-32" />
+        </section>
+
+        {/* MY TOOLS */}
+        <section className="relative bg-red-600 py-12 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48">
+          <FadeY className="mx-auto max-w-screen-xl">
+            <div className="grid grid-cols-4 gap-4 lg:gap-6">
+              <CardIcon
+                target={"_blank"}
+                description={"Tried and true IDE for the masses."}
+                title={"VS Code"}
+                className={"lg:h-72"}
+                cardUrl={"#"}
+              >
+                <IconCodeSVG
+                  className={
+                    "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
+                  }
+                  strokeColor={"#dc2626"}
+                />
+              </CardIcon>
+              <CardIcon
+                target={"_blank"}
+                description={"They're both great."}
+                title={"Figma & Sketch"}
+                className={"lg:h-72"}
+                cardUrl={"#"}
+              >
+                <IconCodeSVG
+                  className={
+                    "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
+                  }
+                  strokeColor={"#dc2626"}
+                />
+              </CardIcon>
+              <CardIcon
+                target={"_blank"}
+                description={"With a splash of Typescript."}
+                title={"React & Nextjs"}
+                className={"lg:h-72"}
+                cardUrl={"#"}
+              >
+                <IconCodeSVG
+                  className={
+                    "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
+                  }
+                  strokeColor={"#dc2626"}
+                />
+              </CardIcon>
+            </div>
+          </FadeY>
         </section>
         {/* CLOSING CONTAINER DIV */}
       </div>
