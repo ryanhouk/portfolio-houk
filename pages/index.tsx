@@ -518,9 +518,9 @@ export default function Home() {
         </section>
 
         {/* MY TOOLS */}
-        <section className="relative bg-red-600 py-12 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48">
+        <section className="relative bg-red-600 py-12 px-8 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48">
           <FadeY className="mx-auto max-w-screen-xl">
-            <div className="grid grid-cols-4 gap-4 lg:gap-6">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-6">
               <CardIcon
                 target={"_blank"}
                 description={"Tried and true IDE for the masses."}
@@ -539,6 +539,76 @@ export default function Home() {
                 target={"_blank"}
                 description={"They're both great."}
                 title={"Figma & Sketch"}
+                className={"lg:h-72"}
+                cardUrl={"#"}
+              >
+                <IconCodeSVG
+                  className={
+                    "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
+                  }
+                  strokeColor={"#dc2626"}
+                />
+              </CardIcon>
+              <CardIcon
+                target={"_blank"}
+                description={"With a splash of Typescript."}
+                title={"React & Nextjs"}
+                className={"lg:h-72"}
+                cardUrl={"#"}
+              >
+                <IconCodeSVG
+                  className={
+                    "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
+                  }
+                  strokeColor={"#dc2626"}
+                />
+              </CardIcon>
+              <CardIcon
+                target={"_blank"}
+                description={"With a splash of Typescript."}
+                title={"React & Nextjs"}
+                className={"lg:h-72"}
+                cardUrl={"#"}
+              >
+                <IconCodeSVG
+                  className={
+                    "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
+                  }
+                  strokeColor={"#dc2626"}
+                />
+              </CardIcon>
+              <CardIcon
+                target={"_blank"}
+                description={"With a splash of Typescript."}
+                title={"React & Nextjs"}
+                className={"lg:h-72"}
+                cardUrl={"#"}
+              >
+                <IconCodeSVG
+                  className={
+                    "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
+                  }
+                  strokeColor={"#dc2626"}
+                />
+              </CardIcon>
+              <CardIcon
+                target={"_blank"}
+                description={"With a splash of Typescript."}
+                title={"React & Nextjs"}
+                className={"lg:h-72"}
+                cardUrl={"#"}
+              >
+                <IconCodeSVG
+                  className={
+                    "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
+                  }
+                  strokeColor={"#dc2626"}
+                />
+              </CardIcon>
+              <CardIcon
+                target={"_blank"}
+                description={"With a splash of Typescript."}
+                title={"React & Nextjs"}
                 className={"lg:h-72"}
                 cardUrl={"#"}
               >
