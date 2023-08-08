@@ -120,19 +120,21 @@ export default function Home() {
         {/* INTRO */}
         <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
           <img
-            src="/img/object/box-logos-rick-shadow.webp"
+            src="/img/object/box-logos-rick.webp"
             alt="old box with software logos all over it"
-            className="absolute -top-[200px] z-30 mx-auto transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
+            className="absolute -top-[150px] z-30 mx-auto w-3/4 drop-shadow-3xl transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[600px] lg:w-[900px] lg:drop-shadow-4xl"
           />
 
           {/* <RoundScribbleSVG
-            className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
+            className={
+              "absolute left-0 top-0 right-0 z-0 mx-auto hidden w-[400px] lg:block"
+            }
             strokeColor={"#dc2626"}
             strokeWidth={0.5}
           /> */}
           <FadeY className="max-w-7xl pt-24 lg:pt-0" once={true}>
-            <h1 className="px-12 pt-24 pb-4 text-center text-5xl font-black sm:text-9xl lg:pt-64 lg:pb-12 xl:text-[200px]">
-              It&apos;s been a minute
+            <h1 className="px-12 pt-24 pb-4 text-center text-5xl font-black sm:text-9xl lg:pt-80 lg:pb-12 xl:text-[200px]">
+              {`It's been a minute`}
               <span className="text-border cursor-cell transition-all duration-200">
                 .
               </span>
@@ -303,7 +305,7 @@ export default function Home() {
           >
             <CardIcon
               description={
-                "Gummi bears cotton candy powder apple pie caramels cake"
+                "What is good design? Maybe we can answer that question together."
               }
               title={"Design"}
               className={"lg:h-72"}
@@ -333,9 +335,7 @@ export default function Home() {
             </CardIcon> */}
             <CardIcon
               target={"_blank"}
-              description={
-                "If you're interested in tech & design, check out my blog."
-              }
+              description={"nterested in tech & design? check out my blog."}
               title={"Blog"}
               className={"lg:h-72"}
               cardUrl={"https://medium.com/@ryanhouk"}
@@ -349,7 +349,7 @@ export default function Home() {
             </CardIcon>
             <CardIcon
               description={
-                "Gummi bears cotton candy powder apple pie caramels cake"
+                "How do we get from A to B? From what's in our head to a working product."
               }
               title={"Process"}
               className={"lg:h-72"}
