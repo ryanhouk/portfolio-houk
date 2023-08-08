@@ -120,18 +120,18 @@ export default function Home() {
         {/* INTRO */}
         <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
           <img
-            src="/img/object/box-logos-rick-shadow.webp"
+            src="/img/object/box-logos-rick.webp"
             alt="old box with software logos all over it"
-            className="absolute -top-[200px] z-30 mx-auto transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
+            className="absolute -top-[150px] z-30 mx-auto w-3/4 drop-shadow-3xl transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[600px] lg:w-[900px] lg:drop-shadow-4xl"
           />
 
-          <RoundScribbleSVG
+          {/* <RoundScribbleSVG
             className={
               "absolute left-0 top-0 right-0 z-0 mx-auto hidden w-[400px] lg:block"
             }
             strokeColor={"#dc2626"}
             strokeWidth={0.5}
-          />
+          /> */}
           <FadeY className="max-w-7xl pt-24 lg:pt-0" once={true}>
             <h1 className="px-12 pt-24 pb-4 text-center text-5xl font-black sm:text-9xl lg:pt-80 lg:pb-12 xl:text-[200px]">
               {`It's been a minute`}
