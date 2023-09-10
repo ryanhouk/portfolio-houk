@@ -118,7 +118,7 @@ export default function Home() {
                 />
 
                 {/* INTRO */}
-                <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
+                <section className="relative hidden lg:flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
                     <img
                         src="/img/object/box-logos-rick-shadow.webp"
                         alt="old box with software logos all over it"
@@ -171,7 +171,7 @@ export default function Home() {
                 </section>
 
                 {/* ABOUT ME */}
-                <section className="relative bg-red-600 py-12 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48">
+                <section className="relative bg-red-600 py-12 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48 overflow-clip lg:rounded-[72px]">
                     <RoundScribbleSVG
                         className={"absolute left-8 top-8 z-0 hidden w-[400px] lg:block"}
                         strokeColor={"#000"}
@@ -360,7 +360,7 @@ export default function Home() {
                 </section>
 
                 {/* PROJECTS */}
-                <section className="relative bg-brand-dark py-12 lg:mx-12 lg:py-32 xl:py-48">
+                <section className="relative bg-brand-dark py-12 lg:mx-12 lg:py-32 xl:py-48 lg:rounded-[72px] overflow-clip">
                     <CrossSVG
                         className={
                             "absolute left-0 right-0 -top-12 mx-auto hidden w-24 lg:-top-32 lg:block lg:w-64"
