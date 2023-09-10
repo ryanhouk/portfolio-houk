@@ -324,7 +324,7 @@ export default function Home() {
             <CardIcon
               target={"_blank"}
               description={
-                "If you're interested in tech & design, check out my blog."
+                `If you're interested in tech & design, check out my blog.`
               }
               title={"Blog"}
               className={"lg:h-72"}
@@ -388,7 +388,7 @@ export default function Home() {
             delay={0.15}
           >
             <h2 className="relative z-20 mb-8 lg:text-center text-5xl font-black text-white sm:text-9xl lg:px-12 xl:text-[180px] leading-[1.1]">
-              We've got projects.
+              We&apos;ve got projects.
             </h2>
             <p className="mx-auto lg:text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
               A deeper look into the projects and products I&apos;ve worked on.
