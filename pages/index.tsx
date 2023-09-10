@@ -122,7 +122,8 @@ export default function Home() {
           <img
             src="/img/object/box-logos-rick.webp"
             alt="old box with software logos all over it"
-            className="absolute -top-[150px] z-30 mx-auto w-3/4 drop-shadow-3xl transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[600px] lg:w-[900px] lg:drop-shadow-4xl"
+            className="absolute hidden lg:flex -top-[200px] z-30 mx-auto transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
+
           />
 
           {/* <RoundScribbleSVG
@@ -133,13 +134,14 @@ export default function Home() {
             strokeWidth={0.5}
           /> */}
           <FadeY className="max-w-7xl pt-24 lg:pt-0" once={true}>
-            <h1 className="px-12 pt-24 pb-4 text-center text-5xl font-black sm:text-9xl lg:pt-80 lg:pb-12 xl:text-[200px]">
-              {`It's been a minute`}
+            <h1 className="px-12 pb-4 lg:text-center text-5xl font-black sm:text-9xl lg:pt-64 lg:pb-12 xl:text-[180px] leading-[1.1]">
+              It&apos;s been a minute
+
               <span className="text-border cursor-cell transition-all duration-200">
                 .
               </span>
             </h1>
-            <p className="mx-auto px-12 text-center font-mono leading-relaxed lg:w-4/6">
+            <p className="mx-auto px-12 lg:text-center font-mono leading-relaxed lg:w-4/6">
               <span className="text-black/70">
                 This is a portfolio site. It might look a little messy, but
                 design, development, usability testing, and iterating is often a
@@ -195,7 +197,7 @@ export default function Home() {
             className="relative z-10 mx-auto max-w-7xl px-8 lg:px-0"
             delay={0.2}
           >
-            <h2 className="text-center text-5xl font-black text-white drop-shadow-sm sm:text-9xl xl:text-[200px]">
+            <h2 className="lg:text-center text-5xl font-black text-white drop-shadow-sm sm:text-9xl xl:text-[180px] leading-[1.1]">
               It&apos;s been a journey
               <span className="text-border cursor-cell transition-all duration-200">
                 .
@@ -288,15 +290,14 @@ export default function Home() {
             className="mx-auto mb-16 max-w-7xl px-8 selection:bg-black/10"
             delay={0.25}
           >
-            <h2 className="z-20 mb-8 text-center text-5xl font-black sm:text-9xl lg:px-12 xl:text-[200px]">
+            <h2 className="z-20 pb-4 lg:pb-12 lg:text-center text-5xl font-black sm:text-9xl lg:px-12 xl:text-[180px] leading-[1.1]">
               It&apos;s been busy
               <span className="text-border cursor-cell transition-all duration-200">
                 .
               </span>
             </h2>
-            <p className="mx-auto text-center font-mono text-black/70 lg:w-2/3">
-              Halvah marzipan marshmallow apple pie shortbread croissant apple
-              pie macaroon.
+            <p className="mx-auto lg:text-center font-mono text-black/70 lg:w-2/3">
+              I&apos;ve been working on a few projects and learning new things too!
             </p>
           </FadeY>
           <FadeY
@@ -397,10 +398,10 @@ export default function Home() {
             className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
             delay={0.15}
           >
-            <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-white sm:text-9xl lg:px-12 xl:text-[200px]">
-              There&apos;s been projects.
+            <h2 className="relative z-20 mb-8 lg:text-center text-5xl font-black text-white sm:text-9xl lg:px-12 xl:text-[180px] leading-[1.1]">
+              We've got projects.
             </h2>
-            <p className="mx-auto text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
+            <p className="mx-auto lg:text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
               A deeper look into the projects and products I&apos;ve worked on.
               Coming soon.
             </p>
@@ -457,7 +458,7 @@ export default function Home() {
             className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
             delay={0.15}
           >
-            <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-white sm:text-9xl lg:px-12 xl:text-[200px]">
+            <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-white sm:text-9xl lg:px-12 xl:text-[180px] leading-[1.1]">
               Blog.
             </h2>
             <p className="mx-auto text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
@@ -487,8 +488,9 @@ export default function Home() {
             className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
             delay={0.15}
           >
-            <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-black sm:text-9xl lg:px-12 xl:text-[200px]">
-              Work.
+            <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-black sm:text-9xl lg:px-12 xl:text-[180px] leading-[1.1]">
+              Design.
+
             </h2>
             {/* <p className="mx-auto max-w-3xl text-center font-mono leading-relaxed text-black/70">
               Ah yes, the tools of the trade. 🧰

@@ -116,14 +116,14 @@ export default function Home() {
           strokeColor={"#000"}
           strokeWidth={0.1}
         />
+                {/* INTRO */}
+                <section className="relative hidden lg:flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
+                    <img
+                        src="/img/object/box-logos-rick-shadow.webp"
+                        alt="old box with software logos all over it"
+                        className="absolute -top-[160px] z-30 mx-auto w-[900px] px-8 transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
+                    />
 
-        {/* INTRO */}
-        <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
-          <img
-            src="/img/object/box-logos-rick-shadow.webp"
-            alt="old box with software logos all over it"
-            className="absolute -top-[160px] z-30 mx-auto w-[900px] px-8 transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:w-[1100px]"
-          />
 
           {/* <RoundScribbleSVG
             className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
@@ -170,23 +170,24 @@ export default function Home() {
           />
         </section>
 
-        {/* ABOUT ME */}
-        <section className="relative bg-red-600 py-12 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48">
-          <RoundScribbleSVG
-            className={"absolute left-8 top-8 z-0 hidden w-[400px] lg:block"}
-            strokeColor={"#000"}
-            strokeWidth={0.5}
-          />
-          <img
-            className="absolute -left-2 top-0 z-0 hidden w-[200px] rotate-90 lg:block"
-            src="/img/photo/mr-meeseeks.webp"
-            alt="mr meeseeks"
-          />
-          <img
-            className="absolute -left-24 top-0 z-0 hidden w-[400px] rotate-12 drop-shadow-lg transition-all duration-200 hover:rotate-0 lg:block"
-            src="/img/photo/self-bw-car.png"
-            alt="photo of ryan with beard and beanie"
-          />
+                {/* ABOUT ME */}
+                <section className="relative bg-red-600 py-12 selection:bg-black/10 lg:mx-12 lg:py-32 xl:py-48 overflow-clip lg:rounded-[72px]">
+                    <RoundScribbleSVG
+                        className={"absolute left-8 top-8 z-0 hidden w-[400px] lg:block"}
+                        strokeColor={"#000"}
+                        strokeWidth={0.5}
+                    />
+                    <img
+                        className="absolute -left-2 top-0 z-0 w-[200px] rotate-90 lg:block hidden"
+                        src="/img/photo/mr-meeseeks.webp"
+                        alt="mr meeseeks"
+                    />
+                    <img
+                        className="absolute -left-24 top-0 z-0 hidden w-[400px] rotate-12 drop-shadow-lg transition-all duration-200 hover:rotate-0 lg:block"
+                        src="/img/photo/self-bw-car.png"
+                        alt="photo of ryan with beard and beanie"
+                    />
+
 
           {/* <img src="/img/photo/summer-smith.webp" alt="" className="absolute left-0 right-0 mx-auto -top-4 z-0 w-48 hover:-top-48 hidden lg:block transition-all duration-300" /> */}
           <FadeY
@@ -326,42 +327,118 @@ export default function Home() {
                 strokeColor={"#dc2626"}
               />
             </CardIcon> */}
-            <CardIcon
-              target={"_blank"}
-              description={
-                "If you're interested in tech & design, check out my blog."
-              }
-              title={"Blog"}
-              className={"lg:h-72"}
-              cardUrl={"https://medium.com/@ryanhouk"}
-            >
-              <IconWriteSVG
-                className={
-                  "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
-                }
-                strokeColor={"#dc2626"}
-              />
-            </CardIcon>
-            <CardIcon
-              description={
-                "Gummi bears cotton candy powder apple pie caramels cake"
-              }
-              title={"Process"}
-              className={"lg:h-72"}
-              cardUrl={""}
-            >
-              <IconProcessSVG
-                className={
-                  "mb-6 w-14 transition-all duration-300 hover:scale-125 group-hover:-rotate-6"
-                }
-                strokeColor={"#dc2626"}
-              />
-              {/* <RoundScribbleSVG className={"w-52 opacity-0 -left-12 -bottom-12 group-hover:opacity-10 absolute transition-all duration-300"} strokeColor={"#000"} strokeWidth={2} /> */}
-            </CardIcon>
-          </FadeY>
-          {/* <div className="h-32 w-32 lg:w-64 lg:h-64 absolute rounded-full border-red-600 border-[.5px] -right-16 -bottom-16 lg:-bottom-32"></div> */}
-          {/* <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div> */}
-        </section>
+                        <CardIcon
+                            target={"_blank"}
+                            description={
+                                "If you're interested in tech & design, check out my blog."
+                            }
+                            title={"Blog"}
+                            className={"lg:h-72"}
+                            cardUrl={"https://medium.com/@ryanhouk"}
+                        >
+                            <IconWriteSVG
+                                className={
+                                    "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
+                                }
+                                strokeColor={"#dc2626"}
+                            />
+                        </CardIcon>
+                        <CardIcon
+                            description={
+                                "Gummi bears cotton candy powder apple pie caramels cake"
+                            }
+                            title={"Process"}
+                            className={"lg:h-72"}
+                            cardUrl={""}
+                        >
+                            <IconProcessSVG
+                                className={
+                                    "mb-6 w-14 transition-all duration-300 group-hover:-rotate-6 hover:scale-125"
+                                }
+                                strokeColor={"#dc2626"}
+                            />
+                            {/* <RoundScribbleSVG className={"w-52 opacity-0 -left-12 -bottom-12 group-hover:opacity-10 absolute transition-all duration-300"} strokeColor={"#000"} strokeWidth={2} /> */}
+                        </CardIcon>
+                    </FadeY>
+                    {/* <div className="h-32 w-32 lg:w-64 lg:h-64 absolute rounded-full border-red-600 border-[.5px] -right-16 -bottom-16 lg:-bottom-32"></div> */}
+                    {/* <div className="h-[.5px] bg-black w-full mt-12 lg:mt-32 xl:mt-48 hidden lg:flex"></div> */}
+                </section>
+
+                {/* PROJECTS */}
+                <section className="relative bg-brand-dark py-12 lg:mx-12 lg:py-32 xl:py-48 lg:rounded-[72px] overflow-clip">
+                    <CrossSVG
+                        className={
+                            "absolute left-0 right-0 -top-12 mx-auto hidden w-24 lg:-top-32 lg:block lg:w-64"
+                        }
+                        strokeColor={"#dc2626"}
+                        strokeWidth={0.5}
+                    />
+                    <RoundScribbleSVG
+                        className={"absolute -left-72 -top-16 hidden w-[370px] lg:block"}
+                        strokeColor={"#dc2626"}
+                        strokeWidth={0.5}
+                    />
+                    <RoundLinesOutSVG
+                        className={
+                            "absolute -right-40 -bottom-12 hidden w-[370px] lg:block"
+                        }
+                        strokeColor={"#dc2626"}
+                    />
+                    <img
+                        src="/img/sticker/sticker-gray-round.png"
+                        alt="sticker with design with care written on it"
+                        className="absolute -left-24 hidden w-48 rotate-12 transition-all hover:rotate-0 lg:-top-16 lg:flex lg:w-80"
+                    />
+                    <FadeY
+                        className="mb-16 px-8 selection:bg-white/10 lg:mb-32"
+                        delay={0.15}
+                    >
+                        <h2 className="relative z-20 mb-8 text-center text-5xl font-black text-white sm:text-9xl lg:px-12 xl:text-[200px]">
+                            There&apos;s been projects.
+                        </h2>
+                        <p className="mx-auto text-center font-mono leading-relaxed text-white/70 lg:w-2/3">
+                            A deeper look into the projects and products I&apos;ve worked on.
+                            Coming soon.
+                        </p>
+                    </FadeY>
+                    <FadeY
+                        className="relative mx-auto mt-16 h-96 max-w-screen-xl"
+                        delay={0.15}
+                    >
+                        <img
+                            src="/img/mockup/klove/kl-web-home.webp"
+                            alt=""
+                            className="absolute w-full -rotate-12 p-8 lg:p-24"
+                        />
+                        <img
+                            src="/img/mockup/crc/crc-paper-01.webp"
+                            alt=""
+                            className="absolute w-full rotate-6 p-8 lg:p-24"
+                        />
+                        <img
+                            src="/img/mockup/klove/tvos-paper-min.webp"
+                            alt=""
+                            className="absolute w-full -rotate-6 p-8 lg:p-24"
+                        />
+                    </FadeY>
+                    <div className="bg-gradient-to-t from-brand-dark to-brand-dark/0 absolute z-10 h-64 bottom-0 w-full"></div>
+                </section>
+
+                {/* ETHICAL */}
+                <section className="pt-12 lg:py-32 h-full overflow-clip bg-brand-light relative z-10">
+                    <FadeY
+                        className="mx-auto max-w-7xl px-8 selection:bg-black/10"
+                        delay={0.25}
+                    >
+                    </FadeY>
+                    <div className="flex h-full flex-col md:flex-row">
+                        <FadeY className="flex-1 flex items-center" delay={0.25}>
+                            <p className="font-mono text-center md:text-left text-black md:w-4/6 mx-auto px-8 leading-loose md:border-l-4 border-red-600 mb-8">Product design is for everyone. My favorite design is inclusive and accessible and it aligns business goals and customer goals.</p>
+                        </FadeY>
+                        <FadeY className="flex-1 justify-center md:justify-end flex">
+                            <img src="/img/paper/black-paper-design-sm-min.png" alt="design for everyone torn paper" className=" w-[800px] mr-6 md:-mr-8" />
+                        </FadeY>
+
 
         {/* PROJECTS */}
         <section className="relative bg-brand-dark py-12 lg:mx-12 lg:py-32 xl:py-48">
