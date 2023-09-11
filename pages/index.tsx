@@ -324,7 +324,7 @@ export default function Home() {
             <CardIcon
               target={"_blank"}
               description={
-                `If you're interested in tech & design, check out my blog.`
+                `Interested in tech & design? Check out my blog!`
               }
               title={"Blog"}
               className={"lg:h-72"}
