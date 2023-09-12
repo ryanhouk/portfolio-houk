@@ -5,7 +5,6 @@ import {
   ArrowDownSVG,
   CrossSVG,
   DribbbleSVG,
-  IconCodeSVG,
   IconDesignTechSVG,
   IconProcessSVG,
   IconWriteSVG,
@@ -100,7 +99,7 @@ export default function Home() {
             </div>
           </Link>
         </div>
-
+        {/* 
         <LineVerticalSVG
           className={
             "absolute left-36 top-0 z-10 hidden h-full opacity-25 xl:flex"
@@ -115,7 +114,7 @@ export default function Home() {
           }
           strokeColor={"#000"}
           strokeWidth={0.1}
-        />
+        /> */}
 
         {/* INTRO */}
         <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
@@ -130,7 +129,7 @@ export default function Home() {
             strokeColor={"#dc2626"}
             strokeWidth={0.5}
           /> */}
-          <FadeY className="max-w-7xl pt-24 lg:pt-0" once={true}>
+          <FadeY className="max-w-7xl pt-32 lg:pt-0" once={true}>
             <h1 className="px-12 pb-4 lg:text-center text-5xl font-black sm:text-9xl lg:pt-64 lg:pb-12 xl:text-[180px] leading-[1.1]">
               It&apos;s been a minute
               <span className="text-border cursor-cell transition-all duration-200">
@@ -145,7 +144,7 @@ export default function Home() {
               </span>
               😊
             </p>
-            <div className="flex justify-center">
+            <div className="flex px-10 lg:justify-center">
               <ArrowDownSVG
                 className={"mt-16 w-8 animate-bounce"}
                 strokeColor={"#000"}
@@ -213,26 +212,14 @@ export default function Home() {
             <div className="m-4 rounded-sm bg-white p-4 py-12 shadow-md lg:p-16 lg:py-16">
               <h2 className="mb-8 font-mono">A brief history.</h2>
               <p className="mb-8 font-mono leading-loose">
-                I could say I&apos;m a designer who loves to create meaningful
-                experiences etcetera, but we&apos;ve all read that so many times
-                it&apos;s become a cliche. I&apos;ve been doing this for a long
-                time and have had both successes and failures. Empathy? Yep!
-                Usability testing? Yep! Aligning business and customer goals?
-                Yessir.
+                I&apos;ve been doing this for a long time and have had both successes and failures. Empathy? Yep! Usability testing? Yep! Aligning business and customer goals? You better know it!
               </p>
-              <p className="mb-8 font-mono leading-loose">
-                I&apos;ve learned that successful and powerful products have
-                teams behind them with absent egos and creative contributions
-                coming from everyone.
+              <p className="font-mono leading-loose mb-8">
+                It all started with a training tutorial for a Pepsi bottling plant. I designed the UI Photoshop and coded the software with Lingo using Macromedia Director. I told you I&apos;ve been doing this for a long time. I ended up focusing on design over coding and have been a product designer for several years until I rediscovered my love for coding and have been doing both now for while.
               </p>
-              <p className="font-mono leading-loose">
-                Powder lollipop gummi bears lollipop apple pie. Dragée biscuit
-                halvah carrot cake croissant sweet. Chocolate cake croissant
-                pudding donut brownie sesame snaps bear claw. Pie sweet roll
-                gummies soufflé croissant. Powder lollipop gummi bears lollipop
-                apple pie. Dragée biscuit halvah carrot cake croissant sweet.
-                Chocolate cake croissant pudding donut brownie sesame snaps bear
-                claw.
+              <p className="font-mono leading-loose mb-8">
+                I&apos;ve worked with startups, agencies, and companies. I&apos;ve learned that successful and powerful products have
+                teams behind them with absent egos and creative contributions coming from everyone.
               </p>
               <p className="font-mono leading-loose">
                 Kind regards,
@@ -243,11 +230,6 @@ export default function Home() {
                 <br />
                 P.S. Delete my photo.
               </p>
-              {/* <img
-                src="/img/photo/evil-rick.png"
-                alt="evil rick sanchez"
-                className="absolute left-0 right-0 top-32 z-0 mx-auto hidden w-96 lg:flex"
-              /> */}
             </div>
 
             <RectangeDotsSVG
@@ -262,12 +244,19 @@ export default function Home() {
             strokeColor={"#000"}
             strokeWidth={0.5}
           />
-          {/* ADD THE OPEN DISC IMG ON HOVER WITH NEW CHARACTER INSIDE MISEEKS */}
-          <img
-            src="/img/object/cd-ns.webp"
-            alt="cd case with macromedia and pepsi logos"
-            className="flex justify-center p-8 drop-shadow-2xl transition-all duration-200 hover:-bottom-48 lg:absolute lg:-right-10 lg:-bottom-32 lg:w-[500px] lg:-rotate-12 lg:p-0"
-          />
+          <div className="group">
+            <img
+              src="/img/photo/evil-rick.png"
+              alt="evil rick sanchez"
+              className="hidden lg:flex justify-center p-8 drop-shadow-2xl transition-all duration-200 lg:absolute lg:right-32 group-hover:-bottom-6 -bottom-24 w-[300px] -rotate-12 lg:p-0"
+            />
+            <img
+              src="/img/object/cd-ns.webp"
+              alt="cd case with macromedia and pepsi logos"
+              className="flex justify-center p-8 drop-shadow-2xl transition-all duration-200 group-hover:-bottom-48 lg:absolute lg:-right-10 lg:-bottom-32 lg:w-[500px] lg:-rotate-12 lg:p-0"
+            />
+          </div>
+
         </section>
 
         {/* BEEN BUSY */}
