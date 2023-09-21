@@ -40,7 +40,6 @@ export default function Home() {
               className={
                 "mx-auto w-[32px] transition-all duration-200 group-hover:-translate-y-1"
               }
-              fillColor={"#000"}
             />
             <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               Medium
@@ -51,7 +50,6 @@ export default function Home() {
               className={
                 "mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600"
               }
-              fillColor={"#000"}
             />
             <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               LinkedIn
@@ -62,7 +60,6 @@ export default function Home() {
               className={
                 "mx-auto w-[26px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600"
               }
-              fillColor={"#000"}
             />
             <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               Twitter
@@ -77,7 +74,6 @@ export default function Home() {
               className={
                 "mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600"
               }
-              fillColor={"#000"}
             />
             <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               Dribbble
@@ -92,7 +88,6 @@ export default function Home() {
               className={
                 "mx-auto w-[16px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600"
               }
-              fillColor={"#000"}
             />
             <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               Polywork
