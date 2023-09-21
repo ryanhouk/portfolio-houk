@@ -19,6 +19,8 @@ export { default as IconWriteSVG } from "./IconWrite"
 export { default as ArrowRightSVG } from "./ArrowRight"
 export { default as IconProcessSVG } from "./IconProcess"
 export { default as PolyworkSVG } from "./Polywork"
+export { default as ThreadsSVG } from "./Threads"
+export { default as TwitterXSVG } from "./TwitterX"
 
 
 
