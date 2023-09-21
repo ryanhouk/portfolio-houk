@@ -99,38 +99,11 @@ export default function Home() {
             </div>
           </Link>
         </div>
-        {/* 
-        <LineVerticalSVG
-          className={
-            "absolute left-36 top-0 z-10 hidden h-full opacity-25 xl:flex"
-          }
-          strokeColor={"#000"}
-          strokeWidth={0.1}
-        />
-
-        <LineVerticalSVG
-          className={
-            "absolute right-36 top-0 z-10 hidden h-full opacity-25 xl:flex"
-          }
-          strokeColor={"#000"}
-          strokeWidth={0.1}
-        /> */}
 
         {/* INTRO */}
-        <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
-          <img
-            src="/img/object/box-logos-rick-shadow.webp"
-            alt="old box with software logos all over it"
-            className="absolute -top-[200px] z-30 mx-auto hidden transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:flex lg:w-[1100px]"
-          />
-
-          {/* <RoundScribbleSVG
-            className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
-            strokeColor={"#dc2626"}
-            strokeWidth={0.5}
-          /> */}
-          <FadeY className="max-w-7xl pt-32 lg:pt-0" once={true}>
-            <h1 className="px-12 pb-4 text-5xl font-black leading-[1.1] sm:text-9xl lg:pt-64 lg:pb-12 lg:text-center xl:text-[180px]">
+        <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pb-48">
+          <FadeY className="max-w-7xl" once={true}>
+            <h1 className="px-12 pb-4 text-5xl font-black leading-[1.1] sm:text-9xl lg:pt-48 lg:pb-12 lg:text-center xl:text-[180px]">
               It&apos;s been a minute
               <span className="text-border cursor-cell transition-all duration-200">
                 .
