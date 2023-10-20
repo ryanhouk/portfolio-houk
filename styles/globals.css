@@ -8,3 +8,9 @@
     src: local('Clash Display'), url('../public/font/ClashDisplay.woff') format('woff'),
         url('../public/font/ClashDisplay.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Object';
+    src: local('Object'), url('../public/font/object/PPObjectSans-Heavy.woff') format('woff'),
+        url('../public/font/object/PPObjectSans-Heavy.woff') format('woff');
+}

@@ -15,8 +15,7 @@ import {
   RectangeDotsSVG,
   RoundLinesOutSVG,
   RoundScribbleSVG,
-  ThreadsSVG,
-  TwitterXSVG,
+  TwitterSVG,
 } from "../components/svg";
 
 export default function Home() {
@@ -42,30 +41,30 @@ export default function Home() {
                 "mx-auto w-[32px] transition-all duration-200 group-hover:-translate-y-1"
               }
             />
-            <div className="mx-auto mt-2 text-center font-mono text-[.75rem]">
+            <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               Medium
             </div>
           </Link>
-          <Link className="group" target={"_blank"} href={"https://www.linkedin.com/in/ryanhouk/"}>
+          <Link className="group" target={"_blank"} href={""}>
             <LinkedInSVG
               className={
-                "mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-sky-600"
+                "mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600"
               }
             />
-            <div className="mx-auto mt-2 text-center font-mono text-[.75rem]">
+            <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               LinkedIn
             </div>
           </Link>
-          {/* <Link className="group" target={"_blank"} href={""}>
-            <TwitterXSVG
+          <Link className="group" target={"_blank"} href={""}>
+            <TwitterSVG
               className={
-                "mx-auto w-[26px] transition-all duration-200 group-hover:-translate-y-1"
+                "mx-auto w-[26px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600"
               }
             />
-            <div className="mx-auto mt-2 text-center font-mono text-[.75rem]">
-              Twitter "X"
+            <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
+              Twitter
             </div>
-          </Link> */}
+          </Link>
           <Link
             className="group"
             target={"_blank"}
@@ -73,10 +72,10 @@ export default function Home() {
           >
             <DribbbleSVG
               className={
-                "mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-pink-600"
+                "mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600"
               }
             />
-            <div className="mx-auto mt-2 text-center font-mono text-[.75rem]">
+            <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               Dribbble
             </div>
           </Link>
@@ -87,33 +86,46 @@ export default function Home() {
           >
             <PolyworkSVG
               className={
-                "mx-auto w-[16px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-indigo-600"
+                "mx-auto w-[16px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600"
               }
             />
-            <div className="mx-auto mt-2 text-center font-mono text-[.75rem]">
+            <div className="mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600">
               Polywork
             </div>
           </Link>
-          <Link
-            className="group"
-            target={"_blank"}
-            href={"https://www.threads.net/@ryanhouk"}
-          >
-            <ThreadsSVG
-              className={
-                "mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1"
-              }
-            />
-            <div className="mx-auto mt-2 text-center font-mono text-[.75rem]">
-              Threads
-            </div>
-          </Link>
         </div>
+        {/* 
+        <LineVerticalSVG
+          className={
+            "absolute left-36 top-0 z-10 hidden h-full opacity-25 xl:flex"
+          }
+          strokeColor={"#000"}
+          strokeWidth={0.1}
+        />
+
+        <LineVerticalSVG
+          className={
+            "absolute right-36 top-0 z-10 hidden h-full opacity-25 xl:flex"
+          }
+          strokeColor={"#000"}
+          strokeWidth={0.1}
+        /> */}
 
         {/* INTRO */}
-        <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pb-48">
-          <FadeY className="max-w-7xl lg:pt-48" once={true}>
-            <h1 className="px-12 pb-4 text-5xl font-black leading-[1.1] sm:text-9xl lg:pb-12 lg:text-center xl:text-[180px]">
+        <section className="relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48">
+          <img
+            src="/img/object/box-logos-rick-shadow.webp"
+            alt="old box with software logos all over it"
+            className="absolute -top-[200px] z-30 mx-auto hidden transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:flex lg:w-[1100px]"
+          />
+
+          {/* <RoundScribbleSVG
+            className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
+            strokeColor={"#dc2626"}
+            strokeWidth={0.5}
+          /> */}
+          <FadeY className="max-w-7xl pt-32 lg:pt-0" once={true}>
+            <h1 className="px-12 pb-4 text-5xl font-black leading-[1.1] sm:text-9xl lg:pt-64 lg:pb-12 lg:text-center xl:text-[180px]">
               It&apos;s been a minute
               <span className="text-border cursor-cell transition-all duration-200">
                 .
@@ -309,7 +321,7 @@ export default function Home() {
             </CardIcon> */}
             <CardIcon
               target={"_blank"}
-              description={`Interested in tech & design?`}
+              description={`Interested in tech & design? Check out my blog!`}
               title={"Blog"}
               className={"lg:h-72"}
               cardUrl={"https://medium.com/@ryanhouk"}
@@ -323,7 +335,7 @@ export default function Home() {
             </CardIcon>
             <CardIcon
               description={
-                "A good process means a good product."
+                "Gummi bears cotton candy powder apple pie caramels cake"
               }
               title={"Process"}
               className={"lg:h-72"}
@@ -410,7 +422,7 @@ export default function Home() {
           ></FadeY>
           <div className="flex h-full flex-col md:flex-row">
             <FadeY className="flex flex-1 items-center" delay={0.25}>
-              <p className="mx-auto mb-8 border-red-600 px-8 font-mono leading-relaxed text-black md:w-4/6 md:border-l-4 lg:text-left lg:leading-loose">
+              <p className="mx-auto mb-8 border-red-600 px-8 font-mono leading-relaxed text-black md:w-4/6 md:border-l-4 md:text-left lg:text-center lg:leading-loose">
                 Product design is for everyone. My favorite design is inclusive
                 and accessible and it aligns business goals and customer goals.
               </p>

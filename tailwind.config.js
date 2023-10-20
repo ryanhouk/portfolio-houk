@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         mono: ["Roboto Mono", "monospace"],
         clash: ["Clash Display", "Helvetica", "Arial", "sans-serif"],
+        object: ["Object", "Helvetica", "Arial", "sans-serif"],
       },
       dropShadow: {
         '3xl': ['0px 28px 24px rgba(0, 0, 0, 0.5)'],
@@ -20,8 +21,9 @@ module.exports = {
         "brand-primary": "#00ebc7",
         "brand-secondary": "#ff5470",
         "brand-tertiary": "#fde24f",
+        "brand-pale": "#f4eddd",
       },
     },
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwind"],
 };
