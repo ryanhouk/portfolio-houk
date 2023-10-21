@@ -3,7 +3,7 @@ import React, { PropsWithChildren } from "react";
 
 interface Props extends PropsWithChildren<any> {
   className: string;
-  title: string;
+//   title: string;
   description: string;
   delay?: number;
   cardUrl: string;
