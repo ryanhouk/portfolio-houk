@@ -4,13 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
 
 @font-face {
-    font-family: 'Clash Display';
-    src: local('Clash Display'), url('../public/font/ClashDisplay.woff') format('woff'),
-        url('../public/font/ClashDisplay.woff') format('woff');
+  font-family: 'Clash Display';
+  src: local('Clash Display'),
+    url('../public/font/ClashDisplay.woff') format('woff'),
+    url('../public/font/ClashDisplay.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Object';
-    src: local('Object'), url('../public/font/object/PPObjectSans-Heavy.woff') format('woff'),
-        url('../public/font/object/PPObjectSans-Heavy.woff') format('woff');
+  font-family: 'Object';
+  src: local('Object'),
+    url('../public/font/object/PPObjectSans-Heavy.woff') format('woff'),
+    url('../public/font/object/PPObjectSans-Heavy.woff') format('woff');
+}
+
+body {
+  scroll-behavior: smooth;
 }

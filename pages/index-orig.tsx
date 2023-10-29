@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { FadeY, SeekCursorHover } from '../components/animations';
-import { CardGhostImg, CardIcon } from '../components/cards';
+import { FadeY } from '../components/animations';
+import { CardIcon } from '../components/cards';
 import {
   ArrowDownSVG,
   CrossSVG,
@@ -15,7 +15,7 @@ import {
   RectangeDotsSVG,
   RoundLinesOutSVG,
   RoundScribbleSVG,
-  ThreadsSVG,
+  TwitterSVG,
 } from '../components/svg';
 
 export default function Home() {
@@ -41,22 +41,28 @@ export default function Home() {
                 'mx-auto w-[32px] transition-all duration-200 group-hover:-translate-y-1'
               }
             />
-            <div className='mx-auto mt-2 text-center font-mono text-[.75rem]'>
+            <div className='mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600'>
               Medium
             </div>
           </Link>
-          <Link
-            className='group'
-            target={'_blank'}
-            href={'https://www.linkedin.com/in/ryanhouk/'}
-          >
+          <Link className='group' target={'_blank'} href={''}>
             <LinkedInSVG
               className={
-                'mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-sky-600'
+                'mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600'
               }
             />
-            <div className='mx-auto mt-2 text-center font-mono text-[.75rem]'>
+            <div className='mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600'>
               LinkedIn
+            </div>
+          </Link>
+          <Link className='group' target={'_blank'} href={''}>
+            <TwitterSVG
+              className={
+                'mx-auto w-[26px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600'
+              }
+            />
+            <div className='mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600'>
+              Twitter
             </div>
           </Link>
           <Link
@@ -66,10 +72,10 @@ export default function Home() {
           >
             <DribbbleSVG
               className={
-                'mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-pink-600'
+                'mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600'
               }
             />
-            <div className='mx-auto mt-2 text-center font-mono text-[.75rem]'>
+            <div className='mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600'>
               Dribbble
             </div>
           </Link>
@@ -80,34 +86,47 @@ export default function Home() {
           >
             <PolyworkSVG
               className={
-                'mx-auto w-[16px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-indigo-600'
+                'mx-auto w-[16px] transition-all duration-200 group-hover:-translate-y-1 group-hover:text-red-600'
               }
             />
-            <div className='mx-auto mt-2 text-center font-mono text-[.75rem]'>
+            <div className='mx-auto mt-2 text-center font-mono text-[.75rem] transition-all duration-200 group-hover:text-red-600'>
               Polywork
             </div>
           </Link>
-          <Link
-            className='group'
-            target={'_blank'}
-            href={'https://www.threads.net/@ryanhouk'}
-          >
-            <ThreadsSVG
-              className={
-                'mx-auto w-[24px] transition-all duration-200 group-hover:-translate-y-1'
-              }
-            />
-            <div className='mx-auto mt-2 text-center font-mono text-[.75rem]'>
-              Threads
-            </div>
-          </Link>
         </div>
+        {/* 
+        <LineVerticalSVG
+          className={
+            "absolute left-36 top-0 z-10 hidden h-full opacity-25 xl:flex"
+          }
+          strokeColor={"#000"}
+          strokeWidth={0.1}
+        />
+
+        <LineVerticalSVG
+          className={
+            "absolute right-36 top-0 z-10 hidden h-full opacity-25 xl:flex"
+          }
+          strokeColor={"#000"}
+          strokeWidth={0.1}
+        /> */}
 
         {/* INTRO */}
-        <section className='relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pb-48'>
-          <FadeY className='max-w-7xl pt-24 lg:pt-48' once={true}>
-            <h1 className='px-12 pb-4 text-5xl font-black leading-[1.1] sm:text-9xl lg:pb-12 lg:text-center xl:text-[180px]'>
-              It&apos;s been a journey
+        <section className='relative flex items-center justify-center bg-brand-light pb-16 selection:bg-black/10 lg:pt-24 lg:pb-48'>
+          <img
+            src='/img/object/box-logos-rick-shadow.webp'
+            alt='old box with software logos all over it'
+            className='absolute -top-[200px] z-30 mx-auto hidden transition-all duration-300 hover:-top-[400px] hover:rotate-45 sm:-top-[600px] lg:-top-[700px] lg:flex lg:w-[1100px]'
+          />
+
+          {/* <RoundScribbleSVG
+            className={"w-[400px] absolute left-0 top-0 right-0 mx-auto hidden lg:block z-0"}
+            strokeColor={"#dc2626"}
+            strokeWidth={0.5}
+          /> */}
+          <FadeY className='max-w-7xl pt-32 lg:pt-0' once={true}>
+            <h1 className='px-12 pb-4 text-5xl font-black leading-[1.1] sm:text-9xl lg:pt-64 lg:pb-12 lg:text-center xl:text-[180px]'>
+              It&apos;s been a minute
               <span className='text-border cursor-cell transition-all duration-200'>
                 .
               </span>
@@ -169,13 +188,13 @@ export default function Home() {
             delay={0.2}
           >
             <h2 className='text-5xl font-black leading-[1.1] text-white drop-shadow-sm sm:text-9xl lg:text-center xl:text-[180px]'>
-              A brief history
+              It&apos;s been a journey
               <span className='text-border cursor-cell transition-all duration-200'>
                 .
               </span>
             </h2>
           </FadeY>
-          <div className='mt-12 h-[1px] bg-black'></div>
+          <div className='mt-12 h-[.5px] bg-black'></div>
           <FadeY
             className='relative mx-auto mt-16 max-w-5xl lg:mt-24'
             delay={0.2}
@@ -186,29 +205,32 @@ export default function Home() {
               alt='piece of duct tape stuck to a letter'
             />
             <div className='m-4 rounded-sm bg-white p-4 py-12 shadow-md lg:p-16 lg:py-16'>
-              <h2 className='mb-8 font-mono'>Hey, friends!</h2>
+              <h2 className='mb-8 font-mono'>A brief history.</h2>
               <p className='mb-8 font-mono leading-loose'>
                 I&apos;ve been doing this for a long time and have had both
                 successes and failures. Empathy? Yep! Usability testing? Yep!
                 Aligning business and customer goals? You better know it!
               </p>
               <p className='mb-8 font-mono leading-loose'>
-                It all started with a digital training tutorial for a Pepsi
-                bottling plant. I designed the UI in Photoshop (Figma
-                didn&apos;t exist yet) and coded the software with Lingo using
-                Macromedia Director. I told you I&apos;ve been doing this for a
-                long time. I ended up focusing on design over coding and have
-                been a product designer for several years until I rediscovered
-                my love for coding and have been doing both now for while.
+                It all started with a training tutorial for a Pepsi bottling
+                plant. I designed the UI Photoshop and coded the software with
+                Lingo using Macromedia Director. I told you I&apos;ve been doing
+                this for a long time. I ended up focusing on design over coding
+                and have been a product designer for several years until I
+                rediscovered my love for coding and have been doing both now for
+                while.
               </p>
               <p className='mb-8 font-mono leading-loose'>
-                I&apos;ve worked with startups, co-founded a startup and raised
-                angel investments, worked with agencies, and companies.
+                I&apos;ve worked with startups, agencies, and companies.
                 I&apos;ve learned that successful and powerful products have
                 teams behind them with absent egos and creative contributions
                 coming from everyone.
               </p>
-              <p className='font-mono leading-loose'>~ Ryan</p>
+              <p className='font-mono leading-loose'>
+                Kind regards,
+                <br />
+                <br />~ Ryan
+              </p>
               <p className='hidden font-mono leading-loose lg:block'>
                 <br />
                 P.S. Delete my photo.
@@ -243,13 +265,11 @@ export default function Home() {
 
         {/* BEEN BUSY */}
         <section className='relative py-12 lg:mx-12 lg:py-32 xl:py-48'>
-          <SeekCursorHover className='absolute -left-28 -top-48'>
-            <img
-              src='/img/paper/torn-bumber-bk.png'
-              alt=''
-              className='h-52 rotate-12 lg:h-80'
-            />
-          </SeekCursorHover>
+          <img
+            src='/img/paper/torn-bumber-bk.png'
+            alt=''
+            className='absolute -left-28 -top-48 h-52 rotate-12 lg:h-80'
+          />
           <FadeY
             className='mx-auto mb-16 max-w-7xl px-8 selection:bg-black/10'
             delay={0.25}
@@ -300,7 +320,8 @@ export default function Home() {
               />
             </CardIcon> */}
             <CardIcon
-              description={`Interested in tech & design?`}
+              target={'_blank'}
+              description={`Interested in tech & design? Check out my blog!`}
               title={'Blog'}
               className={'lg:h-72'}
               cardUrl={'#Blog'}
@@ -313,7 +334,9 @@ export default function Home() {
               />
             </CardIcon>
             <CardIcon
-              description={'A good process means a good product.'}
+              description={
+                'Gummi bears cotton candy powder apple pie caramels cake'
+              }
               title={'Process'}
               className={'lg:h-72'}
               cardUrl={''}
@@ -357,7 +380,7 @@ export default function Home() {
             className='absolute -left-32 hidden w-48 rotate-12 transition-all hover:rotate-0 lg:-top-16 lg:flex lg:w-96'
           />
           <FadeY
-            className='mx-auto mb-16 max-w-7xl px-8 selection:bg-white/10 lg:mb-32'
+            className='mb-16 px-8 selection:bg-white/10 lg:mb-32'
             delay={0.15}
           >
             <h2 className='relative z-20 mb-8 text-5xl font-black leading-[1.1] text-white sm:text-9xl lg:px-12 lg:text-center xl:text-[180px]'>
@@ -365,6 +388,7 @@ export default function Home() {
             </h2>
             <p className='mx-auto font-mono leading-relaxed text-white/70 lg:w-2/3 lg:text-center'>
               A deeper look into the projects and products I&apos;ve worked on.
+              Coming soon.
             </p>
           </FadeY>
           <FadeY
@@ -387,7 +411,6 @@ export default function Home() {
               className='absolute w-full -rotate-6 p-8 lg:p-24'
             />
           </FadeY>
-
           <div className='absolute bottom-0 z-10 h-64 w-full bg-gradient-to-t from-brand-dark to-brand-dark/0'></div>
         </section>
 
@@ -399,28 +422,25 @@ export default function Home() {
           ></FadeY>
           <div className='flex h-full flex-col md:flex-row'>
             <FadeY className='flex flex-1 items-center' delay={0.25}>
-              <p className='mx-auto mb-8 border-red-600 px-8 font-mono leading-relaxed text-black md:w-4/6 md:border-l-4 lg:text-left lg:leading-loose'>
+              <p className='mx-auto mb-8 border-red-600 px-8 font-mono leading-relaxed text-black md:w-4/6 md:border-l-4 md:text-left lg:text-center lg:leading-loose'>
                 Product design is for everyone. My favorite design is inclusive
                 and accessible and it aligns business goals and customer goals.
               </p>
             </FadeY>
-            <SeekCursorHover className='flex flex-1 justify-center md:justify-end'>
+            <FadeY className='flex flex-1 justify-center md:justify-end'>
               <img
                 src='/img/paper/black-paper-design-sm-min.png'
                 alt='design for everyone torn paper'
                 className=' mr-6 w-[800px] md:-mr-8'
               />
-            </SeekCursorHover>
+            </FadeY>
           </div>
         </section>
 
         {/* BLOG */}
-        <section
-          id='Blog'
-          className='relative scroll-mt-14 bg-brand-dark py-12 lg:mx-12 lg:py-32 xl:py-48'
-        >
+        <section className='relative bg-brand-dark py-12 lg:mx-12 lg:py-32 xl:py-48'>
           <FadeY
-            className='mx-auto mb-16 max-w-7xl px-8 selection:bg-white/10 lg:mb-32'
+            className='mb-16 px-8 selection:bg-white/10 lg:mb-32'
             delay={0.15}
           >
             <h2 className='relative z-20 mb-8 text-5xl font-black leading-[1.1] text-white sm:text-9xl lg:px-12 lg:text-center xl:text-[180px]'>
@@ -440,14 +460,10 @@ export default function Home() {
           </FadeY>
 
           <FadeY
-            className='relative mx-auto mt-16 grid h-96 grid-cols-3 gap-6 px-8 lg:px-12'
+            className='relative mx-auto mt-16 h-96 max-w-screen-xl'
             delay={0.15}
           >
-            <CardGhostImg
-              description={'Blog description'}
-              cardUrl={''}
-              title={'Blog name'}
-            />
+            ADD BLOGS
           </FadeY>
         </section>
 
