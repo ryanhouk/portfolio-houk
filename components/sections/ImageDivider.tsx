@@ -41,7 +41,7 @@ const ImageLoop: React.FC = () => {
           transition={{ duration: 1.5 }}
           className="absolute inset-0 w-full h-full"
         >
-          <Image src={image.src} alt={image.alt} layout="fill" className='object-cover object-top' />
+          <Image src={image.src} alt={image.alt} height={1588} width={3000} className='object-cover object-top' />
         </motion.div>
       ))}
     </div>
