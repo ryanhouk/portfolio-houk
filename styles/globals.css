@@ -20,3 +20,10 @@
 body {
   scroll-behavior: smooth;
 }
+
+.bg-dots {
+  background-color: #000000;
+  opacity: 1;
+  background-image: radial-gradient(#191919 0.9px, #000000 0.9px);
+  background-size: 18px 18px;
+}
