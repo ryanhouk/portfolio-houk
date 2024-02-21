@@ -7,7 +7,7 @@ type Props = {};
 const Hero = (Props: Props) => {
   return (
     <>
-      <section className='relative overflow-clip py-48 lg:py-96'>
+      <section className='relative overflow-clip py-48 lg:py-72'>
         {/* <div className="absolute top-0 h-full w-full bg-[url('/img/texture/bg-noise.png')] bg-repeat opacity-40"></div> */}
         <BackgroundGlow />
         <div className='absolute top-0 z-10 h-32 w-full bg-gradient-to-b from-black to-black/0 lg:h-96'></div>
