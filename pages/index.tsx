@@ -18,8 +18,8 @@ const index = (props: Props) => {
         {/* INTRO HERO */}
         <Hero />
 
-        {/* IMGS */}
-        <section className='relative px-8'>
+        {/* PACKAGE */}
+        <section className='relative '>
           <div className='absolute bottom-0 z-10 h-96 w-full bg-gradient-to-t from-black via-black to-black/0'></div>
           <Image
             src='/img/photo/package.webp'
@@ -29,6 +29,8 @@ const index = (props: Props) => {
             className='mx-auto max-w-2xl opacity-50 hover:scale-90 transition-all hover:cursor-cell duration-300'
           />
         </section>
+
+
 
         {/* BENTO GRID */}
         <section className='py-12 lg:pb-32'>
