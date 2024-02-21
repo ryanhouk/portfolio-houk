@@ -1,5 +1,5 @@
-import React, { PropsWithChildren } from "react";
-import { motion } from "framer-motion";
+import React, { PropsWithChildren } from 'react';
+import { motion } from 'framer-motion';
 
 interface Props extends PropsWithChildren<any> {
   className?: string;
@@ -17,8 +17,8 @@ const FadeY = ({ className, delay, once = false, children }: Props) => {
         y: 50,
       }}
       transition={{
-        duration: 0.5,
-        type: "spring",
+        duration: 1,
+        type: 'spring',
         delay: delay,
       }}
       whileInView={{
