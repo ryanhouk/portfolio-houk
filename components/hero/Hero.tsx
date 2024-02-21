@@ -11,9 +11,10 @@ const Hero = (Props: Props) => {
         {/* <div className="absolute top-0 h-full w-full bg-[url('/img/texture/bg-noise.png')] bg-repeat opacity-40"></div> */}
         <BackgroundGlow />
         <div className='absolute top-0 z-10 h-32 w-full bg-gradient-to-b from-black to-black/0 lg:h-96'></div>
-        <div className='absolute bottom-0 z-10 h-32 w-full bg-gradient-to-t from-black to-black/0 lg:h-96'></div>
+        {/* <div className='absolute bottom-0 z-10 h-32 w-full bg-gradient-to-t from-black to-black/0 lg:h-96'></div> */}
+        
         {/* <FadeY className='relative z-20 mb-6 flex justify-center gap-2'>
-          <div className='rounded-[4px] bg-white px-3 py-1 font-mono text-xs font-bold text-black transition-all duration-200 hover:cursor-cell hover:bg-red-500 hover:text-white'>
+          <div className='rounded-[4px] bg-white px-3 py-1 font-mono text-xs font-bold text-black transition-all duration-200 hover:cursor-cell hover:bg-black hover:text-white'>
             UX Design
           </div>
           <div className='rounded-[4px] bg-white px-3 py-1 font-mono text-xs font-bold text-black'>
@@ -23,17 +24,19 @@ const Hero = (Props: Props) => {
             Development
           </div>
         </FadeY> */}
-        <FadeY className='relative z-20 mb-6 flex justify-center gap-2'>
-          <div className='rounded-[4px] bg-gradient-to-tr from-brand-primary to-brand-tertiary bg-clip-text px-3 py-1 font-mono text-sm font-bold text-transparent text-black transition-all duration-200 hover:cursor-cell'>
+        
+        {/* <FadeY className='relative z-20 mb-6 flex justify-center gap-2'>
+          <div className='bg-gradient-to-tr from-brand-primary to-brand-tertiary bg-clip-text px-3 py-1 font-mono text-sm font-bold text-transparent text-black transition-all duration-200 hover:cursor-cell'>
             UX Design
           </div>
-          <div className='rounded-[4px] bg-white px-3 py-1 font-mono text-xs font-bold text-black'>
+          <div className='bg-gradient-to-tr from-brand-primary to-brand-tertiary bg-clip-text px-3 py-1 font-mono text-sm font-bold text-transparent text-black transition-all duration-200 hover:cursor-cell'>
             Accessibility
           </div>
-          <div className='rounded-[4px] bg-white px-3 py-1 font-mono text-xs font-bold text-black'>
+          <div className='bg-gradient-to-tr from-brand-primary to-brand-tertiary bg-clip-text px-3 py-1 font-mono text-sm font-bold text-transparent text-black transition-all duration-200 hover:cursor-cell'>
             Development
           </div>
-        </FadeY>
+        </FadeY> */}
+
         <FadeY
           delay={0.25}
           className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8'
