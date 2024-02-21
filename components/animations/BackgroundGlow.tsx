@@ -23,7 +23,7 @@ const BackgroundGlow = ({ className }: Props) => {
   return (
     // Updated to ensure it's centered and covers the intended area
     <div
-      className={`absolute inset-0 z-0 mb-20 mr-16 flex items-center justify-center opacity-30  ${className}`}
+      className={`absolute left-0 right-0 top-0 mx-auto w-96 ${className}`}
     >
       <div className='relative h-96 w-96'>
         <motion.div

@@ -6,9 +6,9 @@ function IconHangLoose({
   gradientId = 'icon-gradient', // Unique ID for the gradient
   stopColors = {
     // Default colors for the gradient stops
-    stop1: '#ff0000',
-    stop2: '#00ff00',
-    stop3: '#0000ff',
+    stop1: '#fff',
+    stop2: '#fff',
+    stop3: '#fff',
   },
   viewBox = '0 0 64 64',
   ...props

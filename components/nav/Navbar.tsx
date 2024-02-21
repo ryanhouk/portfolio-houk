@@ -12,7 +12,7 @@ const navItems = [
 const Navbar = (props: Props) => {
   return (
     <>
-      <nav className='fixed z-50 w-full bg-gradient-to-b from-black to-black/0'>
+      <nav className='via-bg-black/50 fixed z-50 w-full bg-gradient-to-b from-black to-black/0'>
         <div className='flex h-20 items-center justify-center gap-8 text-white'>
           {navItems.map((item, index) => (
             <Link
