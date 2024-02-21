@@ -13,7 +13,7 @@ const Package = (props: Props) => {
             alt='hero'
             width={1920}
             height={1080}
-            className='mx-auto lg:max-w-3xl opacity-50 hover:scale-90 transition-all hover:cursor-cell duration-300 px-8'
+            className='mx-auto lg:max-w-3xl opacity-70 hover:scale-90 transition-all hover:cursor-cell duration-300 px-8'
           />
         </section>
     </>

@@ -3,6 +3,7 @@ import Navbar from '../components/nav/Navbar';
 import Hero from '../components/sections/Hero';
 import FourGrid from '../components/sections/FourGrid';
 import Package from '../components/sections/Package';
+import ImageDivider from '../components/sections/ImageDivider';
 
 
 type Props = {};
@@ -15,6 +16,7 @@ const Index = (props: Props) => {
         <Navbar />
         <Hero />
         <Package />
+        <ImageDivider />
         <FourGrid />
         {/* END DIV */}
       </div>
