@@ -8,7 +8,7 @@ const index = (props: Props) => {
   return (
     <>
       <div className='relative overflow-clip'>
-        <div className='absolute h-full w-full bg-gradient-to-br from-pink-500 via-purple-600 to-blue-600 opacity-20'></div>
+        {/* <div className='absolute h-full w-full bg-gradient-to-br from-pink-500 via-purple-600 to-blue-600 opacity-20'></div> */}
         <div className='bottom-0 z-10 h-32 w-full bg-gradient-to-t from-black to-black/0 lg:h-32 fixed'></div>
 
         {/* NAV */}
