@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
+import Medium from '../svg/Medium';
+import LinkedIn from '../svg/LinkedIn';
+import Threads from '../svg/Threads';
 
 type Props = {};
 
@@ -12,8 +15,9 @@ const navItems = [
 const Navbar = (props: Props) => {
   return (
     <>
-      <nav className='via-bg-black/50 fixed z-50 w-full bg-gradient-to-b from-black to-black/0'>
-        <div className='flex h-20 items-center justify-center gap-8 text-white'>
+      <nav className='via-bg-black/50 fixed z-50 w-full bg-gradient-to-b from-black to-black/0 flex justify-between px-8'>
+        <div className='text-white h-20 items-center justify-center lg:flex hidden'>LOGO</div>
+        <div className='flex h-20 items-center justify-center gap-4 lg:gap-8 text-white'>
           {navItems.map((item, index) => (
             <Link
               key={index}
@@ -23,6 +27,14 @@ const Navbar = (props: Props) => {
               {item.label}
             </Link>
           ))}
+        </div>
+        <div className='flex h-20 items-center justify-center gap-4'>
+          <Link href='#' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
+            <Threads className='text-white w-8' />
+          </Link>
+          <Link href='#' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
+            <LinkedIn className='text-white w-6' />
+          </Link>
         </div>
       </nav>
     </>

@@ -12,19 +12,19 @@ const FourGrid = (props: Props) => {
     
 
         <div
-          className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8'
+          className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8 py-12 lg:pt-32'
         >
           <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'><FadeY delay={.25}>Work </FadeY> <FadeY delay={.5}>Highlights</FadeY></h1>
          
-        </div>
          <FadeY className='relative z-20 px-8' delay={.75}>
           <p className='lg:text-center text-white font-mono opacity-60 max-w-2xl mx-auto text-sm leading-loose'>
             There is a lot of work choose from! Here are a few highlights to diver into.
           </p>
          </FadeY>
+        </div>
 
          
-    <section className='max-w-7xl mx-auto px-8 lg:py-32 py-12'>
+    <section className='max-w-7xl mx-auto px-8 lg:pb-32 pb-12'>
         <div className='grid lg:grid-cols-2 gap-4'>
             <Link href={`/`} className='group'>
             <div className='rounded-3xl h-[500px] bg-white/5 flex flex-col justify-between overflow-clip'>
