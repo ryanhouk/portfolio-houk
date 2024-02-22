@@ -17,17 +17,17 @@ const data: Item[] = [
   {
     href: '/',
     title: 'K-LOVE Platforms',
-    description: 'Designing for content-heavy, consumption-oriented platforms.',
+    description: 'Designing tvOS, iOS & Android, Website and Web Apps for content-heavy brands.',
     backgroundImage: '/img/mockup/phone.webp',
   },
   {
     href: '/',
     title: 'P4O Platform',
-    description: 'Using AI to reduce content reviewing.',
+    description: 'Using AI to reduce content reviewing. Due to PII guidelines, this is a private project and can be discussed, but not shown.',
     backgroundImage: '/img/mockup/streaming.webp',
   },
     {
-    href: '/details/webmob',
+    href: '/',
     title: 'WebMob Dev Site',
     description: 'Internal website for stakeholders to see project progress and style guide.',
     backgroundImage: '/img/mockup/internal.webp',
@@ -35,7 +35,7 @@ const data: Item[] = [
   {
     href: '/',
     title: 'Wribbn',
-    description: 'Co-founded a startup and raised funding for an all-in-one listing app. Created entry points for users to add and consume content across platforms.',
+    description: 'Co-founded a startup and raised funding for an all-in-one listing app. Created entry points for users to add and consume content across platforms including browser extensions and embedded content.',
     backgroundImage: '/img/mockup/wrbn.webp',
   },
   {
@@ -47,7 +47,7 @@ const data: Item[] = [
   {
     href: '/',
     title: 'Donor Cloud',
-    description: 'Coming soon.',
+    description: 'Platform for donors to manage donations, tax receipts and busines accounts.',
     backgroundImage: '/img/mockup/account.webp',
   },
 
@@ -77,11 +77,11 @@ const FourGrid = () => {
             <Link key={index} href={item.href} className="group hover:-translate-y-2 transition-all duration-300 border border-white/[.15] rounded-3xl overflow-clip">
               <div
                 className="h-96 lg:h-[500px] flex flex-col justify-end relative bg-no-repeat bg-center lg:bg-left lg:group-hover:bg-right bg-cover transition-all duration-300"
-                style={{ backgroundImage: `url('${item.backgroundImage}')` }}
->
+                style={{ backgroundImage: `url('${item.backgroundImage}')` }}>
                 <div className='w-full h-48 bg-gradient-to-t from-black/80 to-black/0 bottom-0 absolute z-0'></div>
                 <div className='w-full h-full bg-black/30 absolute z-0'></div>
                 <div className='lg:p-8 p-6 group-hover:-translate-y-4 transition-all duration-300 z-10'>
+                  <p className='text-orange-400 text-sm font-mono pb-4'>Case Study Soon</p>
                   <div className='flex items-center'>
                     <h3 className='text-white font-object text-2xl mb-2'>{item.title}</h3>
                     <IconArrowRight className='w-6 group-hover:ml-4 ml-0 transition-all duration-200 opacity-0 group-hover:opacity-100 text-white mb-2 lg:flex hidden' />
