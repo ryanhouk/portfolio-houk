@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import IconArrowRight from '../svg/IconArrowRight';
 import { FadeY } from '../animations';
+import DoodleScribble from '../svg/DoodleScribble';
 
 // import Image from 'next/image';
 
@@ -40,7 +41,7 @@ const data: Item[] = [
   {
     href: '/',
     title: 'Accessibility',
-    description: 'Using Siteimprove\'s accessibility tools, I resolved issues and maintained a high accessibility score for my websites, ensuring they are inclusive and user-friendly for all visitors.',
+    description: 'Using Siteimprove\'s accessibility tools to maintain a high accessibility score, ensuring they are inclusive and user-friendly for all visitors.',
     backgroundImage: '/img/mockup/access.webp',
   },
   {
@@ -56,7 +57,9 @@ const FourGrid = () => {
   return (
     <>
       <section id='Work' className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8 py-12 lg:pt-32 scroll-mt-16'>
-        {/* <DoodleHash className='w-44 absolute mx-auto left-0 right-0 z-0' gradientStartColor={'#dc2626'} gradientEndColor={'#facc15'} /> */}
+        <FadeY>
+            <DoodleScribble startColor={'#dc2626'} stopColor={'#facc15'} className='w-24 lg:mb-0 mb-2 lg:w-44 lg:mx-auto' />
+        </FadeY>
         <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8 z-10'>
           <FadeY delay={.25}>Work </FadeY>
           <FadeY delay={.5}>Highlights</FadeY>
@@ -79,10 +82,10 @@ const FourGrid = () => {
 
                 <div className='w-full h-48 bg-gradient-to-t from-black/80 to-black/0 bottom-0 absolute z-0'></div>
                 <div className='w-full h-full bg-black/30 absolute z-0'></div>
-                <div className='p-8 group-hover:-translate-y-4 transition-all duration-300 z-10'>
+                <div className='lg:p-8 p-6 group-hover:-translate-y-4 transition-all duration-300 z-10'>
                   <div className='flex items-center'>
                     <h3 className='text-white font-object text-2xl mb-2'>{item.title}</h3>
-                    <IconArrowRight className='w-6 group-hover:ml-4 ml-0 transition-all duration-200 opacity-0 group-hover:opacity-100 text-white mb-2' />
+                    <IconArrowRight className='w-6 group-hover:ml-4 ml-0 transition-all duration-200 opacity-0 group-hover:opacity-100 text-white mb-2 lg:flex hidden' />
                   </div>
                   <p className='lg:text-white/60 text-white font-mono leading-relaxed group-hover:text-white transition-all duration-200 text-sm'>{item.description}</p>
                 </div>
