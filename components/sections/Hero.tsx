@@ -11,7 +11,7 @@ const Hero = (Props: Props) => {
 
         {/* <div className="absolute top-0 h-full w-full bg-[url('/img/texture/bg-noise.png')] bg-repeat opacity-40"></div> */}
         <div className='absolute top-0 z-10 h-32 w-full bg-gradient-to-b from-black to-black/0 lg:h-96'></div>
-        <div className='absolute bottom-0 z-10 h-32 w-full bg-gradient-to-t from-black to-black/0 lg:h-96'></div>
+        {/* <div className='absolute bottom-0 z-10 h-32 w-full bg-gradient-to-t from-black to-black/0 lg:h-96'></div> */}
 
 
         <FadeY className='relative z-20 mx-auto mb-4 lg:mb-6 flex max-w-5xl lg:justify-center gap-4 px-8'>
