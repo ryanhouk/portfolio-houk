@@ -19,12 +19,14 @@ const LoopingText: React.FC = ({className}:Props) => {
           ease: "linear",
         }}
       >
+       <div className='flex items-center'>AB Testing<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
        <div className='flex items-center'>Dashboards<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
+       <div className='flex items-center'>Usability Testing<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
        <div className='flex items-center'>Web Applications<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
+       <div className='flex items-center'>Surveys<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
        <div className='flex items-center'>iOS & Android Apps<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-       <div className='flex items-center'>Roku<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
+       <div className='flex items-center'>IA<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
        <div className='flex items-center'>tvOS<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-       <div className='flex items-center'>Websites<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
 
       </motion.div>
     </div>

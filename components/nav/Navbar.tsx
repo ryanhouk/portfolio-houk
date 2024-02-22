@@ -35,7 +35,7 @@ const Navbar = (props: Props) => {
           <Link href='https://www.threads.net/@ryanhouk' target='_blank' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
             <Threads className='text-white w-4' />
           </Link>
-          <Link href='https://www.ryanhouk.com/index-orig' target='_blank' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
+          <Link href='https://www.linkedin.com/in/ryanhouk/' target='_blank' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
             <LinkedIn className='text-white w-4' />
           </Link>
           <Link href='https://dribbble.com/ryanhouk' target='_blank' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
