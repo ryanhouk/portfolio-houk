@@ -32,7 +32,7 @@ const ImageLoop: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[250px] lg:h-[600px] overflow-hidden">
+    <div className="relative w-full h-[200px] lg:h-[600px] overflow-hidden">
       {imageData.map((image, index) => (
         <motion.div
           key={image.src}
