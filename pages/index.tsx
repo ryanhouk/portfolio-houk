@@ -6,7 +6,7 @@ import Package from '../components/sections/Package';
 import About from '../components/sections/About';
 import LoopingText from '../components/animations/LoopingText';
 import Blog from '../components/sections/Blog';
-import ImageDivider from '../components/sections/ImageDivider';
+import Footer from '../components/sections/Footer';
 
 
 type Props = {};
@@ -22,8 +22,9 @@ const Index = (props: Props) => {
         <LoopingText />
         <FourGrid />
         <About />
-        <ImageDivider />
+        {/* <ImageDivider /> */}
         <Blog />
+        <Footer />
         {/* END DIV */}
       </div>
     </>

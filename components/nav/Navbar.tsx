@@ -19,7 +19,7 @@ const Navbar = (props: Props) => {
   return (
     <>
       <nav className='via-bg-black/50 fixed z-50 w-full bg-gradient-to-b from-black to-black/0 flex justify-between px-8'>
-        <div className='h-20 items-center justify-center lg:flex hidden'><Image src={'/img/photo/avatar.jpeg'} alt={'photo of ryan houk smiling'} width={400} height={400} className='rounded-full border-2 border-white w-8' /></div>
+        <div className='h-20 items-center justify-center lg:flex hidden'><Image src={'/img/photos/avatar.png'} alt={'photo of ryan houk smiling'} width={400} height={400} className='rounded-full border-2 border-white w-8' /></div>
         <div className='flex h-20 items-center justify-center gap-4 lg:gap-8 text-white'>
           {navItems.map((item, index) => (
             <Link
