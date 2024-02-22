@@ -8,6 +8,7 @@ const Package = (props: Props) => {
     <>
         <section className='relative group'>
           <div className='absolute bottom-0 z-10 h-48 lg:h-96 w-full bg-gradient-to-t from-black via-black to-black/0'></div>
+          
           <Image
             src='/img/objects/package.webp'
             alt='hero'
@@ -20,4 +21,4 @@ const Package = (props: Props) => {
   )
 }
 
-export default Package
+export default Package;

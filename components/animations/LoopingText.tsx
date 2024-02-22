@@ -1,12 +1,16 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-const LoopingText: React.FC = () => {
+type Props = {
+  className?: string;
+}; 
+
+const LoopingText: React.FC = ({className}:Props) => {
   return (
-    <div className="overflow-hidden relative w-full h-32 flex items-center justify-start">
+    <div className={`overflow-hidden relative w-full h-32 flex items-center justify-start ${className}`}>
       <motion.div
-        className="whitespace-nowrap text-4xl font-bold text-white lg:text-7xl" // Making the text larger
-        initial={{ x: '100vw' }} // Start off the right edge of the screen
+        className="whitespace-nowrap text-4xl font-bold text-white lg:text-7xl font-clash flex gap-x-20"
+        initial={{ x: '0vw' }} // Start off the right edge of the screen
         animate={{ x: '-100vw' }} // End off the left edge of the screen
         transition={{
           repeat: Infinity,
@@ -15,7 +19,11 @@ const LoopingText: React.FC = () => {
           ease: "linear",
         }}
       >
-        Single Looping Text
+       <div>Dashboards</div>
+       <div> Web Apps</div>
+       <div>iOS & Android Apps</div>
+       <div>tvOS</div>
+
       </motion.div>
     </div>
   );

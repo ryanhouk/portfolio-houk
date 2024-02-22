@@ -1,80 +1,98 @@
-import Link from 'next/link'
-import React from 'react'
-import IconArrowRight from '../svg/IconArrowRight'
-import { FadeY } from '../animations'
-// import Image from 'next/image'
+import Link from 'next/link';
+import React from 'react';
+import IconArrowRight from '../svg/IconArrowRight';
+import { FadeY } from '../animations';
 
-type Props = {}
+// import Image from 'next/image';
 
-const FourGrid = (props: Props) => {
+type Item = {
+  href: string;
+  title: string;
+  description: string;
+  backgroundImage: string;
+};
+
+const data: Item[] = [
+  {
+    href: '/',
+    title: 'Content Focus',
+    description: 'Designing for content-heavy, consumption-oriented platforms.',
+    backgroundImage: '/img/mockup/phone.webp',
+  },
+  {
+    href: '/',
+    title: 'Streaming Platforms',
+    description: 'Designed, developer and increased listening sessions across platforms.',
+    backgroundImage: '/img/mockup/streaming.webp',
+  },
+    {
+    href: '/',
+    title: 'Find a problem, solve it',
+    description: 'Internal website for stakeholders to see project progress and style guide.',
+    backgroundImage: '/img/mockup/internal.webp',
+  },
+  {
+    href: '/',
+    title: 'Co-founder',
+    description: 'Co-founded a startup and raised funding for an all-in-one listing app. Created entry points for users to add and consume content across platforms.',
+    backgroundImage: '/img/mockup/wrbn.webp',
+  },
+  {
+    href: '/',
+    title: 'Accessibility',
+    description: 'Using Siteimprove\'s accessibility tools, I resolved issues and maintained a high accessibility score for my websites, ensuring they are inclusive and user-friendly for all visitors.',
+    backgroundImage: '/img/mockup/access.webp',
+  },
+  {
+    href: '/',
+    title: 'Donor Management',
+    description: 'Coming soon.',
+    backgroundImage: '/img/mockup/account.webp',
+  },
+
+];
+
+const FourGrid = () => {
   return (
     <>
-    
-
-        <div
-          className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8 py-12 lg:pt-32'
-        >
-          <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'><FadeY delay={.25}>Work </FadeY> <FadeY delay={.5}>Highlights</FadeY></h1>
-         
-         <FadeY className='relative z-20 px-8' delay={.75}>
+      <section id='Work' className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8 py-12 lg:pt-32 scroll-mt-16'>
+        {/* <DoodleHash className='w-44 absolute mx-auto left-0 right-0 z-0' gradientStartColor={'#dc2626'} gradientEndColor={'#facc15'} /> */}
+        <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8 z-10'>
+          <FadeY delay={.25}>Work </FadeY>
+          <FadeY delay={.5}>Highlights</FadeY>
+        </h1>
+        <FadeY className='relative z-20' delay={.75}>
           <p className='lg:text-center text-white font-mono opacity-60 max-w-2xl mx-auto text-sm leading-loose'>
-            There is a lot of work choose from! Here are a few highlights to diver into.
+            There is a lot of work to choose from! Here are a few highlights to dive into.
           </p>
-         </FadeY>
-        </div>
+        </FadeY>
+      </section>
 
-         
-    <section className='max-w-7xl mx-auto px-8 lg:pb-32 pb-12'>
-        <div className='grid lg:grid-cols-2 gap-4'>
-            <Link href={`/`} className='group'>
-            <div className='rounded-3xl h-[500px] bg-white/5 flex flex-col justify-between overflow-clip'>
-                <div>ITEM</div>
-                <div className='p-8 group-hover:-translate-y-4 transition-all duration-300'>
-                    <div className='flex items-center'>
-                        <h3 className='text-white font-object text-2xl mb-2'>Content Focus</h3><IconArrowRight className='w-6 group-hover:ml-4 ml-0 transition-all duration-200 opacity-0 group-hover:opacity-100 text-white mb-2' />
-                    </div>
-                    <p className='text-white/60 font-mono leading-relaxed group-hover:text-white transition-all duration-200 text-sm'>Add text</p>
-                </div>
-            </div>
-            </Link>
+      <section className='max-w-7xl mx-auto px-8 lg:pb-32 pb-12'>
+        <FadeY delay={.25} className='grid lg:grid-cols-2 gap-8'>
+          {data.map((item, index) => (
+            <Link key={index} href={item.href} className="group hover:-translate-y-2 transition-all duration-300 border border-white/[.15] rounded-3xl overflow-clip">
+              <div
+                className="h-96 lg:h-[500px] flex flex-col justify-end relative bg-no-repeat bg-center lg:bg-left lg:group-hover:bg-right bg-cover transition-all duration-300"
+                style={{ backgroundImage: `url('${item.backgroundImage}')` }}
+>
 
-            <Link href={`/`} className='group'>
-            <div className='rounded-3xl h-[500px] bg-white/5 flex flex-col justify-between overflow-clip'>
-                <div>ITEM</div>
-                <div className='p-8 group-hover:-translate-y-4 transition-all duration-300'>
-                    <div className='flex items-center'>
-                        <h3 className='text-white font-object text-2xl mb-2'>Streaming Platforms</h3><IconArrowRight className='w-6 group-hover:ml-4 ml-0 transition-all duration-200 opacity-0 group-hover:opacity-100 text-white mb-2' />
-                    </div>
-                <p className='text-white/60 font-mono leading-relaxed group-hover:text-white transition-all duration-200 text-sm w-3/4'>Designed, developer and increased listening sessions across platforms.</p>
+                <div className='w-full h-48 bg-gradient-to-t from-black/80 to-black/0 bottom-0 absolute z-0'></div>
+                <div className='w-full h-full bg-black/30 absolute z-0'></div>
+                <div className='p-8 group-hover:-translate-y-4 transition-all duration-300 z-10'>
+                  <div className='flex items-center'>
+                    <h3 className='text-white font-object text-2xl mb-2'>{item.title}</h3>
+                    <IconArrowRight className='w-6 group-hover:ml-4 ml-0 transition-all duration-200 opacity-0 group-hover:opacity-100 text-white mb-2' />
+                  </div>
+                  <p className='lg:text-white/60 text-white font-mono leading-relaxed group-hover:text-white transition-all duration-200 text-sm'>{item.description}</p>
                 </div>
-            </div>
+              </div>
             </Link>
-            <Link href={`/`} className='group'>
-            <div className='rounded-3xl h-[500px] bg-white/5 flex flex-col justify-between overflow-clip'>
-                <div>ITEM</div>
-                <div className='p-8 group-hover:-translate-y-4 transition-all duration-300'>
-                    <div className='flex items-center'>
-                        <h3 className='text-white font-object text-2xl mb-2'>Co-founder</h3><IconArrowRight className='w-6 group-hover:ml-4 ml-0 transition-all duration-200 opacity-0 group-hover:opacity-100 text-white mb-2' />
-                    </div>
-                    <p className='text-white/60 font-mono leading-relaxed group-hover:text-white transition-all duration-200 text-sm'>Co-founded a startup and raised funding for an all-in-one listing app. Created entry points for users to add and consume content across platforms.</p>
-                </div>
-            </div>
-            </Link>
-            <Link href={`/`} className='group'>
-            <div className='rounded-3xl h-[500px] bg-white/5 flex flex-col justify-between overflow-clip'>
-                <div>ITEM</div>
-                <div className='p-8 group-hover:-translate-y-4 transition-all duration-300'>
-                    <div className='flex items-center'>
-                        <h3 className='text-white font-object text-2xl mb-2'>Accessibility</h3><IconArrowRight className='w-6 group-hover:ml-4 ml-0 transition-all duration-200 opacity-0 group-hover:opacity-100 text-white mb-2' />
-                    </div>
-                    <p className='text-white/60 font-mono leading-relaxed group-hover:text-white transition-all duration-200 text-sm'>Using Siteimprove&apos;s accessibility tools, I resolved issues and maintained a high accessibility score for my websites, ensuring they are inclusive and user-friendly for all visitors.</p>
-                </div>
-            </div>
-            </Link>
-        </div>
-    </section>
+          ))}
+        </FadeY>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default FourGrid
+export default FourGrid;
