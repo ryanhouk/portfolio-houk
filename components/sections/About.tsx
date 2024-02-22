@@ -1,5 +1,6 @@
 import React from 'react';
 import { FadeY } from '../animations';
+import DoodleHash from '../svg/DoodleHash';
 
 
 type Props = {};
@@ -10,12 +11,17 @@ const About: React.FC<Props> = (props) => {
       <section id='About' className='py-12 lg:py-32 scroll-mt-16'>
         <div className='relative z-20 mx-auto max-w-5xl flex flex-col justify-center px-8'>
           <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'>
-            <FadeY delay={0.25}>About Me</FadeY>
-           
+           <FadeY delay={.25}><DoodleHash StartColor={'#dc2626'} EndColor={'#facc15'} className='w-10 mb-2 lg:mb-0 lg:w-20 lg:mx-auto' /></FadeY>
+            <FadeY delay={0.5}>About Me</FadeY>
+            <FadeY delay={.75}>
+              <p className='lg:text-center text-white font-mono opacity-60 max-w-2xl mx-auto text-sm leading-loose'>
+            A quick snippet about me.
+          </p>
+            </FadeY>
           </h1>
         </div>
 
-        <FadeY className='relative mx-auto max-w-5xl mt-16 lg:mt-24' delay={0.2}>
+        <FadeY className='relative mx-auto max-w-5xl mt-8 lg:mt-24' delay={0.2}>
           <img
             className='mx-auto -mb-16 w-48 lg:w-72 transition-all duration-200'
             src='/img/objects/tape-gray.png'

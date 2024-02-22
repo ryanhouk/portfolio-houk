@@ -3,16 +3,16 @@ import React from 'react';
 // Extending the Props type to include className and optional gradient colors
 type Props = {
   className?: string;
-  gradientStartColor: string;
-  gradientEndColor: string;
+  StartColor: string;
+  EndColor: string;
 };
 
 const DoodleHash = ({
   className = '',
-  gradientStartColor,
-  gradientEndColor,
+  StartColor,
+  EndColor,
 }: Props) => {
-  const hasGradient = gradientStartColor && gradientEndColor;
+  const hasGradient = StartColor && EndColor;
 
   return (
     <>
@@ -25,8 +25,8 @@ const DoodleHash = ({
         {hasGradient && (
           <defs>
             <linearGradient id="doodleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor={gradientStartColor} />
-              <stop offset="100%" stopColor={gradientEndColor} />
+              <stop offset="0%" stopColor={StartColor} />
+              <stop offset="100%" stopColor={EndColor} />
             </linearGradient>
           </defs>
         )}

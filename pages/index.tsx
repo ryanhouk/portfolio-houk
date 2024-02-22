@@ -4,7 +4,7 @@ import Hero from '../components/sections/Hero';
 import FourGrid from '../components/sections/FourGrid';
 import Package from '../components/sections/Package';
 import About from '../components/sections/About';
-// import LoopingText from '../components/animations/LoopingText';
+import LoopingText from '../components/animations/LoopingText';
 // import ImageDivider from '../components/sections/ImageDivider';
 
 
@@ -18,7 +18,7 @@ const Index = (props: Props) => {
         <Navbar />
         <Hero />
         <Package />
-        {/* <LoopingText /> */}
+        <LoopingText />
         {/* <ImageDivider /> */}
         <FourGrid />
         <About />

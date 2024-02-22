@@ -11,8 +11,8 @@ type Props = {};
 const navItems = [
   { href: '#Work', label: 'Work' },
   { href: '#About', label: 'About' },
-  { href: '#', label: 'Blog' },
-  { href: '#', label: 'Contact' },
+  { href: '#Blog', label: 'Blog' },
+  { href: 'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I like your portfolio.', label: 'Contact' },
 ];
 
 const Navbar = (props: Props) => {
