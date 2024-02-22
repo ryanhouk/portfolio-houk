@@ -10,9 +10,9 @@ type ImageData = {
 
 // Sample data object with images
 const imageData: ImageData[] = [
-  { src: '/img/mockup/tablet.webp', alt: 'website on an ipad' },
-  { src: '/img/mockup/phone.webp', alt: 'iphone with k love app' },
-  { src: '/img/mockup/laptop.webp', alt: 'laptop with training website' },
+  { src: '/img/photos/photo-02.webp', alt: 'website on an ipad' },
+  { src: '/img/photos/photo-01.webp', alt: 'iphone with k love app' },
+  { src: '/img/photos/photo-03.webp', alt: 'laptop with training website' },
   // Add more images as needed
 ];
 
@@ -32,14 +32,14 @@ const ImageLoop: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[200px] lg:h-[600px] overflow-hidden">
+    <div className="relative h-[200px] lg:h-[600px] max-w-5xl mx-auto rounded-md overflow-clip">
       {imageData.map((image, index) => (
         <motion.div
           key={image.src}
           initial={{ opacity: 0 }}
           animate={{ opacity: index === currentImage || (isAnimating && index === (currentImage + 1) % imageData.length) ? 1 : 0 }}
           transition={{ duration: 1.5 }}
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full px-4"
         >
           <Image src={image.src} alt={image.alt} height={1588} width={3000} className='object-cover object-top' />
         </motion.div>

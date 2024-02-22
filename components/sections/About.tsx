@@ -1,6 +1,7 @@
 import React from 'react';
 import { FadeY } from '../animations';
 import DoodleHash from '../svg/DoodleHash';
+import Link from 'next/link';
 
 
 type Props = {};
@@ -8,17 +9,20 @@ type Props = {};
 const About: React.FC<Props> = (props) => {
   return (
     <>
-      <section id='About' className='py-12 lg:py-32 scroll-mt-16'>
+      <section id='About' className='pt-12 lg:pt-32 scroll-mt-16'>
         <div className='relative z-20 mx-auto max-w-5xl flex flex-col justify-center px-8'>
-          <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'>
            <FadeY delay={.25}><DoodleHash StartColor={'#dc2626'} EndColor={'#facc15'} className='w-10 mb-2 lg:mb-0 lg:w-20 lg:mx-auto' /></FadeY>
+          <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'>
             <FadeY delay={0.5}>About Me</FadeY>
-            <FadeY delay={.75}>
+            </h1>
+          <FadeY delay={.75}>
               <p className='lg:text-center text-white font-mono opacity-60 max-w-2xl mx-auto text-sm leading-loose'>
             A quick snippet about me.
           </p>
             </FadeY>
-          </h1>
+            <FadeY delay={1} className='flex lg:justify-center mt-8'>
+              <Link href={'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I like your portfolio.'} className='border-2 border-white px-8 py-3 rounded-full text-white font-object hover:bg-white hover:text-black transition-all duration-300' >Contact Me</Link>
+            </FadeY>
         </div>
 
         <FadeY className='relative mx-auto max-w-5xl mt-8 lg:mt-24' delay={0.2}>

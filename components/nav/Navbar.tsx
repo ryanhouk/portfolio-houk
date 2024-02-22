@@ -12,7 +12,7 @@ const navItems = [
   { href: '#Work', label: 'Work' },
   { href: '#About', label: 'About' },
   { href: '#Blog', label: 'Blog' },
-  { href: 'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I like your portfolio.', label: 'Contact' },
+  // { href: 'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I like your portfolio.', label: 'Contact' },
 ];
 
 const Navbar = (props: Props) => {

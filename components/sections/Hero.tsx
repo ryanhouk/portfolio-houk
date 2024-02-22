@@ -1,5 +1,6 @@
 import React from 'react';
 import { FadeY } from '../animations';
+import ArrowDown from '../svg/ArrowDown';
 
 type Props = {};
 
@@ -29,6 +30,9 @@ const Hero = (Props: Props) => {
           <p className='lg:text-center text-white font-mono opacity-60 max-w-2xl mx-auto text-sm leading-loose'>
             This is a portfolio site. It might look a little messy, but design, development, usability testing, and iterating is often a little messy. 
           </p>
+         </FadeY>
+         <FadeY delay={1}>
+            <ArrowDown className={'mx-auto w-6 animate-bounce mt-10'} strokeColor={'#fff'} />
          </FadeY>
       </section>
     </>

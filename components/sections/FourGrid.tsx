@@ -34,7 +34,7 @@ const data: Item[] = [
   },
   {
     href: '/',
-    title: 'Co-founder',
+    title: 'Co-founder of Wribbn',
     description: 'Co-founded a startup and raised funding for an all-in-one listing app. Created entry points for users to add and consume content across platforms.',
     backgroundImage: '/img/mockup/wrbn.webp',
   },
@@ -79,7 +79,6 @@ const FourGrid = () => {
                 className="h-96 lg:h-[500px] flex flex-col justify-end relative bg-no-repeat bg-center lg:bg-left lg:group-hover:bg-right bg-cover transition-all duration-300"
                 style={{ backgroundImage: `url('${item.backgroundImage}')` }}
 >
-
                 <div className='w-full h-48 bg-gradient-to-t from-black/80 to-black/0 bottom-0 absolute z-0'></div>
                 <div className='w-full h-full bg-black/30 absolute z-0'></div>
                 <div className='lg:p-8 p-6 group-hover:-translate-y-4 transition-all duration-300 z-10'>
