@@ -27,7 +27,7 @@ const data: Item[] = [
     backgroundImage: '/img/mockup/streaming.webp',
   },
     {
-    href: '/',
+    href: '/details/webmob',
     title: 'Find a problem, solve it',
     description: 'Internal website for stakeholders to see project progress and style guide.',
     backgroundImage: '/img/mockup/internal.webp',
