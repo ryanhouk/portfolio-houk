@@ -16,14 +16,14 @@ type Item = {
 const data: Item[] = [
   {
     href: '/',
-    title: 'K-LOVE Platforms',
-    description: 'Designing tvOS, iOS & Android, Website and Web Apps for content-heavy brands.',
+    title: 'P4O Platform',
+    description: 'Using AI to reduce content reviewing. Due to PII guidelines, this is a private project and can be discussed, but not shown.',
     backgroundImage: '/img/mockup/phone.webp',
   },
   {
     href: '/',
-    title: 'P4O Platform',
-    description: 'Using AI to reduce content reviewing. Due to PII guidelines, this is a private project and can be discussed, but not shown.',
+    title: 'K-LOVE Platforms',
+    description: 'Designing tvOS, iOS & Android, Websites and Web Apps for content-heavy brands.',
     backgroundImage: '/img/mockup/streaming.webp',
   },
     {

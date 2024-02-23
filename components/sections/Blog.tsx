@@ -67,7 +67,7 @@ const Blog = () => {
             <Link href={post.url} key={index} target='_blank' className='flex flex-wrap lg:flex-nowrap items-center py-4 border-t border-white/10 hover:bg-white/5 transition-all duration-300 group'>
                 <Image src={post.img} alt={post.title} height={400} width={200} className='w-full lg:w-56' />
                 <div className='flex flex-col'>
-                    <h3 className='text-white lg:ml-8 text-lg mt-4 lg:mt-0 lg:text-2xl font-object'>{post.title}</h3>
+                    <h3 className='text-white lg:ml-8 text-lg mt-4 lg:-mt-2 lg:text-2xl font-object'>{post.title}</h3>
                 <div className='hidden lg:flex items-center lg:ml-8 group-hover:mt-2 -mt-8 opacity-0 group-hover:opacity-100 transition-all duration-200'>
                     <p className='text-white font-mono text-xs'>Read More</p>
                 </div>
