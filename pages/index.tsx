@@ -7,6 +7,7 @@ import About from '../components/sections/About';
 import LoopingText from '../components/animations/LoopingText';
 import Blog from '../components/sections/Blog';
 import Footer from '../components/sections/Footer';
+import SkillsGrid from '../components/sections/SkillsGrid';
 
 
 type Props = {};
@@ -19,6 +20,7 @@ const Index = (props: Props) => {
         <Navbar />
         <Hero />
         <Package />
+        <SkillsGrid />
         <LoopingText />
         <FourGrid />
         <About />

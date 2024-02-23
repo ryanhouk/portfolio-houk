@@ -2,6 +2,7 @@ import React from 'react';
 import { FadeY } from '../animations';
 import DoodleHash from '../svg/DoodleHash';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 type Props = {};
@@ -9,7 +10,7 @@ type Props = {};
 const About: React.FC<Props> = (props) => {
   return (
     <>
-      <section id='About' className='pt-12 lg:pt-32 scroll-mt-16'>
+      <section id='About' className='py-12 lg:py-32 scroll-mt-16'>
         <div className='relative z-20 mx-auto max-w-5xl flex flex-col justify-center px-8'>
            <FadeY delay={.25}><DoodleHash StartColor={'#dc2626'} EndColor={'#facc15'} className='w-10 mb-2 lg:mb-0 lg:w-20 lg:mx-auto' /></FadeY>
           <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'>
@@ -43,10 +44,13 @@ const About: React.FC<Props> = (props) => {
               I&apos;ve worked with startups, co-founded a startup and raised angel investments, worked with agencies, and companies. I&apos;ve learned that successful and powerful products have teams behind them with absent egos and creative contributions coming from everyone.
             </p>
             <p className='font-mono leading-loose'>~ Ryan</p>
-            {/* <p className='hidden lg:block font-mono leading-loose'>
-              <br />
-              P.S. Delete my photo.
-            </p> */}
+          <Image
+            src='/img/objects/sticker-gray-round.png'
+            alt='sticker with the words design with care'
+            width={200}
+            height={200}
+            className='w-40 lg:w-48 mx-auto lg:left-0 lg:right-0 -right-8 transition-all duration-200 absolute hover:cursor-cell -rotate-12 hover:rotate-12 drop-shadow-lg'
+          />
           </div>
         </FadeY>
       </section>
