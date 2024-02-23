@@ -17,7 +17,7 @@ const data: Item[] = [
   {
     href: '/',
     title: 'P4O Platform',
-    description: 'Using AI to reduce content reviewing. Due to PII guidelines, this is a private project and can be discussed, but not shown.',
+    description: `Using AI to increase content reviewers' speed. Due to PII guidelines, this is a private project and can be discussed, but not shown.`,
     backgroundImage: '/img/mockup/phone.webp',
   },
   {

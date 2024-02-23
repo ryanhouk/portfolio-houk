@@ -64,7 +64,7 @@ const Blog = () => {
       <section id='Posts' className='px-8 py-12 max-w-5xl mx-auto mb-16'>
         <div className='flex flex-col'>
           {data.map((post, index) => (
-            <Link href={post.url} key={index} target='_blank' className='flex flex-wrap lg:flex-nowrap items-center py-4 border-t border-white/10 hover:bg-white/5 transition-all duration-300 group'>
+            <Link href={post.url} key={index} target='_blank' className='flex flex-wrap lg:flex-nowrap items-center py-4 border-t border-white/10 hover:bg-white/5 transition-all duration-300 group last:border-b'>
                 <Image src={post.img} alt={post.title} height={400} width={200} className='w-full lg:w-56' />
                 <div className='flex flex-col'>
                     <h3 className='text-white lg:ml-8 text-lg mt-4 lg:-mt-2 lg:text-2xl font-object'>{post.title}</h3>
