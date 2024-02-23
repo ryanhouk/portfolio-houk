@@ -18,7 +18,7 @@ const PageHeader = ({ title, backgroundImage }: Props) => {
       </section>
 
       <FadeY once className='relative z-20 max-w-7xl mx-auto px-8 xl:px-0'>
-        <h1 className='text-3xl lg:text-8xl text-white font-clash lg:w-2/3'>{title}</h1>
+        <h1 className='text-3xl lg:text-8xl text-white font-clash text-center'>{title}</h1>
       </FadeY>
     </>
   )

@@ -16,7 +16,7 @@ const Hero = (Props: Props) => {
 
         <FadeY className='relative z-20 mx-auto mb-4 lg:mb-6 flex max-w-5xl lg:justify-center gap-4 px-8'>
           <div className='bg-gradient-to-tr from-red-600 to-yellow-400 bg-clip-text font-mono text-transparent transition-all duration-200 hover:cursor-cell'>
-            @ryanhouk
+            Ryan Houk
           </div>
         </FadeY>
 
