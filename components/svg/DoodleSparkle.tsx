@@ -1,12 +1,12 @@
 import React from 'react';
 
 type Props = {
-    colorStart: string;
-    colorEnd: string;
+    startColor: string;
+    endColor: string;
     className?: string;
 }
 
-const DoodleSparkle = ({ colorStart, colorEnd, className = 'w-10 h-10' }: Props) => {
+const DoodleSparkle = ({ startColor, endColor, className = 'w-10 h-10' }: Props) => {
     return (
         <>
             <svg
@@ -17,8 +17,8 @@ const DoodleSparkle = ({ colorStart, colorEnd, className = 'w-10 h-10' }: Props)
             >
                 <defs>
                     <linearGradient id="sparkleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor={colorStart} />
-                        <stop offset="100%" stopColor={colorEnd} />
+                        <stop offset="0%" stopColor={startColor} />
+                        <stop offset="100%" stopColor={endColor} />
                     </linearGradient>
                 </defs>
                 <path
