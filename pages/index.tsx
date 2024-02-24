@@ -8,6 +8,7 @@ import LoopingText from '../components/animations/LoopingText';
 import Blog from '../components/sections/Blog';
 import Footer from '../components/sections/Footer';
 import SkillsGrid from '../components/sections/SkillsGrid';
+import ThankYou from '../components/sections/ThankYou';
 
 
 type Props = {};
@@ -26,6 +27,7 @@ const Index = (props: Props) => {
         <About />
         {/* <ImageDivider /> */}
         <Blog />
+        <ThankYou />
         <Footer />
         {/* END DIV */}
       </div>

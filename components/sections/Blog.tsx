@@ -52,7 +52,7 @@ const Blog = () => {
           </h1>
           <FadeY delay={0.75}>
             <p className='lg:text-center text-white font-mono opacity-60 max-w-2xl mx-auto text-sm leading-loose'>
-              Check out some posts I&apos;ve written.
+              Interested in design and tech? I&apos;d love to hear your thoughts!
             </p>
           </FadeY>
           <FadeY delay={1} className='flex lg:justify-center mt-8'>
@@ -61,7 +61,7 @@ const Blog = () => {
         </div>
       </section>
 
-      <section id='Posts' className='px-8 py-12 max-w-5xl mx-auto mb-16'>
+      <section id='Posts' className='px-8 pt-12 max-w-5xl mx-auto'>
         <div className='flex flex-col'>
           {data.map((post, index) => (
             <Link href={post.url} key={index} target='_blank' className='flex flex-wrap lg:flex-nowrap items-center py-4 border-t border-white/10 hover:bg-white/5 transition-all duration-300 group last:border-b'>
