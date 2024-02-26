@@ -23,12 +23,12 @@ const data: Item[] = [
   {
     href: '/',
     title: 'K-LOVE Platforms',
-    description: 'Designing tvOS, iOS & Android, Websites and Web Apps for content-heavy brands.',
+    description: 'Designing tvOS, iOS & Android, websites, and web apps for content-heavy brands',
     backgroundImage: '/img/mockup/streaming.webp',
   },
     {
     href: '/',
-    title: 'WebMob Dev Site',
+    title: 'WebMob Site',
     description: 'Internal website for stakeholders to see project progress and style guide.',
     backgroundImage: '/img/mockup/internal.webp',
   },
