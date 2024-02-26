@@ -35,13 +35,13 @@ const About: React.FC<Props> = (props) => {
           <div className='m-4 rounded-sm bg-white p-4 py-12 shadow-md lg:p-16 lg:py-16'>
             <h2 className='mb-8 font-mono'>Hey, friends!</h2>
             <p className='mb-8 font-mono leading-loose'>
-              I&apos;ve been doing this for a long time and have had both successes and failures. Empathy? Yep! Usability testing? Yep! Aligning business and customer goals? You better know it!
+              I&apos;ve been doing this for over 15 years and continuously learning from both success and failure. Empathy? Yep! Usability testing? Yep! Aligning business and customer goals? You know it!
             </p>
             <p className='mb-8 font-mono leading-loose'>
-              It all started with a digital training tutorial for a Pepsi bottling plant. I designed the UI in Photoshop (Figma didn&apos;t exist yet) and coded the software with Lingo using Macromedia Director. I told you I&apos;ve been doing this for a long time. I ended up focusing on design over coding and have been a product designer for several years until I rediscovered my love for coding and have been doing both now for a while.
+              It all started with a digital training tutorial for a Pepsi bottling plant. I designed the UI in Photoshop (Figma didn&apos;t exist yet) and coded the software with Lingo using Macromedia Director. Didn&pos; I say I&apos;ve been doing this for a long time? I&pos;ve done product design for years until rediscovering my love for coding, now I do both.
             </p>
             <p className='mb-8 font-mono leading-loose'>
-              I&apos;ve worked with startups, co-founded a startup and raised angel investments, worked with agencies, and companies. I&apos;ve learned that successful and powerful products have teams behind them with absent egos and creative contributions coming from everyone.
+              I&apos;ve worked with startups, co-founded a startup, raised angel investments, and worked with agencies. These experiences taught me that successfull products result from teams with no egos where creative contributions come from everyone.
             </p>
             <p className='font-mono leading-loose'>~ Ryan</p>
           <Image
