@@ -19,7 +19,7 @@ const Navbar = (props: Props) => {
   return (
     <>
       <nav className='via-bg-black/50 fixed z-50 w-full bg-gradient-to-b from-black to-black/0 flex justify-between px-8'>
-        <div className='h-20 items-center justify-center lg:flex hidden'><Image src={'/img/photos/avatar.png'} alt={'photo of ryan houk smiling'} width={400} height={400} className='rounded-full border-2 border-white w-8' /></div>
+        <div className='h-20 items-center justify-center lg:flex hidden'><Image src={'/img/photos/avatar.png'} alt={'Photo of Ryan Houk smiling'} width={400} height={400} className='rounded-full border-2 border-white/30 w-8' /></div>
         <div className='flex h-20 items-center justify-center gap-4 lg:gap-8 text-white'>
           {navItems.map((item, index) => (
             <Link
@@ -32,13 +32,13 @@ const Navbar = (props: Props) => {
           ))}
         </div>
         <div className='flex h-20 items-center justify-center gap-4'>
-          <Link href='https://www.threads.net/@ryanhouk' target='_blank' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
+          <Link href='https://www.threads.net/@ryanhouk' target='_blank' title="Visit Ryan Houk Threads" className='flex flex-col group opacity-60 hover:opacity-100 transition-all relative'>
             <Threads className='text-white w-4' />
           </Link>
-          <Link href='https://www.linkedin.com/in/ryanhouk/' target='_blank' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
+          <Link href='https://www.linkedin.com/in/ryanhouk/' target='_blank' title="Visit Ryan Houk LinkedIn" className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
             <LinkedIn className='text-white w-4' />
           </Link>
-          <Link href='https://dribbble.com/ryanhouk' target='_blank' className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
+          <Link href='https://dribbble.com/ryanhouk' target='_blank' title="Visit Ryan Houk Dribbble" className='flex flex-col group opacity-60 hover:opacity-100 transition-all'>
             <Dribbble className='text-white w-4' />
           </Link>
         </div>
