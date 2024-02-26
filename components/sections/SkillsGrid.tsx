@@ -25,7 +25,8 @@ const skillData: Skill[] = [
     { title: 'TypeScript', context: 'Typed superset of JavaScript.' },
     { title: 'Card Sorting', context: 'Method where users organize content into categories.' },
     { title: 'Iconography', context: 'Design icons with meaningful intention.' },
-    { title: 'Being Nice', context: 'Genuinely treating people with respect 😊' },
+    { title: 'Heatmaps', context: 'Visualized user interactions on a webpage with color coding.' },
+    { title: 'Being Nice', context: 'Genuinely treating people with respect 😊' }
 ];
 
 const SkillsGrid = () => {

@@ -24,9 +24,9 @@ const Index = (props: Props) => {
         <SkillsGrid />
         <LoopingText />
         <FourGrid />
+        <Blog />
         <About />
         {/* <ImageDivider /> */}
-        <Blog />
         <ThankYou />
         <Footer />
         {/* END DIV */}
