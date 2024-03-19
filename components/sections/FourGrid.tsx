@@ -17,19 +17,19 @@ const data: Item[] = [
   {
     href: '/',
     title: 'P4O Platform',
-    description: `Using AI to increase content reviewers' speed. Due to PII guidelines, this is a private project and can be discussed, but not shown.`,
+    description: `Using AI to increase reviewers' speed and accuracy. Due to PII guidelines, this is a private project and can be discussed, but not shown.`,
     backgroundImage: '/img/mockup/phone.webp',
   },
   {
     href: '/',
     title: 'K-LOVE Platforms',
-    description: 'Designing tvOS, iOS & Android, websites, and web apps for content-heavy brands',
+    description: 'Crafting user-centric experiences for tvOS, iOS, Android, websites, and web applications, specifically tailored for content-rich brands.',
     backgroundImage: '/img/mockup/streaming.webp',
   },
     {
     href: '/',
     title: 'WebMob Site',
-    description: 'Internal website for stakeholders to see project progress and style guide.',
+    description: 'Developed an internal website that enables stakeholders to monitor project progress and access style guides, fostering greater transparency and collaboration.',
     backgroundImage: '/img/mockup/internal.webp',
   },
   {
@@ -41,13 +41,13 @@ const data: Item[] = [
   {
     href: '/',
     title: 'Crisis Response',
-    description: 'Using Siteimprove\'s accessibility tools to maintain a high accessibility score, ensuring they are inclusive and user-friendly for all visitors.',
+    description: 'Focused on enhancing website accessibility, ensuring universal usability for all users, including those with disabilities.',
     backgroundImage: '/img/mockup/access.webp',
   },
   {
     href: '/',
     title: 'Donor Cloud',
-    description: 'Platform for donors to manage donations, tax receipts and busines accounts.',
+    description: 'Updated donor platforms for easier contribution tracking and boosting overall donations.',
     backgroundImage: '/img/mockup/account.webp',
   },
 
