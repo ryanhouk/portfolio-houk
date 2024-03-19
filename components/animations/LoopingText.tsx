@@ -8,10 +8,10 @@ type Props = {
 const LoopingText: React.FC<Props> = ({ className }: Props) => {
   return (
     <>
-      <div className={`overflow-hidden relative w-full h-32 flex items-center justify-start lg:py-16 border-y border-white/20 ${className}`}>
+      <div className={`overflow-hidden relative w-full lg:h-32 flex items-center justify-start py-6 lg:py-16 border-y border-white/20 ${className}`}>
         <motion.div
           className="whitespace-nowrap text-3xl font-bold text-white lg:text-7xl font-clash flex gap-x-8"
-          initial={{ x: '20vw' }} // Start off the right edge of the screen
+          initial={{ x: '0vw' }} // Start off the right edge of the screen
           animate={{ x: '-100vw' }} // End off the left edge of the screen
           transition={{
             repeat: Infinity,
