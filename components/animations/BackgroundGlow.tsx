@@ -25,7 +25,7 @@ const BackgroundGlow = ({ className }: Props) => {
     <div className={`absolute inset-0 z-0 flex items-center justify-center ${className}`}>
       <div className='relative lg:h-96 lg:w-96'>
         <motion.div
-          className='absolute h-96 w-96 rounded-full bg-white mix-blend-screen blur-3xl filter'
+          className='absolute h-96 w-96 rounded-full bg-orange-500 mix-blend-screen blur-3xl filter'
           variants={circleVariants}
           animate='animate'
         />
@@ -36,7 +36,7 @@ const BackgroundGlow = ({ className }: Props) => {
           animate='animate'
         />
         <motion.div
-          className='absolute h-96 w-96 rounded-full bg-white mix-blend-screen blur-3xl filter'
+          className='absolute h-96 w-96 rounded-full bg-cyan-500 mix-blend-screen blur-3xl filter'
           style={{ x: '-25%', y: '20%' }}
           variants={circleVariants}
           animate='animate'
