@@ -20,12 +20,12 @@ const DetailsNav = (props: Props) => {
       <nav className='fixed z-50 w-full flex justify-between px-6 bg-white/70 backdrop-blur-3xl'>
         
         {/* AVATAR */}
-        <div className='h-20 items-center justify-start lg:flex hidden flex-1'>
+        <div className='h-16 items-center justify-start lg:flex hidden flex-1'>
           <Image src={'/img/photos/avatar.png'} alt={'Photo of Ryan Houk smiling'} width={400} height={400} className='rounded-full border-2 border-black/30 w-8 hover:border-black transition-all hover:cursor-cell' />
         </div>
         
         {/* NAV ITEMS */}
-        <div className='flex lg:h-20 h-12 items-center justify-center gap-4 lg:gap-8 text-black'>
+        <div className='flex lg:h-16 h-12 items-center justify-center gap-4 lg:gap-8 text-black'>
           {navItems.map((item, index) => (
             <Link
               key={index}
@@ -38,7 +38,7 @@ const DetailsNav = (props: Props) => {
         </div>
 
         {/* SOCIAL */}
-        <div className='flex lg:h-20 h-12 items-center justify-end gap-4 flex-1'>
+        <div className='flex lg:h-16 h-12 items-center justify-end gap-4 flex-1'>
           <Link href='https://www.threads.net/@ryanhouk' target='_blank' title="Visit Ryan Houk Threads" className='hover:opacity-60 transition-all relative'>
             <Threads className='text-black w-4' />
           </Link>

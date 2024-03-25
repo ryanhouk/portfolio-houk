@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import DetailsHeader from '../../../components/header/DetailsHeader';
 import DetailsNav from '../../../components/nav/DetailsNav';
+import IconDevices from '../../../components/svg/IconDevices';
 
 const KloveDetails: React.FC = () => {
   const router = useRouter();
@@ -23,7 +24,7 @@ const KloveDetails: React.FC = () => {
     {/* HERO */}
       <div className='h-screen bg-white'>
         <section>
-          <DetailsHeader title={'Content Heavy Platforms'} imgSrc={`/img/mockup/klove/web/tv-player-center.jpg`} />
+          <DetailsHeader icon={<IconDevices startColor={'#dc2626'} endColor={'#facc15'} className='w-10 lg:w-16' />} title={'Content Heavy Platforms'} imgSrc={`/img/mockup/klove/web/tv-player-bottom.jpg`} />
         </section>
       </div>
     </>
