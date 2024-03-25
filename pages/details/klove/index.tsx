@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { FadeY } from '../../../components/animations';
+import DetailsHeader from '../../../components/header/DetailsHeader';
+import DetailsNav from '../../../components/nav/DetailsNav';
 
 const KloveDetails: React.FC = () => {
   const router = useRouter();
@@ -15,12 +16,17 @@ const KloveDetails: React.FC = () => {
   }, [router]);
 
   return (
-    <FadeY delay={.25} className="flex justify-center items-center h-screen">
-      <div className="text-center text-white">
-        <h1 className="text-4xl font-bold">Welcome to Klove Details</h1>
-        <p className="mt-4">You have successfully accessed protected content!</p>
+    <>
+    {/* NAV */}
+    <DetailsNav />
+
+    {/* HERO */}
+      <div className='h-screen bg-white'>
+        <section>
+          <DetailsHeader title={'Content Heavy Platforms'} imgSrc={`/img/mockup/klove/web/tv-player-center.jpg`} />
+        </section>
       </div>
-    </FadeY>
+    </>
   );
 };
 

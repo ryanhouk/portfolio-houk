@@ -23,6 +23,9 @@ module.exports = {
         "brand-tertiary": "#fde24f",
         "brand-pale": "#f4eddd",
       },
+      maxWidth: {
+        'screen-3xl': '2000px', // Add this line
+      },
     },
   },
   plugins: ["prettier-plugin-tailwind"],
