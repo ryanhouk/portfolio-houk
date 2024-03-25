@@ -56,7 +56,7 @@ const data: Item[] = [
 const FourGrid = () => {
   return (
     <>
-      <section id='Work' className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8 py-12 lg:pt-32 scroll-mt-16'>
+      <section id='Work' className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8 py-12 lg:pt-32 scroll-mt-10'>
         <FadeY>
             <DoodleScribble startColor={'#dc2626'} stopColor={'#facc15'} className='w-24 lg:mb-0 mb-2 lg:w-44 lg:mx-auto' />
         </FadeY>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { FadeY } from '../../components/animations';
+import { FadeY } from '../../../components/animations';
 import Image from 'next/image';
-import PageHeader from '../../components/header/PageHeader';
+import PageHeader from '../../../components/header/PageHeader';
 
 type Props = {};
 

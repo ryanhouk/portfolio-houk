@@ -18,7 +18,7 @@ const navItems = [
 const Navbar = (props: Props) => {
   return (
     <>
-      <nav className='via-bg-black/50 fixed z-50 w-full bg-gradient-to-b from-black to-black/0 flex justify-between px-8'>
+      <nav className='via-bg-black/50 fixed z-50 w-full bg-gradient-to-b from-black to-black/0 flex justify-between px-6'>
         
         {/* AVATAR */}
         <div className='h-20 items-center justify-start lg:flex hidden flex-1'>

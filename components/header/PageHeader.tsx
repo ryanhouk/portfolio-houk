@@ -10,7 +10,7 @@ const PageHeader = ({ title, backgroundImage }: Props) => {
   return (
     <>
       <section 
-        className="relative overflow-clip h-96 flex flex-col justify-end bg-no-repeat bg-cover" 
+        className="relative overflow-clip h-[75vh] flex flex-col justify-end bg-no-repeat bg-cover" 
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className='h-full w-full absolute bg-gradient-to-b from-black/80 to-black/0 top-0'></div>
