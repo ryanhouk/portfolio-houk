@@ -33,7 +33,7 @@ const SkillsGrid = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <section className='px-8'>
+        <section className='px-8 selection:bg-orange-200'>
             <div className='flex flex-wrap justify-center gap-2 relative z-30 xl:-translate-y-20 mb-20 lg:mb-4 max-w-2xl mx-auto transition-all duration-300'>
                 {skillData.map((skill, index) => (
                     <div

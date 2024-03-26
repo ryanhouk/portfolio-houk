@@ -56,7 +56,7 @@ const data: Item[] = [
 const FourGrid = () => {
   return (
     <>
-      <section id='Work' className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8 py-12 lg:pt-32 scroll-mt-10'>
+      <section id='Work' className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8 py-12 lg:pt-32 scroll-mt-10 selection:bg-orange-200'>
         <FadeY>
             <DoodleScribble startColor={'#dc2626'} stopColor={'#facc15'} className='w-24 lg:mb-0 mb-2 lg:w-44 lg:mx-auto' />
         </FadeY>
@@ -71,7 +71,7 @@ const FourGrid = () => {
         </FadeY>
       </section>
 
-      <section className='max-w-7xl mx-auto px-8 lg:pb-32 pb-12'>
+      <section className='max-w-7xl mx-auto px-8 lg:pb-32 pb-12 selection:bg-orange-200'>
         <FadeY delay={.25} className='grid lg:grid-cols-2 gap-8'>
           {data.map((item, index) => (
             <Link key={index} href={item.href} className="group hover:-translate-y-2 transition-all duration-300 border border-white/[.15] rounded-3xl overflow-clip">

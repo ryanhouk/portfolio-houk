@@ -9,7 +9,7 @@ type Props = {};
 const BentoGrid = (props: Props) => {
   return (
     <>
-      <section className='py-12 lg:py-32 px-8'>
+      <section className='py-12 lg:py-32 px-8 selection:bg-orange-200'>
         <div className='mx-auto grid max-w-screen-2xl lg:grid-cols-3 gap-4'>
           <div className='lg:col-span-2 grid lg:grid-cols-3 gap-4 rounded-2xl'>
             <FadeY delay={0.25} className='col-span-1 h-96 rounded-3xl flex justify-between flex-col overflow-clip border border-white/10 group'>
