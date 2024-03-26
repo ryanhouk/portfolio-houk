@@ -44,7 +44,7 @@ const Blog = () => {
 
   return (
     <>
-      <section id='Blog' className='scroll-mt-16 pt-12 lg:pt-32'>
+      <section id='Blog' className='scroll-mt-16 pt-12 lg:pt-32 selection:bg-orange-200'>
         <div className='relative z-20 mx-auto max-w-5xl flex flex-col justify-center px-8'>
           <FadeY delay={0.25}><DoodleLoops startColor={'#dc2626'} stopColor={'#facc15'} className='w-20 mb-2 lg:mb-2 lg:w-64 lg:mx-auto' /></FadeY>
           <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'>
@@ -61,7 +61,7 @@ const Blog = () => {
         </div>
       </section>
 
-      <section id='Posts' className='px-8 pt-12 max-w-5xl mx-auto'>
+      <section id='Posts' className='px-8 pt-12 max-w-5xl mx-auto selection:bg-orange-200'>
         <div className='flex flex-col'>
           {data.map((post, index) => (
             <Link href={post.url} key={index} target='_blank' className='flex flex-wrap lg:flex-nowrap items-center py-4 border-t border-white/10 hover:bg-white/5 transition-all duration-300 group last:border-b'>

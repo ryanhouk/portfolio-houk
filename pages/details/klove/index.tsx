@@ -22,11 +22,14 @@ const KloveDetails: React.FC = () => {
     <DetailsNav />
 
     {/* HERO */}
-      <div className='h-screen bg-white'>
-        <section>
+        <section className='h-screen bg-white'>
           <DetailsHeader icon={<IconDevices startColor={'#dc2626'} endColor={'#facc15'} className='w-10 lg:w-16' />} title={'Content Heavy Platforms'} imgSrc={`/img/mockup/klove/web/tv-player-bottom.jpg`} />
         </section>
-      </div>
+
+      {/* INTRO TEXT */}
+      <section className='py-12 lg:py-20 bg-orange-300'>
+        <div>THIS ITEM</div>
+      </section>
     </>
   );
 };

@@ -10,12 +10,12 @@ type Props = {};
 const About: React.FC<Props> = (props) => {
   return (
     <>
-      <section id='About' className='py-12 lg:py-32 scroll-mt-16'>
+      <section id='About' className='py-12 lg:py-32 scroll-mt-16 selection:bg-orange-200'>
         <div className='relative z-20 mx-auto max-w-5xl flex flex-col justify-center px-8'>
            <FadeY delay={.25}><DoodleHash StartColor={'#dc2626'} EndColor={'#facc15'} className='w-10 mb-2 lg:mb-0 lg:w-20 lg:mx-auto' /></FadeY>
-          <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'>
+          <h2 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'>
             <FadeY delay={0.5}>About Me</FadeY>
-            </h1>
+            </h2>
           <FadeY delay={.75}>
               <p className='lg:text-center text-white font-mono opacity-60 max-w-2xl mx-auto text-sm leading-loose'>
             A quick snippet about me.
@@ -33,7 +33,7 @@ const About: React.FC<Props> = (props) => {
             alt='piece of duct tape stuck to a letter'
           />
           <div className='m-4 rounded-sm bg-white p-4 py-12 shadow-md lg:p-16 lg:py-16'>
-            <h2 className='mb-8 font-mono'>Hey, friends!</h2>
+            <h3 className='mb-8 font-mono'>Hey, friends!</h3>
             <p className='mb-8 font-mono leading-loose'>
               I&apos;ve been doing this for over 15 years and continuously learning from both success and failure. Empathy? Yep! Usability testing? Yep! Aligning business and customer goals? You know it!
             </p>

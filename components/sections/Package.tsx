@@ -6,7 +6,7 @@ type Props = {};
 const Package = (props: Props) => {
   return (
     <>
-      <section className='relative'>
+      <section className='relative selection:bg-orange-200'>
         <div className='absolute bottom-0 z-20 h-48 lg:h-96 w-full bg-gradient-to-t from-black via-black to-black/0'></div>
 
         <p className='text-center font-mono text-white translate-y-8 z-[2] relative hover:translate-y-2 transition-all'>Good stuff in one package!</p>

@@ -22,7 +22,7 @@ const ThankYou = (props: Props) => {
           </FadeY>
         </div>
          <FadeY delay={1} className='flex lg:justify-center mt-8 px-8'>
-            <Link href={'mailto:ryan.houk@proton.me?subject=Hi, Ryan! I like your portfolio.'} target='_blank' className='border-2 border-white px-8 py-3 rounded-full text-white font-object hover:bg-white hover:text-black transition-all duration-300'>Contact Me</Link>
+            <Link href={'mailto:ryan.houk@proton.me?subject=Hi, Ryan! A message via ryanhouk.com.'} target='_blank' className='border-2 border-white px-8 py-3 rounded-full text-white font-object hover:bg-white hover:text-black transition-all duration-300'>Contact Me</Link>
           </FadeY>
       </section>
     </>
