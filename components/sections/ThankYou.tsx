@@ -1,32 +1,45 @@
-import React from 'react'
-import { FadeY } from '../animations'
-import DoodleSparkle from '../svg/DoodleSparkle'
-import Link from 'next/link'
+import React from 'react';
+import { FadeY } from '../animations';
+import DoodleSparkle from '../svg/DoodleSparkle';
+import Link from 'next/link';
 
-type Props = {}
+type Props = {};
 
 const ThankYou = (props: Props) => {
   return (
     <>
-    <section className='scroll-mt-16 py-12 lg:py-32 relative'>
-        <div className='relative z-20 mx-auto max-w-5xl flex flex-col justify-center px-8'>
+      <section className='relative scroll-mt-16 py-12 lg:py-32'>
+        <div className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8'>
           <FadeY delay={0.25}>
-            <DoodleSparkle startColor={'#dc2626'} endColor={'#facc15'} className='w-20 mb-2 lg:mb-2 lg:w-32 lg:mx-auto' /></FadeY>
-          <h1 className='font-clash text-4xl text-white lg:text-9xl lg:text-center mb-4 lg:mb-8'>
+            <DoodleSparkle
+              startColor={'#dc2626'}
+              endColor={'#facc15'}
+              className='mb-2 w-20 lg:mx-auto lg:mb-2 lg:w-32'
+            />
+          </FadeY>
+          <h1 className='mb-4 font-clash text-4xl text-white lg:mb-8 lg:text-center lg:text-9xl'>
             <FadeY delay={0.5}>Thank You!</FadeY>
           </h1>
           <FadeY delay={0.75}>
-            <p className='lg:text-center text-white font-mono opacity-60 max-w-2xl mx-auto text-sm leading-loose'>
+            <p className='mx-auto max-w-2xl font-mono text-sm leading-loose text-white opacity-60 lg:text-center'>
               Appreciate you taking the time to check out my portfolio.
             </p>
           </FadeY>
         </div>
-         <FadeY delay={1} className='flex lg:justify-center mt-8 px-8'>
-            <Link href={'mailto:ryan.houk@proton.me?subject=Hi, Ryan! A message via ryanhouk.com.'} target='_blank' className='border-2 border-white px-8 py-3 rounded-full text-white font-object hover:bg-white hover:text-black transition-all duration-300'>Contact Me</Link>
-          </FadeY>
+        <FadeY delay={1} className='mt-8 flex px-8 lg:justify-center'>
+          <Link
+            href={
+              'mailto:ryan.houk@proton.me?subject=Hi, Ryan! A message via ryanhouk.com.'
+            }
+            target='_blank'
+            className='rounded-full border-2 border-white px-8 py-3 font-object text-white transition-all duration-300 hover:bg-white hover:text-black'
+          >
+            Contact Me
+          </Link>
+        </FadeY>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default ThankYou
+export default ThankYou;

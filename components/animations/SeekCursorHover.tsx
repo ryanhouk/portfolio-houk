@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import { useAnimation, motion } from "framer-motion";
+import React, { ReactNode } from 'react';
+import { useAnimation, motion } from 'framer-motion';
 
 interface SeekCursorHoverProps {
   children: ReactNode;
@@ -8,7 +8,7 @@ interface SeekCursorHoverProps {
 
 const SeekCursorHover: React.FC<SeekCursorHoverProps> = ({
   children,
-  className = "",
+  className = '',
 }) => {
   const animationControl = useAnimation();
 
@@ -20,7 +20,7 @@ const SeekCursorHover: React.FC<SeekCursorHoverProps> = ({
     animationControl.start({
       x: moveX / offsetFactor,
       y: moveY / offsetFactor,
-      transition: { type: "spring", damping: 20, stiffness: 100 }, // Add this line
+      transition: { type: 'spring', damping: 20, stiffness: 100 }, // Add this line
     });
   };
 

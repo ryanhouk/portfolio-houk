@@ -3,31 +3,54 @@ import React from 'react';
 
 type Props = {
   className?: string;
-}; 
+};
 
 const LoopingText: React.FC<Props> = ({ className }: Props) => {
   return (
     <>
-      <div className={`overflow-hidden relative w-full lg:h-32 flex items-center justify-start py-6 lg:py-16 border-y border-white/20 selection:bg-orange-200 ${className}`}>
+      <div
+        className={`relative flex w-full items-center justify-start overflow-hidden border-y border-white/20 py-6 selection:bg-orange-200 lg:h-32 lg:py-16 ${className}`}
+      >
         <motion.div
-          className="whitespace-nowrap text-3xl font-bold text-white lg:text-7xl font-clash flex gap-x-8"
+          className='flex gap-x-8 whitespace-nowrap font-clash text-3xl font-bold text-white lg:text-7xl'
           initial={{ x: '0vw' }} // Start off the right edge of the screen
           animate={{ x: '-100vw' }} // End off the left edge of the screen
           transition={{
             repeat: Infinity,
-            repeatType: "loop",
+            repeatType: 'loop',
             duration: 40, // Duration for the text to move across the screen, adjust as needed
-            ease: "linear",
+            ease: 'linear',
           }}
         >
-          <div className='flex items-center'>AB Testing<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-          <div className='flex items-center'>Dashboards<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-          <div className='flex items-center'>Usability Testing<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-          <div className='flex items-center'>Web Applications<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-          <div className='flex items-center'>Surveys<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-          <div className='flex items-center'>iOS & Android Apps<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-          <div className='flex items-center'>IA<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
-          <div className='flex items-center'>tvOS<div className='w-4 h-4 ml-8 rounded-full bg-white/40'></div></div>
+          <div className='flex items-center'>
+            AB Testing
+            <div className='ml-8 h-4 w-4 rounded-full bg-white/40'></div>
+          </div>
+          <div className='flex items-center'>
+            Dashboards
+            <div className='ml-8 h-4 w-4 rounded-full bg-white/40'></div>
+          </div>
+          <div className='flex items-center'>
+            Usability Testing
+            <div className='ml-8 h-4 w-4 rounded-full bg-white/40'></div>
+          </div>
+          <div className='flex items-center'>
+            Web Applications
+            <div className='ml-8 h-4 w-4 rounded-full bg-white/40'></div>
+          </div>
+          <div className='flex items-center'>
+            Surveys<div className='ml-8 h-4 w-4 rounded-full bg-white/40'></div>
+          </div>
+          <div className='flex items-center'>
+            iOS & Android Apps
+            <div className='ml-8 h-4 w-4 rounded-full bg-white/40'></div>
+          </div>
+          <div className='flex items-center'>
+            IA<div className='ml-8 h-4 w-4 rounded-full bg-white/40'></div>
+          </div>
+          <div className='flex items-center'>
+            tvOS<div className='ml-8 h-4 w-4 rounded-full bg-white/40'></div>
+          </div>
         </motion.div>
       </div>
     </>

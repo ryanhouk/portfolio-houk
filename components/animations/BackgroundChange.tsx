@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { motion, useViewportScroll } from "framer-motion";
+import { useEffect } from 'react';
+import { motion, useViewportScroll } from 'framer-motion';
 
 interface Props {
   children: React.ReactNode;
@@ -18,7 +18,7 @@ const BackgroundChange: React.FC<Props> = ({ className, children }) => {
         body.offsetHeight,
         html.clientHeight,
         html.scrollHeight,
-        html.offsetHeight
+        html.offsetHeight,
       );
       const scrollHeight = height - window.innerHeight;
       const percentage = (window.pageYOffset / scrollHeight) * 100;
@@ -26,16 +26,16 @@ const BackgroundChange: React.FC<Props> = ({ className, children }) => {
       document.body.style.backgroundColor = `hsl(${hue}, 50%, 50%)`;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
     <motion.div
-      style={{ width: "100%", height: "100%" }}
+      style={{ width: '100%', height: '100%' }}
       animate={{ opacity: [0, 1] }}
       transition={{ duration: 0.3 }}
       className={className}
