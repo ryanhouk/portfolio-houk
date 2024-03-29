@@ -9,48 +9,93 @@ type Props = {};
 const BentoGrid = (props: Props) => {
   return (
     <>
-      <section className='py-12 lg:py-32 px-8 selection:bg-orange-200'>
-        <div className='mx-auto grid max-w-screen-2xl lg:grid-cols-3 gap-4'>
-          <div className='lg:col-span-2 grid lg:grid-cols-3 gap-4 rounded-2xl'>
-            <FadeY delay={0.25} className='col-span-1 h-96 rounded-3xl flex justify-between flex-col overflow-clip border border-white/10 group'>
-              <Link href={'https://medium.com/prototypr/accessibility-in-web-design-the-responsibility-of-developers-c82ecdd9ebf2'} target='_blank'>
-                <div className='p-6 bg-black z-10 relative'>
+      <section className='px-8 py-12 selection:bg-orange-200 lg:py-32'>
+        <div className='mx-auto grid max-w-screen-2xl gap-4 lg:grid-cols-3'>
+          <div className='grid gap-4 rounded-2xl lg:col-span-2 lg:grid-cols-3'>
+            <FadeY
+              delay={0.25}
+              className='group col-span-1 flex h-96 flex-col justify-between overflow-clip rounded-3xl border border-white/10'
+            >
+              <Link
+                href={
+                  'https://medium.com/prototypr/accessibility-in-web-design-the-responsibility-of-developers-c82ecdd9ebf2'
+                }
+                target='_blank'
+              >
+                <div className='relative z-10 bg-black p-6'>
                   <h2 className='font-object text-lg text-white'>
-                    Accessibility in web design & the responsibility of developers
+                    Accessibility in web design & the responsibility of
+                    developers
                   </h2>
                   <div className='flex items-center'>
-                    <p className='font-mono text-white/50 text-xs mt-2 group-hover:text-white'>Read More</p>
-                    <ArrowRight className='w-4 group-hover:ml-2 ml-0 mt-[10px] opacity-0 group-hover:opacity-100 transition-all' strokeColor={'#fff'} strokeWidth={2} />
+                    <p className='mt-2 font-mono text-xs text-white/50 group-hover:text-white'>
+                      Read More
+                    </p>
+                    <ArrowRight
+                      className='ml-0 mt-[10px] w-4 opacity-0 transition-all group-hover:ml-2 group-hover:opacity-100'
+                      strokeColor={'#fff'}
+                      strokeWidth={2}
+                    />
                   </div>
                 </div>
-                <Image src={'/img/blog/blog-access.webp'} alt={''} height={400} width={600} className='w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-300' />
+                <Image
+                  src={'/img/blog/blog-access.webp'}
+                  alt={''}
+                  height={400}
+                  width={600}
+                  className='h-full w-full object-cover object-center transition-all duration-300 group-hover:scale-110'
+                />
               </Link>
             </FadeY>
 
-            <FadeY className='lg:col-span-2 h-96 rounded-3xl overflow-clip border border-white/10 group'>
-              <Link href={'https://ryanhouk.medium.com/do-netflix-hbo-spotify-twitter-hulu-apple-and-google-agree-with-these-designers-9d8d8ae2e9a1'} target='_blank'>
-                <div className='p-6 bg-black z-10 relative'>
+            <FadeY className='group h-96 overflow-clip rounded-3xl border border-white/10 lg:col-span-2'>
+              <Link
+                href={
+                  'https://ryanhouk.medium.com/do-netflix-hbo-spotify-twitter-hulu-apple-and-google-agree-with-these-designers-9d8d8ae2e9a1'
+                }
+                target='_blank'
+              >
+                <div className='relative z-10 bg-black p-6'>
                   <h2 className='font-object text-lg text-white'>
-                    Do Netflix, HBO, Apple, Google, Hulu, Twitter and Spotify, agree with these designers?
+                    Do Netflix, HBO, Apple, Google, Hulu, Twitter and Spotify,
+                    agree with these designers?
                   </h2>
                   <div className='flex items-center'>
-                    <p className='font-mono text-white/50 text-xs mt-2 group-hover:text-white'>Read More</p>
-                    <ArrowRight className='w-4 group-hover:ml-2 ml-0 mt-[10px] opacity-0 group-hover:opacity-100 transition-all' strokeColor={'#fff'} strokeWidth={2} />
+                    <p className='mt-2 font-mono text-xs text-white/50 group-hover:text-white'>
+                      Read More
+                    </p>
+                    <ArrowRight
+                      className='ml-0 mt-[10px] w-4 opacity-0 transition-all group-hover:ml-2 group-hover:opacity-100'
+                      strokeColor={'#fff'}
+                      strokeWidth={2}
+                    />
                   </div>
                 </div>
-              <Image src={'/img/blog/blog-agree.webp'} alt={''} height={400} width={600} className='w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-300' />
+                <Image
+                  src={'/img/blog/blog-agree.webp'}
+                  alt={''}
+                  height={400}
+                  width={600}
+                  className='h-full w-full object-cover object-center transition-all duration-300 group-hover:scale-110'
+                />
               </Link>
             </FadeY>
 
-            <FadeY delay={0.25} className='lg:col-span-2 h-96 rounded-3xl bg-white/5 p-4 lg:p-8'>
+            <FadeY
+              delay={0.25}
+              className='h-96 rounded-3xl bg-white/5 p-4 lg:col-span-2 lg:p-8'
+            >
               SHORT
             </FadeY>
-            <FadeY delay={0.5} className='lg:col-span-1 h-96 rounded-3xl bg-white/5 p-4 lg:p-8'>
+            <FadeY
+              delay={0.5}
+              className='h-96 rounded-3xl bg-white/5 p-4 lg:col-span-1 lg:p-8'
+            >
               LONG
             </FadeY>
           </div>
 
-          <FadeY delay={0.75} className='lg:col-span-1 h-full rounded-3xl'>
+          <FadeY delay={0.75} className='h-full rounded-3xl lg:col-span-1'>
             <div className='h-full rounded-2xl bg-white/5 backdrop-blur-3xl'>
               STUFF
             </div>

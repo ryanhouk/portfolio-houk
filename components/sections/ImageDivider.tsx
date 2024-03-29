@@ -32,16 +32,28 @@ const ImageLoop: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative h-[200px] lg:h-[600px] max-w-5xl mx-auto rounded-md overflow-clip">
+    <div className='relative mx-auto h-[200px] max-w-5xl overflow-clip rounded-md lg:h-[600px]'>
       {imageData.map((image, index) => (
         <motion.div
           key={image.src}
           initial={{ opacity: 0 }}
-          animate={{ opacity: index === currentImage || (isAnimating && index === (currentImage + 1) % imageData.length) ? 1 : 0 }}
+          animate={{
+            opacity:
+              index === currentImage ||
+              (isAnimating && index === (currentImage + 1) % imageData.length)
+                ? 1
+                : 0,
+          }}
           transition={{ duration: 1.5 }}
-          className="absolute inset-0 w-full h-full px-4"
+          className='absolute inset-0 h-full w-full px-4'
         >
-          <Image src={image.src} alt={image.alt} height={1588} width={3000} className='object-cover object-top' />
+          <Image
+            src={image.src}
+            alt={image.alt}
+            height={1588}
+            width={3000}
+            className='object-cover object-top'
+          />
         </motion.div>
       ))}
     </div>

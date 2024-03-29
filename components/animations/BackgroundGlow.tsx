@@ -22,7 +22,9 @@ const circleVariants = {
 const BackgroundGlow = ({ className }: Props) => {
   return (
     // Updated to ensure it's centered and covers the intended area
-    <div className={`absolute inset-0 z-0 flex items-center justify-center ${className}`}>
+    <div
+      className={`absolute inset-0 z-0 flex items-center justify-center ${className}`}
+    >
       <div className='relative lg:h-96 lg:w-96'>
         <motion.div
           className='absolute h-96 w-96 rounded-full bg-orange-500 mix-blend-screen blur-3xl filter'
