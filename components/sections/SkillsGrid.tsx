@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 type Skill = {
-  title: string;
-  context: string; // New field for additional tooltip text
-};
+  title: string
+  context: string // New field for additional tooltip text
+}
 
 const skillData: Skill[] = [
   { title: 'Figma', context: 'Design tool for UI and UX.' },
@@ -70,25 +70,24 @@ const skillData: Skill[] = [
     context: 'Visualized user interactions on a webpage with color coding.',
   },
   { title: 'Being Nice', context: 'Genuinely treating people with respect 😊' },
-];
+]
 
 const SkillsGrid = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <section className='px-8 selection:bg-orange-200'>
-      <div className='relative z-30 mx-auto mb-20 flex max-w-2xl flex-wrap justify-center gap-2 transition-all duration-300 lg:mb-4 xl:-translate-y-20'>
+    <section className="px-8 selection:bg-orange-200">
+      <div className="relative z-30 flex flex-wrap justify-center max-w-2xl gap-2 mx-auto mb-20 transition-all duration-300 lg:mb-4 xl:-translate-y-20">
         {skillData.map((skill, index) => (
           <div
             key={index}
             aria-label={skill.title} // Add aria-label here
-            className='group relative rounded-full border border-white/10 bg-white/10 bg-gradient-to-br from-red-500 to-yellow-400 bg-clip-text px-4 py-2 font-mono text-xs text-transparent transition-all duration-300 hover:cursor-cell hover:border-white/40'
+            className="relative px-4 py-2 font-mono text-xs text-transparent transition-all duration-300 border rounded-full group border-white/10 bg-white/10 bg-gradient-to-br from-red-500 to-yellow-400 bg-clip-text hover:cursor-cell hover:border-white/40"
             onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
+            onMouseLeave={() => setHoveredIndex(null)}>
             {skill.title}
             {hoveredIndex === index && (
-              <div className='absolute bottom-full left-1/2 mb-2 w-72 -translate-x-1/2 transform rounded-xl border border-white/10 bg-black/20 p-2 text-center text-xs leading-relaxed text-white shadow-lg backdrop-blur-2xl'>
+              <div className="absolute p-2 mb-2 text-xs leading-relaxed text-center text-white transform -translate-x-1/2 border shadow-lg bottom-full left-1/2 w-72 rounded-xl border-white/10 bg-black/20 backdrop-blur-2xl">
                 {skill.context}
               </div>
             )}
@@ -96,7 +95,7 @@ const SkillsGrid = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SkillsGrid;
+export default SkillsGrid

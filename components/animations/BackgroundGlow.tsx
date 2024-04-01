@@ -1,10 +1,10 @@
 // AnimatedCircles.tsx
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion } from 'framer-motion'
+import React from 'react'
 
 type Props = {
-  className?: string;
-};
+  className?: string
+}
 
 const circleVariants = {
   animate: {
@@ -17,35 +17,34 @@ const circleVariants = {
       ease: 'easeInOut',
     },
   },
-};
+}
 
 const BackgroundGlow = ({ className }: Props) => {
   return (
     // Updated to ensure it's centered and covers the intended area
     <div
-      className={`absolute inset-0 z-0 flex items-center justify-center ${className}`}
-    >
-      <div className='relative lg:h-96 lg:w-96'>
+      className={`absolute inset-0 z-0 flex items-center justify-center ${className}`}>
+      <div className="relative lg:h-96 lg:w-96">
         <motion.div
-          className='absolute h-96 w-96 rounded-full bg-orange-500 mix-blend-screen blur-3xl filter'
+          className="absolute bg-orange-500 rounded-full h-96 w-96 mix-blend-screen blur-3xl filter"
           variants={circleVariants}
-          animate='animate'
+          animate="animate"
         />
         <motion.div
-          className='absolute h-96 w-96 rounded-full bg-white mix-blend-screen blur-3xl filter'
+          className="absolute bg-white rounded-full h-96 w-96 mix-blend-screen blur-3xl filter"
           style={{ x: '25%', y: '20%' }}
           variants={circleVariants}
-          animate='animate'
+          animate="animate"
         />
         <motion.div
-          className='absolute h-96 w-96 rounded-full bg-cyan-500 mix-blend-screen blur-3xl filter'
+          className="absolute rounded-full h-96 w-96 bg-cyan-500 mix-blend-screen blur-3xl filter"
           style={{ x: '-25%', y: '20%' }}
           variants={circleVariants}
-          animate='animate'
+          animate="animate"
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BackgroundGlow;
+export default BackgroundGlow

@@ -22,7 +22,7 @@ const KloveDetails: React.FC = () => {
       <DetailsNav />
 
       {/* HERO */}
-      <section className="h-screen overflow-clip bg-white">
+      <section className="h-screen bg-white overflow-clip">
         <DetailsHeader
           icon={
             <IconDevices
@@ -37,10 +37,10 @@ const KloveDetails: React.FC = () => {
       </section>
 
       {/* INTRO TEXT */}
-      <section className="bg-orange-100 py-12 lg:py-20">
-        <div className="mx-auto grid max-w-5xl grid-cols-2">
+      <section className="py-12 bg-orange-100 lg:py-20">
+        <div className="grid max-w-5xl grid-cols-2 mx-auto">
           <div className="col-span-1">
-            <h2 className="mb-2 text-sm uppercase tracking-wide text-orange-700">
+            <h2 className="mb-2 text-sm tracking-wide text-orange-700 uppercase">
               The Problem
             </h2>
             <p className="font-mono">Problem statement</p>
