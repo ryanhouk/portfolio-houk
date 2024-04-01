@@ -62,27 +62,27 @@ const FourGrid = () => {
     <>
       <section
         id="Work"
-        className="relative z-20 mx-auto flex max-w-5xl scroll-mt-10 flex-col justify-center px-8 py-12 selection:bg-orange-200 lg:pt-32">
+        className="relative z-20 flex flex-col justify-center max-w-5xl px-8 py-12 mx-auto scroll-mt-10 selection:bg-orange-200 lg:pt-32">
         <FadeY>
           <DoodleScribble
             startColor={'#dc2626'}
             stopColor={'#facc15'}
-            className="mb-2 w-24 lg:mx-auto lg:mb-0 lg:w-44"
+            className="w-24 mb-2 lg:mx-auto lg:mb-0 lg:w-44"
           />
         </FadeY>
-        <h1 className="z-10 mb-4 font-clash text-4xl text-white lg:mb-8 lg:text-center lg:text-9xl">
+        <h1 className="z-10 mb-4 text-4xl text-white font-clash lg:mb-8 lg:text-center lg:text-9xl">
           <FadeY delay={0.25}>Work </FadeY>
           <FadeY delay={0.5}>Highlights</FadeY>
         </h1>
         <FadeY className="relative z-20" delay={0.75}>
-          <p className="mx-auto max-w-2xl font-mono text-sm leading-loose text-white opacity-60 lg:text-center">
+          <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-white opacity-60 lg:text-center">
             There is a lot of work to choose from! Here are a few highlights to
             dive into.
           </p>
         </FadeY>
       </section>
 
-      <section className="mx-auto max-w-7xl px-8 pb-12 selection:bg-orange-200 lg:pb-32">
+      <section className="px-8 pb-12 mx-auto max-w-7xl selection:bg-orange-200 lg:pb-32">
         <FadeY delay={0.25} className="grid gap-8 lg:grid-cols-2">
           {data.map((item, index) => (
             <Link
@@ -92,17 +92,17 @@ const FourGrid = () => {
               <div
                 className="relative flex h-96 flex-col justify-end bg-cover bg-center bg-no-repeat transition-all duration-300 lg:h-[500px] lg:bg-left lg:group-hover:bg-right"
                 style={{ backgroundImage: `url('${item.backgroundImage}')` }}>
-                <div className="absolute bottom-0 z-0 h-48 w-full bg-gradient-to-t from-black/80 to-black/0"></div>
-                <div className="absolute z-0 h-full w-full bg-black/30"></div>
+                <div className="absolute bottom-0 z-0 w-full h-48 bg-gradient-to-t from-black/80 to-black/0"></div>
+                <div className="absolute z-0 w-full h-full bg-black/30"></div>
                 <div className="z-10 p-6 transition-all duration-300 group-hover:-translate-y-4 lg:p-8">
                   <p className="pb-4 font-mono text-sm text-orange-400">
                     Case Study Soon
                   </p>
                   <div className="flex items-center">
-                    <h3 className="mb-2 font-object text-2xl text-white">
+                    <h3 className="mb-2 text-2xl text-white font-object">
                       {item.title}
                     </h3>
-                    <IconArrowRight className="mb-2 ml-0 hidden w-6 text-white opacity-0 transition-all duration-200 group-hover:ml-4 group-hover:opacity-100 lg:flex" />
+                    <IconArrowRight className="hidden w-6 mb-2 ml-0 text-white transition-all duration-200 opacity-0 group-hover:ml-4 group-hover:opacity-100 lg:flex" />
                   </div>
                   <p className="font-mono text-sm leading-relaxed text-white transition-all duration-200 group-hover:text-white lg:text-white/60">
                     {item.description}

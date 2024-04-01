@@ -1,10 +1,10 @@
-import React, { PropsWithChildren } from 'react';
-import { motion } from 'framer-motion';
+import React, { PropsWithChildren } from 'react'
+import { motion } from 'framer-motion'
 
 interface Props extends PropsWithChildren<any> {
-  className?: string;
-  once?: boolean;
-  delay?: number;
+  className?: string
+  once?: boolean
+  delay?: number
 }
 
 const FadeY = ({ className, delay, once = false, children }: Props) => {
@@ -24,11 +24,10 @@ const FadeY = ({ className, delay, once = false, children }: Props) => {
       whileInView={{
         opacity: 1,
         y: 0,
-      }}
-    >
+      }}>
       {children}
     </motion.div>
-  );
-};
+  )
+}
 
-export default FadeY;
+export default FadeY

@@ -1,16 +1,16 @@
-import Link from 'next/link';
-import React from 'react';
-import { FadeY } from '../animations';
-import DoodleLoops from '../svg/DoodleLoops';
-import Image from 'next/image';
-import IconArrowRight from '../svg/IconArrowRight';
+import Link from 'next/link'
+import React from 'react'
+import { FadeY } from '../animations'
+import DoodleLoops from '../svg/DoodleLoops'
+import Image from 'next/image'
+import IconArrowRight from '../svg/IconArrowRight'
 
 // Define the structure for a blog post data
 type BlogData = {
-  url: string;
-  img: string;
-  title: string;
-};
+  url: string
+  img: string
+  title: string
+}
 
 const Blog = () => {
   // Sample data for blog posts
@@ -42,37 +42,35 @@ const Blog = () => {
       title:
         'The accessibility rating for 5 popular websites — how did they score?',
     },
-  ];
+  ]
 
   return (
     <>
       <section
-        id='Blog'
-        className='scroll-mt-16 pt-12 selection:bg-orange-200 lg:pt-32'
-      >
-        <div className='relative z-20 mx-auto flex max-w-5xl flex-col justify-center px-8'>
+        id="Blog"
+        className="pt-12 scroll-mt-16 selection:bg-orange-200 lg:pt-32">
+        <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
             <DoodleLoops
               startColor={'#dc2626'}
               stopColor={'#facc15'}
-              className='mb-2 w-20 lg:mx-auto lg:mb-2 lg:w-64'
+              className="w-20 mb-2 lg:mx-auto lg:mb-2 lg:w-64"
             />
           </FadeY>
-          <h1 className='mb-4 font-clash text-4xl text-white lg:mb-8 lg:text-center lg:text-9xl'>
+          <h1 className="mb-4 text-4xl text-white font-clash lg:mb-8 lg:text-center lg:text-9xl">
             <FadeY delay={0.5}>Blog</FadeY>
           </h1>
           <FadeY delay={0.75}>
-            <p className='mx-auto max-w-2xl font-mono text-sm leading-loose text-white opacity-60 lg:text-center'>
+            <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-white opacity-60 lg:text-center">
               Interested in design and tech? I&apos;d love to hear your
               thoughts!
             </p>
           </FadeY>
-          <FadeY delay={1} className='mt-8 flex lg:justify-center'>
+          <FadeY delay={1} className="flex mt-8 lg:justify-center">
             <Link
               href={'https://medium.com/@ryanhouk'}
-              target='_blank'
-              className='rounded-full border-2 border-white px-8 py-3 font-object text-white transition-all duration-300 hover:bg-white hover:text-black'
-            >
+              target="_blank"
+              className="px-8 py-3 text-white transition-all duration-300 border-2 border-white rounded-full font-object hover:bg-white hover:text-black">
               Visit Blog
             </Link>
           </FadeY>
@@ -80,30 +78,28 @@ const Blog = () => {
       </section>
 
       <section
-        id='Posts'
-        className='mx-auto max-w-5xl px-8 pt-12 selection:bg-orange-200'
-      >
-        <div className='flex flex-col'>
+        id="Posts"
+        className="max-w-5xl px-8 pt-12 mx-auto selection:bg-orange-200">
+        <div className="flex flex-col">
           {data.map((post, index) => (
             <Link
               href={post.url}
               key={index}
-              target='_blank'
-              className='group flex flex-wrap items-center border-t border-white/10 py-4 transition-all duration-300 last:border-b hover:bg-white/5 lg:flex-nowrap'
-            >
+              target="_blank"
+              className="flex flex-wrap items-center py-4 transition-all duration-300 border-t group border-white/10 last:border-b hover:bg-white/5 lg:flex-nowrap">
               <Image
                 src={post.img}
                 alt={post.title}
                 height={400}
                 width={200}
-                className='w-full lg:w-56'
+                className="w-full lg:w-56"
               />
-              <div className='flex flex-col'>
-                <h3 className='mt-4 font-object text-lg text-white lg:mx-8 lg:-mt-2 lg:text-2xl'>
+              <div className="flex flex-col">
+                <h3 className="mt-4 text-lg text-white font-object lg:mx-8 lg:-mt-2 lg:text-2xl">
                   {post.title}
                 </h3>
-                <div className='-mt-8 hidden items-center opacity-0 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 lg:ml-8 lg:flex'>
-                  <p className='font-mono text-xs text-white'>Read More</p>
+                <div className="items-center hidden -mt-8 transition-all duration-200 opacity-0 group-hover:mt-2 group-hover:opacity-100 lg:ml-8 lg:flex">
+                  <p className="font-mono text-xs text-white">Read More</p>
                 </div>
               </div>
             </Link>
@@ -111,7 +107,7 @@ const Blog = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
