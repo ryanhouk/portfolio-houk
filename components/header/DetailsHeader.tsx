@@ -17,7 +17,7 @@ const DetailsHeader = ({ title, imgSrc, icon }: Props) => {
 
   return (
     <>
-      <FadeY className="py-24 mx-auto max-w-screen-3xl lg:py-60">
+      <FadeY className="pt-24 mx-auto max-w-screen-3xl lg:pt-60">
         <FadeY
           delay={0.5}
           className="relative z-20 px-6 mx-auto mb-10 text-center md:max-w-4xl xl:-mb-12 xl:max-w-5xl">

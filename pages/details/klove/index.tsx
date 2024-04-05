@@ -22,7 +22,7 @@ const KloveDetails: React.FC = () => {
       <DetailsNav />
 
       {/* HERO */}
-      <section className="h-screen bg-white overflow-clip">
+      <section className="bg-white overflow-clip">
         <DetailsHeader
           icon={
             <IconDevices
@@ -37,17 +37,37 @@ const KloveDetails: React.FC = () => {
       </section>
 
       {/* INTRO TEXT */}
-      <section className="py-12 bg-orange-100 lg:py-20">
-        <div className="grid max-w-5xl grid-cols-2 mx-auto">
+      <section className="px-6 py-12 bg-black lg:py-48">
+        <div className="grid mx-auto lg:grid-cols-2 max-w-7xl">
           <div className="col-span-1">
-            <h2 className="mb-2 text-sm tracking-wide text-orange-700 uppercase">
-              The Problem
+            <h2 className="mb-4 text-xl tracking-wide text-white font-object lg:text-6xl">
+              About this project
             </h2>
-            <p className="font-mono">Problem statement</p>
+            <p className="leading-relaxed text-white">
+              Chocolate cake powder cookie candy canes chocolate bar. Powder
+              chocolate powder powder jelly bonbon tootsie roll toffee.
+              Chocolate macaroon biscuit cheesecake topping candy dessert
+              marshmallow. Chocolate cake carrot cake icing carrot cake sweet
+              gummi bears jelly.
+            </p>
+            <div className="mt-12">
+              <h3 className="text-white font-object">My Role:</h3>
+              <p className="text-white/60">
+                Design &middot; UX &middot; Development
+              </p>
+            </div>
           </div>
-          <div className="col-span-1"></div>
+          {/* <div className="col-span-1 lg:mt-20">
+            <h3 className="text-white font-object">My Role:</h3>
+            <p className="text-white/60">
+              Design &middot; UX &middot; Development
+            </p>
+          </div> */}
         </div>
       </section>
+
+      {/* INFO */}
+      <section className="py-64 bg-black">INFO</section>
     </>
   )
 }
