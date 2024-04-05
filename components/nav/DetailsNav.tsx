@@ -16,7 +16,7 @@ const navItems = [
 const DetailsNav = (props: Props) => {
   return (
     <>
-      <nav className="fixed z-50 flex justify-between w-full px-6 bg-white/70 backdrop-blur-3xl">
+      <nav className="fixed z-50 flex justify-between w-full px-6 shadow-sm bg-white/70 backdrop-blur-3xl">
         {/* AVATAR */}
         <div className="items-center justify-start flex-1 hidden h-16 lg:flex">
           <Image

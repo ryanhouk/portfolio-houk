@@ -1,6 +1,7 @@
 import { useState, FormEvent, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import IconDevices from '../../../components/svg/IconDevices'
 
 interface EnterPasswordProps {}
 
@@ -52,6 +53,11 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
       <div className="flex flex-col h-screen lg:flex-row">
         <div className="flex items-center justify-center flex-1">
           <section className="w-full max-w-sm mx-6">
+            <IconDevices
+              startColor={'#dc2626'}
+              endColor={'#facc15'}
+              className="w-10 mx-auto mb-4 lg:mb-6 lg:w-16"
+            />
             <div className="mb-8 text-center text-white">
               <h1 className="text-3xl font-clash">K-LOVE Platforms</h1>
               <p className="mt-4 font-mono text-sm leading-normal opacity-60">
