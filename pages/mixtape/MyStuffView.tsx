@@ -30,7 +30,7 @@ const MyStuffView = () => {
         <CardRetail
           img="/img/mixtape/stuff/planet.jpg"
           title="TikTok is filled with tax advice. Is any of it worth listening to?"
-          urlRef="npr.com"
+          website="npr.com"
           alt=""
           subtext=""
         />
@@ -60,7 +60,7 @@ const MyStuffView = () => {
         <CardRetail
           img="/img/mixtape/stuff/nike-blazer-white.jpg"
           title="Nike SB Zoom Blazer Mid"
-          urlRef="nike.com"
+          website="nike.com"
           alt=""
           subtext="$90"
         />
@@ -74,7 +74,7 @@ const MyStuffView = () => {
         <CardRetail
           img="/img/mixtape/stuff/nike-blazer-red.png"
           title="Nike SB Zoom Blazer Mid"
-          urlRef="nike.com"
+          website="nike.com"
           alt=""
           subtext="$90"
         />
