@@ -13,7 +13,7 @@ const MyStuffView = () => {
       y: 0,
       transition: {
         delay: i * 0.1, // staggered delay, adjusted manually per card
-        duration: 0.6, // duration for smoother animation
+        duration: 0.4, // duration for smoother animation
         ease: [0.22, 1, 0.36, 1], // custom cubic bezier for a smooth ease-out
       },
     }),
@@ -33,6 +33,7 @@ const MyStuffView = () => {
           website="npr.com"
           alt=""
           subtext=""
+          appSource={'PocketCast'}
         />
       </motion.div>
       <motion.div
@@ -47,14 +48,6 @@ const MyStuffView = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        custom={2}
-        variants={variants}>
-        <CardImage img="/img/mixtape/stuff/woman.jpg" alt="" />
-      </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
         custom={3}
         variants={variants}>
         <CardRetail
@@ -63,21 +56,16 @@ const MyStuffView = () => {
           website="nike.com"
           alt=""
           subtext="$90"
+          appSource={'Safari'}
         />
       </motion.div>
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        custom={4}
+        custom={2}
         variants={variants}>
-        <CardRetail
-          img="/img/mixtape/stuff/nike-blazer-red.png"
-          title="Nike SB Zoom Blazer Mid"
-          website="nike.com"
-          alt=""
-          subtext="$90"
-        />
+        <CardImage img="/img/mixtape/stuff/woman.jpg" alt="" />
       </motion.div>
     </section>
   )
