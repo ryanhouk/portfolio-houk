@@ -26,11 +26,11 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
     const { isValid } = await response.json()
 
     if (isValid) {
-      localStorage.setItem('hasAccess_klove', 'true') // Specific local storage key for KLOVE
-      router.push('/details/klove') // Specific redirection for KLOVE
+      localStorage.setItem('hasAccess_webmob', 'true') // Specific local storage key for WebMob
+      router.push('/details/webmob') // Specific redirection for WebMob
     } else {
       setErrorMessage(
-        `That's the wrong password KLOVE. You can hit the link below to request access.`
+        `That's the wrong password for WebMob. You can hit the link below to request access.`
       ) // Set error message instead of alert
     }
   }
@@ -59,13 +59,13 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
               className="w-10 mx-auto mb-4 lg:mb-6 lg:w-16"
             />
             <div className="mb-8 text-center text-white">
-              <h1 className="text-3xl font-clash">K-LOVE Platforms</h1>
+              <h1 className="text-3xl font-clash">WebMob</h1>
               <p className="mt-4 font-mono text-sm leading-normal opacity-60">
                 Please enter the password to view this case study. You can
                 request access{' '}
                 <Link
                   className="hover:underline"
-                  href={`mailto:ryan.houk@proton.me?subject=Hi, Ryan! I'd like access to K-LOVE.`}>
+                  href={`mailto:ryan.houk@proton.me?subject=Hi, Ryan! I'd like access to WebMob.`}>
                   here
                 </Link>
                 .
