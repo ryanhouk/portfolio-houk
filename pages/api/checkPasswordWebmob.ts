@@ -1,4 +1,3 @@
-// pages/api/checkPassword.ts
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 export default function handler(
@@ -6,6 +5,6 @@ export default function handler(
   res: NextApiResponse<{ isValid: boolean }>
 ) {
   const { password } = req.body
-  const isValid = password === process.env.PASSWORD_KLOVE // Securely compare the password
+  const isValid = password === process.env.PASSWORD_WEBMOB // Securely compare the password
   res.status(200).json({ isValid })
 }

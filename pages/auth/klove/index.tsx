@@ -15,7 +15,7 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
     event.preventDefault()
     setErrorMessage(null) // Reset error message on each attempt
 
-    const response = await fetch('/api/checkPassword', {
+    const response = await fetch('/api/checkPasswordKlove', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
