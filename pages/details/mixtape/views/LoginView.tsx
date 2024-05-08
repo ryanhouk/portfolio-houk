@@ -32,12 +32,12 @@ const LoginView = (props: Props) => {
             {/* FORM */}
             <div className="flex flex-col p-4 gap-y-2">
               <input
-                className="text-[17px] px-4 border text-white border-white/10 placeholder:text-white/30 rounded-[10px] bg-white/10 h-[58px] w-full"
+                className="text-[17px] px-4 border text-white border-white/10 placeholder:text-white/30 rounded-[10px] bg-white/5 h-[58px] w-full"
                 placeholder="Email"
                 type="email"
               />
               <input
-                className="text-[17px] px-4 border text-white border-white/10 placeholder:text-white/30 rounded-[10px] bg-white/10 h-[58px] w-full"
+                className="text-[17px] px-4 border text-white border-white/10 placeholder:text-white/30 rounded-[10px] bg-white/5 h-[58px] w-full"
                 placeholder="Password"
                 type="password"
               />
@@ -51,7 +51,7 @@ const LoginView = (props: Props) => {
                 Apple
               </Link>
             </div>
-            <div className="border-t-[.5px] border-white/20 pt-6 pb-10">
+            <div className="border-t-[.5px] border-white/20 pt-5 pb-20">
               <p className="text-white text-[17px] text-center">
                 Already have an account?{' '}
                 <span className="text-[#0A84FF]">Sign In</span>
