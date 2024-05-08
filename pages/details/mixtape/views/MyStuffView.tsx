@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import CardRetail from './cards/CardRetail'
-import CardNote from './cards/CardNote'
-import CardImage from './cards/CardImage'
+import CardLink from '../cards/CardLink'
+import CardNote from '../cards/CardNote'
+import CardImage from '../cards/CardImage'
 
 const MyStuffView = () => {
   // Animation variants
@@ -27,7 +27,7 @@ const MyStuffView = () => {
         viewport={{ once: true }}
         custom={0}
         variants={variants}>
-        <CardRetail
+        <CardLink
           img="/img/mixtape/stuff/planet.jpg"
           title="TikTok is filled with tax advice. Is any of it worth listening to?"
           website="npr.com"
@@ -50,7 +50,7 @@ const MyStuffView = () => {
         viewport={{ once: true }}
         custom={3}
         variants={variants}>
-        <CardRetail
+        <CardLink
           img="/img/mixtape/stuff/nike-blazer-white.jpg"
           title="Nike SB Zoom Blazer Mid"
           website="nike.com"

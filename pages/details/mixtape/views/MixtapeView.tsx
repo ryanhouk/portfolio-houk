@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import CardMixtape from './cards/CardMixtape'
+import CardMixtape from '../cards/CardMixtape'
 
 const MixtapeView = () => {
   // Animation variants
@@ -26,7 +26,7 @@ const MixtapeView = () => {
         custom={0}
         variants={variants}>
         <CardMixtape
-          img={'img/mixtape/banner/tahoe.jpg'}
+          img={'/img/mixtape/banner/tahoe.jpg'}
           title={'Tahoe Trip'}
         />
       </motion.div>
@@ -37,7 +37,7 @@ const MixtapeView = () => {
         custom={1}
         variants={variants}>
         <CardMixtape
-          img={'img/mixtape/banner/nike-red.jpg'}
+          img={'/img/mixtape/banner/nike-red.jpg'}
           title={'Nike SB Blazer Wishlist'}
         />
       </motion.div>
@@ -48,7 +48,7 @@ const MixtapeView = () => {
         custom={2}
         variants={variants}>
         <CardMixtape
-          img={'img/mixtape/banner/pasta.jpg'}
+          img={'/img/mixtape/banner/pasta.jpg'}
           title={'Recipe: Rigatoni with Creamy Tomato Sauce'}
         />
       </motion.div>
