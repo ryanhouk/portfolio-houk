@@ -3,6 +3,7 @@ import Toggle from '../components/Toggle'
 import BlockButton from '../components/BlockButton'
 import Link from 'next/link'
 import LogoApple from '../svg/LogoApple'
+import TabNav from '../components/TabNav'
 
 type Props = {}
 
@@ -24,7 +25,9 @@ const EmptyHomeView = (props: Props) => {
       <div className="flex items-center justify-center h-screen">
         {/* PHONE CONTAINER */}
         <div className="w-[390px] h-[844px] bg-black border border-white/10 relative overflow-clip rounded-[50px]">
-          STUFF
+          <div className="flex flex-col justify-end h-full">
+            <TabNav />
+          </div>
         </div>
       </div>
     </>

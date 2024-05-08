@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Toggle from './components/Toggle'
+import TabNav from './components/TabNav'
 
 type Props = {}
 
@@ -18,9 +18,10 @@ const Mixtape = (props: Props) => {
   }, [])
   return (
     <>
+      {/* OUTER AREA */}
       <div className="flex items-center justify-center h-screen">
         {/* PHONE CONTAINER */}
-        <div className="w-[390px] h-[844px] bg-black border border-white/10 relative overflow-clip rounded-[50px]">
+        <div className="w-[390px] h-[844px] bg-black border border-white/10 relative overflow-y-scroll rounded-[50px]">
           {/* HEADER */}
           <div id="HeaderContainer" className="h-[202px] w-full relative">
             <div className="absolute bottom-0 z-[55] w-full">
@@ -42,9 +43,9 @@ const Mixtape = (props: Props) => {
               id="HeaderBackground"
               className="relative z-50 w-full h-full text-white bg-black/80 backdrop-blur-3xl"></div>
           </div>
-          <Toggle />
 
-          {/* <MixtapeView /> */}
+          {/* NAV */}
+          <TabNav className="absolute bottom-0 left-0 right-0 z-50" />
         </div>
       </div>
     </>
