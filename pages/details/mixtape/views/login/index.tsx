@@ -67,7 +67,7 @@ const LoginView = (props: Props) => {
                 </FadeY>
               </div>
               <FadeY delay={1.25} className="flex flex-col p-4 gap-y-2">
-                <BlockButton title={'Sign up with email'} url={'../'} />
+                <BlockButton title={'Sign up with email'} Url={'../'} />
                 <Link
                   href={'../'}
                   className="text-[17px] flex justify-center rounded-[10px] items-center hover:brightness-90 transition-all font-medium bg-white h-[50px] text-black w-full">
