@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import TabNav from './components/TabNav'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -47,6 +48,15 @@ const Mixtape = (props: Props) => {
           {/* NAV */}
           <TabNav className="absolute bottom-0 left-0 right-0 z-50" />
         </div>
+      </div>
+
+      {/* GLOBAL NAV */}
+      <div className="max-w-5xl mx-auto mb-4">
+        <Link
+          className="px-3 py-2 text-center transition-all text-white/50 hover:text-white"
+          href={'/details/mixtape/views/login/'}>
+          Back to Start
+        </Link>
       </div>
     </>
   )
