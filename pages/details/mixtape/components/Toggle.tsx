@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import MixtapeView from './MixtapeView'
-import MyStuffView from './MyStuffView'
+import MixtapeView from '../views/MixtapeView'
+import MyStuffView from '../views/MyStuffView'
 
 const Toggle = () => {
   const [isActive, setIsActive] = useState(true)

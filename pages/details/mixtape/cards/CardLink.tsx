@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 
 type Props = {
@@ -18,9 +18,14 @@ const CardRetail = ({
   alt,
   appSource,
 }: Props) => {
+  const [isExpanded, setIsExpanded] = useState(false)
+
   return (
     <>
-      <div className="h-[96px] w-full bg-[#1C1C1E]/[.6]  border-[1px] border-white/5 rounded-[16px] relative z-0 overflow-clip flex flex-col items-start group hover:h-[196px] transition-all ease-in-out duration-300">
+      <div
+        id="CardLink"
+        className={`h-[96px hover:cursor-pointer w-full bg-[#1C1C1E]/[.6] border-[1px] border-white/5 rounded-[16px] relative z-0 overflow-clip flex flex-col items-start group ${isExpanded ? 'h-[196px]' : 'h-[96px]'} transition-all ease-in-out duration-300`}
+        onClick={() => setIsExpanded(!isExpanded)}>
         <div className="flex items-center w-full p-[5px]">
           <Image
             className="object-cover rounded-xl opacity-90 aspect-square"

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Toggle from './Toggle'
+import Toggle from './components/Toggle'
 
 type Props = {}
 

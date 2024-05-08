@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import CardMixtape from './cards/CardMixtape'
+import CardMixtape from '../cards/CardMixtape'
 
 const MixtapeView = () => {
   // Animation variants
