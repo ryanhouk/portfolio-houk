@@ -1,8 +1,4 @@
 import React, { useEffect } from 'react'
-import Toggle from '../components/Toggle'
-import BlockButton from '../components/BlockButton'
-import Link from 'next/link'
-import LogoApple from '../svg/LogoApple'
 import TabNav from '../components/TabNav'
 
 type Props = {}

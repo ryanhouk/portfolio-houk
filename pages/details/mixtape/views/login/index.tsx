@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 // import Toggle from '../components/Toggle'
-import BlockButton from '../../components/BlockButton'
 import Link from 'next/link'
 import LogoApple from '../../svg/LogoApple'
 import Image from 'next/image'
@@ -67,7 +66,11 @@ const LoginView = (props: Props) => {
                 </FadeY>
               </div>
               <FadeY delay={1.25} className="flex flex-col p-4 gap-y-2">
-                <BlockButton title={'Sign up with email'} url={'../'} />
+                <Link
+                  href={'../'}
+                  className="ext-[17px] flex justify-center rounded-[10px] items-center hover:brightness-90 transition-all font-medium bg-[#0A84FF] h-[50px] text-white w-full">
+                  Sign Up with Email
+                </Link>
                 <Link
                   href={'../'}
                   className="text-[17px] flex justify-center rounded-[10px] items-center hover:brightness-90 transition-all font-medium bg-white h-[50px] text-black w-full">
