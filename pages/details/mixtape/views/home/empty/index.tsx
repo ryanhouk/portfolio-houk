@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import TabNav from './components/TabNav'
+import TabNavEmpty from '../../../components/TabNavEmpty'
 import Image from 'next/image'
 
 type Props = {}
@@ -46,7 +46,6 @@ const Mixtape = (props: Props) => {
                 className="h-[36px] w-[361px] text-[#EBEBF5]/[.6] flex items-center mb-4 px-3 bg-[#767680]/[.24] rounded-[10px] mx-auto">
                 Search Mixtape...
               </div>
-              {/* TOGGLE */}
             </div>
             {/* BG */}
             <div
@@ -55,7 +54,7 @@ const Mixtape = (props: Props) => {
           </div>
 
           {/* NAV */}
-          <TabNav className="absolute bottom-0 left-0 right-0 z-50" />
+          <TabNavEmpty className="absolute bottom-0 left-0 right-0 z-50" />
         </div>
       </div>
     </>

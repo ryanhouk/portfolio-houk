@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-// import Toggle from '../components/Toggle'
 import Link from 'next/link'
 import LogoApple from '../../svg/LogoApple'
 import Image from 'next/image'
@@ -23,9 +22,18 @@ const LoginView = (props: Props) => {
   }, [])
   return (
     <>
-      <div className="flex items-center justify-center h-screen">
+      <div className="fixed inset-0 flex items-center justify-center bg-black">
+        <Image
+          id="iphone"
+          className="w-[473px] h-[932px] object-cover object-center absolute"
+          src={'/img/mixtape/frames/iphone.png'}
+          alt={''}
+          width={473}
+          height={932}
+          priority // This prop ensures the image is loaded as high priority
+        />
         {/* PHONE CONTAINER */}
-        <div className="w-[390px] h-[844px] bg-black border border-white/10 relative overflow-clip rounded-[50px]">
+        <div className="w-[393px] h-[852px] bg-black relative overflow-clip rounded-[55px]">
           {/* ACTIONS */}
           <div className="flex flex-col justify-between h-full">
             <FadeY delay={0.25} className="relative p-4 mt-52">
