@@ -34,6 +34,7 @@ const MyStuffView = () => {
           alt=""
           subtext=""
           appSource={'PocketCast'}
+          linkUrl="https://play.pocketcasts.com/podcasts/c59b45b0-0bc4-012e-fb02-00163e1b201c"
         />
       </motion.div>
       <motion.div
@@ -57,6 +58,7 @@ const MyStuffView = () => {
           alt=""
           subtext="$90"
           appSource={'Safari'}
+          linkUrl="https://www.nike.com/t/sb-zoom-blazer-mid-skate-shoes-lCFcxG/864349-002"
         />
       </motion.div>
       <motion.div
