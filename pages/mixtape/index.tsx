@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
-import TabNavEmpty from '../../../components/TabNavEmpty'
+import TabNav from './components/TabNav'
 import Image from 'next/image'
+import MixNavbar from './components/MixNavbar'
 
 type Props = {}
 
@@ -19,6 +20,7 @@ const Mixtape = (props: Props) => {
   }, [])
   return (
     <>
+      <MixNavbar />
       {/* OUTER AREA */}
       <div className="fixed inset-0 flex items-center justify-center bg-black">
         <Image
@@ -46,6 +48,7 @@ const Mixtape = (props: Props) => {
                 className="h-[36px] w-[361px] text-[#EBEBF5]/[.6] flex items-center mb-4 px-3 bg-[#767680]/[.24] rounded-[10px] mx-auto">
                 Search Mixtape...
               </div>
+              {/* TOGGLE */}
             </div>
             {/* BG */}
             <div
@@ -54,7 +57,7 @@ const Mixtape = (props: Props) => {
           </div>
 
           {/* NAV */}
-          <TabNavEmpty className="absolute bottom-0 left-0 right-0 z-50" />
+          <TabNav className="absolute bottom-0 left-0 right-0 z-50" />
         </div>
       </div>
     </>

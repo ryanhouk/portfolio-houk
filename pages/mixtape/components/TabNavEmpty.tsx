@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import IconHome from '../svg/IconHome'
 import IconMixtape from '../svg/IconMixtape'
 import IconUser from '../svg/IconUser'
-import MyStuffView from '../views/MyStuffView'
-import MixtapeView from '../views/MixtapeView'
 import PasteLink from './PasteLink'
 
 type Props = {
@@ -20,6 +18,7 @@ const TabNav = ({ className }: Props) => {
   return (
     <>
       <div
+        id="TabNavEmpty"
         className={`w-full h-[83px] bg-black/70 backdrop-blur-2xl border-t-[.5px] border-white/10 ${className}`}>
         <div className="w-[320px] mx-auto flex justify-between mt-3">
           <button

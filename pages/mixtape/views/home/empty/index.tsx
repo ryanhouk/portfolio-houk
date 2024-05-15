@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react'
-import TabNav from './components/TabNav'
+import TabNavEmpty from '../../../components/TabNavEmpty'
 import Image from 'next/image'
+import MixNavbar from '../../../components/MixNavbar'
+import { FadeY } from '../../../../../components/animations'
+import BackgroundGlow from '../../../../../components/animations/BackgroundGlow'
 
 type Props = {}
 
-const Mixtape = (props: Props) => {
+const Index = (props: Props) => {
   useEffect(() => {
     // Save the current body background color
     const originalBackgroundColor = document.body.style.backgroundColor
@@ -19,6 +22,8 @@ const Mixtape = (props: Props) => {
   }, [])
   return (
     <>
+      <MixNavbar />
+
       {/* OUTER AREA */}
       <div className="fixed inset-0 flex items-center justify-center bg-black">
         <Image
@@ -46,7 +51,6 @@ const Mixtape = (props: Props) => {
                 className="h-[36px] w-[361px] text-[#EBEBF5]/[.6] flex items-center mb-4 px-3 bg-[#767680]/[.24] rounded-[10px] mx-auto">
                 Search Mixtape...
               </div>
-              {/* TOGGLE */}
             </div>
             {/* BG */}
             <div
@@ -55,11 +59,17 @@ const Mixtape = (props: Props) => {
           </div>
 
           {/* NAV */}
-          <TabNav className="absolute bottom-0 left-0 right-0 z-50" />
+          <TabNavEmpty className="absolute bottom-0 left-0 right-0 z-50" />
+          <FadeY delay={0.25} className="relative p-4 mt-[550px]">
+            <BackgroundGlow
+              className="absolute bottom-0 z-0 mr-4 opacity-20"
+              size={200}
+            />
+          </FadeY>
         </div>
       </div>
     </>
   )
 }
 
-export default Mixtape
+export default Index

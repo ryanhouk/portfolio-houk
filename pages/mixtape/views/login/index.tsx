@@ -2,8 +2,9 @@ import React, { useEffect } from 'react'
 import Link from 'next/link'
 import LogoApple from '../../svg/LogoApple'
 import Image from 'next/image'
-import BackgroundGlow from '../../../../../components/animations/BackgroundGlow'
-import { FadeY } from '../../../../../components/animations'
+import MixNavbar from '../../components/MixNavbar'
+import { FadeY } from '../../../../components/animations'
+import BackgroundGlow from '../../../../components/animations/BackgroundGlow'
 
 type Props = {}
 
@@ -22,6 +23,8 @@ const LoginView = (props: Props) => {
   }, [])
   return (
     <>
+      <MixNavbar />
+
       <div className="fixed inset-0 flex items-center justify-center bg-black">
         <Image
           id="iphone"
