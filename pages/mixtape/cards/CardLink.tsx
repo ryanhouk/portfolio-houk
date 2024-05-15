@@ -10,14 +10,7 @@ type Props = {
   appSource: string
 }
 
-const CardRetail = ({
-  img,
-  title,
-  website,
-  subtext,
-  alt,
-  appSource,
-}: Props) => {
+const CardLink = ({ img, title, website, subtext, alt, appSource }: Props) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
@@ -61,4 +54,4 @@ const CardRetail = ({
   )
 }
 
-export default CardRetail
+export default CardLink

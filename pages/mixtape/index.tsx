@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import TabNav from './components/TabNav'
-import Link from 'next/link'
+import Image from 'next/image'
+import MixNavbar from './components/MixNavbar'
 
 type Props = {}
 
@@ -19,10 +20,20 @@ const Mixtape = (props: Props) => {
   }, [])
   return (
     <>
+      <MixNavbar />
       {/* OUTER AREA */}
-      <div className="flex items-center justify-center h-screen">
+      <div className="fixed inset-0 flex items-center justify-center bg-black">
+        <Image
+          id="iphone"
+          className="w-[473px] h-[932px] object-cover object-center absolute"
+          src={'/img/mixtape/frames/iphone.png'}
+          alt={''}
+          width={473}
+          height={932}
+          priority // This prop ensures the image is loaded as high priority
+        />
         {/* PHONE CONTAINER */}
-        <div className="w-[390px] h-[844px] bg-black border border-white/10 relative overflow-y-scroll rounded-[50px]">
+        <div className="w-[393px] h-[852px] bg-black relative overflow-y-scroll rounded-[55px]">
           {/* HEADER */}
           <div id="HeaderContainer" className="h-[202px] w-full relative">
             <div className="absolute bottom-0 z-[55] w-full">

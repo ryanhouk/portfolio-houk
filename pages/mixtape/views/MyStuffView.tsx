@@ -65,21 +65,10 @@ const MyStuffView = () => {
         viewport={{ once: true }}
         custom={2}
         variants={variants}>
-        <CardImage img="/img/mixtape/stuff/woman.jpg" alt="" />
-      </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        custom={3}
-        variants={variants}>
-        <CardLink
-          img="/img/mixtape/stuff/nike-blazer-white.jpg"
-          title="Nike SB Zoom Blazer Mid"
-          website="nike.com"
+        <CardImage
+          img="/img/mixtape/stuff/woman.jpg"
           alt=""
-          subtext="$90"
-          appSource={'Safari'}
+          appSource={'Source'}
         />
       </motion.div>
     </section>
