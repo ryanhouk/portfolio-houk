@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 type Props = {
   img: string
@@ -8,9 +9,18 @@ type Props = {
   subtext: string
   alt: string
   appSource: string
+  linkUrl?: string
 }
 
-const CardLink = ({ img, title, website, subtext, alt, appSource }: Props) => {
+const CardLink = ({
+  img,
+  title,
+  website,
+  subtext,
+  alt,
+  appSource,
+  linkUrl,
+}: Props) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
@@ -39,9 +49,11 @@ const CardLink = ({ img, title, website, subtext, alt, appSource }: Props) => {
           </div>
         </div>
         <div className="flex w-full gap-2 p-2 transition-all border-y border-white/5">
-          <div className="h-[34px] bg-white/5 text-white text-xs font-medium text-center flex justify-center items-center rounded-full w-full border border-white/5">
-            {appSource}
-          </div>
+          <Link href={linkUrl || '/'} target="_blank" className="w-full">
+            <div className="h-[34px] bg-white/5 transition-all text-white text-xs hover:bg-white/10 font-medium text-center flex justify-center items-center rounded-full w-full border border-white/5">
+              {appSource}
+            </div>
+          </Link>
           <div className="h-[34px] bg-white/5 text-white text-xs font-medium text-center flex justify-center items-center rounded-full w-full border border-white/5">
             Add To
           </div>

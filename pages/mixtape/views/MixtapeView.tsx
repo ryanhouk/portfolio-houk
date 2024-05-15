@@ -23,6 +23,17 @@ const MixtapeView = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
+        custom={1}
+        variants={variants}>
+        <CardMixtape
+          img={'/img/mixtape/banner/nike-dark.jpg'}
+          title={'Nike SB Blazer Wishlist'}
+        />
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
         custom={0}
         variants={variants}>
         <CardMixtape
