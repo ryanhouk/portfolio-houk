@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import IconArrowRight from '../svg/IconArrowRight'
 import { FadeY } from '../animations'
-import DoodleScribble from '../svg/DoodleScribble'
+import DoodleScribbleAnimate from '../svg/DoodleScribbleAnimate'
 
 // import Image from 'next/image';
 
@@ -57,14 +57,19 @@ const data: Item[] = [
   },
 ]
 
-const FourGrid = () => {
+const WorkHighlights = () => {
   return (
     <>
       <section
         id="Work"
         className="relative z-20 flex flex-col justify-center max-w-5xl px-8 py-12 mx-auto scroll-mt-10 selection:bg-orange-200 lg:pt-32">
         <FadeY>
-          <DoodleScribble
+          {/* <DoodleScribble
+            startColor={'#dc2626'}
+            stopColor={'#facc15'}
+            className="w-24 mb-2 lg:mx-auto lg:mb-0 lg:w-44"
+          /> */}
+          <DoodleScribbleAnimate
             startColor={'#dc2626'}
             stopColor={'#facc15'}
             className="w-24 mb-2 lg:mx-auto lg:mb-0 lg:w-44"
@@ -117,4 +122,4 @@ const FourGrid = () => {
   )
 }
 
-export default FourGrid
+export default WorkHighlights

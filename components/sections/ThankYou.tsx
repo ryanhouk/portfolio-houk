@@ -1,7 +1,7 @@
 import React from 'react'
 import { FadeY } from '../animations'
-import DoodleSparkle from '../svg/DoodleSparkle'
 import Link from 'next/link'
+import DoodleSparkleAnimate from '../svg/DoodleSparkleAnimate'
 
 type Props = {}
 
@@ -11,7 +11,7 @@ const ThankYou = (props: Props) => {
       <section className="relative py-12 scroll-mt-16 lg:py-32">
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
-            <DoodleSparkle
+            <DoodleSparkleAnimate
               startColor={'#dc2626'}
               endColor={'#facc15'}
               className="w-20 mb-2 lg:mx-auto lg:mb-2 lg:w-32"

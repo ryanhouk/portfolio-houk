@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 import { FadeY } from '../animations'
-import DoodleLoops from '../svg/DoodleLoops'
 import Image from 'next/image'
-import IconArrowRight from '../svg/IconArrowRight'
+import DoodleLoopsAnimate from '../svg/DoodleLoopsAnimate'
 
 // Define the structure for a blog post data
 type BlogData = {
@@ -51,7 +50,7 @@ const Blog = () => {
         className="pt-12 scroll-mt-16 selection:bg-orange-200 lg:pt-32">
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
-            <DoodleLoops
+            <DoodleLoopsAnimate
               startColor={'#dc2626'}
               stopColor={'#facc15'}
               className="w-20 mb-2 lg:mx-auto lg:mb-2 lg:w-64"

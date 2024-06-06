@@ -1,8 +1,8 @@
 import React from 'react'
 import { FadeY } from '../animations'
-import DoodleHash from '../svg/DoodleHash'
 import Link from 'next/link'
 import Image from 'next/image'
+import DoodleHashAnimate from '../svg/DoodleHashAnimate'
 
 type Props = {}
 
@@ -14,7 +14,7 @@ const About: React.FC<Props> = (props) => {
         className="py-12 scroll-mt-16 selection:bg-orange-200 lg:py-32">
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
-            <DoodleHash
+            <DoodleHashAnimate
               StartColor={'#dc2626'}
               EndColor={'#facc15'}
               className="w-10 mb-2 lg:mx-auto lg:mb-0 lg:w-20"
