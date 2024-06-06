@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/nav/Navbar'
 import Hero from '../components/sections/Hero'
-import FourGrid from '../components/sections/FourGrid'
 import Package from '../components/sections/Package'
 import About from '../components/sections/About'
 import LoopingText from '../components/animations/LoopingText'
@@ -9,6 +8,7 @@ import Blog from '../components/sections/Blog'
 import Footer from '../components/sections/Footer'
 import SkillsGrid from '../components/sections/SkillsGrid'
 import ThankYou from '../components/sections/ThankYou'
+import WorkHighlights from '../components/sections/WorkHighlights'
 
 type Props = {}
 
@@ -35,7 +35,7 @@ const Index = (props: Props) => {
         <Package />
         <SkillsGrid />
         <LoopingText />
-        <FourGrid />
+        <WorkHighlights />
         <Blog />
         <About />
         {/* <ImageDivider /> */}
