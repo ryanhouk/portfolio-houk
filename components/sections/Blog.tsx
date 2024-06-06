@@ -53,7 +53,7 @@ const Blog = () => {
             <DoodleLoopsAnimate
               startColor={'#dc2626'}
               stopColor={'#facc15'}
-              className="w-20 mb-2 lg:mx-auto lg:mb-2 lg:w-64"
+              className="w-24 mb-2 lg:mx-auto lg:mb-2 lg:w-64"
             />
           </FadeY>
           <h1 className="mb-4 text-4xl text-white font-clash lg:mb-8 lg:text-center lg:text-9xl">
