@@ -3,7 +3,7 @@ import React from 'react'
 import LinkedIn from '../svg/LinkedIn'
 import Threads from '../svg/Threads'
 import Image from 'next/image'
-import Dribbble from '../svg/Dribbble'
+import IconMail from '../svg/IconMail'
 
 type Props = {}
 
@@ -11,6 +11,7 @@ const navItems = [
   { href: '#Work', label: 'Work' },
   { href: '#About', label: 'About' },
   { href: '#Blog', label: 'Blog' },
+  // { href: '#Contact', label: 'Contact' },
   // { href: 'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I like your portfolio.', label: 'Contact' },
 ]
 
@@ -62,12 +63,12 @@ const Navbar = (props: Props) => {
             </div>
           </Link>
           <Link
-            href="https://dribbble.com/ryanhouk"
+            href="mailto:ryan.houk@proton.me?subject=Hey, Ryan! I would like to chat about..."
             target="_blank"
             className="relative transition-all group opacity-60 hover:opacity-100">
-            <Dribbble className="w-4 text-white" />
+            <IconMail className="w-6 text-white" />
             <div className="absolute px-2 py-1 text-xs text-white transition-all duration-300 transform scale-0 rotate-90 -translate-x-1/2 translate-y-2 bg-black rounded opacity-0 left-1/2 top-full group-hover:mt-6 group-hover:scale-100 group-hover:opacity-100">
-              Dribbble
+              Contact
             </div>
           </Link>
         </div>
