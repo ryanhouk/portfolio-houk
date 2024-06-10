@@ -1,63 +1,101 @@
-import Link from 'next/link'
 import React from 'react'
-import IconArrowRight from '../svg/IconArrowRight'
 import { FadeY } from '../animations'
 import DoodleScribbleAnimate from '../svg/DoodleScribbleAnimate'
-
-// import Image from 'next/image';
+import FeatureCard from '../cards/FeatureCard'
 
 type Item = {
+  keyId: number
   href: string
   title: string
   description: string
-  backgroundImage: string
+  imgSrc: string
+  alt: string
+  category: string
 }
 
 const data: Item[] = [
   {
+    keyId: 8,
+    href: '/',
+    title: 'Mixtape',
+    description: 'Description',
+    imgSrc: '/img/mockup/mixtape/mt-open.png',
+    alt: '',
+    category: '',
+  },
+  {
+    keyId: 1,
     href: '/',
     title: 'P4O Platform',
     description: `Using AI to increase reviewers' speed and accuracy. Due to PII guidelines, this is a private project and can be discussed, but not shown.`,
-    backgroundImage: '/img/mockup/phone.webp',
+    imgSrc: '/img/mockup/klove/mob/kl-dual-open.png',
+    alt: 'two iphones with media rich app interfaces',
+    category: '',
   },
   {
+    keyId: 2,
     href: '/',
     title: 'K-LOVE Platforms',
     description:
       'Crafting user-centric experiences for tvOS, iOS, Android, websites, and web applications, specifically tailored for content-rich brands.',
-    backgroundImage: '/img/mockup/streaming.webp',
+    imgSrc: '/img/mockup/klove/tv/tv-open.png',
+    alt: 'tv OS music app with large artist photo',
+    category: '',
   },
   {
+    keyId: 3,
     href: '/',
     title: 'WebMob Site',
     description:
       'Developed an internal website that enables stakeholders to monitor project progress and access style guides, fostering greater transparency and collaboration.',
-    backgroundImage: '/img/mockup/internal.webp',
+    imgSrc: '/img/mockup/webmob/wm-open.png',
+    category: '',
+
+    alt: '',
   },
   {
+    keyId: 4,
     href: '/',
     title: 'Wribbn',
     description:
       'Co-founded a startup and raised funding for an all-in-one listing app. Created entry points for users to add and consume content across platforms including browser extensions and embedded content.',
-    backgroundImage: '/img/mockup/wrbn.webp',
+    imgSrc: '/img/mockup/wribbn/wrbn-open.png',
+    category: '',
+
+    alt: '',
   },
   {
+    keyId: 5,
     href: '/',
     title: 'Crisis Response',
     description:
       'Focused on enhancing website accessibility, ensuring universal usability for all users, including those with disabilities.',
-    backgroundImage: '/img/mockup/access.webp',
+    imgSrc: '/img/mockup/klove/tv/tv-open.png',
+    alt: '',
+    category: '',
   },
   {
+    keyId: 6,
     href: '/',
     title: 'Donor Cloud',
     description:
       'Updated donor platforms for easier contribution tracking and boosting overall donations.',
-    backgroundImage: '/img/mockup/account.webp',
+    imgSrc: '/img/mockup/klove/tv/tv-open.png',
+    alt: '',
+    category: '',
+  },
+  {
+    keyId: 7,
+    href: '/',
+    title: 'Mixtape',
+    description: 'Description',
+    imgSrc: '/img/mockup/mixtape/mt-open.png',
+    alt: '',
+    category: '',
   },
 ]
 
-const WorkHighlights = () => {
+const CaseStudies = () => {
   return (
     <>
       <section
@@ -82,34 +120,18 @@ const WorkHighlights = () => {
         </FadeY>
       </section>
 
-      <section className="px-8 pb-12 mx-auto max-w-7xl selection:bg-orange-200 lg:pb-32">
+      <section className="px-8 pb-12 mx-auto max-w-screen-2xl selection:bg-orange-200 lg:pb-32">
         <FadeY delay={0.25} className="grid gap-8 lg:grid-cols-2">
-          {data.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href}
-              className="group overflow-clip rounded-3xl border border-white/[.15] transition-all duration-300">
-              <div
-                className="relative flex h-96 flex-col justify-end bg-cover bg-center bg-no-repeat transition-all duration-300 lg:h-[500px] lg:bg-left lg:group-hover:bg-right"
-                style={{ backgroundImage: `url('${item.backgroundImage}')` }}>
-                <div className="absolute bottom-0 z-0 w-full h-48 bg-gradient-to-t from-black/80 to-black/0"></div>
-                <div className="absolute z-0 w-full h-full bg-black/30"></div>
-                <div className="z-10 p-6 transition-all duration-300 group-hover:-translate-y-4 lg:p-8">
-                  <p className="pb-4 font-mono text-sm text-orange-400">
-                    Case Study Soon
-                  </p>
-                  <div className="flex items-center">
-                    <h3 className="mb-2 text-2xl text-white font-object">
-                      {item.title}
-                    </h3>
-                    <IconArrowRight className="hidden w-6 mb-2 ml-0 text-white transition-all duration-200 opacity-0 group-hover:ml-4 group-hover:opacity-100 lg:flex" />
-                  </div>
-                  <p className="font-mono text-sm leading-relaxed text-white transition-all duration-200 group-hover:text-white lg:text-white/60">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </Link>
+          {data.map((item) => (
+            <FeatureCard
+              key={item.keyId}
+              urlSrc={item.href}
+              imgSrc={item.imgSrc}
+              title={item.title}
+              description={item.description}
+              altText={item.alt}
+              category={item.category}
+            />
           ))}
         </FadeY>
       </section>
@@ -117,4 +139,4 @@ const WorkHighlights = () => {
   )
 }
 
-export default WorkHighlights
+export default CaseStudies
