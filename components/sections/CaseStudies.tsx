@@ -18,19 +18,19 @@ const data: Item[] = [
     keyId: 8,
     href: '/',
     title: 'Mixtape',
-    description: 'Description',
+    description: 'A place for everything. Project details available soon.',
     imgSrc: '/img/mockup/mixtape/mt-open.png',
     alt: '',
-    category: '',
+    category: 'iOS · MacOS',
   },
   {
     keyId: 1,
     href: '/',
     title: 'P4O Platform',
-    description: `Using AI to increase reviewers' speed and accuracy. Due to PII guidelines, this is a private project and can be discussed, but not shown.`,
-    imgSrc: '/img/mockup/klove/mob/kl-dual-open.png',
+    description: `Using AI to increase team members' speed and accuracy for content review. Due to PII guidelines, this is a private project and can be discussed, but not shown.`,
+    imgSrc: '/img/mockup/klove/tv/tv-open.png',
     alt: 'two iphones with media rich app interfaces',
-    category: '',
+    category: 'AI · Web · App',
   },
   {
     keyId: 2,
@@ -38,9 +38,9 @@ const data: Item[] = [
     title: 'K-LOVE Platforms',
     description:
       'Crafting user-centric experiences for tvOS, iOS, Android, websites, and web applications, specifically tailored for content-rich brands.',
-    imgSrc: '/img/mockup/klove/tv/tv-open.png',
+    imgSrc: '/img/mockup/klove/mob/kl-dual-open.png',
     alt: 'tv OS music app with large artist photo',
-    category: '',
+    category: 'Web · iOS · Android · tvOS · Roku',
   },
   {
     keyId: 3,
@@ -48,9 +48,8 @@ const data: Item[] = [
     title: 'WebMob Site',
     description:
       'Developed an internal website that enables stakeholders to monitor project progress and access style guides, fostering greater transparency and collaboration.',
-    imgSrc: '/img/mockup/webmob/wm-open.png',
-    category: '',
-
+    imgSrc: '/img/mockup/webmob/wm-open-an.png',
+    category: 'Website',
     alt: '',
   },
   {
@@ -60,8 +59,7 @@ const data: Item[] = [
     description:
       'Co-founded a startup and raised funding for an all-in-one listing app. Created entry points for users to add and consume content across platforms including browser extensions and embedded content.',
     imgSrc: '/img/mockup/wribbn/wrbn-open.png',
-    category: '',
-
+    category: 'iOS · Android · Browser Ext · Web App',
     alt: '',
   },
   {
@@ -70,9 +68,9 @@ const data: Item[] = [
     title: 'Crisis Response',
     description:
       'Focused on enhancing website accessibility, ensuring universal usability for all users, including those with disabilities.',
-    imgSrc: '/img/mockup/klove/tv/tv-open.png',
+    imgSrc: '/img/mockup/crc/crc-open-an.png',
+    category: 'Website',
     alt: '',
-    category: '',
   },
   {
     keyId: 6,
@@ -80,18 +78,18 @@ const data: Item[] = [
     title: 'Donor Cloud',
     description:
       'Updated donor platforms for easier contribution tracking and boosting overall donations.',
-    imgSrc: '/img/mockup/klove/tv/tv-open.png',
+    imgSrc: '/img/mockup/donorcloud/form-open-an.png',
+    category: 'Web App',
     alt: '',
-    category: '',
   },
   {
     keyId: 7,
     href: '/',
-    title: 'Mixtape',
+    title: 'EMF Site',
     description: 'Description',
-    imgSrc: '/img/mockup/mixtape/mt-open.png',
+    imgSrc: '/img/mockup/emf/emf-open-an.png',
+    category: 'Website',
     alt: '',
-    category: '',
   },
 ]
 
