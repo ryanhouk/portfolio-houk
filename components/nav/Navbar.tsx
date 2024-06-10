@@ -12,7 +12,10 @@ const navItems = [
   { href: '#About', label: 'About' },
   { href: '#Blog', label: 'Blog' },
   // { href: '#Contact', label: 'Contact' },
-  // { href: 'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I like your portfolio.', label: 'Contact' },
+  {
+    href: 'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I would like to chat about...',
+    label: 'Contact',
+  },
 ]
 
 const Navbar = (props: Props) => {
@@ -62,7 +65,7 @@ const Navbar = (props: Props) => {
               LinkedIn
             </div>
           </Link>
-          <Link
+          {/* <Link
             href="mailto:ryan.houk@proton.me?subject=Hey, Ryan! I would like to chat about..."
             target="_blank"
             className="relative transition-all group opacity-60 hover:opacity-100">
@@ -70,7 +73,7 @@ const Navbar = (props: Props) => {
             <div className="absolute px-2 py-1 text-xs text-white transition-all duration-300 transform scale-0 rotate-90 -translate-x-1/2 translate-y-2 bg-black rounded opacity-0 left-1/2 top-full group-hover:mt-6 group-hover:scale-100 group-hover:opacity-100">
               Contact
             </div>
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </>

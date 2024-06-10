@@ -69,7 +69,7 @@ const skillData: Skill[] = [
     title: 'Heatmaps',
     context: 'Visualized user interactions on a webpage with color coding.',
   },
-  { title: 'Being Nice', context: 'Genuinely treating people with respect 😊' },
+  { title: 'Kindess', context: 'Genuinely treating people with respect 😊' },
 ]
 
 const SkillsGrid = () => {

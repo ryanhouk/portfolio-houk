@@ -9,6 +9,7 @@ type BlogData = {
   url: string
   img: string
   title: string
+  readTime: string
 }
 
 const Blog = () => {
@@ -18,28 +19,33 @@ const Blog = () => {
       url: 'https://medium.com/prototypr/accessibility-in-web-design-the-responsibility-of-developers-c82ecdd9ebf2',
       img: '/img/blog/blog-access.webp',
       title: 'Accessibility in web design & the responsibility of developers',
+      readTime: '(4 mins)',
     },
     {
       url: 'https://uxdesign.cc/the-rise-of-the-tiktok-pattern-dc5dc5524664',
       img: '/img/blog/blog-tiktok.webp',
       title: 'The rise of the TikTok pattern',
+      readTime: '(4 mins)',
     },
     {
       url: 'https://ryanhouk.medium.com/the-illusion-of-wireless-charging-b296655e58a5',
       img: '/img/blog/blog-wireless.webp',
       title: 'The confusing obsession with wireless charging',
+      readTime: '(4 mins)',
     },
     {
       url: 'https://medium.com/@ryanhouk/do-netflix-hbo-spotify-twitter-hulu-apple-and-google-agree-with-these-designers-9d8d8ae2e9a1',
       img: '/img/blog/blog-agree.webp',
       title:
         'Do Netflix, HBO, Apple, Google, Hulu, Twitter and Spotify, agree with these designers?',
+      readTime: '(5 mins)',
     },
     {
       url: 'https://uxdesign.cc/here-are-the-accessibility-scores-for-5-the-most-popular-websites-491085b3bd07',
       img: '/img/blog/blog-access-02.webp',
       title:
         'The accessibility rating for 5 popular websites — how did they score?',
+      readTime: '(5 mins)',
     },
   ]
 
@@ -98,7 +104,9 @@ const Blog = () => {
                   {post.title}
                 </h3>
                 <div className="items-center hidden -mt-8 transition-all duration-200 opacity-0 group-hover:mt-2 group-hover:opacity-100 lg:ml-8 lg:flex">
-                  <p className="font-mono text-xs text-white">Read More</p>
+                  <p className="font-mono text-xs text-white">
+                    Read <span className="opacity-50">{post.readTime}</span>
+                  </p>
                 </div>
               </div>
             </Link>
