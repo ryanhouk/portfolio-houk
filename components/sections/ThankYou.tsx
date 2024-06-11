@@ -21,7 +21,7 @@ const ThankYou = (props: Props) => {
             <FadeY delay={0.5}>Thank You!</FadeY>
           </h1>
           <FadeY delay={0.75}>
-            <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-white opacity-60 lg:text-center">
+            <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-500 lg:text-center">
               Appreciate you taking the time to check out my portfolio.
             </p>
           </FadeY>

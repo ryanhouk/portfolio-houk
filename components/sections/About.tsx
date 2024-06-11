@@ -24,7 +24,7 @@ const About: React.FC<Props> = (props) => {
             <FadeY delay={0.5}>About Me</FadeY>
           </h2>
           <FadeY delay={0.75}>
-            <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-white opacity-60 lg:text-center">
+            <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-500 lg:text-center">
               A quick snippet about me.
             </p>
           </FadeY>
@@ -48,23 +48,18 @@ const About: React.FC<Props> = (props) => {
           <div className="p-4 py-12 m-4 bg-white rounded-sm shadow-md lg:p-16 lg:py-16">
             <h3 className="mb-8 font-mono">Hey, friends!</h3>
             <p className="mb-8 font-mono leading-loose">
-              I&apos;ve been doing this for over 15 years and continuously
-              learning from both success and failure. Empathy? Yep! Usability
-              testing? Yep! Aligning business and customer goals? You know it!
+              {`I've been doing this for over 15 years and continuously learning
+              from both success and failure. Empathy? Yep! Usability testing?
+              Yep! Aligning business and customer goals? You know it!`}
             </p>
             <p className="mb-8 font-mono leading-loose">
-              It all started with a digital training tutorial for a Pepsi
-              bottling plant. I designed the UI in Photoshop (Figma didn&apos;t
-              exist yet) and coded the software with Lingo using Macromedia
-              Director. Didn&apos; I say I&apos;ve been doing this for a long
-              time? I&apos;ve done product design for years until rediscovering
-              my love for coding, now I do both.
+              {`It all started with a digital training tutorial for a Pepsi bottling plant. I designed the UI in Photoshop (Figma didn't exist yet) and coded the software with Lingo using Macromedia Director. Didn't I say I've been doing this for a long time? I've done product design for years until rediscovering my love for coding; now I do both.`}
             </p>
             <p className="mb-8 font-mono leading-loose">
-              I&apos;ve worked with startups, co-founded a startup, raised angel
-              investments, and worked with agencies. These experiences taught me
-              that successfull products result from teams with no egos where
-              creative contributions come from everyone.
+              {`I've worked with startups, co-founded a startup, raised angel investments, and worked with agencies. These experiences taught me that successful products result from teams with no egos, where creative contributions come from everyone.`}
+            </p>
+            <p className="mb-8 font-mono leading-loose">
+              {`In my journey, I've embraced the beauty of diversity and the richness of different perspectives. My interactions and experiences are guided by a deep appreciation for every individual's unique story. I strive to create a space where everyone feels valued and understood, fostering connections that celebrate our shared humanity.`}
             </p>
             <p className="font-mono leading-loose">~ Ryan</p>
             <Image

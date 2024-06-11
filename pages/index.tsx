@@ -8,10 +8,7 @@ import Blog from '../components/sections/Blog'
 import Footer from '../components/sections/Footer'
 import SkillsGrid from '../components/sections/SkillsGrid'
 import ThankYou from '../components/sections/ThankYou'
-// import WorkHighlights from '../components/sections/WorkHighlights'
 import CaseStudies from '../components/sections/CaseStudies'
-// import Goodbye from '../components/sections/Goodbye'
-// import FeatureProject from '../components/sections/FeatureProject'
 
 type Props = {}
 
@@ -45,7 +42,6 @@ const Index = (props: Props) => {
         <About />
         {/* <ImageDivider /> */}
         <ThankYou />
-        {/* <Goodbye /> */}
         <Footer />
         {/* END DIV */}
       </div>

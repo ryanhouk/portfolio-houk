@@ -77,17 +77,17 @@ const SkillsGrid = () => {
 
   return (
     <section className="px-8 selection:bg-orange-200">
-      <div className="relative z-30 flex flex-wrap justify-center max-w-2xl gap-2 mx-auto mb-20 transition-all duration-300 lg:mb-4 xl:-translate-y-20">
+      <div className="relative z-30 flex flex-wrap justify-center max-w-3xl gap-2 mx-auto mb-20 transition-all duration-300 lg:mb-4 xl:-translate-y-20">
         {skillData.map((skill, index) => (
           <div
             key={index}
             aria-label={skill.title} // Add aria-label here
-            className="relative px-4 py-2 font-mono text-xs text-transparent transition-all duration-300 border rounded-full group border-white/10 bg-white/10 bg-gradient-to-br from-red-500 to-yellow-400 bg-clip-text hover:cursor-cell hover:border-white/40"
+            className="relative px-4 py-2 font-mono text-sm text-transparent transition-all duration-300 border rounded-full group border-white/10 bg-white/10 bg-gradient-to-br from-red-500 to-yellow-400 bg-clip-text hover:cursor-cell hover:border-white/40"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}>
             {skill.title}
             {hoveredIndex === index && (
-              <div className="absolute p-2 mb-2 text-xs leading-relaxed text-center text-white transform -translate-x-1/2 border shadow-lg bottom-full left-1/2 w-72 rounded-xl border-white/10 bg-black/20 backdrop-blur-2xl">
+              <div className="absolute p-2 mb-2 text-xs leading-relaxed text-center text-white transform -translate-x-1/2 border shadow-lg bottom-full left-1/2 w-72 rounded-xl border-white/10 bg-black/10 backdrop-blur-2xl">
                 {skill.context}
               </div>
             )}

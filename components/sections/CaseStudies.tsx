@@ -27,7 +27,7 @@ const data: Item[] = [
     keyId: 1,
     href: '/',
     title: 'P4O Platform',
-    description: `Using AI to increase team members' speed and accuracy for content review. Due to PII guidelines, this is a private project and can be discussed, but not shown.`,
+    description: `Led the design & development of a platform that supercharged internal content reviewers use AI to speed up their review process, increasing team efficiency and accuracy by more than 10x.`,
     imgSrc: '/img/mockup/klove/tv/tv-open.png',
     alt: 'two iphones with media rich app interfaces',
     category: 'AI · Web · App',
@@ -37,8 +37,8 @@ const data: Item[] = [
     href: '/',
     title: 'K-LOVE Platforms',
     description:
-      'Crafting user-centric experiences for tvOS, iOS, Android, websites, and web applications, specifically tailored for content-rich brands.',
-    imgSrc: '/img/mockup/klove/mob/kl-dual-open.png',
+      'Unified disparate media platforms for podcasts, videos, and music by reworking the information architecture and designing a scalable product for a consistent user experience across Apple TV, mobile apps, and websites.',
+    imgSrc: '/img/mockup/klove/mob/kl-unify-02-open.png',
     alt: 'tv OS music app with large artist photo',
     category: 'Web · iOS · Android · tvOS · Roku',
   },
@@ -48,7 +48,7 @@ const data: Item[] = [
     title: 'WebMob Site',
     description:
       'Developed an internal website that enables stakeholders to monitor project progress and access style guides, fostering greater transparency and collaboration.',
-    imgSrc: '/img/mockup/webmob/wm-open-an.png',
+    imgSrc: '/img/mockup/webmob/wm-guide-open.png',
     category: 'Website',
     alt: '',
   },
@@ -67,7 +67,7 @@ const data: Item[] = [
     href: '/',
     title: 'Crisis Response',
     description:
-      'Focused on enhancing website accessibility, ensuring universal usability for all users, including those with disabilities.',
+      'Designed and developed a training platform for emergency responders with a focus on accessibility, achieving a WCAG compliance score of 96%.',
     imgSrc: '/img/mockup/crc/crc-open-an.png',
     category: 'Website',
     alt: '',
@@ -77,7 +77,7 @@ const data: Item[] = [
     href: '/',
     title: 'Donor Cloud',
     description:
-      'Updated donor platforms for easier contribution tracking and boosting overall donations.',
+      'Redesigned & developed a donation form flow, increasing the completion rate by 35%, and created a donor platform for managing donor information, enhancing user engagement and data management.',
     imgSrc: '/img/mockup/donorcloud/form-open-an.png',
     category: 'Web App',
     alt: '',
@@ -86,7 +86,8 @@ const data: Item[] = [
     keyId: 7,
     href: '/',
     title: 'EMF Site',
-    description: 'Description',
+    description:
+      'For outsourced design projects, I act as a developer and mentor to junior designers, providing feedback before ultimately developing the final product.',
     imgSrc: '/img/mockup/emf/emf-open-an.png',
     category: 'Website',
     alt: '',
@@ -102,7 +103,7 @@ const CaseStudies = () => {
         <FadeY>
           <DoodleScribbleAnimate
             startColor={'#dc2626'}
-            stopColor={'#facc15'}
+            endColor={'#facc15'}
             className="w-24 mb-2 lg:mx-auto lg:mb-0 lg:w-44"
           />
         </FadeY>
@@ -111,7 +112,7 @@ const CaseStudies = () => {
           <FadeY delay={0.5}>Highlights</FadeY>
         </h1>
         <FadeY className="relative z-20" delay={0.75}>
-          <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-white opacity-60 lg:text-center">
+          <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-500 lg:text-center">
             There is a lot of work to choose from! Here are a few highlights to
             dive into.
           </p>

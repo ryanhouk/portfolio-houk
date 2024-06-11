@@ -4,13 +4,13 @@ import { motion, useInView } from 'framer-motion'
 type Props = {
   className?: string // Make className optional
   startColor: string // Define start color for the gradient
-  stopColor: string // Define stop color for the gradient
+  endColor: string // Define stop color for the gradient
 }
 
 const DoodleScribbleAnimate = ({
   className = '',
   startColor,
-  stopColor,
+  endColor,
 }: Props) => {
   const svgRef = useRef(null)
   const isInView = useInView(svgRef, { amount: 0.5 })
@@ -34,7 +34,7 @@ const DoodleScribbleAnimate = ({
         <defs>
           <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style={{ stopColor: startColor }} />
-            <stop offset="100%" style={{ stopColor: stopColor }} />
+            <stop offset="100%" style={{ stopColor: endColor }} />
           </linearGradient>
         </defs>
         <motion.path
