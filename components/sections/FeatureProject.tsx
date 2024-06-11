@@ -15,7 +15,7 @@ const FeatureProject = (props: Props) => {
         <FadeY>
           <DoodleScribbleAnimate
             startColor={'#dc2626'}
-            stopColor={'#facc15'}
+            endColor={'#facc15'}
             className="w-24 mb-2 lg:mx-auto lg:mb-0 lg:w-44"
           />
         </FadeY>
