@@ -17,15 +17,16 @@ const Hero = (Props: Props) => {
         </FadeY>
 
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
-          <h1 className="mb-4 text-4xl text-white font-clash lg:mb-8 lg:text-center lg:text-9xl">
-            <FadeY delay={0.25}>UX Designer &</FadeY>{' '}
-            <FadeY delay={0.5}>Developer</FadeY>
+          <h1 className="mb-4 text-4xl text-white font-clash lg:mb-8 lg:text-center lg:text-8xl">
+            <FadeY delay={0.25}>Product Designer</FadeY>{' '}
+            <FadeY delay={0.5}>& Developer</FadeY>
           </h1>
         </div>
         <FadeY className="relative z-20 px-8" delay={0.75}>
           <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-500 lg:text-center">
-            This is a portfolio site. It might look a little messy, but design,
-            development, usability testing, and iterating are often a bit messy.
+            This is a portfolio site. It might look a little messy, but product
+            design, development, usability testing, and iterating are often a
+            bit messy.
           </p>
         </FadeY>
         <FadeY delay={1}>
