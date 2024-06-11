@@ -42,9 +42,9 @@ const FeatureCard = ({
           </div>
           <div className="flex items-center mb-2">
             <h3 className="text-white font-object lg:text-2xl">{title}</h3>
-            <IconArrowRight className="w-6 ml-1 text-white transition-all opacity-0 group-hover:ml-4 group-hover:opacity-100" />
+            <IconArrowRight className="w-6 ml-1 text-white transition-all opacity-0 group-hover:ml-3 group-hover:opacity-100" />
           </div>
-          <p className="mb-4 font-mono text-sm leading-relaxed transition-all text-white/50 group-hover:text-white">
+          <p className="mb-4 font-mono text-sm leading-relaxed transition-all text-zinc-400 group-hover:text-white">
             {description}
           </p>
           <span className="px-2 py-1 text-xs rounded-full text-white/50 bg-white/20">

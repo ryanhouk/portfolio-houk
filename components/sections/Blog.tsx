@@ -66,7 +66,7 @@ const Blog = () => {
             <FadeY delay={0.5}>Blog</FadeY>
           </h1>
           <FadeY delay={0.75}>
-            <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-white opacity-60 lg:text-center">
+            <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-500 lg:text-center">
               Interested in design and tech? I&apos;d love to hear your
               thoughts!
             </p>
