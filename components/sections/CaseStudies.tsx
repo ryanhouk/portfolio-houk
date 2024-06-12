@@ -108,7 +108,7 @@ const CaseStudies = () => {
           />
         </FadeY>
         <h1 className="z-10 mb-4 text-4xl text-white font-clash lg:mb-8 lg:text-center lg:text-9xl">
-          <FadeY delay={0.25}>Work </FadeY>
+          <FadeY delay={0.25}>Product </FadeY>
           <FadeY delay={0.5}>Highlights</FadeY>
         </h1>
         <FadeY className="relative z-20" delay={0.75}>
