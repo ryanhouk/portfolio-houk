@@ -5,7 +5,7 @@ import FeatureCard from '../cards/FeatureCard'
 
 type Item = {
   keyId: number
-  href: string
+  // href: string
   title: string
   description: string
   imgSrc: string
@@ -16,7 +16,7 @@ type Item = {
 const data: Item[] = [
   {
     keyId: 8,
-    href: '/',
+    // href: '/',
     title: 'Mixtape',
     description: 'A place for everything. Project details available soon.',
     imgSrc: '/img/mockup/mixtape/mt-open.png',
@@ -25,7 +25,7 @@ const data: Item[] = [
   },
   {
     keyId: 1,
-    href: '/',
+    // href: '/',
     title: 'P4O Platform',
     description: `Led the design & development of a platform that supercharged internal content reviewers use AI to speed up their review process, increasing team efficiency and accuracy by more than 10x.`,
     imgSrc: '/img/mockup/klove/tv/tv-open.png',
@@ -34,7 +34,7 @@ const data: Item[] = [
   },
   {
     keyId: 2,
-    href: '/',
+    // href: '/',
     title: 'K-LOVE Platforms',
     description:
       'Unified disparate media platforms for podcasts, videos, and music by reworking the information architecture and designing a scalable product for a consistent user experience across Apple TV, mobile apps, and websites.',
@@ -44,7 +44,7 @@ const data: Item[] = [
   },
   {
     keyId: 3,
-    href: '/',
+    // href: '/',
     title: 'WebMob Site',
     description:
       'Developed an internal website that enables stakeholders to monitor project progress and access style guides, fostering greater transparency and collaboration.',
@@ -54,7 +54,7 @@ const data: Item[] = [
   },
   {
     keyId: 4,
-    href: '/',
+    // href: '/',
     title: 'Wribbn',
     description:
       'Co-founded a startup and raised funding for an all-in-one listing app. Created entry points for users to add and consume content across platforms including browser extensions and embedded content.',
@@ -64,7 +64,7 @@ const data: Item[] = [
   },
   {
     keyId: 5,
-    href: '/',
+    // href: '/',
     title: 'Crisis Response',
     description:
       'Designed and developed a training platform for emergency responders with a focus on accessibility, achieving a WCAG compliance score of 96%.',
@@ -74,7 +74,7 @@ const data: Item[] = [
   },
   {
     keyId: 6,
-    href: '/',
+    // href: '/',
     title: 'Donor Cloud',
     description:
       'Redesigned & developed a donation form flow, increasing the completion rate by 35%, and created a donor platform for managing donor information, enhancing user engagement and data management.',
@@ -84,7 +84,7 @@ const data: Item[] = [
   },
   {
     keyId: 7,
-    href: '/',
+    // href: '/',
     title: 'EMF Site',
     description:
       'For outsourced design projects, I act as a developer and mentor to junior designers, providing feedback before ultimately developing the final product.',
@@ -124,7 +124,7 @@ const CaseStudies = () => {
           {data.map((item) => (
             <FeatureCard
               key={item.keyId}
-              urlSrc={item.href}
+              // urlSrc={item.href}
               imgSrc={item.imgSrc}
               title={item.title}
               description={item.description}
