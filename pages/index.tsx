@@ -9,6 +9,7 @@ import Footer from '../components/sections/Footer'
 import SkillsGrid from '../components/sections/SkillsGrid'
 import ThankYou from '../components/sections/ThankYou'
 import CaseStudies from '../components/sections/CaseStudies'
+import Tools from '../components/sections/Tools'
 
 type Props = {}
 
@@ -38,7 +39,7 @@ const Index = (props: Props) => {
         {/* <FeatureProject /> */}
         {/* <WorkHighlights /> */}
         <CaseStudies />
-        {/* <Tools /> */}
+        <Tools />
         <Blog />
         <About />
         {/* <ImageDivider /> */}
