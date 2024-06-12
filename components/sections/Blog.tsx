@@ -47,6 +47,12 @@ const Blog = () => {
         'The accessibility rating for 5 popular websites — how did they score?',
       readTime: '(5 mins)',
     },
+    {
+      url: 'https://ryanhouk.medium.com/framer-motion-is-easy-and-powerful-9f54d797e65c',
+      img: '/img/blog/blog-framer.webp',
+      title: 'Framer Motion is easy and powerful',
+      readTime: '(3 mins)',
+    },
   ]
 
   return (
