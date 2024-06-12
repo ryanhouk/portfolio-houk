@@ -38,6 +38,7 @@ const Index = (props: Props) => {
         {/* <FeatureProject /> */}
         {/* <WorkHighlights /> */}
         <CaseStudies />
+        {/* <Tools /> */}
         <Blog />
         <About />
         {/* <ImageDivider /> */}

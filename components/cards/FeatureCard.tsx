@@ -4,7 +4,7 @@ import Image from 'next/image'
 import IconArrowRight from '../svg/IconArrowRight'
 
 type Props = {
-  urlSrc: string
+  // urlSrc: string
   imgSrc: string
   title: string
   description: string
@@ -13,7 +13,7 @@ type Props = {
 }
 
 const FeatureCard = ({
-  urlSrc,
+  // urlSrc,
   imgSrc,
   title,
   description,
@@ -22,9 +22,9 @@ const FeatureCard = ({
 }: Props) => {
   return (
     <>
-      <Link
-        href={urlSrc}
-        className="group overflow-clip rounded-3xl border border-white/[.15] transition-all duration-300 relative">
+      <div
+        // href={urlSrc}
+        className="group overflow-clip rounded-3xl border border-white/[.15] transition-all duration-300 relative hover:cursor-cell">
         <div
           className={`relative overflow-hidden transition-all duration-500 bg-gradient-to-b from-white/10 to-black group-hover:bg-white/30`}>
           <div className="absolute bottom-0 z-10 w-full transition-all h-60 bg-gradient-to-t from-black to-black/0 group-hover:h-16"></div>
@@ -51,7 +51,7 @@ const FeatureCard = ({
             Case Study Soon
           </span>
         </div>
-      </Link>
+      </div>
     </>
   )
 }
