@@ -35,7 +35,7 @@ const data: Item[] = [
   {
     keyId: 2,
     // href: '/',
-    title: 'K-LOVE Platforms',
+    title: 'Media Platforms',
     description:
       'Unified disparate media platforms for podcasts, videos, and music by reworking the information architecture and designing a scalable product for a consistent user experience across Apple TV, mobile apps, and websites.',
     imgSrc: '/img/mockup/klove/mob/kl-unify-02-open.png',
