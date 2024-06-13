@@ -3,14 +3,13 @@ import React from 'react'
 import LinkedIn from '../svg/LinkedIn'
 import Threads from '../svg/Threads'
 import Image from 'next/image'
-import Dribbble from '../svg/Dribbble'
 
 type Props = {}
 
 const navItems = [
-  { href: '/#Work', label: 'Work' },
-  { href: '#About', label: 'About' },
-  { href: '#Blog', label: 'Blog' },
+  { href: '/#Work', label: 'Case Studies' },
+  // { href: '#About', label: 'About' },
+  // { href: '#Blog', label: 'Blog' },
 ]
 
 const DetailsNav = (props: Props) => {
@@ -31,12 +30,14 @@ const DetailsNav = (props: Props) => {
         {/* NAV ITEMS */}
         <div className="flex items-center justify-center h-12 gap-4 text-black lg:h-16 lg:gap-8">
           {navItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href}
-              className="font-mono text-sm transition-all duration-200 hover:opacity-60">
-              {item.label}
-            </Link>
+            <>
+              <Link
+                key={index}
+                href={item.href}
+                className="px-4 py-2 font-mono text-sm transition-all duration-200 border rounded-full hover:bg-black hover:text-white border-black/10">
+                {item.label}
+              </Link>
+            </>
           ))}
         </div>
 
@@ -56,13 +57,13 @@ const DetailsNav = (props: Props) => {
             className="transition-all hover:opacity-60">
             <LinkedIn className="w-4 text-black" />
           </Link>
-          <Link
+          {/* <Link
             href="https://dribbble.com/ryanhouk"
             target="_blank"
             title="Visit Ryan Houk Dribbble"
             className="transition-all hover:opacity-60">
             <Dribbble className="w-4 text-black" />
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </>
