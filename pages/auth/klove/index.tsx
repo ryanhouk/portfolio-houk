@@ -2,6 +2,7 @@ import { useState, FormEvent, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import IconDevices from '../../../components/svg/IconDevices'
+import { FadeY } from '../../../components/animations'
 
 interface EnterPasswordProps {}
 
@@ -51,7 +52,7 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
   return (
     <>
       <div className="flex flex-col h-screen lg:flex-row">
-        <div className="flex items-center justify-center flex-1">
+        <FadeY className="flex items-center justify-center flex-1">
           <section className="w-full max-w-sm mx-6">
             <IconDevices
               startColor={'#dc2626'}
@@ -109,8 +110,10 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
               </Link>
             </div>
           </section>
-        </div>
-        <div className="flex-1 bg-[url('/img/mockup/klove/mob/kl-dual-full.webp')] bg-cover bg-no-repeat bg-center"></div>
+        </FadeY>
+        <FadeY
+          delay={0.25}
+          className="flex-1 bg-[url('/img/mockup/klove/mob/kl-dual-bg.jpeg')] bg-cover bg-no-repeat bg-center"></FadeY>
       </div>
     </>
   )
