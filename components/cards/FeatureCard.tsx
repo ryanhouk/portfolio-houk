@@ -4,27 +4,29 @@ import Image from 'next/image'
 import IconArrowRight from '../svg/IconArrowRight'
 
 type Props = {
-  // urlSrc: string
+  urlSrc: string
   imgSrc: string
   title: string
   description: string
   altText: string
   category: string
+  showCaseStudy?: boolean // New prop to control the visibility
 }
 
 const FeatureCard = ({
-  // urlSrc,
+  urlSrc,
   imgSrc,
   title,
   description,
   altText,
   category,
+  showCaseStudy,
 }: Props) => {
   return (
     <>
-      <div
-        // href={urlSrc}
-        className="group overflow-clip rounded-3xl border border-white/[.15] transition-all duration-300 relative hover:cursor-cell">
+      <Link
+        href={urlSrc}
+        className="group overflow-clip rounded-3xl border border-white/[.15] transition-all duration-300 relative">
         <div
           className={`relative overflow-hidden transition-all duration-500 bg-gradient-to-b from-white/10 to-black group-hover:bg-white/30`}>
           <div className="absolute bottom-0 z-10 w-full transition-all h-60 bg-gradient-to-t from-black to-black/0 group-hover:h-16"></div>
@@ -47,11 +49,13 @@ const FeatureCard = ({
           <p className="mb-4 font-mono text-sm leading-relaxed transition-all text-zinc-400 group-hover:text-white">
             {description}
           </p>
-          <span className="px-2 py-1 text-xs rounded-full text-white/50 bg-white/20">
-            Case Study Soon
-          </span>
+          {showCaseStudy && (
+            <span className="px-2 py-1 text-xs rounded-full text-white/50 bg-white/20">
+              Case Study Soon
+            </span>
+          )}
         </div>
-      </div>
+      </Link>
     </>
   )
 }

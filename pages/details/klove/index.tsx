@@ -5,8 +5,6 @@ import DetailsNav from '../../../components/nav/DetailsNav'
 import IconDevices from '../../../components/svg/IconDevices'
 import { FadeY } from '../../../components/animations'
 import Image from 'next/image'
-// import LogoWrapper from '../../../components/cards/LogoWrapper'
-// import Figma from '../../../components/svg/logos/Figma'
 
 const KloveDetails: React.FC = () => {
   const router = useRouter()
@@ -53,7 +51,7 @@ const KloveDetails: React.FC = () => {
         />
       </section>
 
-      {/* INTRO TEXT */}
+      {/* INTRO */}
       <section className="bg-black">
         <div className="grid lg:grid-cols-2">
           <div className="max-w-xl col-span-1 px-6 py-12 mx-auto lg:py-48">
@@ -97,11 +95,11 @@ const KloveDetails: React.FC = () => {
               <p className="font-mono text-sm leading-relaxed text-zinc-400">
                 Lead Product Designer
               </p>
-              {/* <LogoWrapper className="w-48 mt-4">
+              {/* <LogoWrapper className="w-40 mt-4">
                 <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
                   Figma
                 </p>
-                <Figma className="transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
+                <Figma className="w-16 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
               </LogoWrapper> */}
             </FadeY>
           </div>
@@ -109,7 +107,7 @@ const KloveDetails: React.FC = () => {
             delay={1}
             className="flex items-center w-full h-full col-span-1 overflow-hidden bg-white/5">
             <Image
-              className="w-full mx-auto lg:w-3/4"
+              className="w-full mx-auto mt-16 lg:mt-32 lg:w-3/4"
               src={'/img/mockup/klove/mob/dual-open.png'}
               alt={''}
               width={1920}
@@ -121,23 +119,61 @@ const KloveDetails: React.FC = () => {
 
       {/* THE APPS */}
       <section className="border-t bg-gradient-to-t from-white/5 to-black border-white/5">
-        <div className="mx-auto mt-12 max-w-7xl lg:mt-32">
+        <div className="mx-auto my-12 lg:my-32 max-w-7xl">
           <div className="max-w-lg px-6">
-            {/* <h2 className="mb-4 text-xl text-white font-object lg:text-5xl">
-              The 3 apps
-            </h2> */}
-            <p className="pl-6 font-mono text-sm leading-relaxed text-white border-l border-zinc-700">
+            <p className="mb-2 text-sm font-medium text-transparent uppercase bg-gradient-to-br from-red-500 to-yellow-400 bg-clip-text">
+              01
+            </p>
+            <h3 className="mb-2 text-xl tracking-wide text-white font-object lg:text-2xl">
+              Audit Disparate Apps
+            </h3>
+            <p className="pl-6 font-mono text-sm leading-relaxed border-l border-zinc-800 text-zinc-400">
               The home view of three media apps for music, video, and podcasts
-              shows a dramatic variation in design and experience.
+              shows a dramatic variation in design and experience. <br />
+              <br /> I first conducted an audit of each app, grouping the
+              content into buckets, identifying common patterns, and creating an
+              IA map.
             </p>
           </div>
-          <Image
-            className="w-full"
-            src={'/img/mockup/klove/screens/all-open.png'}
-            alt={''}
-            width={1179}
-            height={2556}
-          />
+        </div>
+        <Image
+          className="w-full"
+          src={'/img/mockup/klove/screens/all-bg.jpeg'}
+          alt={''}
+          width={1179}
+          height={2556}
+        />
+      </section>
+
+      {/* INFO ARC */}
+      <section className="bg-black">
+        <div className="grid lg:grid-cols-2">
+          <FadeY className="max-w-xl col-span-1 px-6 py-12 mx-auto lg:py-48">
+            <p className="mb-2 text-sm font-medium text-transparent uppercase bg-gradient-to-br from-red-500 to-yellow-400 bg-clip-text">
+              02
+            </p>
+            <h3 className="mb-2 text-xl tracking-wide text-white font-object lg:text-2xl">
+              Create Information Architecture
+            </h3>
+            <p className="pl-6 font-mono text-sm leading-relaxed border-l border-zinc-800 text-zinc-400">
+              The home view of three media apps for music, video, and podcasts
+              shows a dramatic variation in design and experience. <br />
+              <br /> I first conducted an audit of each app, grouping the
+              content into buckets, identifying common patterns, and creating an
+              IA map.
+            </p>
+          </FadeY>
+          <FadeY
+            delay={1}
+            className="flex items-center w-full h-full col-span-1 overflow-hidden bg-white/5">
+            <Image
+              className="w-full mx-auto"
+              src={'/img/mockup/klove/screens/ia-open.png'}
+              alt={''}
+              width={1920}
+              height={1440}
+            />
+          </FadeY>
         </div>
       </section>
     </>
