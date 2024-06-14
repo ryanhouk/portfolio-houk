@@ -126,7 +126,7 @@ const KloveDetails: React.FC = () => {
             {/* <h2 className="mb-4 text-xl text-white font-object lg:text-5xl">
               The 3 apps
             </h2> */}
-            <p className="pl-8 font-mono text-sm leading-relaxed text-white border-l-2 border-zinc-700">
+            <p className="pl-6 font-mono text-sm leading-relaxed text-white border-l border-zinc-700">
               The home view of three media apps for music, video, and podcasts
               shows a dramatic variation in design and experience.
             </p>

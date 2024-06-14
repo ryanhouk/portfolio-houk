@@ -20,9 +20,9 @@ const DetailsHeader = ({ title, imgSrc, icon }: Props) => {
       <FadeY className="pt-24 mx-auto max-w-screen-3xl lg:pt-60">
         <FadeY
           delay={0.5}
-          className="px-6 mx-auto mb-10 text-center md:max-w-4xl xl:max-w-5xl">
+          className="max-w-xs px-6 mx-auto mb-10 text-center md:max-w-4xl xl:max-w-5xl">
           <div className="flex justify-center">{icon}</div>
-          <h1 className="text-3xl font-clash selection:bg-orange-200 md:text-7xl xl:text-9xl">
+          <h1 className="text-5xl font-clash selection:bg-orange-200 md:text-7xl xl:text-9xl">
             {title}
           </h1>
         </FadeY>
