@@ -28,13 +28,7 @@ const DetailsHeader = ({ title, imgSrc, icon }: Props) => {
         </FadeY>
         {/* Apply Framer Motion to Image with both scaling and fading */}
         <motion.div style={{ scale }} className="w-full max-w-6xl mx-auto">
-          <Image
-            src={imgSrc}
-            width={1500}
-            height={1000}
-            alt=""
-            layout="responsive"
-          />
+          <Image src={imgSrc} width={1500} height={1000} alt="" />
         </motion.div>
       </FadeY>
     </>

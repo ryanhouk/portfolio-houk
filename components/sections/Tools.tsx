@@ -8,6 +8,8 @@ import Photoshop from '../svg/logos/Photoshop'
 import Vscode from '../svg/logos/Vscode'
 import Chatgpt from '../svg/logos/Chatgpt'
 import Arc from '../svg/logos/Arc'
+import Apple from '../svg/logos/Apple'
+import Craft from '../svg/logos/Craft'
 
 type Props = {}
 
@@ -27,26 +29,25 @@ const Tools = (props: Props) => {
               <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
                 VS Code
               </p>
-              <Vscode className="transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
+              <Vscode className="w-20 transition-all duration-300 lg:w-28 group-hover:scale-90 group-hover:opacity-0" />
             </LogoWrapper>
             <LogoWrapper>
               <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
                 Tailwind
               </p>
-              <Tailwind className="transition-all duration-300 w-28 group-hover:scale-90 group-hover:opacity-0" />
+              <Tailwind className="w-20 transition-all duration-300 lg:w-28 group-hover:scale-90 group-hover:opacity-0" />
             </LogoWrapper>
-
-            <LogoWrapper>
+            {/* <LogoWrapper>
               <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
                 React
               </p>
               <ReactLogo className="w-20 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
-            </LogoWrapper>
+            </LogoWrapper> */}
             <LogoWrapper>
               <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
                 Next.js
               </p>
-              <Nextjs className="w-24 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
+              <Nextjs className="w-20 transition-all duration-300 lg:w-24 group-hover:scale-90 group-hover:opacity-0" />
             </LogoWrapper>
             <LogoWrapper>
               <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
@@ -72,6 +73,12 @@ const Tools = (props: Props) => {
               </p>
               <Apple className="w-16 mb-2 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
             </LogoWrapper> */}
+            <LogoWrapper>
+              <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
+                Craft Docs
+              </p>
+              <Craft className="w-16 mb-2 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
+            </LogoWrapper>
           </div>
         </div>
       </section>
