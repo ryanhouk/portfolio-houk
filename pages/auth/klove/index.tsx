@@ -52,7 +52,7 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
   return (
     <>
       <div className="flex flex-col h-screen lg:flex-row">
-        <FadeY className="flex items-center justify-center flex-1">
+        <FadeY className="flex items-center justify-center flex-1 mt-8 lg:mt-0">
           <section className="w-full max-w-sm mx-6">
             <IconDevices
               startColor={'#dc2626'}
@@ -60,7 +60,7 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
               className="w-10 mx-auto mb-4 lg:mb-6 lg:w-16"
             />
             <div className="mb-8 text-center text-white">
-              <h1 className="text-3xl font-clash">K-LOVE Platforms</h1>
+              <h1 className="text-3xl font-clash">Media Platforms</h1>
               <p className="mt-4 font-mono text-sm leading-normal opacity-60">
                 Please enter the password to view this case study. You can
                 request access{' '}
@@ -113,7 +113,7 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
         </FadeY>
         <FadeY
           delay={0.25}
-          className="flex-1 bg-[url('/img/mockup/klove/mob/kl-dual-bg.jpeg')] bg-cover bg-no-repeat bg-center"></FadeY>
+          className="flex-1 bg-[url('/img/mockup/klove/mob/kl-dual-bg.jpeg')] mt-8 lg:mt-0 bg-cover bg-no-repeat bg-center"></FadeY>
       </div>
     </>
   )
