@@ -88,7 +88,7 @@ const KloveDetails: React.FC = () => {
                 and intuitive.
               </p>
             </FadeY>
-            <FadeY delay={0.5} className="mt-12">
+            <FadeY delay={0.25} className="mt-12">
               <h3 className="mb-2 text-xl tracking-wide text-white font-object lg:text-2xl">
                 My Role:
               </h3>
@@ -104,10 +104,10 @@ const KloveDetails: React.FC = () => {
             </FadeY>
           </div>
           <FadeY
-            delay={1}
+            delay={0.25}
             className="flex items-center w-full h-full col-span-1 overflow-hidden bg-white/5">
             <Image
-              className="w-full mx-auto mt-16 lg:mt-32 lg:w-3/4"
+              className="w-full mx-auto mt-16 lg:mt-32 lg:w-4/5"
               src={'/img/mockup/klove/mob/dual-open.png'}
               alt={''}
               width={1920}
@@ -162,7 +162,7 @@ const KloveDetails: React.FC = () => {
           </FadeY>
         </div>
         <FadeY
-          delay={1}
+          delay={0.25}
           className="flex items-center w-full h-full col-span-2 overflow-hidden bg-white/5">
           <Image
             className="w-full mx-auto lg:p-16"
@@ -192,9 +192,9 @@ const KloveDetails: React.FC = () => {
           </FadeY>
         </div>
         <FadeY
-          delay={1}
+          delay={0.25}
           className="flex flex-col col-span-2 gap-8 px-8 mx-auto mb-32 max-w-7xl lg:gap-16 lg:flex-row">
-          <div className="border rounded-3xl border-white/10">
+          <div className="border rounded-3xl bg-gradient-to-b from-white/5 border-zinc-800 to-black overflow-clip">
             <Image
               src={'/img/mockup/klove/screens/icon-left.png'}
               alt={''}
@@ -202,7 +202,7 @@ const KloveDetails: React.FC = () => {
               width={1920}
             />
           </div>
-          <div className="border rounded-3xl border-white/10">
+          <div className="border rounded-3xl bg-gradient-to-b from-white/5 border-zinc-800 to-black overflow-clip">
             <Image
               src={'/img/mockup/klove/screens/icon-right.png'}
               alt={''}
