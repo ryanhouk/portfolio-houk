@@ -7,6 +7,9 @@ import { FadeY } from '../../../components/animations'
 import Image from 'next/image'
 import Figma from '../../../components/svg/logos/Figma'
 import StyledText from '../../../components/typography/StyledText'
+import Vscode from '../../../components/svg/logos/Vscode'
+import Tailwind from '../../../components/svg/logos/Tailwind'
+import ReactLogo from '../../../components/svg/logos/ReactLogo'
 
 const KloveDetails: React.FC = () => {
   const router = useRouter()
@@ -97,8 +100,19 @@ const KloveDetails: React.FC = () => {
               <p className="font-mono text-sm leading-relaxed text-zinc-400">
                 Lead Product Designer
               </p>
-              <div className="mt-6">
-                <Figma className="!w-8" />
+              <div className="flex flex-wrap items-center gap-4 mt-6">
+                <div className="flex items-center justify-center w-12 h-12">
+                  <Figma className="w-full h-full" />
+                </div>
+                <div className="flex items-center justify-center w-12 h-12">
+                  <Vscode className="w-full h-full" />
+                </div>
+                <div className="flex items-center justify-center w-12 h-12">
+                  <Tailwind className="w-full h-full" />
+                </div>
+                <div className="flex items-center justify-center w-12 h-12">
+                  <ReactLogo className="w-full h-full" />
+                </div>
               </div>
             </FadeY>
           </div>
