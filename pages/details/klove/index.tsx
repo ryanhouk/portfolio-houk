@@ -5,6 +5,8 @@ import DetailsNav from '../../../components/nav/DetailsNav'
 import IconDevices from '../../../components/svg/IconDevices'
 import { FadeY } from '../../../components/animations'
 import Image from 'next/image'
+import Figma from '../../../components/svg/logos/Figma'
+import StyledText from '../../../components/typography/StyledText'
 
 const KloveDetails: React.FC = () => {
   const router = useRouter()
@@ -95,12 +97,9 @@ const KloveDetails: React.FC = () => {
               <p className="font-mono text-sm leading-relaxed text-zinc-400">
                 Lead Product Designer
               </p>
-              {/* <LogoWrapper className="w-40 mt-4">
-                <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
-                  Figma
-                </p>
-                <Figma className="w-16 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
-              </LogoWrapper> */}
+              <div className="mt-6">
+                <Figma className="!w-8" />
+              </div>
             </FadeY>
           </div>
           <FadeY
@@ -127,13 +126,13 @@ const KloveDetails: React.FC = () => {
             <h3 className="mb-2 text-xl tracking-wide text-white font-object lg:text-2xl">
               Audit Disparate Apps
             </h3>
-            <p className="pl-6 font-mono text-sm leading-relaxed border-l border-zinc-800 text-zinc-400">
+            <StyledText>
               The home view of three media apps for music, video, and podcasts
               shows a dramatic variation in design and experience. <br />
               <br /> I first conducted an audit of each app, grouping the
               content into buckets, identifying common patterns, and creating an
               IA map.
-            </p>
+            </StyledText>
           </FadeY>
         </div>
         <Image
@@ -155,17 +154,28 @@ const KloveDetails: React.FC = () => {
             <h3 className="mb-2 text-xl tracking-wide text-white font-object lg:text-2xl">
               Create Information Architecture
             </h3>
-            <p className="pl-6 font-mono text-sm leading-relaxed border-l border-zinc-800 text-zinc-400">
+            <StyledText>
               After grouping the content, patterns, and flows, I created an IA
-              map to guide each view and workflow.
-            </p>
+              map to guide each view and workflow. <br />
+              <br />
+              Gaining stakeholder and PM buy-in on the information architecture
+              is crucial. By clearly communicating the benefits and aligning the
+              IA with business goals, we can ensure everyone is on the same
+              page. <br />
+              <br />
+              Once we have their support, we can create a product roadmap with
+              phased releases, allowing us to prioritize features, manage
+              resources efficiently, and deliver incremental value to users.
+              This structured approach helps maintain momentum and keeps the
+              project on track.
+            </StyledText>
           </FadeY>
         </div>
         <FadeY
           delay={0.25}
           className="flex items-center w-full h-full col-span-2 overflow-hidden bg-white/5">
           <Image
-            className="w-full mx-auto lg:p-16"
+            className="w-full mx-auto lg:max-w-screen-2xl"
             src={'/img/mockup/klove/screens/ia-open.png'}
             alt={''}
             width={1920}
@@ -184,17 +194,21 @@ const KloveDetails: React.FC = () => {
             <h3 className="mb-2 text-xl tracking-wide text-white font-object lg:text-2xl">
               Begin Design
             </h3>
-            <p className="pl-6 font-mono text-sm leading-relaxed border-l border-zinc-800 text-zinc-400">
-              Add info about design Add info about design Add info about design
-              Add info about design Add info about design Add info about design
-              Add info about design Add info about design Add info about design
-            </p>
+            <StyledText>
+              When starting the design process for this app, finding the right
+              approach can vary. Sometimes, wireframes are essential to map out
+              the basic structure and flow. But if the brand and design system
+              are already established, jumping straight into high-fidelity
+              designs can work just as well. It all depends on what best serves
+              the project
+            </StyledText>
           </FadeY>
         </div>
+        {/* DESIGN CONTENT */}
         <FadeY
           delay={0.25}
-          className="flex flex-col col-span-2 gap-8 px-8 mx-auto mb-32 max-w-7xl lg:gap-16 lg:flex-row">
-          <div className="border rounded-3xl bg-gradient-to-b from-white/5 border-zinc-800 to-black overflow-clip">
+          className="grid gap-8 px-8 mx-auto mb-32 max-w-7xl lg:gap-16 lg:grid-cols-4">
+          <div className="col-span-4 border lg:col-span-2 rounded-3xl bg-gradient-to-b from-white/5 border-zinc-800 to-black overflow-clip">
             <Image
               src={'/img/mockup/klove/screens/icon-left.png'}
               alt={''}
@@ -202,7 +216,7 @@ const KloveDetails: React.FC = () => {
               width={1920}
             />
           </div>
-          <div className="border rounded-3xl bg-gradient-to-b from-white/5 border-zinc-800 to-black overflow-clip">
+          <div className="col-span-4 border lg:col-span-2 rounded-3xl bg-gradient-to-b from-white/5 border-zinc-800 to-black overflow-clip">
             <Image
               src={'/img/mockup/klove/screens/icon-right.png'}
               alt={''}
@@ -210,7 +224,39 @@ const KloveDetails: React.FC = () => {
               width={1920}
             />
           </div>
+          <div className="flex items-center col-span-4 border rounded-3xl bg-gradient-to-b from-white/5 border-zinc-800 to-black overflow-clip lg:h-full h-72">
+            <Image
+              className="scale-[3.5] lg:scale-125 lg:py-16"
+              src={'/img/mockup/klove/screens/special-cards.png'}
+              alt={''}
+              height={1440}
+              width={1920}
+            />
+          </div>
         </FadeY>
+        <div className="bg-white/5">
+          <Image
+            className="w-full mx-auto max-w-screen-2xl"
+            src={'/img/mockup/klove/mob/kl-3-up.png'}
+            alt={''}
+            width={1179}
+            height={2556}
+          />
+          <Image
+            className="w-full mx-auto border-t max-w-screen-2xl border-white/10"
+            src={'/img/mockup/klove/mob/play-3-up.png'}
+            alt={''}
+            width={1179}
+            height={2556}
+          />
+          <Image
+            className="w-full mx-auto border-t max-w-screen-2xl border-white/10"
+            src={'/img/mockup/klove/mob/collect-3-up.png'}
+            alt={''}
+            width={1179}
+            height={2556}
+          />
+        </div>
       </section>
     </>
   )
