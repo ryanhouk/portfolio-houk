@@ -31,7 +31,7 @@ const EnterPassword: React.FC<EnterPasswordProps> = () => {
       router.push('/details/klove') // Specific redirection for KLOVE
     } else {
       setErrorMessage(
-        `That's the wrong password KLOVE. You can hit the link below to request access.`
+        `That's the wrong password. You can hit the link below to request access.`
       ) // Set error message instead of alert
     }
   }
