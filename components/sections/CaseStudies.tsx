@@ -41,7 +41,7 @@ const data: Item[] = [
     href: '/',
     title: 'P4O Platform',
     description: `Led the design & development of a platform that supercharged internal content reviewers to use AI to speed up their review process, increasing team efficiency and accuracy by more than 10x.`,
-    imgSrc: '/img/mockup/klove/tv/tv-open.png',
+    imgSrc: '/img/mockup/klove/web/player-open.png',
     alt: 'two iphones with media rich app interfaces',
     category: 'AI · Web · App',
     caseStudy: true,
