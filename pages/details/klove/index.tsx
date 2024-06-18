@@ -102,7 +102,7 @@ const KloveDetails: React.FC = () => {
               </p>
               <div className="flex flex-wrap items-center gap-4 mt-6">
                 <div className="flex items-center justify-center w-12 h-12">
-                  <Figma className="w-full h-full" />
+                  <Figma className="h-10" />
                 </div>
                 <div className="flex items-center justify-center w-12 h-12">
                   <Vscode className="w-full h-full" />
