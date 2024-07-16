@@ -4,11 +4,10 @@ import ArrowDown from '../svg/ArrowDown'
 
 type Props = {}
 
-const Hero = (Props: Props) => {
+const HeroReturns = (Props: Props) => {
   return (
     <>
-      <section className="relative pt-32 pb-20 overflow-clip selection:bg-orange-200 lg:pb-48 lg:pt-72">
-        <div className="absolute top-0 z-10 w-full h-32 bg-gradient-to-b from-black to-black/0 lg:h-96"></div>
+      <section className="relative pt-32 overflow-clip selection:bg-orange-200 lg:pt-72">
         <FadeY className="relative z-20 flex max-w-5xl gap-4 px-8 mx-auto mb-4 lg:mb-6 lg:justify-center">
           <div className="font-mono text-transparent transition-all duration-200 bg-gradient-to-tr from-red-600 to-yellow-400 bg-clip-text hover:cursor-cell">
             Ryan Houk
@@ -39,4 +38,4 @@ const Hero = (Props: Props) => {
   )
 }
 
-export default Hero
+export default HeroReturns

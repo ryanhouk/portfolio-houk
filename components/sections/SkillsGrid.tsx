@@ -76,12 +76,12 @@ const SkillsGrid = () => {
 
   return (
     <section className="px-8 selection:bg-orange-200">
-      <div className="relative z-30 flex flex-wrap justify-center max-w-3xl gap-2 mx-auto mb-20 transition-all duration-300 lg:mb-4 xl:-translate-y-20">
+      <div className="relative z-30 flex flex-wrap justify-center max-w-3xl gap-2 mx-auto mb-20 transition-all duration-300 lg:max-w-4xl lg:my-24">
         {skillData.map((skill, index) => (
           <div
             key={index}
             aria-label={skill.title} // Add aria-label here
-            className="relative px-4 py-2 font-mono text-sm text-transparent transition-all duration-300 border rounded-full group border-white/10 bg-white/10 bg-gradient-to-br from-red-500 to-yellow-400 bg-clip-text hover:cursor-cell hover:border-white/40"
+            className="relative px-4 py-2 text-xs transition-all duration-300 border rounded-full lg:text-base hover:text-white text-white/60 group border-white/20 hover:cursor-cell hover:border-white/40"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}>
             {skill.title}
