@@ -3,12 +3,10 @@ import Figma from '../svg/logos/Figma'
 import Tailwind from '../svg/logos/Tailwind'
 import LogoWrapper from '../cards/LogoWrapper'
 import Nextjs from '../svg/logos/Nextjs'
-import ReactLogo from '../svg/logos/ReactLogo'
 import Photoshop from '../svg/logos/Photoshop'
 import Vscode from '../svg/logos/Vscode'
 import Chatgpt from '../svg/logos/Chatgpt'
 import Arc from '../svg/logos/Arc'
-import Apple from '../svg/logos/Apple'
 import Craft from '../svg/logos/Craft'
 
 type Props = {}
