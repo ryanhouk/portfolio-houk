@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/nav/Navbar'
-import Hero from '../components/sections/Hero'
+// import Hero from '../components/sections/Hero'
 // import Package from '../components/sections/Package'
 import About from '../components/sections/About'
 import LoopingText from '../components/animations/LoopingText'

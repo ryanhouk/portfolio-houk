@@ -76,7 +76,7 @@ const SkillsGrid = () => {
 
   return (
     <section className="px-8 selection:bg-orange-200">
-      <div className="relative z-30 flex flex-wrap justify-center max-w-3xl gap-2 mx-auto mb-20 transition-all duration-300 lg:max-w-4xl lg:my-24">
+      <div className="relative z-30 flex flex-wrap justify-center max-w-3xl gap-2 mx-auto my-20 transition-all duration-300 lg:max-w-4xl lg:my-24">
         {skillData.map((skill, index) => (
           <div
             key={index}
