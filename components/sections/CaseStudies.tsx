@@ -41,7 +41,7 @@ const data: Item[] = [
     href: '/',
     title: 'P4O Platform',
     description: `Led the design & development of a platform that supercharged internal content reviewers to use AI to speed up their review process, increasing team efficiency and accuracy by more than 10x.`,
-    imgSrc: '/img/mockup/klove/web/player-open.png',
+    imgSrc: '/img/mockup/klove/web/apple-tv.webp',
     alt: 'two iphones with media rich app interfaces',
     category: 'AI · Web · App',
     caseStudy: true,
@@ -74,7 +74,7 @@ const data: Item[] = [
     title: 'Crisis Response',
     description:
       'Designed and developed a training platform for emergency responders with a focus on accessibility, achieving a WCAG compliance score of 96%.',
-    imgSrc: '/img/mockup/crc/crc-open-an.png',
+    imgSrc: '/img/mockup/crc/crc-open-an.webp',
     category: 'Website',
     alt: '',
     caseStudy: true,
@@ -84,7 +84,7 @@ const data: Item[] = [
     href: '/',
     title: 'Donor Cloud',
     description:
-      'Redesigned & developed a donation form flow, increasing the completion rate by 35%, and created a donor platform for managing donor information, enhancing user engagement and data management.',
+      'Redesigned & developed a donation experience, increasing the completion rate by 35%, and created a donor platform for managing donor information, enhancing user engagement and data management.',
     imgSrc: '/img/mockup/donorcloud/form-open-an.png',
     category: 'Web App',
     alt: '',
@@ -93,7 +93,7 @@ const data: Item[] = [
   {
     keyId: 7,
     href: '/',
-    title: 'EMF Site',
+    title: 'Educational Media Foundation',
     description:
       'For outsourced design projects, I act as a developer and mentor to junior designers, providing feedback before ultimately developing the final product.',
     imgSrc: '/img/mockup/emf/emf-open-an.png',

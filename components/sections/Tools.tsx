@@ -55,7 +55,7 @@ const Tools = (props: Props) => {
             </LogoWrapper>
             <LogoWrapper>
               <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
-                ChatGPT
+                OpenAI
               </p>
               <Chatgpt className="w-20 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
             </LogoWrapper>

@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
-import LinkedIn from '../svg/LinkedIn'
+// import LinkedIn from '../svg/LinkedIn'
 import Threads from '../svg/Threads'
 import Image from 'next/image'
-import IconMail from '../svg/IconMail'
+// import IconMail from '../svg/IconMail'
 
 type Props = {}
 
@@ -56,7 +56,7 @@ const Navbar = (props: Props) => {
               Threads
             </div>
           </Link>
-          <Link
+          {/* <Link
             href="https://www.linkedin.com/in/ryanhouk/"
             target="_blank"
             className="relative transition-all group opacity-60 hover:opacity-100">
@@ -64,7 +64,7 @@ const Navbar = (props: Props) => {
             <div className="absolute px-2 py-1 text-xs text-white transition-all duration-300 transform scale-0 rotate-90 -translate-x-1/2 translate-y-2 bg-black rounded opacity-0 left-1/2 top-full group-hover:mt-6 group-hover:scale-100 group-hover:opacity-100">
               LinkedIn
             </div>
-          </Link>
+          </Link> */}
           {/* <Link
             href="mailto:ryan.houk@proton.me?subject=Hey, Ryan! I would like to chat about..."
             target="_blank"

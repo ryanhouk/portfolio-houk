@@ -81,7 +81,7 @@ const SkillsGrid = () => {
           <div
             key={index}
             aria-label={skill.title} // Add aria-label here
-            className="relative px-4 py-2 text-xs transition-all duration-300 border rounded-full lg:text-base hover:text-white text-white/60 group border-white/20 hover:cursor-cell hover:border-white/40"
+            className="relative px-4 py-2 text-xs transition-all duration-300 border-2 rounded-full lg:text-base hover:text-white text-white/60 group border-white/20 hover:cursor-cell hover:border-white/40"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}>
             {skill.title}
