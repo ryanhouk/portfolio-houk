@@ -3,6 +3,7 @@ import { FadeY } from '../animations'
 import Link from 'next/link'
 import Image from 'next/image'
 import DoodleHashAnimate from '../svg/DoodleHashAnimate'
+import LinkButton from '../buttons/LinkButton'
 
 type Props = {}
 
@@ -29,13 +30,12 @@ const About: React.FC<Props> = (props) => {
             </p>
           </FadeY>
           <FadeY delay={1} className="flex mt-8 lg:justify-center">
-            <Link
-              href={
+            <LinkButton
+              url={
                 'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I like your portfolio.'
               }
-              className="px-8 py-3 text-white transition-all duration-300 border-2 border-white rounded-full font-object hover:bg-white hover:text-black">
-              Contact Me
-            </Link>
+              title={'Contact Me'}
+            />
           </FadeY>
         </div>
 

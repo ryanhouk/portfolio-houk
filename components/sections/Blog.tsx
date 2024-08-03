@@ -3,6 +3,7 @@ import React from 'react'
 import { FadeY } from '../animations'
 import Image from 'next/image'
 import DoodleLoopsAnimate from '../svg/DoodleLoopsAnimate'
+import LinkButton from '../buttons/LinkButton'
 
 // Define the structure for a blog post data
 type BlogData = {
@@ -78,12 +79,10 @@ const Blog = () => {
             </p>
           </FadeY>
           <FadeY delay={1} className="flex mt-8 lg:justify-center">
-            <Link
-              href={'https://medium.com/@ryanhouk'}
-              target="_blank"
-              className="px-8 py-3 text-white transition-all duration-300 border-2 border-white rounded-full font-object hover:bg-white hover:text-black">
-              Visit Blog
-            </Link>
+            <LinkButton
+              url={'https://medium.com/@ryanhouk'}
+              title={'Visit Blog'}
+            />
           </FadeY>
         </div>
       </section>
