@@ -2,6 +2,7 @@ import React from 'react'
 import { FadeY } from '../animations'
 import Link from 'next/link'
 import DoodleSparkleAnimate from '../svg/DoodleSparkleAnimate'
+import LinkButton from '../buttons/LinkButton'
 
 type Props = {}
 
@@ -27,14 +28,12 @@ const ThankYou = (props: Props) => {
           </FadeY>
         </div>
         <FadeY delay={1} className="flex px-8 mt-8 lg:justify-center">
-          <Link
-            href={
+          <LinkButton
+            url={
               'mailto:ryan.houk@proton.me?subject=Hi, Ryan! A message via ryanhouk.com.'
             }
-            target="_blank"
-            className="px-8 py-3 text-white transition-all duration-300 border-2 border-white rounded-full font-object hover:bg-white hover:text-black">
-            Contact Me
-          </Link>
+            title={'Contact Me'}
+          />
         </FadeY>
       </section>
     </>

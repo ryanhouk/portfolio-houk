@@ -34,6 +34,7 @@ const Index = (props: Props) => {
         <Navbar />
         {/* <Hero /> */}
         <HeroReturns />
+        {/* <ScrollCards /> */}
         {/* <ImageCarousel /> */}
         <HeroImages />
         {/* <Package /> */}

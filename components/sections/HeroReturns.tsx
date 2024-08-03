@@ -7,7 +7,7 @@ type Props = {}
 const HeroReturns = (Props: Props) => {
   return (
     <>
-      <section className="relative pt-32 overflow-clip selection:bg-orange-200 lg:pt-72">
+      <section className="relative pt-32 overflow-clip selection:bg-orange-200 lg:pt-64">
         <FadeY className="relative z-20 flex max-w-5xl gap-4 px-8 mx-auto mb-4 lg:mb-6 lg:justify-center">
           <div className="font-mono text-transparent transition-all duration-200 bg-gradient-to-tr from-red-600 to-yellow-400 bg-clip-text hover:cursor-cell">
             Ryan Houk
