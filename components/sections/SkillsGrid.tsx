@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 type Skill = {
   title: string
-  context: string // New field for additional tooltip text
+  context: string
 }
 
 const skillData: Skill[] = [
@@ -80,7 +80,7 @@ const SkillsGrid = () => {
         {skillData.map((skill, index) => (
           <div
             key={index}
-            aria-label={skill.title} // Add aria-label here
+            aria-label={skill.title}
             className="relative px-4 py-2 text-xs transition-all duration-300 border-2 rounded-full lg:text-base hover:text-white text-white/60 group border-white/20 hover:cursor-cell hover:border-white/40"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}>
