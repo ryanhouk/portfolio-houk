@@ -8,8 +8,9 @@ import SkillsGrid from '../components/sections/SkillsGrid'
 import ThankYou from '../components/sections/ThankYou'
 import CaseStudies from '../components/sections/CaseStudies'
 import Tools from '../components/sections/Tools'
-import HeroImages from '../components/sections/HeroImages'
-import HeroReturns from '../components/sections/HeroReturns'
+import HeroImages from '../components/heroes/HeroImages'
+import HeroCarousel from '../components/heroes/HeroCarousel'
+import HeroReturns from '../components/heroes/HeroReturns'
 
 type Props = {}
 
@@ -34,9 +35,10 @@ const Index = (props: Props) => {
         <Navbar />
         {/* <Hero /> */}
         <HeroReturns />
+        <HeroCarousel />
         {/* <ScrollCards /> */}
         {/* <ImageCarousel /> */}
-        <HeroImages />
+        {/* <HeroImages /> */}
         {/* <Package /> */}
         <SkillsGrid />
         <LoopingText />
