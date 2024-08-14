@@ -59,32 +59,6 @@ const HeroCarousel = () => {
 
   return (
     <>
-      {/* BUTTONS */}
-      <div className="flex items-center justify-center gap-4">
-        <button
-          onClick={handlePrev}
-          className="p-[1px] group rounded-full bg-gradient-to-b from-zinc-800 to-zinc-950 transition-all hover:-translate-x-1 duration-300">
-          <div className="flex items-center justify-center w-12 h-12 font-mono text-sm text-white transition-all duration-300 rounded-full group-hover:brightness-150 bg-gradient-to-b from-zinc-900 to-zinc-950">
-            <ArrowRightSquare className={'w-6 rotate-180'} />
-          </div>
-        </button>
-        <div className="flex gap-2">
-          {cards.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={`h-[5px] w-[5px] rounded-full transition-all ${currentIndex === index ? 'bg-white' : 'bg-white/15'}`}
-            />
-          ))}
-        </div>
-        <button
-          onClick={handleNext}
-          className="p-[1px] group rounded-full bg-gradient-to-b from-zinc-800 to-zinc-950 transition-all hover:translate-x-1 duration-300">
-          <div className="flex items-center justify-center w-12 h-12 font-mono text-sm text-white transition-all duration-300 rounded-full group-hover:brightness-150 bg-gradient-to-b from-zinc-900 to-zinc-950">
-            <ArrowRightSquare className={'w-6'} />
-          </div>
-        </button>
-      </div>
       {/* IMAGES */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -109,6 +83,32 @@ const HeroCarousel = () => {
           </div>
         </motion.div>
       </AnimatePresence>
+      {/* BUTTONS */}
+      <div className="relative z-20 flex items-center justify-center gap-4">
+        <button
+          onClick={handlePrev}
+          className="p-[1px] group rounded-full bg-gradient-to-b from-zinc-800 to-zinc-950 transition-all hover:-translate-x-1 duration-300">
+          <div className="flex items-center justify-center w-12 h-12 font-mono text-sm text-white transition-all duration-300 rounded-full group-hover:brightness-150 bg-gradient-to-b from-zinc-900 to-zinc-950">
+            <ArrowRightSquare className={'w-6 rotate-180'} />
+          </div>
+        </button>
+        <div className="flex gap-2">
+          {cards.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => handleDotClick(index)}
+              className={`h-[5px] w-[5px] rounded-full transition-all ${currentIndex === index ? 'bg-white' : 'bg-white/15'}`}
+            />
+          ))}
+        </div>
+        <button
+          onClick={handleNext}
+          className="p-[1px] group rounded-full bg-gradient-to-b from-zinc-800 to-zinc-950 transition-all hover:translate-x-1 duration-300">
+          <div className="flex items-center justify-center w-12 h-12 font-mono text-sm text-white transition-all duration-300 rounded-full group-hover:brightness-150 bg-gradient-to-b from-zinc-900 to-zinc-950">
+            <ArrowRightSquare className={'w-6'} />
+          </div>
+        </button>
+      </div>
     </>
   )
 }

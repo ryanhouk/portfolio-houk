@@ -14,7 +14,7 @@ type Props = {}
 const Tools = (props: Props) => {
   return (
     <>
-      <section className="w-full py-8 border-t lg:py-32 bg-gradient-to-t from-black via-white/5 to-white/5 border-zinc-900">
+      <section className="w-full py-8 border-t lg:py-24 bg-gradient-to-t from-black via-white/5 to-white/5 border-zinc-900">
         <div className="px-8 mx-auto max-w-screen-2xl">
           <div className="grid grid-cols-2 gap-4 lg:gap-6 lg:grid-cols-4">
             <LogoWrapper>
