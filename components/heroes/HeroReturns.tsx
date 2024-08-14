@@ -22,9 +22,7 @@ const HeroReturns = (Props: Props) => {
         </div>
         <FadeY className="relative z-20 px-8" delay={0.75}>
           <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-500 lg:text-center">
-            This is a portfolio site. It might look a little messy, but product
-            design, development, usability testing, and iterating are often a
-            bit messy.
+            {`Hey there! Creativity often thrives in a bit of chaos—because let’s be honest, the design process can get a little messy sometimes. But that's where the magic happens, turning ideas into polished, customer-friendly products.`}
           </p>
         </FadeY>
         <FadeY delay={1}>
