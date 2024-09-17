@@ -70,7 +70,7 @@ const data: Item[] = [
   },
   {
     keyId: 5,
-    href: '/',
+    href: '/details/crc/',
     title: 'Crisis Response',
     description:
       'Designed and developed a training platform for emergency responders with a focus on accessibility, achieving a WCAG compliance score of 96%.',
@@ -121,7 +121,7 @@ const CaseStudies = () => {
           <FadeY delay={0.5}>Highlights</FadeY>
         </h1>
         <FadeY className="relative z-20" delay={0.75}>
-          <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-500 lg:text-center">
+          <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-400 lg:text-center">
             There is a lot of work to choose from! Here are a few highlights to
             dive into.
           </p>

@@ -8,7 +8,8 @@ import SkillsGrid from '../components/sections/SkillsGrid'
 import ThankYou from '../components/sections/ThankYou'
 import CaseStudies from '../components/sections/CaseStudies'
 import Tools from '../components/sections/Tools'
-import HeroImages from '../components/heroes/HeroImages'
+// import HeroCarousel from '../components/heroes/HeroCarousel'
+import Hero from '../components/heroes/Hero'
 import HeroCarousel from '../components/heroes/HeroCarousel'
 import HeroReturns from '../components/heroes/HeroReturns'
 
@@ -37,8 +38,6 @@ const Index = (props: Props) => {
         <HeroReturns />
         <HeroCarousel />
         {/* <ScrollCards /> */}
-        {/* <ImageCarousel /> */}
-        {/* <HeroImages /> */}
         {/* <Package /> */}
         <SkillsGrid />
         <LoopingText />
@@ -49,7 +48,6 @@ const Index = (props: Props) => {
         {/* <SkillCallouts /> */}
         <Blog />
         <About />
-        {/* <ImageDivider /> */}
         <ThankYou />
         <Footer />
         {/* END DIV */}

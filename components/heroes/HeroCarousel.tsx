@@ -66,7 +66,7 @@ const HeroCarousel = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.25 }}
+          transition={{ opacity: { duration: 0.25 }, ease: 'easeInOut' }}
           className="relative">
           <div className="relative flex justify-center overflow-clip">
             {/* FADES */}
