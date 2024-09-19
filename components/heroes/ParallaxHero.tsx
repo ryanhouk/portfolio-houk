@@ -38,10 +38,10 @@ const Hero: React.FC<HeroProps> = ({
   }, [])
 
   return (
-    <div id="hero" className={`relative h-[80vh] ${className}`}>
+    <div id="hero" className={`relative h-[95dvh] lg:h-screen ${className}`}>
       <div className="w-full top-0 bg-gradient-to-b from-zinc-900 to-black h-[500px]"></div>
       <motion.div
-        className={`absolute inset-0 z-10 bg-cover bg-top border overflow-clip border-zinc-800 transition-all duration-300 ${
+        className={`absolute inset-0 z-10 bg-cover bg-top overflow-clip border border-zinc-800 transition-all duration-300 ${
           scrollPos > 0
             ? 'm-0'
             : isMobile
@@ -69,7 +69,7 @@ const Hero: React.FC<HeroProps> = ({
         animate={{ y: 0 }} // No vertical movement (parallax removed)
         transition={{ type: 'tween', ease: 'linear', duration: 0 }}>
         <h1
-          className="text-4xl text-center text-white font-clash lg:mb-8 lg:text-8xl"
+          className="px-4 text-3xl text-center text-white font-clash lg:mb-8 lg:text-8xl"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}>
           {textContent}
