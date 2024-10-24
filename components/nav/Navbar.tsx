@@ -21,7 +21,7 @@ const navItems = [
 const Navbar = (props: Props) => {
   return (
     <>
-      <nav className="fixed z-50 flex justify-between w-full px-6 via-bg-black/50 bg-gradient-to-b from-black to-black/0">
+      <nav className="fixed z-50 flex justify-between w-full px-6 bg-gradient-to-b from-black to-black/0">
         {/* AVATAR */}
         <div className="items-center justify-start flex-1 hidden h-20 lg:flex">
           <Image
@@ -34,12 +34,12 @@ const Navbar = (props: Props) => {
         </div>
 
         {/* NAV ITEMS */}
-        <div className="flex items-center justify-center h-20 gap-4 text-white lg:gap-8">
+        <div className="flex items-center justify-center h-20 gap-4 lg:gap-8">
           {navItems.map((item, index) => (
             <Link
               key={index}
               href={item.href}
-              className="font-mono text-sm transition-all duration-200 opacity-60 hover:opacity-100">
+              className="font-mono text-sm text-white transition-all duration-200 opacity-60 hover:opacity-100">
               {item.label}
             </Link>
           ))}

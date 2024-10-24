@@ -12,7 +12,7 @@ const About: React.FC<Props> = (props) => {
     <>
       <section
         id="About"
-        className="py-12 scroll-mt-16 selection:bg-orange-200 lg:py-32">
+        className="pt-12 pb-24 scroll-mt-16 selection:bg-orange-200 lg:py-32">
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
             <DoodleHashAnimate
