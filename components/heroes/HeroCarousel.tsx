@@ -59,30 +59,6 @@ const HeroCarousel = () => {
 
   return (
     <>
-      {/* IMAGES */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ opacity: { duration: 0.25 }, ease: 'easeInOut' }}
-          className="relative">
-          <div className="relative flex justify-center overflow-clip">
-            {/* FADES */}
-            <div className="absolute bottom-0 z-10 w-full h-32 lg:h-96 bg-gradient-to-t from-black to-black/0"></div>
-            <div className="absolute left-0 z-10 h-full lg:w-96 bg-gradient-to-r from-black to-black/0"></div>
-            <div className="absolute right-0 z-10 h-full lg:w-96 bg-gradient-to-l from-black to-black/0"></div>
-            <Image
-              src={image}
-              alt={altText}
-              className={imageClass}
-              width={3060}
-              height={2942}
-            />
-          </div>
-        </motion.div>
-      </AnimatePresence>
       {/* BUTTONS */}
       <div className="relative z-20 flex items-center justify-center gap-4">
         <button
@@ -109,6 +85,30 @@ const HeroCarousel = () => {
           </div>
         </button>
       </div>
+      {/* IMAGES */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentIndex}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ opacity: { duration: 0.25 }, ease: 'easeInOut' }}
+          className="relative">
+          <div className="relative flex justify-center overflow-clip">
+            {/* FADES */}
+            <div className="absolute bottom-0 z-10 w-full h-32 lg:h-96 bg-gradient-to-t from-black to-black/0"></div>
+            <div className="absolute left-0 z-10 h-full lg:w-96 bg-gradient-to-r from-black to-black/0"></div>
+            <div className="absolute right-0 z-10 h-full lg:w-96 bg-gradient-to-l from-black to-black/0"></div>
+            <Image
+              src={image}
+              alt={altText}
+              className={imageClass}
+              width={3060}
+              height={2942}
+            />
+          </div>
+        </motion.div>
+      </AnimatePresence>
     </>
   )
 }

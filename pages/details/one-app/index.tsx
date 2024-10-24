@@ -4,7 +4,7 @@ import ColorSection from '../../../components/animations/ColorSection'
 import { FadeY } from '../../../components/animations'
 import DetailsNav from '../../../components/nav/DetailsNavDark'
 
-const CrcDetails: React.FC = () => {
+const OneAppDetails: React.FC = () => {
   useEffect(() => {
     // Set an initial body background color when the component mounts
     document.body.style.backgroundColor = '#000' // Initial color
@@ -18,18 +18,20 @@ const CrcDetails: React.FC = () => {
   return (
     <>
       {/* NAV */}
-      {/* <DetailsNavLight /> */}
       <DetailsNav />
 
       {/* HERO */}
       <ColorSection id="HeroIntro" bgColor="bg-black">
-        <FadeY className="pt-64 mx-auto max-w-screen-2xl">
+        <FadeY className="relative w-full mx-auto h-[80vh] max-w-screen-3xl overflow-clip">
+          <div className="absolute bottom-0 w-full h-96 bg-gradient-to-t from-black to-black/0"></div>
+          <div className="absolute left-0 hidden h-full w-96 bg-gradient-to-r from-black to-black/0 lg:flex"></div>
+          <div className="absolute right-0 hidden h-full w-96 bg-gradient-to-l from-black to-black/0 lg:flex"></div>
           <Image
-            className="w-full mx-auto"
-            src={'/img/mockup/mixtape/mt-hand.webp'}
+            className="object-cover object-center h-full"
+            src={'/img/mockup/one-app/feature-hero-one-app.jpg'}
             alt={''}
-            width={2753}
-            height={2843}
+            width={4500}
+            height={3375}
           />
         </FadeY>
       </ColorSection>
@@ -59,5 +61,5 @@ const CrcDetails: React.FC = () => {
   )
 }
 
-export default CrcDetails
+export default OneAppDetails
 ;``

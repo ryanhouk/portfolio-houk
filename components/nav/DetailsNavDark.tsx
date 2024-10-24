@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import LinkedIn from '../svg/LinkedIn'
+// import LinkedIn from '../svg/LinkedIn'
 import Threads from '../svg/Threads'
 import Image from 'next/image'
 
@@ -33,16 +33,18 @@ const DetailsNav = () => {
   return (
     <>
       <motion.nav
-        className={`fixed z-50 flex justify-between w-full px-6 transition-colors duration-300 ${isScrolled ? 'bg-gradient-to-b from-black to-black/0' : 'add-initial-state-here'}`}>
+        className={`fixed z-50 flex justify-between w-full px-6 transition-colors duration-300 ${isScrolled ? 'add-scrolled-state-here' : 'add-initial-state-here'}`}>
         {/* AVATAR */}
-        <div className="items-center justify-start flex-1 hidden h-16 lg:flex">
-          <Image
-            src={'/img/photos/avatar.png'}
-            alt={'Photo of Ryan Houk smiling'}
-            width={400}
-            height={400}
-            className="w-8 transition-all border-2 rounded-full border-black/30 hover:cursor-cell hover:border-black"
-          />
+        <div className="items-center justify-start flex-1 hidden h-20 lg:flex">
+          <Link href={'/'}>
+            <Image
+              src={'/img/photos/avatar.png'}
+              alt={'Photo of Ryan Houk smiling'}
+              width={400}
+              height={400}
+              className="w-8 transition-all border-2 rounded-full border-black/30 hover:border-black"
+            />
+          </Link>
         </div>
 
         {/* NAV ITEMS */}
@@ -68,7 +70,7 @@ const DetailsNav = () => {
               className={`w-4 ${isScrolled ? 'text-white' : 'text-white'}`}
             />
           </Link>
-          <Link
+          {/* <Link
             href="https://www.linkedin.com/in/ryanhouk/"
             target="_blank"
             title="Visit Ryan Houk LinkedIn"
@@ -76,7 +78,7 @@ const DetailsNav = () => {
             <LinkedIn
               className={`w-4 ${isScrolled ? 'text-white' : 'text-white'}`}
             />
-          </Link>
+          </Link> */}
           {/* <Link
             href="https://dribbble.com/ryanhouk"
             target="_blank"

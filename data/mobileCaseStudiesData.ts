@@ -1,0 +1,37 @@
+export type MobileItem = {
+  keyId: number
+  href: string
+  title: string
+  description: string
+  imgSrcOne: string
+  imgSrcTwo: string
+  alt: string
+  category: string
+  caseStudy: boolean
+}
+
+export const mobileCaseStudiesData: MobileItem[] = [
+  {
+    keyId: 1,
+    href: '/',
+    title: 'Media Platforms',
+    description:
+      'Unified disparate media platforms for podcasts, videos, and music by reworking the information architecture and designing a scalable product for a consistent user experience across Apple TV, mobile apps, and websites.',
+    imgSrcOne: '/img/mockup/one-app/playlist-feature.png',
+    imgSrcTwo: '/img/mockup/one-app/playlist-player.png',
+    alt: '',
+    category: 'Web · iOS · Android · tvOS · Roku',
+    caseStudy: true,
+  },
+  {
+    keyId: 2,
+    href: '/',
+    title: 'Mixtape',
+    description: 'A place for everything. Project details available soon.',
+    imgSrcOne: '/img/mockup/mixtape/mt-home-expand-solo.png',
+    imgSrcTwo: '/img/mockup/mixtape/mt-mixtapes-solo.png',
+    alt: '',
+    category: 'iOS · MacOS',
+    caseStudy: true,
+  },
+]

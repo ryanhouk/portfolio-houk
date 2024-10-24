@@ -33,19 +33,19 @@ const BackgroundGlow = ({ className, size }: Props) => {
         className="relative"
         style={{ height: `${size}px`, width: `${size}px` }}>
         <motion.div
-          className="absolute bg-orange-500 rounded-full mix-blend-screen blur-3xl filter"
+          className="absolute bg-red-500 rounded-full mix-blend-screen blur-3xl filter"
           style={{ ...circleStyle }}
           variants={circleVariants}
           animate="animate"
         />
         <motion.div
-          className="absolute bg-purple-500 rounded-full mix-blend-screen blur-3xl filter"
+          className="absolute bg-red-500 rounded-full mix-blend-screen blur-3xl filter"
           style={{ ...circleStyle, x: '25%', y: '20%' }}
           variants={circleVariants}
           animate="animate"
         />
         <motion.div
-          className="absolute rounded-full bg-cyan-500 mix-blend-screen blur-3xl filter"
+          className="absolute bg-yellow-500 rounded-full mix-blend-screen blur-3xl filter"
           style={{ ...circleStyle, x: '-25%', y: '20%' }}
           variants={circleVariants}
           animate="animate"

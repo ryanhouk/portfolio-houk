@@ -30,25 +30,20 @@ const DoodleHeartAnimate = ({
     <div ref={svgRef} className={className}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="309"
-        height="174"
-        viewBox="0 0 309 174">
+        viewBox="0 0 99 91"
+        className="w-full h-auto overflow-visible" // This ensures Tailwind classes control width and height
+      >
         <defs>
           <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor={startColor} />
             <stop offset="100%" stopColor={endColor} />
           </linearGradient>
         </defs>
-        <g
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeLinecap="round"
-          strokeWidth="1">
+        <g fill="none" stroke="none" strokeLinecap="round">
           <motion.path
             stroke="url(#iconGradient)"
             strokeWidth={strokeWidth}
-            d="M3 171.27c36.069-36.07 84.84-67.401 136-76.089 13.912-2.362 81.6-14.146 81.6 12.089 0 12.566-14.083 10.333-21.511 6.4-14.623-7.741-25.52-15.182-35.733-28.8-15.766-21.02-33.097-54.945-9.956-76.8 9.987-9.432 29.096-4.067 38.4 2.845 9.122 6.776 15.192 15.472 22.044 24.355 5.57 7.22 4.075 6.488 8.356-1.6 10.746-20.298 44.944-34.557 50.844-2.844 3.311 17.793-2.547 33.241-8 49.6-2.048 6.145-5.223 16.826-9.6 21.689-4.764 5.294-7.345-3.148-5.689-7.645 4.119-11.179 9.681-16 21.689-16 10.861 0 25.27 8.445 25.956 20.8.381 6.855 2.115 5.178 4.444 0 1.808-4.016 4.445-16.849 4.445-12.444 0 1.552-.086 14.398-1.6 15.289-5.39 3.17-12.71 3.229-18.489 5.155"
+            d="M46.5897 90C32.2617 82.5795 21.668 75.8216 13.4112 62.0208C9.00167 54.6506 4.91717 47.0127 2.69169 38.6607C-0.54097 26.5288 0.793624 10.3852 12.9895 3.52983C28.1392 -4.9859 49.2008 9.31642 45.2853 26.7698C45.1636 27.3123 43.6421 30.6293 44.4297 28.79C48.6716 18.8834 61.263 9.74938 71.1476 6.48662C86.7877 1.32402 97.7846 9.63273 97.1912 26.0637C96.7624 37.9369 88.4709 51.895 80.1949 60.0373C70.4344 69.6401 57.315 75.4033 50.4294 87.5728"
             initial={{ pathLength: 0 }} // Initial path length
             animate={startAnimation ? { pathLength: 1 } : { pathLength: 0 }} // Final path length
             transition={{

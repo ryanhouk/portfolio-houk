@@ -12,6 +12,7 @@ import Tools from '../components/sections/Tools'
 import Hero from '../components/heroes/Hero'
 import HeroCarousel from '../components/heroes/HeroCarousel'
 import HeroReturns from '../components/heroes/HeroReturns'
+import FavePodcasts from '../components/sections/FavePodcasts'
 
 type Props = {}
 
@@ -48,6 +49,7 @@ const Index = (props: Props) => {
         {/* <SkillCallouts /> */}
         <Blog />
         <About />
+        <FavePodcasts />
         <ThankYou />
         <Footer />
         {/* END DIV */}
