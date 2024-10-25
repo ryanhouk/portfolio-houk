@@ -9,10 +9,9 @@ import ThankYou from '../components/sections/ThankYou'
 import CaseStudies from '../components/sections/CaseStudies'
 import Tools from '../components/sections/Tools'
 // import HeroCarousel from '../components/heroes/HeroCarousel'
-import Hero from '../components/heroes/Hero'
 import HeroCarousel from '../components/heroes/HeroCarousel'
 import HeroReturns from '../components/heroes/HeroReturns'
-import FavePodcasts from '../components/sections/FavePodcasts'
+import FaveThings from '../components/sections/FaveThings'
 
 type Props = {}
 
@@ -49,7 +48,7 @@ const Index = (props: Props) => {
         {/* <SkillCallouts /> */}
         <Blog />
         <About />
-        <FavePodcasts />
+        <FaveThings />
         <ThankYou />
         <Footer />
         {/* END DIV */}
