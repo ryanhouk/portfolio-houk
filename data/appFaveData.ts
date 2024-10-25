@@ -29,8 +29,8 @@ export const appFaveData: AppFaveItem[] = [
     imageUrl: '/img/faves/app/how-we-feel.png',
     altText: '',
     title: 'How We Feel',
-    credit: 'Genre',
-    url: 'https://pocketcasts.com/',
+    credit: 'Yale Non-profit',
+    url: 'https://howwefeel.org/',
   },
   {
     keyId: 4,
@@ -47,5 +47,21 @@ export const appFaveData: AppFaveItem[] = [
     title: 'Robinhood',
     credit: 'Robinhood',
     url: 'https://robinhood.com/us/en/',
+  },
+  {
+    keyId: 6,
+    imageUrl: '/img/faves/app/cashapp.png',
+    altText: '',
+    title: 'Cash App',
+    credit: 'Block Inc.',
+    url: 'https://cash.app/',
+  },
+  {
+    keyId: 7,
+    imageUrl: '/img/faves/app/podcast.png',
+    altText: '',
+    title: 'Apple Podcasts',
+    credit: 'Apple',
+    url: 'https://apps.apple.com/us/app/apple-podcasts/id525463029',
   },
 ]

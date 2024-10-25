@@ -4,6 +4,7 @@ import ImageCard from '../cards/ImageCard'
 import DoodleHeartAnimate from '../svg/DoodleHeartAnimate'
 import { podcastData } from '../../data/podcastData'
 import { appFaveData } from '../../data/appFaveData'
+import ContainedImageCard from '../cards/ContainedImageCard'
 
 type Props = {}
 
@@ -35,15 +36,15 @@ const FaveThings = (props: Props) => {
 
       {/* PODCASTS */}
       <section className="py-8 border-t bg-gradient-to-t from-black via-white/5 to-white/5 border-zinc-900">
-        <h2 className="px-8 pt-6 text-2xl text-white font-clash lg:text-3xl">
+        <h2 className="px-8 pb-4 text-2xl text-white lg:pt-6 font-clash lg:text-3xl">
           Podcasts
         </h2>
         <div className="relative flex w-full px-8 mx-auto overflow-x-auto selection:bg-orange-200">
-          <div className="flex space-x-8 snap-x snap-mandatory">
+          <div className="flex space-x-4 lg:space-x-8 snap-x snap-mandatory">
             {podcastData.map((podcast) => (
               <div
                 key={podcast.keyId}
-                className="flex-none pt-6 w-44 lg:w-64 snap-start">
+                className="flex-none w-40 lg:w-64 snap-start">
                 <ImageCard
                   imageUrl={podcast.imageUrl}
                   altText={podcast.altText}
@@ -61,23 +62,28 @@ const FaveThings = (props: Props) => {
 
       {/* APPS */}
       <section className="py-8 border-t bg-gradient-to-t from-black via-white/5 to-white/5 border-zinc-900">
-        <h2 className="px-8 pt-6 text-2xl text-white font-clash lg:text-3xl">
+        <h2 className="px-8 pb-4 text-2xl text-white font-clash lg:text-3xl">
           Apps
         </h2>
         <div className="relative flex w-full px-8 mx-auto overflow-x-auto selection:bg-orange-200">
-          <div className="flex space-x-8 snap-x snap-mandatory">
+          <div className="flex space-x-4 lg:space-x-8 snap-x snap-mandatory">
             {appFaveData.map((app) => (
-              <div
-                key={app.keyId}
-                className="flex-none pt-6 w-44 lg:w-64 snap-start">
-                <ImageCard
+              <div key={app.keyId} className="flex-none snap-start">
+                <ContainedImageCard
+                  imageUrl={app.imageUrl}
+                  altText={app.altText}
+                  title={app.title}
+                  credit={app.credit}
+                  url={app.url}
+                />
+                {/* <ImageCard
                   imageUrl={app.imageUrl}
                   altText={app.altText}
                   title={app.title}
                   credit={app.credit}
                   url={app.url}
                   btnTitle={'Download App'}
-                />
+                /> */}
               </div>
             ))}
           </div>
