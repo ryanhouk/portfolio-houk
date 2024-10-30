@@ -45,7 +45,9 @@ const ImageCard = ({
             />
           </div>
           <div className="relative z-20 mt-2 text-center transition-all duration-300 lg:mt-3">
-            <h3 className="text-white font-object lg:mx-6">{title}</h3>
+            <h3 className="text-sm text-white lg:text-base font-object lg:mx-6">
+              {title}
+            </h3>
             <p className="font-mono text-xs text-white/50">{credit}</p>
           </div>
         </Link>

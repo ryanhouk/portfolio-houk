@@ -64,4 +64,28 @@ export const appFaveData: AppFaveItem[] = [
     credit: 'Apple',
     url: 'https://apps.apple.com/us/app/apple-podcasts/id525463029',
   },
+  {
+    keyId: 8,
+    imageUrl: '/img/faves/app/apple-sports.png',
+    altText: '',
+    title: 'Apple Sports',
+    credit: 'Apple',
+    url: 'https://apps.apple.com/us/app/apple-sports/id6446788829',
+  },
+  {
+    keyId: 9,
+    imageUrl: '/img/faves/app/target.png',
+    altText: '',
+    title: 'Target',
+    credit: 'Target',
+    url: 'https://www.target.com/c/target-app/-/N-4th2r',
+  },
+  {
+    keyId: 10,
+    imageUrl: '/img/faves/app/airbnb.png',
+    altText: '',
+    title: 'AirBnB',
+    credit: 'AirBnB',
+    url: 'https://apps.apple.com/us/app/airbnb/id401626263',
+  },
 ]

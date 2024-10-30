@@ -24,9 +24,23 @@ module.exports = {
         'brand-pale': '#f4eddd',
       },
       maxWidth: {
-        'screen-3xl': '2000px', // Add this line
+        'screen-3xl': '2000px',
       },
     },
   },
-  plugins: ['prettier-plugin-tailwind'],
+  plugins: [
+    'prettier-plugin-tailwind',
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hide': {
+          /* Hide the scrollbar */
+          '-ms-overflow-style': 'none', // IE and Edge
+          'scrollbar-width': 'none', // Firefox
+          '&::-webkit-scrollbar': {
+            display: 'none', // Chrome, Safari, and Opera
+          },
+        },
+      })
+    },
+  ],
 }
