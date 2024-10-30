@@ -9,7 +9,9 @@ type Props = {}
 const ThankYou = (props: Props) => {
   return (
     <>
-      <section id="Contact" className="relative py-12 scroll-mt-16 lg:py-32">
+      <section
+        id="Contact"
+        className="relative py-12 mt-16 scroll-mt-16 lg:py-32">
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
             <DoodleSparkleAnimate
