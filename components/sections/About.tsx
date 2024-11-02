@@ -1,6 +1,5 @@
 import React from 'react'
 import { FadeY } from '../animations'
-import Link from 'next/link'
 import Image from 'next/image'
 import DoodleHashAnimate from '../svg/DoodleHashAnimate'
 import LinkButton from '../buttons/LinkButton'
@@ -45,7 +44,7 @@ const About: React.FC<Props> = (props) => {
             src="/img/objects/tape-gray.png"
             alt="piece of duct tape stuck to a letter"
           />
-          <div className="p-4 py-12 m-4 bg-white rounded-sm shadow-md lg:p-16 lg:py-16">
+          <div className="p-4 py-12 m-4 bg-white rounded-sm shadow-md lg:p-16 lg:py-16 bg-[url('/img/texture/paper.jpg')] bg-cover">
             <h3 className="mb-8 font-mono">Hey, friends!</h3>
             <p className="mb-8 font-mono leading-loose">
               {`I've been doing this for over 15 years and continuously learning

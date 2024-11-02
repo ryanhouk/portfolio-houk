@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-// import LinkedIn from '../svg/LinkedIn'
 import Threads from '../svg/Threads'
 import Image from 'next/image'
 
@@ -48,7 +47,7 @@ const DetailsNav = () => {
         </div>
 
         {/* NAV ITEMS */}
-        <div className="flex items-center justify-center h-12 gap-4 lg:h-16 lg:gap-8">
+        <div className="flex items-center justify-center h-12 gap-4 lg:h-16">
           {navItems.map((item, index) => (
             <Link
               key={index}
