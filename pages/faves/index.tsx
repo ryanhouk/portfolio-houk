@@ -1,19 +1,32 @@
-import React from 'react'
-import { FadeY } from '../animations'
-import ImageCard from '../cards/ImageCard'
-import DoodleHeartAnimate from '../svg/DoodleHeartAnimate'
-import { podcastData } from '../../data/podcastData'
+import React, { useEffect } from 'react'
+import { FadeY } from '../../components/animations'
+import ContainedImageCard from '../../components/cards/ContainedImageCard'
+import ImageCard from '../../components/cards/ImageCard'
+import DoodleHeartAnimate from '../../components/svg/DoodleHeartAnimate'
 import { appFaveData } from '../../data/appFaveData'
-import ContainedImageCard from '../cards/ContainedImageCard'
+import { podcastData } from '../../data/podcastData'
+import DetailsNavDark from '../../components/nav/DetailsNavDark'
 
 type Props = {}
 
-const FaveThings = (props: Props) => {
+const Index = (props: Props) => {
+  useEffect(() => {
+    // Save the current body background color
+    const originalBackgroundColor = document.body.style.backgroundColor
+
+    // Set the body background to the desired color when the component mounts
+    document.body.style.backgroundColor = 'black' // or any color you prefer
+
+    // Revert back to the original color when the component unmounts
+    return () => {
+      document.body.style.backgroundColor = originalBackgroundColor
+    }
+  }, [])
+
   return (
     <>
-      <section
-        id="Faves"
-        className="w-full py-8 mt-12 lg:mt-24 lg:pt-24 selection:bg-orange-200">
+      <DetailsNavDark />
+      <section id="Faves" className="w-full py-8 pt-32 selection:bg-orange-200">
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
             <DoodleHeartAnimate
@@ -31,9 +44,6 @@ const FaveThings = (props: Props) => {
               Just a few of my favorite things.
             </p>
           </FadeY>
-          {/* <FadeY delay={1} className="flex mt-8 lg:justify-center">
-            <LinkButton url={'/faves'} title={'Explore More'} />
-          </FadeY> */}
         </div>
       </section>
 
@@ -91,6 +101,14 @@ const FaveThings = (props: Props) => {
                   credit={app.credit}
                   url={app.url}
                 />
+                {/* <ImageCard
+                  imageUrl={app.imageUrl}
+                  altText={app.altText}
+                  title={app.title}
+                  credit={app.credit}
+                  url={app.url}
+                  btnTitle={'Download App'}
+                /> */}
               </div>
             ))}
           </div>
@@ -100,4 +118,4 @@ const FaveThings = (props: Props) => {
   )
 }
 
-export default FaveThings
+export default Index

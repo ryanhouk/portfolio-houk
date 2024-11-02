@@ -1,6 +1,5 @@
 import React from 'react'
 import { FadeY } from '../animations'
-import Link from 'next/link'
 import DoodleSparkleAnimate from '../svg/DoodleSparkleAnimate'
 import LinkButton from '../buttons/LinkButton'
 
@@ -11,7 +10,7 @@ const ThankYou = (props: Props) => {
     <>
       <section
         id="Contact"
-        className="relative py-12 mt-16 scroll-mt-16 lg:py-32">
+        className="relative py-12 mt-16 scroll-mt-16 lg:py-32 selection:bg-orange-200">
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
             <DoodleSparkleAnimate
