@@ -31,7 +31,7 @@ const ImageCard = ({
           {/* BTN */}
           <div className="relative">
             <div className="absolute inset-0 z-20 flex items-center justify-center">
-              <div className="py-3 mt-6 font-mono text-sm text-white transition-all duration-300 border rounded-full opacity-0 px-7 group-hover:opacity-100 bg-black/10 backdrop-blur-2xl border-white/10 group-hover:mt-0">
+              <div className="px-4 py-2 mt-6 font-mono text-xs text-white transition-all duration-300 border rounded-full opacity-0 lg:text-sm lg:py-3 hover:brightness-110 lg:px-7 group-hover:opacity-100 bg-black/10 backdrop-blur-2xl border-white/10 group-hover:mt-0">
                 {btnTitle}
               </div>
             </div>
@@ -41,7 +41,7 @@ const ImageCard = ({
               src={imageUrl}
               height={1000}
               width={1000}
-              className={`object-contain transition-all duration-300 ${rounded}`}
+              className={`object-contain transition-all duration-300 group-hover:scale-95 ${rounded}`}
             />
           </div>
           <div className="relative z-20 mt-2 text-center transition-all duration-300 lg:mt-3">

@@ -102,7 +102,7 @@ const Blog = () => {
                 alt={post.title}
                 height={400}
                 width={200}
-                className="w-full lg:w-56"
+                className="w-full lg:w-64"
               />
               <div className="flex flex-col">
                 <h3 className="mt-4 text-lg text-white font-object lg:mx-8 lg:-mt-2 lg:text-2xl">

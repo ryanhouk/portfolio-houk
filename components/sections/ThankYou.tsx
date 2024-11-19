@@ -10,7 +10,7 @@ const ThankYou = (props: Props) => {
     <>
       <section
         id="Contact"
-        className="relative py-12 mt-16 scroll-mt-16 lg:py-32 selection:bg-orange-200">
+        className="relative py-12 mt-16 border-t scroll-mt-16 selection:bg-orange-200 lg:py-24 bg-gradient-to-t from-black via-white/5 to-white/5 border-zinc-900">
         <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
           <FadeY delay={0.25}>
             <DoodleSparkleAnimate
