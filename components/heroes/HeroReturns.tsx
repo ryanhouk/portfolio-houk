@@ -21,8 +21,8 @@ const HeroReturns = (Props: Props) => {
           </h1>
         </div>
         <FadeY className="relative z-20 px-8" delay={0.75}>
-          <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-400 lg:text-center">
-            {`Hey there! Creativity often thrives in a bit of chaos—because let’s be honest, the design process can get a little messy sometimes. But that's where the magic happens, turning ideas into powerful products.`}
+          <p className="max-w-xl mx-auto font-mono text-sm leading-loose text-zinc-400 lg:text-center">
+            {`Creativity often thrives in a bit of chaos, as the design process can get a little messy at times. But that’s where the magic happens—turning messy ideas into powerful products.`}
           </p>
         </FadeY>
         <FadeY delay={1}>
