@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-// import LinkedIn from '../svg/LinkedIn'
 import Threads from '../svg/Threads'
 import Image from 'next/image'
-// import IconMail from '../svg/IconMail'
 
 type Props = {}
 
