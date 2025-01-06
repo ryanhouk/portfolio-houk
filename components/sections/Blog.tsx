@@ -90,7 +90,7 @@ const Blog = () => {
       <section
         id="Posts"
         className="max-w-5xl px-8 pt-12 mx-auto selection:bg-orange-200">
-        <div className="flex flex-col">
+        <FadeY delay={0.75} className="flex flex-col">
           {data.map((post, index) => (
             <Link
               href={post.url}
@@ -116,7 +116,7 @@ const Blog = () => {
               </div>
             </Link>
           ))}
-        </div>
+        </FadeY>
       </section>
     </>
   )

@@ -6,6 +6,24 @@ type Props = {
 }
 
 const LoopingText: React.FC<Props> = ({ className }: Props) => {
+  const items = [
+    // 'AB Testing',
+    // 'Dashboards',
+    // 'Usability Testing',
+    // 'Web Applications',
+    // 'Surveys',
+    // 'iOS & Android Apps',
+    // 'IA',
+    // 'tvOS',
+    'Empathy',
+    'Results Focused',
+    'User Focused',
+    'Curiosity & Passion',
+    'Mentorship',
+    'Team Player',
+    'Collaboration',
+  ]
+
   return (
     <>
       <div
@@ -20,35 +38,12 @@ const LoopingText: React.FC<Props> = ({ className }: Props) => {
             duration: 40, // Duration for the text to move across the screen, adjust as needed
             ease: 'linear',
           }}>
-          <div className="flex items-center">
-            AB Testing
-            <div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
-          </div>
-          <div className="flex items-center">
-            Dashboards
-            <div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
-          </div>
-          <div className="flex items-center">
-            Usability Testing
-            <div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
-          </div>
-          <div className="flex items-center">
-            Web Applications
-            <div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
-          </div>
-          <div className="flex items-center">
-            Surveys<div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
-          </div>
-          <div className="flex items-center">
-            iOS & Android Apps
-            <div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
-          </div>
-          <div className="flex items-center">
-            IA<div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
-          </div>
-          <div className="flex items-center">
-            tvOS<div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
-          </div>
+          {items.map((item, index) => (
+            <div key={index} className="flex items-center">
+              {item}
+              <div className="w-4 h-4 ml-8 rounded-full bg-white/40"></div>
+            </div>
+          ))}
         </motion.div>
       </div>
     </>

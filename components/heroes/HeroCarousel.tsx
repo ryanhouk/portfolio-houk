@@ -32,7 +32,7 @@ const cards: CardData[] = [
     imageClass: 'mx-auto w-[1000px] lg:w-full -ml-12 -mt-24 max-w-screen-3xl',
   },
   {
-    image: '/img/mockup/klove/web/emf-mob.webp',
+    image: '/img/mockup/emf/emf-mob.webp',
     altText: 'Description for image 2',
     imageClass: 'mx-auto w-[1000px] lg:w-full max-w-screen-3xl',
   },
