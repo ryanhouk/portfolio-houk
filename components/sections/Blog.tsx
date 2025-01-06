@@ -86,7 +86,7 @@ const Blog = () => {
           </FadeY>
         </div>
       </section>
-
+      {/* BLOGS */}
       <section
         id="Posts"
         className="max-w-5xl px-8 pt-12 mx-auto selection:bg-orange-200">
