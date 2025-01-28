@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import IconHome from '../svg/IconHome'
 import IconMixtape from '../svg/IconMixtape'
 import IconUser from '../svg/IconUser'
-import MyStuffView from '../views/MyStuffView'
 import MixtapeView from '../views/MixtapeView'
+import MyStuffView from '../views/MyStuffView'
 
 type Props = {
   className?: string
