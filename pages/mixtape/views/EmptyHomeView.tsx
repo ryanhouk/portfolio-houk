@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import TabNav from '../components/TabNav'
+import TabNav from '../components/TabNavEmpty'
 
 type Props = {}
 

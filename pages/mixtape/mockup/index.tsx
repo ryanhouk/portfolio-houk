@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import TabNav from './components/TabNav'
 import Image from 'next/image'
-import MixNavbar from './components/MixNavbar'
+import MixNavbar from '../components/MixNavbar'
+import TabNav from '../components/TabNav'
 
 type Props = {}
 
