@@ -39,20 +39,39 @@ const Index = () => {
               <li
                 key={player.id}
                 className="p-4 rounded-2xl bg-gradient-to-br from-white/15 to-white/0">
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-4">
-                    <span className="text-2xl text-white font-object">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-2xl text-white font-object">
                       {player.playerName}
-                    </span>
-                    <span className="text-lg text-white/70">
-                      {player.grade}
-                    </span>
+                    </p>
+                    <p className="text-sm font-medium text-white/50">
+                      Averages{' '}
+                      <span className="font-black">
+                        {player.gamesPerSeason}
+                      </span>{' '}
+                      games per season
+                    </p>
+                    <div className="flex gap-2 mt-1">
+                      {Object.entries(player.seasons).map(([year, games]) => (
+                        <div key={year} className="flex items-center gap-1">
+                          <span className="text-xs text-white/50">{year}:</span>
+                          <span className="text-xs font-medium text-white">
+                            {games || '-'}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <span className="font-mono text-sm text-white/70">
-                    AGPS: {player.gamesPerSeason}
-                  </span>
 
-                  <span>{player.colorValue}</span>
+                  <div className="flex items-center space-x-4">
+                    <p className="text-3xl font-black text-white">
+                      {player.grade}
+                    </p>
+                    <div
+                      className="w-4 h-4 rounded-full"
+                      style={{ backgroundColor: player.colorValue }}
+                    />
+                  </div>
                 </div>
               </li>
             ))}
