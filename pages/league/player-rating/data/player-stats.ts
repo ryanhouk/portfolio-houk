@@ -806,6 +806,6 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 58,
     grade: 'C',
     colorValue: '#ffbe0b',
-    seasons: { 2021: 57, 2022: 0, 2023: 62, 2024: 113, 2025: null },
+    seasons: { 2021: 57, 2022: 0, 2023: 62, 2024: 63, 2025: null },
   },
 ]
