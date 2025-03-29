@@ -94,7 +94,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 54,
     grade: 'C',
     colorValue: '#ffbe0b',
-    seasons: { 2021: 36, 2022: 40, 2023: 56, 2024: 84, 2025: null },
+    seasons: { 2021: 36, 2022: 40, 2023: 56, 2024: 76, 2025: null },
   },
   {
     id: 12,
@@ -158,15 +158,15 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 48,
     grade: 'D',
     colorValue: '#fb8500',
-    seasons: { 2021: 52, 2022: 0, 2023: 58, 2024: 82, 2025: null },
+    seasons: { 2021: 52, 2022: 0, 2023: 58, 2024: 68, 2025: null },
   },
   {
     id: 20,
     playerName: 'Paul George',
     gamesPerSeason: 56,
-    grade: 'C',
-    colorValue: '#ffbe0b',
-    seasons: { 2021: 54, 2022: 31, 2023: 56, 2024: 83, 2025: null },
+    grade: 'D',
+    colorValue: '#fb8500',
+    seasons: { 2021: 54, 2022: 31, 2023: 56, 2024: 41, 2025: null },
   },
   {
     id: 21,
@@ -358,7 +358,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 82,
     grade: 'A',
     colorValue: '#38b000',
-    seasons: { 2021: 82, 2022: 82, 2023: 81, 2024: 81, 2025: null },
+    seasons: { 2021: 72, 2022: 82, 2023: 81, 2024: 81, 2025: null },
   },
   {
     id: 45,
@@ -542,7 +542,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 76,
     grade: 'A',
     colorValue: '#38b000',
-    seasons: { 2021: 64, 2022: 84, 2023: 80, 2024: 76, 2025: null },
+    seasons: { 2021: 64, 2022: 82, 2023: 82, 2024: 76, 2025: null },
   },
   {
     id: 68,
@@ -566,7 +566,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 55,
     grade: 'C',
     colorValue: '#ffbe0b',
-    seasons: { 2021: 61, 2022: 9, 2023: 62, 2024: 82, 2025: null },
+    seasons: { 2021: 61, 2022: 9, 2023: 62, 2024: 81, 2025: null },
   },
   {
     id: 71,
@@ -590,7 +590,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 63,
     grade: 'B',
     colorValue: '#219ebc',
-    seasons: { 2021: 54, 2022: 47, 2023: 63, 2024: 82, 2025: null },
+    seasons: { 2021: 54, 2022: 47, 2023: 63, 2024: 54, 2025: null },
   },
   {
     id: 74,
@@ -654,7 +654,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 74,
     grade: 'A',
     colorValue: '#38b000',
-    seasons: { 2021: 82, 2022: 73, 2023: 84, 2024: 57, 2025: null },
+    seasons: { 2021: 61, 2022: 82, 2023: 82, 2024: 57, 2025: null },
   },
   {
     id: 82,
@@ -694,7 +694,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 73,
     grade: 'A',
     colorValue: '#38b000',
-    seasons: { 2021: 70, 2022: 73, 2023: 82, 2024: 67, 2025: null },
+    seasons: { 2021: 70, 2022: 73, 2023: 76, 2024: 67, 2025: null },
   },
   {
     id: 87,
@@ -750,7 +750,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 61,
     grade: 'B',
     colorValue: '#219ebc',
-    seasons: { 2021: 47, 2022: 32, 2023: 76, 2024: 82, 2025: null },
+    seasons: { 2021: 47, 2022: 32, 2023: 76, 2024: 71, 2025: null },
   },
   {
     id: 94,
