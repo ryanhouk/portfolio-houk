@@ -355,10 +355,10 @@ export const playerStats: PlayerStats[] = [
   {
     id: 44,
     playerName: 'Mikal Bridges',
-    gamesPerSeason: 83,
+    gamesPerSeason: 82,
     grade: 'A',
     colorValue: '#38b000',
-    seasons: { 2021: 82, 2022: 83, 2023: 81, 2024: 86, 2025: null },
+    seasons: { 2021: 82, 2022: 82, 2023: 81, 2024: 81, 2025: null },
   },
   {
     id: 45,
@@ -566,7 +566,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 55,
     grade: 'C',
     colorValue: '#ffbe0b',
-    seasons: { 2021: 61, 2022: 9, 2023: 62, 2024: 88, 2025: null },
+    seasons: { 2021: 61, 2022: 9, 2023: 62, 2024: 82, 2025: null },
   },
   {
     id: 71,
@@ -590,7 +590,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 63,
     grade: 'B',
     colorValue: '#219ebc',
-    seasons: { 2021: 54, 2022: 47, 2023: 63, 2024: 88, 2025: null },
+    seasons: { 2021: 54, 2022: 47, 2023: 63, 2024: 82, 2025: null },
   },
   {
     id: 74,
@@ -750,7 +750,7 @@ export const playerStats: PlayerStats[] = [
     gamesPerSeason: 61,
     grade: 'B',
     colorValue: '#219ebc',
-    seasons: { 2021: 47, 2022: 32, 2023: 76, 2024: 89, 2025: null },
+    seasons: { 2021: 47, 2022: 32, 2023: 76, 2024: 82, 2025: null },
   },
   {
     id: 94,
