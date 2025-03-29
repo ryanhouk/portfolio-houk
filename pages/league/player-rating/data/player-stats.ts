@@ -219,7 +219,7 @@ export const playerStats: PlayerStats[] = [
   {
     id: 27,
     playerName: 'Domantas Sabonis',
-    gamesPerSeason: 76,
+    gamesPerSeason: 75,
     grade: 'A',
     colorValue: '#38b000',
     seasons: { 2021: 72, 2022: 79, 2023: 74 },
@@ -291,7 +291,7 @@ export const playerStats: PlayerStats[] = [
   {
     id: 36,
     playerName: 'Scottie Barnes',
-    gamesPerSeason: 71,
+    gamesPerSeason: 72,
     grade: 'A',
     colorValue: '#38b000',
     seasons: { 2021: 74, 2022: 77, 2023: 67 },
@@ -435,7 +435,7 @@ export const playerStats: PlayerStats[] = [
   {
     id: 54,
     playerName: 'Franz Wagner',
-    gamesPerSeason: 76,
+    gamesPerSeason: 78,
     grade: 'A',
     colorValue: '#38b000',
     seasons: { 2021: 79, 2022: 80, 2023: 76 },
@@ -443,7 +443,7 @@ export const playerStats: PlayerStats[] = [
   {
     id: 55,
     playerName: 'Dejounte Murray',
-    gamesPerSeason: 71,
+    gamesPerSeason: 73,
     grade: 'A',
     colorValue: '#38b000',
     seasons: { 2021: 67, 2022: 74, 2023: 78 },
@@ -531,7 +531,7 @@ export const playerStats: PlayerStats[] = [
   {
     id: 66,
     playerName: 'Brook Lopez',
-    gamesPerSeason: 72,
+    gamesPerSeason: 56,
     grade: 'A',
     colorValue: '#38b000',
     seasons: { 2021: 78, 2022: 13, 2023: 78 },
@@ -627,7 +627,7 @@ export const playerStats: PlayerStats[] = [
   {
     id: 78,
     playerName: 'Josh Giddey',
-    gamesPerSeason: 72,
+    gamesPerSeason: 75,
     grade: 'A',
     colorValue: '#38b000',
     seasons: { 2021: 76, 2022: 70, 2023: 80 },
@@ -683,7 +683,7 @@ export const playerStats: PlayerStats[] = [
   {
     id: 85,
     playerName: 'Jordan Clarkson',
-    gamesPerSeason: 71,
+    gamesPerSeason: 69,
     grade: 'A',
     colorValue: '#38b000',
     seasons: { 2021: 68, 2022: 79, 2023: 61 },
@@ -771,7 +771,7 @@ export const playerStats: PlayerStats[] = [
   {
     id: 96,
     playerName: 'Buddy Hield',
-    gamesPerSeason: 76,
+    gamesPerSeason: 77,
     grade: 'A',
     colorValue: '#38b000',
     seasons: { 2021: 72, 2022: 81, 2023: 80 },
