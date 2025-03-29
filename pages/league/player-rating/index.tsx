@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { playerStats } from './data'
+import { playerStats } from './data/player-stats'
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('')
