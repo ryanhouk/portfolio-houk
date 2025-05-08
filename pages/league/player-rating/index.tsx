@@ -1,5 +1,96 @@
 import React, { useEffect, useState } from 'react'
-import { playerStats } from './data'
+
+type PlayerStats = {
+  id: number
+  playerName: string
+  gamesPerSeason: number
+  grade: string
+  colorValue: string
+  seasons: Record<string, number | null>
+}
+
+const playerStats: PlayerStats[] = [
+  {
+    id: 1,
+    playerName: 'Nikola Jokic',
+    gamesPerSeason: 72,
+    grade: 'A',
+    colorValue: '#38b000',
+    seasons: { 2021: 72, 2022: 74, 2023: 69 },
+  },
+  {
+    id: 2,
+    playerName: 'Luka Doncic',
+    gamesPerSeason: 68,
+    grade: 'B',
+    colorValue: '#219ebc',
+    seasons: { 2021: 66, 2022: 65, 2023: 70 },
+  },
+  {
+    id: 3,
+    playerName: 'Giannis Antetokounmpo',
+    gamesPerSeason: 65,
+    grade: 'B',
+    colorValue: '#219ebc',
+    seasons: { 2021: 61, 2022: 67, 2023: 63 },
+  },
+  {
+    id: 4,
+    playerName: 'Shai Gilgeous-Alexander',
+    gamesPerSeason: 62,
+    grade: 'B',
+    colorValue: '#219ebc',
+    seasons: { 2021: 56, 2022: 61, 2023: 68 },
+  },
+  {
+    id: 5,
+    playerName: 'Joel Embiid',
+    gamesPerSeason: 58,
+    grade: 'C',
+    colorValue: '#ffbe0b',
+    seasons: { 2021: 51, 2022: 68, 2023: 66 },
+  },
+  {
+    id: 6,
+    playerName: 'Jayson Tatum',
+    gamesPerSeason: 74,
+    grade: 'A',
+    colorValue: '#38b000',
+    seasons: { 2021: 72, 2022: 76, 2023: 74 },
+  },
+  {
+    id: 7,
+    playerName: 'Stephen Curry',
+    gamesPerSeason: 64,
+    grade: 'B',
+    colorValue: '#219ebc',
+    seasons: { 2021: 63, 2022: 64, 2023: 56 },
+  },
+  {
+    id: 8,
+    playerName: 'LeBron James',
+    gamesPerSeason: 56,
+    grade: 'C',
+    colorValue: '#ffbe0b',
+    seasons: { 2021: 45, 2022: 56, 2023: 55 },
+  },
+  {
+    id: 9,
+    playerName: 'Kevin Durant',
+    gamesPerSeason: 52,
+    grade: 'C',
+    colorValue: '#ffbe0b',
+    seasons: { 2021: 35, 2022: 55, 2023: 47 },
+  },
+  {
+    id: 10,
+    playerName: 'Anthony Edwards',
+    gamesPerSeason: 72,
+    grade: 'A',
+    colorValue: '#38b000',
+    seasons: { 2021: 72, 2022: 76, 2023: 79 },
+  },
+]
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('')
