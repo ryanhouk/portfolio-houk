@@ -10,7 +10,6 @@ const navItems = [
   { href: '#Work', label: 'Work' },
   { href: '#About', label: 'About' },
   { href: '#Blog', label: 'Blog' },
-  // { href: '#Contact', label: 'Contact' },
   {
     href: 'mailto:ryan.houk@proton.me?subject=Hey, Ryan! I would like to chat about...',
     label: 'Contact',
@@ -40,7 +39,7 @@ const Navbar = (props: Props) => {
         </div>
 
         {/* NAV ITEMS */}
-        <div className="items-center justify-center hidden h-20 gap-8 lg:flex">
+        <div className="items-center justify-center hidden h-20 gap-8 pt-1 lg:flex">
           {navItems.map((item, index) => (
             <Link
               key={index}
@@ -62,24 +61,6 @@ const Navbar = (props: Props) => {
               Threads
             </div>
           </Link>
-          {/* <Link
-            href="https://www.linkedin.com/in/ryanhouk/"
-            target="_blank"
-            className="relative transition-all group opacity-60 hover:opacity-100">
-            <LinkedIn className="w-4 text-white" />
-            <div className="absolute px-2 py-1 text-xs text-white transition-all duration-300 transform scale-0 rotate-90 -translate-x-1/2 translate-y-2 bg-black rounded opacity-0 left-1/2 top-full group-hover:mt-6 group-hover:scale-100 group-hover:opacity-100">
-              LinkedIn
-            </div>
-          </Link> */}
-          {/* <Link
-            href="mailto:ryan.houk@proton.me?subject=Hey, Ryan! I would like to chat about..."
-            target="_blank"
-            className="relative transition-all group opacity-60 hover:opacity-100">
-            <IconMail className="w-6 text-white" />
-            <div className="absolute px-2 py-1 text-xs text-white transition-all duration-300 transform scale-0 rotate-90 -translate-x-1/2 translate-y-2 bg-black rounded opacity-0 left-1/2 top-full group-hover:mt-6 group-hover:scale-100 group-hover:opacity-100">
-              Contact
-            </div>
-          </Link> */}
         </div>
       </nav>
 
