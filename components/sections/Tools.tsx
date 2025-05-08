@@ -8,10 +8,10 @@ import Vscode from '../svg/logos/Vscode'
 import Chatgpt from '../svg/logos/Chatgpt'
 import Arc from '../svg/logos/Arc'
 import Craft from '../svg/logos/Craft'
+import Cursor from '../img/logos/cursor.png'
+import Image from 'next/image'
 
-type Props = {}
-
-const Tools = (props: Props) => {
+const Tools = () => {
   return (
     <>
       <section className="w-full py-8 border-t lg:py-24 bg-gradient-to-t from-black via-white/5 to-white/5 border-zinc-900">
@@ -55,9 +55,13 @@ const Tools = (props: Props) => {
             </LogoWrapper>
             <LogoWrapper>
               <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
-                OpenAI
+                Cursor
               </p>
-              <Chatgpt className="w-20 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0" />
+              <Image
+                src={Cursor}
+                alt="Cursor logo"
+                className="w-20 transition-all duration-300 group-hover:scale-90 group-hover:opacity-0"
+              />
             </LogoWrapper>
             <LogoWrapper>
               <p className="absolute z-10 text-white transition-all duration-200 scale-75 opacity-0 group-hover:opacity-100 font-object group-hover:scale-125">
