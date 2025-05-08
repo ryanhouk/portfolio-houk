@@ -39,7 +39,7 @@ const Navbar = (props: Props) => {
         </div>
 
         {/* NAV ITEMS */}
-        <div className="items-center justify-center hidden h-20 gap-8 lg:flex">
+        <div className="items-center justify-center hidden h-20 gap-8 pt-2 lg:flex">
           {navItems.map((item, index) => (
             <Link
               key={index}
