@@ -28,7 +28,7 @@ export const mobileCaseStudiesData: MobileItem[] = [
     href: '/',
     title: 'Mixtape',
     description: 'A place for everything. Project details available soon.',
-    imgSrcOne: '/img/mockup/mixtape/mt-home-expand-solo.png',
+    imgSrcOne: '/img/mockup/mixtape/mt-home-solo.png',
     imgSrcTwo: '/img/mockup/mixtape/mt-mixtapes-solo.png',
     alt: '',
     category: 'iOS · MacOS',
