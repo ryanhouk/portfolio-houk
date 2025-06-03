@@ -10,27 +10,6 @@ export type DesktopItem = {
 }
 
 export const desktopCaseStudiesData: DesktopItem[] = [
-  // {
-  //   keyId: 2,
-  //   href: '/auth/klove/',
-  //   title: 'Media Platforms',
-  //   description:
-  //     'Unified disparate media platforms for podcasts, videos, and music by reworking the information architecture and designing a scalable product for a consistent user experience across Apple TV, mobile apps, and websites.',
-  //   imgSrc: '/img/mockup/klove/mob/kl-unify-02-open.png',
-  //   alt: 'tv OS music app with large artist photo',
-  //   category: 'Web · iOS · Android · tvOS · Roku',
-  //   caseStudy: false,
-  // },
-  // {
-  //   keyId: 8,
-  //   href: '/',
-  //   title: 'Mixtape',
-  //   description: 'A place for everything. Project details available soon.',
-  //   imgSrc: '/img/mockup/mixtape/mt-open.png',
-  //   alt: '',
-  //   category: 'iOS · MacOS',
-  //   caseStudy: true,
-  // },
   {
     keyId: 1,
     href: '/',
@@ -47,9 +26,9 @@ export const desktopCaseStudiesData: DesktopItem[] = [
     title: 'WebMob Site',
     description:
       'Developed an internal website that enables stakeholders to monitor project progress and access style guides, fostering greater transparency and collaboration.',
-    imgSrc: '/img/mockup/webmob/wm-guide-open.png',
-    category: 'Website',
+    imgSrc: '/img/mockup/webmob/wm-open.png',
     alt: '',
+    category: 'Website',
     caseStudy: true,
   },
   {
