@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { FadeY } from '../../../components/animations'
 import DetailsNav from '../../../components/nav/DetailsNavDark'
 import IconDevices from '../../../components/svg/IconDevices'
@@ -27,11 +28,11 @@ const MediaPlatformsDetails: React.FC = () => {
           <div className="flex justify-center">
             <IconDevices startColor={'#dc2626'} endColor={'#facc15'} className="w-10 lg:w-16" />
           </div>
-          <h1 className="text-5xl font-clash selection:bg-orange-200 md:text-7xl xl:text-9xl">
+          <h1 className="text-5xl text-white font-clash selection:bg-orange-200 md:text-7xl xl:text-9xl">
             Media Platforms
           </h1>
         </FadeY>
-        <motion.div className="w-full max-w-6xl mx-auto">
+        <FadeY className="w-full max-w-6xl mx-auto">
           <Image 
             src="/img/mockup/klove/mob/kl-3-up.png"
             width={1500} 
@@ -39,7 +40,7 @@ const MediaPlatformsDetails: React.FC = () => {
             alt="Media platforms interface showcase"
             className="w-full"
           />
-        </motion.div>
+        </FadeY>
       </section>
 
       {/* INTRO */}
