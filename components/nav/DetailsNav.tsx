@@ -41,6 +41,7 @@ const DetailsNav = () => {
             alt={'Photo of Ryan Houk smiling'}
             width={400}
             height={400}
+            unoptimized={true}
             className="w-8 transition-all border-2 rounded-full border-black/30 hover:cursor-cell hover:border-black"
           />
         </div>
@@ -77,13 +78,6 @@ const DetailsNav = () => {
               className={`w-4 ${isScrolled ? 'text-white' : 'text-black'}`}
             />
           </Link>
-          {/* <Link
-            href="https://dribbble.com/ryanhouk"
-            target="_blank"
-            title="Visit Ryan Houk Dribbble"
-            className="transition-all hover:opacity-60">
-            <Dribbble className={`w-4 ${isScrolled ? 'text-white' : 'text-black'}`} />
-          </Link> */}
         </div>
       </motion.nav>
     </>

@@ -32,6 +32,7 @@ const Navbar = (props: Props) => {
               alt={'Photo of Ryan Houk smiling'}
               width={400}
               height={400}
+              unoptimized={true}
               className="w-8 transition-all border-2 rounded-full border-white/30 hover:cursor-cell hover:border-white"
             />
             <p className="ml-3 font-mono text-white/70">ryanhouk</p>
@@ -109,6 +110,7 @@ const Navbar = (props: Props) => {
                   alt={'Photo of Ryan Houk smiling'}
                   width={400}
                   height={400}
+                  unoptimized={true}
                   className="w-10 border-2 rounded-full border-white/30"
                 />
                 <span className="font-mono text-white">ryanhouk</span>
