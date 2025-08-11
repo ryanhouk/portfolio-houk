@@ -58,7 +58,7 @@ const skillData: Skill[] = [
     title: 'Usability Testing',
     context: 'Evaluating a product by testing it on users.',
   },
-  { title: 'VS Code', context: 'Source-code editor made by Microsoft.' },
+  { title: 'Cursor', context: 'AI-powered IDE for coding.' },
   { title: 'TypeScript', context: 'Typed superset of JavaScript.' },
   {
     title: 'Card Sorting',
@@ -76,17 +76,17 @@ const SkillsGrid = () => {
 
   return (
     <section className="px-8 selection:bg-orange-200">
-      <div className="relative z-30 flex flex-wrap justify-center max-w-3xl gap-2 mx-auto my-20 transition-all duration-300 lg:max-w-4xl lg:my-24">
+      <div className="flex relative z-30 flex-wrap gap-2 justify-center mx-auto my-20 max-w-3xl transition-all duration-300 lg:max-w-4xl lg:my-24">
         {skillData.map((skill, index) => (
           <div
             key={index}
             aria-label={skill.title}
-            className="relative px-4 py-2 text-xs transition-all duration-300 border-2 rounded-full lg:text-base hover:text-white text-white/60 group border-white/20 hover:cursor-cell hover:border-white/40"
+            className="relative px-4 py-2 text-xs rounded-full border-2 transition-all duration-300 lg:text-base hover:text-white text-white/60 group border-white/20 hover:cursor-cell hover:border-white/40"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}>
             {skill.title}
             {hoveredIndex === index && (
-              <div className="absolute p-2 mb-2 text-xs leading-relaxed text-center text-white transform -translate-x-1/2 border shadow-lg bottom-full left-1/2 w-72 rounded-xl border-white/10 bg-black/10 backdrop-blur-2xl">
+              <div className="absolute bottom-full left-1/2 p-2 mb-2 w-72 text-xs leading-relaxed text-center text-white rounded-xl border shadow-lg backdrop-blur-2xl transform -translate-x-1/2 border-white/10 bg-black/10">
                 {skill.context}
               </div>
             )}
