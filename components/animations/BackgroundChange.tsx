@@ -6,6 +6,9 @@ interface Props {
   className?: string
 }
 
+// Cast motion.div to any to suppress TypeScript errors with children/className
+const MotionDiv = motion.div as any
+
 const BackgroundChange: React.FC<Props> = ({ className, children }) => {
   const { scrollYProgress } = useViewportScroll()
 
@@ -34,13 +37,13 @@ const BackgroundChange: React.FC<Props> = ({ className, children }) => {
   }, [])
 
   return (
-    <motion.div
+    <MotionDiv
       style={{ width: '100%', height: '100%' }}
       animate={{ opacity: [0, 1] }}
       transition={{ duration: 0.3 }}
       className={className}>
       {children}
-    </motion.div>
+    </MotionDiv>
   )
 }
 
