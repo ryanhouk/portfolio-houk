@@ -118,10 +118,10 @@ const FaveThings = () => {
           <h2 className="mb-1 text-2xl text-white lg:pt-6 font-clash lg:text-3xl">
             Podcasts
           </h2>
-          {/* <p className="max-w-md font-mono text-sm leading-normal text-white/50">
+          <p className="max-w-md font-mono text-sm leading-normal text-white/50">
             These are some amazing podcasts with talented hosts and fascinating
             insights!
-          </p> */}
+          </p>
         </div>
         <div className="relative flex w-full px-8 mx-auto overflow-x-auto selection:bg-orange-200 scrollbar-hide">
           <div className="flex space-x-4 lg:space-x-8 snap-x snap-mandatory">
@@ -150,10 +150,10 @@ const FaveThings = () => {
           <h2 className="mb-1 text-2xl text-white lg:pt-6 font-clash lg:text-3xl">
             Apps
           </h2>
-          {/* <p className="max-w-md font-mono text-sm leading-normal text-white/50">
-            These are my top picks for showcasing great design and user-centered
-            development.
-          </p> */}
+          <p className="max-w-md font-mono text-sm leading-normal text-white/50">
+            My top picks for showcasing great design and user-centered
+            creativity.
+          </p>
         </div>
         <div className="relative flex w-full px-8 mx-auto overflow-x-auto selection:bg-orange-200 scrollbar-hide">
           <div className="flex space-x-4 lg:space-x-8 snap-x snap-mandatory">

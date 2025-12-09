@@ -10,20 +10,20 @@ const ThankYou = (props: Props) => {
     <>
       <section
         id="Contact"
-        className="relative py-12 mt-16 border-t scroll-mt-16 selection:bg-orange-200 lg:py-24 bg-gradient-to-t from-black via-white/5 to-white/5 border-zinc-900">
-        <div className="relative z-20 flex flex-col justify-center max-w-5xl px-8 mx-auto">
+        className="relative py-12 mt-16 bg-gradient-to-t from-black border-t scroll-mt-16 selection:bg-orange-200 lg:py-24 via-white/5 to-white/5 border-zinc-900">
+        <div className="flex relative z-20 flex-col justify-center px-8 mx-auto max-w-5xl">
           <FadeY delay={0.25}>
             <DoodleSparkleAnimate
               startColor={'#dc2626'}
               endColor={'#facc15'}
-              className="w-20 mb-2 lg:mx-auto lg:mb-2 lg:w-32"
+              className="mb-2 w-20 lg:mx-auto lg:mb-2 lg:w-32"
             />
           </FadeY>
           <h1 className="mb-4 text-4xl text-white font-clash lg:mb-8 lg:text-center lg:text-9xl">
             <FadeY delay={0.5}>Thank You!</FadeY>
           </h1>
           <FadeY delay={0.75}>
-            <p className="max-w-2xl mx-auto font-mono text-sm leading-loose text-zinc-500 lg:text-center">
+            <p className="mx-auto max-w-2xl font-mono text-sm leading-loose text-zinc-500 lg:text-center">
               Appreciate you taking the time to check out my portfolio 👍
             </p>
           </FadeY>
